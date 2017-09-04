@@ -10,10 +10,10 @@ Uit de kubus â€œInwoners naar nationaliteit, leeftijd (10 klassen) en geslachtâ€
 - De naam van de kubus is natcube10
 - De naam van de dimensie is leeft10
 - De itemcodes zijn 1 (0 tem 9j) en 2 (10 tem 19j)
-> De formule is dan: cell(natcube10,leeft10_1) + cell(natcube10,leeft10_2)
+> De formule is dan: `cell(natcube10,leeft10_1) + cell(natcube10,leeft10_2)`
 
 Uit dezelfde kubus willen we de Belgen van 0 tem 9 jaar optellen met de Belgen van 10 tem 19 jaar
 - De naam van de kubus is natcube10
 - De naam van de dimensie is voor leeftijd is leeft10, die voor nationaliteit is nat_geo_omschr2
 - De itemcodes zijn 1 (0 tem 9j) en 2 (10 tem 19j) voor leeftijd en belgie voor de Belgen
-- De formule is dan: cell(natcube10,leeft10_1,nat_geo_omschr2_belgie) + cell(natcube10,leeft10_2,nat_geo_omschr2_belgie)
+> De formule is dan: cell(natcube10,leeft10_1,nat_geo_omschr2_belgie) + cell(natcube10,leeft10_2,nat_geo_omschr2_belgie)
