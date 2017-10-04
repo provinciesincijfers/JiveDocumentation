@@ -1,23 +1,27 @@
 
-Inhoud
-Handleiding aanmaak en inlezen kubussen in Stad in cijfers studio	1
-1.	Inleiding	2
-2.	Aanmaak bestand	2
-2.1.	Reeds bestaande kubus	2
-2.2.	Nieuwe kubus	3
-3.	Importeren kubusbestand	12
-4.	Bewerken dimensies en onderwerp	16
-4.1.	Onderwerp	16
-4.2.	Dimensies	18
-5.	Onderbrengen in de themaboom	22
+# Handleiding aanmaak en inlezen kubussen in Swing Studio
+
+## Inhoud
+
+
+1.	Inleiding
+2.	Aanmaak bestand
+2.1.	Reeds bestaande kubus
+2.2.	Nieuwe kubus
+3.	Importeren kubusbestand
+4.	Bewerken dimensies en onderwerp
+4.1.	Onderwerp
+4.2.	Dimensies
+5.	Onderbrengen in de themaboom
 
  
 
-1.	Inleiding
+## 1.	Inleiding
 
-In Stad in cijfers bestaat de mogelijkheid gegevens in te lezen in kubusvorm. Deze vorm laat toe om gegevens in te lezen met verschillende kenmerken, die bij raadpleging onderling gekruist kunnen worden. Zo kan men bevolkingsgegevens inlezen met de kenmerken nationaliteitsgroep, geslacht en leeftijd. Men kan dan via deze vorm bevolkingsgegevens opvragen van bijvoorbeeld een nationaliteitsgroep naar leeftijdsgroepen.
-Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de studio van Stad in Cijfers.
-2.	Aanmaak bestand
+In Swing bestaat de mogelijkheid gegevens in te lezen in kubusvorm. Deze vorm laat toe om gegevens in te lezen met verschillende kenmerken, die bij raadpleging onderling gekruist kunnen worden. Zo kan men bevolkingsgegevens inlezen met de kenmerken nationaliteitsgroep, geslacht en leeftijd. Men kan dan via deze vorm bevolkingsgegevens opvragen van bijvoorbeeld een nationaliteitsgroep naar leeftijdsgroepen.
+Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van Swing.
+
+## 2.	Aanmaak bestand
 
 In eerste instantie wordt vanuit het betreffende basisbestand een bestand aangemaakt in een formaat dat Swing Studio kan inlezen.
 Een bestand voor kubussen bestaat uit 5 types velden:
@@ -27,15 +31,17 @@ Een bestand voor kubussen bestaat uit 5 types velden:
 -	Onderwerp: dit is de teller of de aantallen
 -	Dimensies: dit zijn de kenmerken (bv nationaliteit, leeftijdsindeling, economische sectoren). Er kunnen meerdere dimensies zijn, dus ook meerdere velden.
 
-2.1.	Reeds bestaande kubus
+### 2.1.	Reeds bestaande kubus
 
 Bij aanmaak van een kubus die reeds bestaat, dien je al deze velden op dezelfde manier te benoemen als ervoor. Normaal gezien wordt voor elke kubus een syntax gemaakt om de gegevens vanuit een basisbestand in het juiste formaat te krijgen en worden de velden automatisch correct benoemd.
  
 
-2.2.	Nieuwe kubus
+### 2.2.	Nieuwe kubus
 
 Indien de kubus nog aangemaakt moet worden, onderneem dan volgende stappen:
-Stap 1: Check of de dimensies die de wil gebruiken reeds in de studio zijn aangemaakt
+
+*Stap 1: Check of de dimensies die de wil gebruiken reeds in de studio zijn aangemaakt
+
 Bepaalde dimensies kunnen in meerdere kubussen voorkomen, maar moeten in de studio maar een keer worden aangemaakt. Indien je dus in een nieuwe kubus een bepaalde bestaande dimensie wil invoeren (bijvoorbeeld een veelgebruikte leeftijdsindeling), is het belangrijk in je nieuw bestand een variabele aan te maken met dezelfde indeling en dezelfde naam. 
 De bestaande dimensies kan je controleren door in Swing Studio te kiezen voor Data  Dimensies. De kolomnaam voor een bestaande dimensie in je bestand moet overeenkomen met de Dimensiecode.
 variabele aan te maken met dezelfde indeling en dezelfde naam. 
@@ -56,7 +62,8 @@ De code of naam van je categorie in je bestand moet overeenkomen met de itemcode
 ![afbeelding 5](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image5.jpg)
 
 
-Stap 2: Aanmaak bestand
+*Stap 2: Aanmaak bestand
+
 Aan de hand van een voorbeeld beschrijven we het formaat van een bestand. Volgende velden zijn nodig:
 -	Periode: jaar
 -	Gebiedsniveau: buurt (evt. wijk, postzone, district, stad)
@@ -83,7 +90,8 @@ Wanneer je het bestand samenstelt, neem volgende aandachtspunten in acht:
 
 Om een kubusbestand aan te maken op basis van een basisbestand werk je best met een SPSS-syntax die kan herhaald worden. Hieronder kan je een voorbeeldsyntax vinden
 
-´*** In eerste instantie wordt het basisbestand opgeladen en worden eventueel nog een aantal variabelen aangemaakt ***
+```
+*** In eerste instantie wordt het basisbestand opgeladen en worden eventueel nog een aantal variabelen aangemaakt ***
 GET
   FILE='../file.sav'.
 DATASET NAME DataSet1 WINDOW=FRONT.
@@ -119,9 +127,9 @@ SAVE TRANSLATE OUTFILE='kubus.xlsx'
   /REPLACE
   /FIELDNAMES
   /CELLS=VALUES.
+```
 
-
-3.	Importeren kubusbestand
+## 3.	Importeren kubusbestand
 
 Je leest een kubusbestand in via Swing studio: https://stadincijfers.antwerpen.be/Admin/studio
 •	Na het inloggen, kies je voor data  importeren
@@ -148,23 +156,37 @@ Je leest een kubusbestand in via Swing studio: https://stadincijfers.antwerpen.b
 ![afbeelding 15](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image15.jpg)
 
 
-4.	Bewerken dimensies en onderwerp
+## 4.	Bewerken dimensies en onderwerp
 
 Wanneer je een bestaande kubus inleest, hoeft er verder niets te gebeuren. Bij nieuwe kubussen dienen onderwerp en nieuwe dimensies nog bewerkt te worden.
-4.1.	Onderwerp
+
+### 4.1.	Onderwerp
 
 Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aangemaakt. Kies Data  onderwerpen. Je kan zo een aantal zaken aanpassen, zoals de benaming van de kubus, de bron, de teleenheid van de teller, extra uitleg,…
 
 ![afbeelding 16](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image16.jpg)
 
-4.	Bewerken dimensies en onderwerp
 
-Wanneer je een bestaande kubus inleest, hoeft er verder niets te gebeuren. Bij nieuwe kubussen dienen onderwerp en nieuwe dimensies nog bewerkt te worden.
-4.1.	Onderwerp
+### 4.2.	Dimensies
 
-Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aangemaakt. Kies Data  onderwerpen. Je kan zo een aantal zaken aanpassen, zoals de benaming van de kubus, de bron, de teleenheid van de teller, extra uitleg,…
+De dimensies aanpassen doe je in 2 stappen:
+Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen. 
+•	Kies Data  Dimensies.
+•	Pas vervolgens naam en metadata aan
 
 
 ![afbeelding 17](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image17.jpg)
 ![afbeelding 18](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image18.jpg)
+
+
+## 5.	Onderbrengen in de themaboom
+
+•	Kies Weergave  Themaboom
+•	Je krijgt rechts te onderwerpenstructuur zoals deze in stad in cijfers te zien is. Links staan alle onderwerpen die in Swing Studio staan ingelezen. 
+•	Sleep het onderwerp van de gewenste kubus naar de map binnen de onderwerpenstructuur waar deze thuishoort.
+
+![afbeelding 19](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image19.jpg)
+![afbeelding 20](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image20.jpg)
+
+
 
