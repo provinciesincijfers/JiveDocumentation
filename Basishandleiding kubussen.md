@@ -43,13 +43,13 @@ Indien de kubus nog aangemaakt moet worden, onderneem dan volgende stappen:
 *Stap 1: Check of de dimensies die de wil gebruiken reeds in de studio zijn aangemaakt
 
 Bepaalde dimensies kunnen in meerdere kubussen voorkomen, maar moeten in de studio maar een keer worden aangemaakt. Indien je dus in een nieuwe kubus een bepaalde bestaande dimensie wil invoeren (bijvoorbeeld een veelgebruikte leeftijdsindeling), is het belangrijk in je nieuw bestand een variabele aan te maken met dezelfde indeling en dezelfde naam. 
-De bestaande dimensies kan je controleren door in Swing Studio te kiezen voor Data  Dimensies. De kolomnaam voor een bestaande dimensie in je bestand moet overeenkomen met de Dimensiecode.
+De bestaande dimensies kan je controleren door in Swing Studio te kiezen voor Data > Dimensies. De kolomnaam voor een bestaande dimensie in je bestand moet overeenkomen met de Dimensiecode.
 variabele aan te maken met dezelfde indeling en dezelfde naam. 
 
 ![afbeelding 1](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image1.jpg)
 ![afbeelding 2](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image2.jpg)
 
-De indeling van de categorieën (dimensie-items) kan je nakijken door te kiezen voor Data  Dimensieniveaus:
+De indeling van de categorieën (dimensie-items) kan je nakijken door te kiezen voor Data > Dimensieniveaus:
 
 ![afbeelding 3](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image3.jpg)
 
@@ -80,7 +80,7 @@ In onderstaand voorbeeld zien we bijvoorbeeld dat er volgens de eerste lijn onde
 Wanneer je het bestand samenstelt, neem volgende aandachtspunten in acht: 
 -	Voor dimensies die al in andere kubussen zitten (zie stap 1): de kolomtitel=de dimensiecode en de categorieën=itemcodes
 -	Voor nieuwe dimensies mag de kolomtitel niet overeenstemmen met een van de bestaande dimensiecodes.
--	Het onderwerp (teller) mag niet overeenstemmen met een reeds bestaande onderwerpcode. Dit controleer je door binnen Data  Onderwerpen te kiezen en vervolgens te controleren op het veld onderwerpcode.
+-	Het onderwerp (teller) mag niet overeenstemmen met een reeds bestaande onderwerpcode. Dit controleer je door binnen Data > Onderwerpen te kiezen en vervolgens te controleren op het veld onderwerpcode.
 -	Er mogen geen lege cellen zijn. Indien bepaalde gegevens niet bekend zijn, voorzie een code voor ontbrekende waarden.
 
 ![afbeelding 7](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image7.jpg)
@@ -107,7 +107,9 @@ value labels gezposcube
 11 'collectief huishouden'.
 
 
-*** Via de functie AGGREGATE wordt het bestand omgevormd tot een bestand in kubusvorm. De teller is de som van een de teller in het basisbestand (meestal is dit gewoon een variabele, bv. aantal die altijd 1 is), de breakvariabelen zijn jaar, buurt en de dimensievariabelen.
+*** Via de functie AGGREGATE wordt het bestand omgevormd tot een bestand in kubusvorm. 
+De teller is de som van een de teller in het basisbestand (meestal is dit gewoon een variabele, 
+bv. aantal die altijd 1 is), de breakvariabelen zijn jaar, buurt en de dimensievariabelen.
 
 * je kan best data op slechts één gebiedsniveau inladen.
 string gebiedsniveau (a5).
@@ -132,7 +134,7 @@ SAVE TRANSLATE OUTFILE='kubus.xlsx'
 ## 3.	Importeren kubusbestand
 
 Je leest een kubusbestand in via Swing studio: https://stadincijfers.antwerpen.be/Admin/studio
-•	Na het inloggen, kies je voor data  importeren
+•	Na het inloggen, kies je voor data > importeren
 •	Vervolgens klik je “bestand kiezen” aan, navigeer naar waar je kubusbestand staat en kies het kubusbestand
 •	Kies vervolgens voor upload
 
@@ -162,7 +164,7 @@ Wanneer je een bestaande kubus inleest, hoeft er verder niets te gebeuren. Bij n
 
 ### 4.1.	Onderwerp
 
-Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aangemaakt. Kies Data  onderwerpen. Je kan zo een aantal zaken aanpassen, zoals de benaming van de kubus, de bron, de teleenheid van de teller, extra uitleg,…
+Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aangemaakt. Kies Data > onderwerpen. Je kan zo een aantal zaken aanpassen, zoals de benaming van de kubus, de bron, de teleenheid van de teller, extra uitleg,…
 
 ![afbeelding 16](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image16.jpg)
 
@@ -171,7 +173,7 @@ Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aange
 
 De dimensies aanpassen doe je in 2 stappen:
 Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen. 
-•	Kies Data  Dimensies.
+•	Kies Data > Dimensies.
 •	Pas vervolgens naam en metadata aan
 
 
@@ -181,7 +183,7 @@ Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de
 
 ## 5.	Onderbrengen in de themaboom
 
-•	Kies Weergave  Themaboom
+•	Kies Weergave > Themaboom
 •	Je krijgt rechts te onderwerpenstructuur zoals deze in stad in cijfers te zien is. Links staan alle onderwerpen die in Swing Studio staan ingelezen. 
 •	Sleep het onderwerp van de gewenste kubus naar de map binnen de onderwerpenstructuur waar deze thuishoort.
 
