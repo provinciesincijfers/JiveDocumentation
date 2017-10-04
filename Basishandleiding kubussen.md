@@ -14,7 +14,7 @@
   4.2.	Dimensies
 5.	Onderbrengen in de themaboom
 
-* Dit is een algemene beginnershandleiding. Vooraleer je tot actie overgaat, check ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken. * 
+*Dit is een algemene beginnershandleiding. Vooraleer je tot actie overgaat, check ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
 
 ## 1.	Inleiding
 
