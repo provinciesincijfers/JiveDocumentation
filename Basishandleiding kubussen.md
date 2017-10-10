@@ -14,7 +14,9 @@
   4.2.	Dimensies
 5.	Onderbrengen in de themaboom
 
-*Dit is een algemene beginnershandleiding. Vooraleer je tot actie overgaat, check ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
+*Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
+
+*Deze handleiding gaat uit van het inladen van enkel data, waarbij Swing dan op basis daarvan de structuur van de data gaat achterhalen. Je kan ook de structuur zelf opladen, zodat Swing enkel nog de data in de juiste structuur moet steken. Dit kan op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)*
 
 ## 1.	Inleiding
 
