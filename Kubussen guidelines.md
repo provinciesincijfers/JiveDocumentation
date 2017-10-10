@@ -11,7 +11,7 @@ Opgelet: een kubus bestaat vaak uit héél veel rijen. XLSX kan niet meer dan on
 In de toekomst zou dit ook moeten kunnen in JSON formaat. 
 Data en de metadata zijn dan in één bestand op te nemen en kunnen ingelezen worden via Jive Services (Bulk API). 
 
-Je kan een kubus volledig definiëren op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5).
+Je kan een kubus volledig definiëren op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)
 
 ## Gebieden
 
