@@ -7,7 +7,7 @@ Vergeet niet dat een kubus maximaal 100.000 combinaties mag bevatten. Om de comb
 
 ## Inlaadbestanden
 
-Opgelet: een kubus bestaat vaak uit héél veel rijen. XLSX kan niet meer dan ongeveer een miljoen rijen aan, dus je importbestand moet mogelijk verdeeld worden.
+Opgelet: een kubus bestaat vaak uit héél veel rijen. XLSX kan niet meer dan ongeveer een miljoen rijen aan, dus je importbestand moet mogelijk verdeeld worden. Opmerking 16/10/2017: CSV inladen gaat ook; opgesplitste XLSX inladen lijkt problemen te geven.
 In de toekomst zou dit ook moeten kunnen in JSON formaat. 
 Data en de metadata zijn dan in één bestand op te nemen en kunnen ingelezen worden via Jive Services (Bulk API). 
 
