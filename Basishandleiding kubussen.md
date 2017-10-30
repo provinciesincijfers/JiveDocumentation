@@ -23,6 +23,14 @@
 In Swing bestaat de mogelijkheid gegevens in te lezen in kubusvorm. Deze vorm laat toe om gegevens in te lezen met verschillende kenmerken, die bij raadpleging onderling gekruist kunnen worden. Zo kan men bevolkingsgegevens inlezen met de kenmerken nationaliteitsgroep, geslacht en leeftijd. Men kan dan via deze vorm bevolkingsgegevens opvragen van bijvoorbeeld een nationaliteitsgroep naar leeftijdsgroepen.
 Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van Swing.
 
+### Conceptueel kader
+*Dimensie*: conceptueel bestaande manier om de realiteit in te delen (vb. het concept leeftijd)
+*Dimensieniveau*: de manier waarop dit concept zich uit in de kubus zoals je hem inleest (vb. leeftijdsindeling per 5 jaar)
+*Dimensieniveau item*: één object binnen het dimensieniveau (vb. 0 te.m. 4 jarigen)
+*Dimensieniveau itemcode*: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
+*Dimensie-aggregatie*: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
+
+
 ## 2.	Aanmaak bestand
 
 In eerste instantie wordt vanuit het betreffende basisbestand een bestand aangemaakt in een formaat dat Swing Studio kan inlezen.
