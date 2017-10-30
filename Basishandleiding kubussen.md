@@ -24,11 +24,11 @@ In Swing bestaat de mogelijkheid gegevens in te lezen in kubusvorm. Deze vorm la
 Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van Swing.
 
 ### Conceptueel kader
-*Dimensie*: conceptueel bestaande manier om de realiteit in te delen (vb. het concept leeftijd)
-*Dimensieniveau*: de manier waarop dit concept zich uit in de kubus zoals je hem inleest (vb. leeftijdsindeling per 5 jaar)
-*Dimensieniveau item*: één object binnen het dimensieniveau (vb. 0 te.m. 4 jarigen)
-*Dimensieniveau itemcode*: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
-*Dimensie-aggregatie*: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
+* *Dimensie*: conceptueel bestaande manier om de realiteit in te delen (vb. het concept leeftijd)
+* *Dimensieniveau*: de manier waarop dit concept zich uit in de kubus zoals je hem inleest (vb. leeftijdsindeling per 5 jaar)
+* *Dimensieniveau item*: één object binnen het dimensieniveau (vb. 0 te.m. 4 jarigen)
+* *Dimensieniveau itemcode*: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
+* *Dimensie-aggregatie*: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
 
 
 ## 2.	Aanmaak bestand
