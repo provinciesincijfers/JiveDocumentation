@@ -1,5 +1,7 @@
 # Guidelines voor kubussen
 
+Dit zijn guidelines die we binnen Provincies in Cijfers hanteren.
+
 Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Basishandleiding%20kubussen.md)  eerst. Deze tekst bevat enkel aanvullende info.
 Ook een handleiding gezocht rond werken met geperecenteerde kubussen en het combineren van kubussen.
 
