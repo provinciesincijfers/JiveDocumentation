@@ -1,0 +1,204 @@
+/* --------------------------------- */
+/* standaard css voor html rapporten */
+/* --------------------------------- */
+
+body{
+ /* color: #000; hier kan je eventueel de kleur van tekst aanpassen */
+ /* deze instelling overrulen standaard instellingen */
+ 	font-family: tahoma;
+	font-size: 10pt;
+	line-height: 1.3;
+}
+
+/* de achtergrondkleur van een rapport moet je afzonderlijk instellen, omdat dit eigenlijk maar een klein deeltje van de hele pagina is */
+.swingreport
+{	background-color: #f2fcff;}
+
+/* aangepaste header: in een blok, en met dynamische tekstgrootte */
+/* dit is de originele versie
+h1{
+	font-size: 1.5em;
+	color: #000;
+} */
+
+h1{
+	background-repeat: no-repeat;
+	height: 40px;
+	display: -webkit-flex; /* Safari */
+    -webkit-align-items: flex-start; /* Safari 7.0+ */
+	display: flex;
+	align-items: flex-start;
+	background-image: url(2016_logo_provincies_blauw_enkel_staaf.png);
+	background-color: #f2fcff;
+	background-size: 100px 100px;
+	overflow:hidden;
+	padding-top: 15px;
+	padding-bottom: 45px;
+	padding-left: 110px;
+	color: #999999;
+	font-size: 30px;
+	line-height: 1.1;
+}
+
+
+/* de volgende drie statements verkleinen de tekst van de titel om deze (meestal) binnen zijn vakje te laten vallen */
+@media screen and (max-width: 750px) {
+H1{
+	font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}}
+
+@media screen and (max-width: 650px) {
+H1{
+	font-size: 20px;
+	padding-top: 5px;
+	padding-bottom: 55px;	
+}}
+
+@media screen and (max-width: 550px) {
+H{
+	font-size: 5px;
+	padding-top: 1px;
+	padding-bottom: 59px;
+}}
+
+
+/* EINDE AANGEPASTE HEADER */
+
+
+h2{
+	font-size: 1.2em;
+	color: #000;
+	margin-top: 1.5em;
+	margin-bottom: 0.2em;
+}
+
+a{
+	color:#000;
+	text-decoration:underline;
+}
+
+a:hover{
+	color:#000;
+	text-decoration:none;
+}
+
+a img{
+	border: 0;
+}
+
+p{
+	margin: 0em;
+} 
+
+table{
+	border-collapse: collapse; 
+	border-top: 2px outset #fff; 
+	border-left: 2px outset #fff; 
+	border-right: 1px outset #fff; 
+	border-bottom: 1px outset #fff; 
+	text-align: right; 
+}
+
+table tr{
+	padding:0; 
+	margin:0;
+}
+
+table th{
+	padding: 1px 5px; 
+	border: 2px inset #fff; 
+	text-align: left; 
+	background-color: #999;
+}
+
+table td{
+	padding: 1px 5px; 
+	border: 2px inset #fff;
+}
+
+/* -------- div aanmaken----------- */
+
+#content{
+	width: 850px;
+}
+
+/* -------- class elementen --------- */
+
+.gemeente{
+	text-align: left;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+/* --------------------------------- */
+/* 				einde 				 */
+/* --------------------------------- */
+
+
+/* dynamische toevoegingen */
+
+.hoofdstuk{
+	max-width:860px;
+	width:100%;
+	background:#fff;
+	box-sizing:border-box;
+	padding:20px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-box-shadow: 5px 5px 25px 0px rgba(179,179,179,1);
+	-moz-box-shadow: 5px 5px 25px 0px rgba(179,179,179,1);
+	box-shadow: 5px 5px 25px 0px rgba(179,179,179,1);	
+	overflow:auto; /* als je te brede tabellen hebt scrollbar voorzien */
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    display: inline-block; /* inline-block zorgt ervoor dat afbeeldingen standaard naast elkaar worden weergegeven */
+}
+
+
+/* paginering naar PDF bijsturen */
+@media print{
+    body{
+		background:none !important;
+	}
+	.hoofdstuk{
+	-webkit-box-shadow: none;
+	-moz-box-shadow:  none;
+	box-shadow:  none;
+	background: none;
+    page-break-after: always;
+    overflow:hidden;
+	}
+    .hoofdstuk:last-child{
+	page-break-after:avoid;
+	overflow:hidden;
+	}	
+}	
+
+/*  Houdt samen wat in deze div staat */    
+
+.keeptogether{
+    page-break-inside: avoid !important;
+    }  
+    
+   /*  vermijdt page-break na deze div  */    
+.nobreakafter {
+        page-break-after: avoid;}
+        
+ /*  Forceert weergave op een volgende pagina bij de export naar PDF en Word */
+.pagebreak        { 
+        page-break-before: always; 
+    }
