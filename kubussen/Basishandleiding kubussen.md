@@ -1,17 +1,19 @@
 
 # Handleiding aanmaak en inlezen kubussen in Swing Studio
 
+Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies in Cijfers, en geen officiële documentatie. Als je een fout ziet of een suggestie voor verbetering hebt, open dan [een Issue](https://github.com/provinciesincijfers/JiveDocumentation/issues)!
+
 ## Inhoud
 
 
 1.	Inleiding
 2.	Aanmaak bestand
-  2.1.	Reeds bestaande kubus
-  2.2.	Nieuwe kubus
+*2.1.	Reeds bestaande kubus*
+*2.2.	Nieuwe kubus*
 3.	Importeren kubusbestand
 4.	Bewerken dimensies en onderwerp
-  4.1.	Onderwerp
-  4.2.	Dimensies
+*4.1.	Onderwerp*
+*4.2.	Dimensies*
 5.	Onderbrengen in de themaboom
 
 *Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
@@ -31,6 +33,22 @@ Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van S
 * *Dimensieniveau itemcode*: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
 * *Dimensie-aggregatie*: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
 
+### Voor- en nadelen
+
+Voordelen:
+- de eindgebruiker (of de ondersteuner) heeft veel meer mogelijkheden om ad-hoc vragen toch in Swing te beantwoorden
+- je kan heel veel verwerkingen van een bron in één keer opladen
+- je kan de ingeladen data voor vanalles hergebruiken binnen swing
+
+Nadelen:
+- iets complexer voor eindgebruikers om te gebruiken, vooral om percentages te berekenen
+- fragiel: als een dimensieniveau lichtjes wijzigt, heb je veel beheer binnen Swing
+
+Quirks van Swing:
+- geen overzicht van "kubussen die een bepaal dimensieniveau gebruiken"
+- geen controle bij inladen op "laat toe om al of niet nieuwe dimensieniveaucodes te maken"
+- sommige lege cellen in Excel worden toch als een dimensiecode herkend
+- je kan niet kiezen welke dimensieaggregaties mogen toegpast worden op de kubus
 
 ## 2.	Aanmaak bestand
 
@@ -42,9 +60,14 @@ Een bestand voor kubussen bestaat uit 5 types velden:
 -	Onderwerp: dit is de teller of de aantallen
 -	Dimensies: dit zijn de kenmerken (bv nationaliteit, leeftijdsindeling, economische sectoren). Er kunnen meerdere dimensies zijn, dus ook meerdere velden.
 
+Hou bij het design rekening met:
+- je kan slechts één onderwerp opladen. Maar je kan wel meerdere identieke kubussen opladen met andere onderwerpen, en die kubussen combineren.
+- kies per dimensie slechts één dimensieniveau. Als je meerdere leeftijdsindelingen wilt, laadt dan de meest gedetailleerde in, en gebruik aggregaties om er andere uit af te leiden
+- het product van je dimensieniveauitems (2 geslachten * 10 leeftijdscategorieen = 20 combinaties) moet kleiner zijn dan 10.000. Iedereen moet zichzelf terugvinden in elk dimensieniveau! Als bijvoorbeeld een dimensieniveau niet van toepassing is op een deel van de bevolking, dan moet je een categorie "niet van toepassing" voorzien.
+
 ### 2.1.	Reeds bestaande kubus
 
-Bij aanmaak van een kubus die reeds bestaat, dien je al deze velden op dezelfde manier te benoemen als ervoor. Normaal gezien wordt voor elke kubus een syntax gemaakt om de gegevens vanuit een basisbestand in het juiste formaat te krijgen en worden de velden automatisch correct benoemd.
+Bij aanmaak van een kubus die reeds bestaat, dien je al deze velden op dezelfde manier te benoemen als ervoor. Normaal gezien wordt voor elke kubus een script gemaakt om de gegevens vanuit een basisbestand in het juiste formaat te krijgen en worden de velden automatisch correct benoemd.
  
 
 ### 2.2.	Nieuwe kubus
@@ -60,7 +83,7 @@ variabele aan te maken met dezelfde indeling en dezelfde naam.
 ![afbeelding 1](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image1.jpg)
 ![afbeelding 2](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image2.jpg)
 
-De indeling van de categorieën (dimensie-items) kan je nakijken door te kiezen voor Data > Dimensieniveaus:
+De indeling van de categorieën (dimensieniveau-items) kan je nakijken door te kiezen voor Data > Dimensieniveaus:
 
 ![afbeelding 3](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image3.jpg)
 
