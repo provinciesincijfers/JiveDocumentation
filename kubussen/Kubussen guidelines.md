@@ -16,9 +16,6 @@ In de toekomst zou dit ook moeten kunnen in JSON formaat. Data en de metadata zi
 
 Je kan een kubus volledig definiëren op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)
 
-## Gebieden
-
-Vertaal in de code van je gebieden "-" en andere speciale tekens naar "_". Dit is niet noodzakelijk, maar kan wel het proces versnellen.
 
 ## Dimensies
 
