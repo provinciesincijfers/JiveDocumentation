@@ -1,6 +1,6 @@
 # JiveDocumentation
 
-Hier verzamelen we handleidingen en documentatie.
+Hier verzamelen we handleidingen en documentatie over Swing Studio en Swing Viewer (Jive). Voor het Dashboard, zie [de afzonderlijke repository](https://github.com/provinciesincijfers/DashboardABF).
 
 ## Algemene doelstelling
 
