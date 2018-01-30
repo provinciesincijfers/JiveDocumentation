@@ -1,0 +1,8 @@
+Meest afgewerkte huisstijl:
+https://provincies.incijfers.be/report/style/dynamisch_rapport_printvriendelijk.css
+
+Draft eengemaakte stijl:
+https://provincies.incijfers.be/report/style/ipo_dynamic.css
+
+Niet-dynamische huisstijl, gebaseerd op die van Limburg:
+https://provincies.incijfers.be/report/style/ipossp_basis.css
