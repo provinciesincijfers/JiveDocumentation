@@ -34,5 +34,5 @@ Je maakt best eerst dimensies aan, alvorens de data zelf in te laden. Zie hiervo
 
 ## Naamgeving van kubussen
 
-Voorstel: `vkubus1234_omschrijving`
+Voorstel: `kubus1234_omschrijving`
 
