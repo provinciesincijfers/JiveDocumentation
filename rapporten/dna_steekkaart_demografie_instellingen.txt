@@ -2,7 +2,7 @@
   <PropertySheet>
     <ID>default</ID>
     <PropertyGroup>
-      <ShowTitle>False</ShowTitle>
+      <ShowTitle>True</ShowTitle>
       <ShowSource>False</ShowSource>
       <ShowExcelLink>False</ShowExcelLink>
       <ShowTableLink>False</ShowTableLink>
@@ -44,30 +44,30 @@
       <ShowParentNames>False</ShowParentNames>
     </PropertyGroup>
     <PropertyGroup>
-      <Class>introkaartBACKUP</Class>
-      <ShowLegend>False</ShowLegend>
-      <ShowTitle>False</ShowTitle>
-      <ShowTableLink>False</ShowTableLink>
-      <DataClassCount>1</DataClassCount>
-      <DefaultSequentialColorScheme>SSP_grijs</DefaultSequentialColorScheme>
-      <FavoritePen>
-        <Color>rgb(0, 0, 0)</Color>
-        <Width>2</Width>
-        <Style>Solid</Style>
-      </FavoritePen>
-      <LayersSelection>
-        <Item>
-          <Id>LayerContour</Id>
-          <Enabled>True</Enabled>
-        </Item>
-      </LayersSelection>
-      <OverlayOpacity>99</OverlayOpacity>
-      <ShowSource>False</ShowSource>
-      <ShowData>False</ShowData>
+      <Class>gesorteerdetabel</Class>
+      <SortDirection>Descending</SortDirection>
+      <SortDimension>dim_geo</SortDimension>
+      <SortOnItemIndex>0</SortOnItemIndex>
     </PropertyGroup>
     <PropertyGroup>
       <Class>pres_a</Class>
       <FavoriteGeoItem />
+      <BarOrColumn>Bar</BarOrColumn>
+      <UserVariableNames>
+        <Item>
+          <Key>vp1111a_0_17</Key>
+          <Value>0-17 jaar</Value>
+        </Item>
+        <Item>
+          <Key>vp1111a_18_64</Key>
+          <Value>18-64 jaar</Value>
+        </Item>
+        <Item>
+          <Key>vp1111a_65_of_ouder</Key>
+          <Value>65 en ouder</Value>
+        </Item>
+      </UserVariableNames>
+      <PresentTitle>Leeftijden t.o.v. alle inwoners %p - %g</PresentTitle>
     </PropertyGroup>
     <PropertyGroup>
       <Class>pres_b</Class>
@@ -105,6 +105,112 @@
       <DataClassesEqualAmounts>True</DataClassesEqualAmounts>
       <DataClasses />
       <ShowTitle>True</ShowTitle>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>vis_6</Class>
+      <ShowRegressionLine>True</ShowRegressionLine>
+      <FavoriteGeoItem />
+      <ChildViewPositioning>Horizontal</ChildViewPositioning>
+      <LayersSelection>
+        <Item>
+          <Id>LayerOpenStreetMap</Id>
+          <Enabled>False</Enabled>
+        </Item>
+        <Item>
+          <Id>4bb171e6-241f-4901-907a-81ba69106d28</Id>
+          <Enabled>False</Enabled>
+        </Item>
+        <Item>
+          <Id>LayerContour</Id>
+          <Enabled>False</Enabled>
+        </Item>
+        <Item>
+          <Id>f544f51b-9396-4d58-80ff-a1c535682219</Id>
+          <Enabled>False</Enabled>
+        </Item>
+      </LayersSelection>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>vis_1</Class>
+      <LegendDocking>Right</LegendDocking>
+      <FavoriteGeoItem />
+      <ShowNames>False</ShowNames>
+      <LabelFont>
+        <Family>Tahoma</Family>
+        <Size>6</Size>
+        <Style>Regular</Style>
+      </LabelFont>
+      <LayersSelection>
+        <Item>
+          <Id>LayerContour</Id>
+          <Enabled>True</Enabled>
+        </Item>
+        <Item>
+          <Id>LayerOpenStreetMap</Id>
+          <Enabled>True</Enabled>
+        </Item>
+      </LayersSelection>
+      <ChildViewPositioning>Horizontal</ChildViewPositioning>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>vis_3</Class>
+      <LegendDocking>Left</LegendDocking>
+      <LabelFont>
+        <Family>Tahoma</Family>
+        <Size>8</Size>
+        <Style>Regular</Style>
+      </LabelFont>
+      <ShowTitle>False</ShowTitle>
+      <ShowLegend>False</ShowLegend>
+      <ShowData>True</ShowData>
+      <ChildViewPositioning>Horizontal</ChildViewPositioning>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>vis_2</Class>
+      <AutomaticAxisCutOff>True</AutomaticAxisCutOff>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>kleinetabel</Class>
+      <ShowTitle>False</ShowTitle>
+      <HideCommonVariableDescription>False</HideCommonVariableDescription>
+      <ShowTableVarInfo>False</ShowTableVarInfo>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>hh</Class>
+      <AutomaticAxisCutOff>True</AutomaticAxisCutOff>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>hh_3</Class>
+      <ChildViewPositioning>Vertical</ChildViewPositioning>
+      <ShowData>True</ShowData>
+      <LabelFont>
+        <Family>Tahoma</Family>
+        <Size>10</Size>
+        <Style>Regular</Style>
+      </LabelFont>
+      <ShowLegend>True</ShowLegend>
+      <ShowTitle>False</ShowTitle>
+      <ShowNames>False</ShowNames>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>hh_4</Class>
+      <ChildViewPositioning>Horizontal</ChildViewPositioning>
+      <ShowData>False</ShowData>
+      <ShowLegend>False</ShowLegend>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>hh_5</Class>
+      <ShowTotalsHorizontal>False</ShowTotalsHorizontal>
+      <ShowTotalsVertical>False</ShowTotalsVertical>
+      <ShowData>True</ShowData>
+      <LegendDocking>Bottom</LegendDocking>
+      <BarOrColumn>Bar</BarOrColumn>
+      <LabelFont>
+        <Family>Tahoma</Family>
+        <Size>8</Size>
+        <Style>Regular</Style>
+      </LabelFont>
+      <ShowTitle>False</ShowTitle>
     </PropertyGroup>
   </PropertySheet>
 </PropertyDoc>
