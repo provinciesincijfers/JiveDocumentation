@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<!-- door je instellingen en selecties tussen "fake HTML" te zetten, kan je deze eenvoudig samenklikken, dit werkt veel handiger -->
+<inputs>#
+input_geo=input
+{
+    Type: Geo;
+    Caption: "Kies een gebied";
+    Instruction: "Kies het gebied dat je interesseert.";
+    Level: [Geo.gemeente];
+    Min: 1;
+    Max: 1;
+
+}
+input_compare=input
+{
+    Type: GeoItem;
+    Caption: "Kies een vergelijkingsgebied";
+    Instruction: "Kies het gebied waarmee je wil vergelijken.";
+    Subset: parents(input_geo);
+    Default: [provincie._99999, gewest._99999];
+    Min: 1;
+    Max: 2;
+}
+#
+</inputs>
+<extra>
+#  
+inwonersofficieel = Presentation {
+	Selection {
+		[Ind.v1101_t];
+		MostRecentPeriod: 1;
+		input_geo;
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Table;
+	ViewDimensions: [dim_variable];
+}
+
+inwonersfeitelijk = Presentation {
+	Selection {
+		[Ind.v1111a_tot_bevolking];
+		MostRecentPeriod: 1;
+		input_geo;
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Table;
+	ViewDimensions: [dim_variable];
+}
+
+verzameltabel = Presentation {
+	Selection {
+		[Ind.v1111a_mannen, Ind.v1111a_vrouwen, Ind.v1101_bevdicht, Ind.v1115a_totaal_huishoudens, Ind.v1114a_pers_priv_hh, Ind.v1114a_coll];
+		MostRecentPeriod: 1;
+		input_geo;
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Table;
+	ViewDimensions: [dim_variable];
+}
+
+dichtstbevolkt = Presentation {
+	Selection {
+		Ind.v1101_bevdicht;
+		MostRecentPeriod: 1;
+		input_geo;
+		SplitUp: Geo.statsec;
+	};
+	View: Table;
+	ViewDimensions: [dim_geo, dim_variable];
+	LayoutClass: "gesorteerdetabel";
+}
+
+/* maakt het gemakkelijker om het gekozen gebiedsniveau aan te spreken */
+geolevel = level(item(input_geo, 0))
+
+/* telt het aantal gekozen gebieden */
+count = Presentation {
+        Selection {
+                Ind.v1101_m;
+                MostRecentPeriod: 1;
+                input_geo;
+        };
+        View: Table;
+}
+
+#
+</extra>
+<selections>
+#
+    introkaart = Presentation {
+	Selection {
+		Ind.v1101_m;
+		MostRecentPeriod: 1;
+		input_compare;
+		SplitUp: geolevel;
+	};
+	View: Map;
+	ViewDimensions: [dim_geo, dim_variable];
+	LayoutClass: "introkaart";
+	FavoriteGeoItem: item(input_geo,0);
+}
+
+introkaart2 = Presentation {
+	Selection {
+		[Ind.v1101_m];
+		MostRecentPeriod: 1;
+		input_geo;
+		compare: item(input_compare,0);
+        CompareShowGeoIndividual: true;
+        CompareShowGeoTotal: false;		
+	};
+	View: Map;
+	ViewDimensions: [dim_geocompare, dim_variable, dim_period];
+		LayoutClass: "introkaart";
+}
+
+absolutegroeibevolking = Presentation {
+	Selection {
+		Ind.v1111a_tot_bevolking;
+		MostRecentPeriods(Ind.v1111a_tot_bevolking, year, 18);
+		input_geo;
+		compare: input_compare;
+		Transformation: Growth;
+		BasePeriod: Item(MostRecentPeriods(Ind.v1111a_tot_bevolking, year, 18), 17);
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+}
+
+
+/* liever deze grafiek, maar dan met leeftijden per tien jaar
+pres_a = Presentation {
+	Selection {
+		[Ind.vp1111a_0_17, Ind.vp1111a_18_24, Ind.vp1111a_25_49, Ind.vp1111a_50_64, Ind.vp1111a_65_74, Ind.vp1111a_75_of_ouder];
+		MostRecentPeriod: 1;
+		input_geo;
+		compare: item(input_compare,0);
+        CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;		
+	};
+	View: ProfileBar;
+	ViewDimensions: [dim_geocompare, dim_variable, dim_period];
+	LayoutClass: "pres_a";
+}
+*/
+
+pres_a = Presentation {
+	Selection {
+		[Ind.vp1111a_0_17, Ind.vp1111a_18_64, Ind.vp1111a_65_of_ouder];
+		MostRecentPeriod: 1;
+		input_geo;
+		compare: input_compare;
+		CompareShowGeoIndividual: false;
+		CompareShowGeoIndividualTotalize: true;
+	};
+	View: Bar;
+	ViewDimensions: [dim_geocompare, dim_variable, dim_period];
+	LayoutClass: "pres_a";
+}
+
+bevdichtkaart = Presentation {
+	Selection {
+		Ind.vp1111a_bevdicht;
+		MostRecentPeriod: 1;
+		input_geo;
+		SplitUp: Geo.statsec;	
+		};
+	View: Map;
+	ViewDimensions: [dim_geo, dim_variable];
+	LayoutClass: "detailkaart";
+}
+
+
+tabelherkomst = Presentation {
+	Selection {
+		[Ind.v1111a_tot_bevolking, Ind.v1118a_niet_belg_nat, Ind.vp1118a_niet_belg_nat, Ind.v1117a_niet_belg_geb, Ind.vp1117a_niet_belg_geb, Ind.v1116a_niet_belg_herk, Ind.vp1116a_niet_belg_herk];
+    	[Item(MostRecentPeriods(Ind.v1111a_tot_bevolking, year, 18), 17), Item(MostRecentPeriods(Ind.v1111a_tot_bevolking, year, 18), 0)];
+		input_geo;
+		compare: input_compare;
+		CompareShowGeoIndividual: true;
+        CompareShowGeoTotal: false;		
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_geocompare, dim_period];
+	LayoutClass: "kleinetabel";
+}
+
+herkomstkaart = Presentation {
+	Selection {
+		Ind.vp1116a_niet_belg_herk;
+		MostRecentPeriod: 1;
+		input_geo;
+		SplitUp: Geo.statsec;	
+		};
+	View: Map;
+	ViewDimensions: [dim_geo, dim_variable];
+	LayoutClass: "detailkaart";
+}
+
+
+hh_1 = Presentation {
+	Selection {
+		Ind.v1115a_totaal_huishoudens;
+		MostRecentPeriods(Ind.v1115a_totaal_huishoudens, year, 18);
+		input_geo;
+		compare: input_compare;
+		Transformation: Growth;
+		BasePeriod: Item(MostRecentPeriods(Ind.v1115a_totaal_huishoudens, year, 18), 17);
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "hh";
+}
+
+hh_2 = Presentation {
+	Selection {
+		Ind.v1115a_gezinsgrootte;
+		MostRecentPeriods(Ind.v1115a_totaal_huishoudens, year, 18);
+		input_geo;
+		compare: input_compare;
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "hh";
+}
+
+hh_3 = Presentation {
+	Selection {
+		[Ind.v1115a_alleenw, Ind.v1115a_hh_minst_1_mind_k, Ind.v1115a_hhtype_mk_meer_zk];
+		MostRecentPeriod: 1;
+		input_geo;
+		compare: item(input_compare,0);
+	};
+	View: Pie;
+	ViewDimensions: [dim_variable, dim_geocompare];
+	LayoutClass: "hh_3";
+}
+
+hh_4 = Presentation {
+	Selection {
+		[Ind.v1115a_alleenw, Ind.v1115a_hh_minst_1_mind_k, Ind.v1115a_hhtype_mk_meer_zk];
+		MostRecentPeriod: 1;
+		input_geo;
+		SplitUp: Geo.deelgemeente;
+	};
+	View: MapPie;
+	ViewDimensions: [dim_geo, dim_variable, dim_period];
+	LayoutClass: "hh_4";
+}
+
+hh_5 = Presentation {
+	Selection {
+		[Ind.v1115a_alleenw, Ind.v1115a_hh_minst_1_mind_k, Ind.v1115a_hhtype_mk_meer_zk];
+		MostRecentPeriod: 1;
+		input_geo;
+		compare: input_compare;
+		Percentagedim: dim_variable;
+	};
+	View: BarStacked;
+	ViewDimensions: [dim_variable, dim_geocompare, dim_period];
+	LayoutClass: "hh_5";
+}
+
+
+
+
+
+#
+</selections>    
+<head>
+<meta charset="utf-8" />
+<title>Steekkaart Demografie</title>
+<link type="text/css" rel="stylesheet" href="style/ipo_dynamic.css?015" />
+</head>
+<body class="swingreport">
+
+<p>&nbsp;</p><p>&nbsp;</p>
+<section class="container">
+    <section class="hoofdstuk">
+        <h1>Basisgegevens Demografie in #Write(name(level(item(input_geo,0))))# #show(input_geo)#</h1>
+
+<h2>Inhoud</h2>
+<p>In dit rapport geven we enkele basiskenmerken van de Demografie in <b>#Write(name(level(item(input_geo,0))))# #show(input_geo)#</b> weer.
+Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikking hebben. Via de wijzig knop kunt u zelf gebieden kiezen en deze vergelijken met andere gebieden.
+ </p>
+ <p>De meest recente <b>offici&euml;le statistiek van de bevolking</b> geeft voor
+     #Write(name(level(item(input_geo,0))))# #show(input_geo)# 
+ #Write(data(inwonersofficieel,0,0))# inwoners (1/1/#Write(mostrecentperiods(v1101_t,year,1))#)</b>.
+</p>
+ <p>De rest van dit rapport is gebasserd op onze eigen verwerking van het Rijksregister. Dit laat ons toe het Wachtregister mee te nemen,
+ en doorgaans sneller data aan te bieden die we beter op maat kunnen brengen. De aantallen wijken hierdoor af van de offici&euml;le aantallen die Statbel 
+ (het vroegere NIS) aanbiedt. Op basis van onze eigen analyse zijn er <b>#Write(data(inwonersfeitelijk,0,0))# inwoners</b> (op 1/1/#Write(mostrecentperiods(v1111a_tot_bevolking,year,1))#).</p>
+<p>De bron van alle grafieken in dit rapport is het Rijksregister.</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ 
+#if ListCount(Items(count, dim_geo))>1 then#
+<p>#show(introkaart2, 750, 450)#</p>
+# else #
+    <p>
+    #show(introkaart, 400, 330)#
+    #show(introkaart2, 400, 330)#
+    </p>
+#end if#
+
+    </section>
+
+
+    <section class="hoofdstuk">
+        <h2>Basiskenmerken van de bevolking</h2>  
+<p>&nbsp;</p>
+<p>
+    In de #Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> wonen in totaal 
+    <b>#Write(data(inwonersfeitelijk,0,0))#</b> mensen (#Write(mostrecentperiods(v1101_t,year,1))#), waarvan
+    #Write(data(verzameltabel,0,0))# mannen en #Write(data(verzameltabel,1,0))# vrouwen.
+</p>
+    <p>De eerste grafiek toont de verhouding van de bevolking naar leeftijd in #Write(name(level(item(input_geo,0))))# #show(input_geo)# vergeleken met  #show(input_compare)#.</p>
+    <p>De tweede grafiek toont de totale procentuele bevolkingsgroei.</p>
+ <p>&nbsp;</p>
+
+<p>
+
+ #show (pres_a, 395, 425)#
+ #show(absolutegroeibevolking, 395, 425)#
+
+</p>
+<p>
+
+
+
+</p>
+</section>
+
+<section class="hoofdstuk">
+    <h2>Bevolkingsdichtheid</h2> 
+     <p>&nbsp;</p>
+<p>De bevolkingsdichtheid van #Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> is <b>
+#Write(data(verzameltabel,2,0))#</b> inwoners per vierkante kilometer. 
+In #Write(name(level(item(input_compare,0))))# <b>#show(item(input_compare,0))#</b> is dit  
+<b>#Show(data{Ind.v1101_bevdicht;Item(mostrecentperiods(v1101_bevdicht,year,11),10);item(input_compare,0);})#</b> inwoners per km&sup2;.</p>
+<p>De dichtst bevolkte statistische sector in 
+#Name(Item(dichtstbevolkt, dim_geo, 0))# heeft <b>#Write(data(dichtstbevolkt,0,0))#</b> inwoners per km&sup2;.</p>
+</p>
+ <p>&nbsp;
+ #code(dichtstbevolkt, dim_geo, 1)#</p>
+<p>#show(bevdichtkaart, 800, 600)#</p>
+
+</section>
+
+<section class="hoofdstuk">
+
+<h2>Herkomst & nationaliteit</h2>
+<p>We kijken hier naar huidige nationaliteit, geboortenationaliteit en herkomst.</p>
+<p>We benaderen de herkomst van een individu via zijn geboortenationaliteit en de geboortenationaliteit 
+van zijn ouders. Een individu is van buitenlandse herkomst als hij zelf bij geboorte niet de Belgische nationaliteit 
+had of als &eacute;&eacute;n of beide van zijn ouders bij hun geboorte niet de Belgische nationaliteit hadden.
+Wie ouder is van wie bepalen we op basis van opeenvolgende gezinssamenstellingen (relatie met referentiepersoon) 
+in de periode 2000-2017 (provincies Oost- en West-Vlaanderen) en 1990-2017 (provincies Limburg, Vlaams Brabant en 
+Antwerpen).
+</p>
+<p>We tonen eerst een tabel met aantallen en percentages niet-Belgen. Daarna een kaart met het aandeel niet-Belgen naar herkomst ten opzichte van de gehele bevolking. Waar er minder dan 5 
+inwoners van niet-Belgische herkomst zijn, wordt geen resultaat weergegeven.</p>
+<div align="center">#show(tabelherkomst)#</div>
+<p>&nbsp;</p>
+<p>#show(herkomstkaart, 800, 600)#</p>
+<p></p>
+</section>
+
+
+<section class="hoofdstuk">
+
+<h2>Huishoudens</h2>
+<p>Van de #Write(data(inwonersfeitelijk,0,0))# inwoners van 
+#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> wonen in totaal 
+<b>#Write(data(verzameltabel,4,0))# mensen in private huishoudens</b> (#Write(mostrecentperiods(v1115a_totaal_huishoudens,year,1))#). 
+De overige #Write(data(verzameltabel,5,0))# 
+wonen in collectieve huishoudens, zoals rusthuizen, instellingen, gevangenissen, etc.</p>
+<p>In totaal gaat het om <b>#Write(data(verzameltabel,3,0))# private huishoudens</b>.</p>
+<!-- TODO: link naar definitie van huishoudens -->
+<p>In de eerste grafiek tonen we de totale groei van het aantal huishoudens sinds 2000. De tweede grafiek toont hoe
+de gemiddelde huishoudsgrootte in dezelfde periode evolueerde. Om de relatief kleine veranderingen duidelijker zichtbaar te maken, begint deze
+grafiek doorgaans niet op nul.</p>
+    <p>
+    #show(hh_1, 400, 330)#
+    #show(hh_2, 400, 330)#
+    </p>
+<p>&nbsp;</p>
+<p>We delen huishoudens op in drie types. We kijken naar alleenstaanden, meerpersoonshuishoudens met minderjarige kinderen
+en andere types meerpersoonshuishoudens.</p>
+<p>We tellen enkel minderjarige kinderen mee als deze ook een relatie als kind hebben met het gezinshoofd. 
+Dit heeft slechts een minimale impact op de cijfers (grootte-orde 1,5 promille).</p>
+<p>Via 
+<a href="https://provincies.incijfers.be/?var=v1115a_alleenw,v1115a_hh_enkel_meerd_k,v1115a_hh_zond_k,v1115a_hhtype_p_mk_min,v1115a_allst_ouder_minst_1_min_k,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
+deze link</a> 
+krijgt u een beeld van de verschillende types huishoudens binnen de indeling zoals hierboven. 
+<a href="https://provincies.incijfers.be/?var=v1115a_alleenw,v1115a_geh_paar_minst_1_min_k,v1115a_geh_paar_enkel_meerd_k,v1115a_geh_paar_zond_k,v1115a_sw_paar_minst_1_min_k,v1115a_sw_paar_enkel_meerd_k,v1115a_sw_paar_zond_k,v1115a_allst_ouder_minst_1_min_k,v1115a_allst_ouder_enkel_meerd_k,v1115a_ander,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
+Deze link</a> 
+toont de 'klassieke' LIPRO-indeling van huishoudens. 
+</p>
+<p>Hieronder deze indeling voor #Write(name(level(item(input_geo,0))))# 
+<b>#show(input_geo)#</b> (#Write(mostrecentperiods(v1115a_alleenw,year,1))#), in vergelijking met  
+<b>#show(input_compare)#</b></b>.
+</p>
+<p>&nbsp;</p>
+    <p><div align="center">#show(hh_5, 600, 400)#</div>       
+        <!-- misschien doen als taart-in-kaart taartgrootte aanpasbaar is
+    #show(hh_3, 400, 400)#
+    #show(hh_4, 400, 400)#
+        -->
+    </p>
+
+
+</section>
+
+</section>
+<p>&nbsp;</p>
+</body>
+</html>
