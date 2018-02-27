@@ -55,6 +55,7 @@ Quirks van Swing:
 - geen controle bij inladen op "laat toe om al of niet nieuwe dimensieniveaucodes te maken"
 - sommige lege cellen in Excel worden toch als een dimensiecode herkend
 - je kan niet kiezen welke dimensieaggregaties mogen toegpast worden op de kubus
+- je kan wel items (aggregeer van x naar y, dimensie-items, etc) toevoegen via excel, maar niet wegnemen via excel. Als je dus in je metadata-excel de rij "X aggregeert naar Y" vervangt door "Xa aggregeert naar Y", dan wordt de rij voor X niet verwijderd uit Swing.
 
 ## 2.	Aanmaak bestand
 
