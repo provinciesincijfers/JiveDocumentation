@@ -213,13 +213,22 @@ Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aange
 ### 4.2.	Dimensies
 
 De dimensies aanpassen doe je in 2 stappen:
-Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen. 
-•	Kies Data > Dimensies.
-•	Pas vervolgens naam en metadata aan
+Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen.   
+•	Kies Data > Dimensies.  
+•	Pas vervolgens naam en metadata aan  
 
 
 ![afbeelding 17](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image17.jpg)
 ![afbeelding 18](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image18.jpg)
+
+### 4.3 Dimensie-aggregatie
+
+Als je gedetailleerde informatie oplaadt, dan kan je die binnen Swing laten aggregeren tot eenvoudigere informatie. Bijvoorbeeld zou je nationaliteiten kunnen aggregeren naar landengroepen. Een eindgebruiker kan dan binnen een dimensie kiezen op welk dimensieniveau deze moet weergegeven worden. Je kan dit volledig inlezen via een excel-bestand. Zie de voorbeelden in deze map.
+De volgorde is zo:
+- je hebt een Dimensie nodig (vb nationaliteit)
+- je hebt twee (of meer) Dimensieniveau's nodig die binnen deze Dimensie een plaats hebben (vb. land, landengroep)
+- deze Dimensieniveaus hebben Items nodig (vb Nederland, EU)
+- nu kan je een aggregatietabel inlezen (met daarin rijen die aan Swing vertellen "Nederland ligt in de EU)
 
 
 ## 5.	Onderbrengen in de themaboom
@@ -229,7 +238,5 @@ Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de
 •	Sleep het onderwerp van de gewenste kubus naar de map binnen de onderwerpenstructuur waar deze thuishoort.
 
 ![afbeelding 19](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image19.jpg)
-![afbeelding 20](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image20.jpg)
-
 
 
