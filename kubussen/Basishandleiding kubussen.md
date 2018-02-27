@@ -16,9 +16,10 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
 3.	Importeren kubusbestand
 4.	Bewerken dimensies en onderwerp
 
-*4.1.	Onderwerp*
+*4.1.	Onderwerp* 
+*4.2.	Dimensies*  
+*4.3.	Dimensie-aggregatie*  
 
-*4.2.	Dimensies*
 
 5.	Onderbrengen in de themaboom
 
