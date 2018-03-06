@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl-NL">
 <!-- todo:
-- horizontale pagina's in PDF
+- float en versmalling van afbeeldingen loopt mis
+- gepagineerde PDF?
+- horizontale pagina's
 -->
 
 <!-- door je instellingen en selecties tussen "fake HTML" te zetten, kan je deze eenvoudig samenklikken, dit werkt veel handiger -->
@@ -208,7 +210,7 @@ vis_6 = Presentation {
 <head>
 <meta charset="utf-8" />
 <title>Steekkaart Economie</title>
-<link type="text/css" rel="stylesheet" href="style/dynamisch_rapport_printvriendelijk.css?011" />
+<link type="text/css" rel="stylesheet" href="style/dynamisch_rapport_printvriendelijk.css?018" />
 </head>
 <body class="swingreport">
 
@@ -245,6 +247,11 @@ Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikkin
     In de #Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> wonen in totaal <b>#Write(data(inwoners,0,0))#</b> mensen (#Write(mostrecentperiods(v1101_t,year,1))#).
 </p>
     <p>De eerste grafiek toont de verhouding van de bevolking naar leeftijd in #Write(name(level(item(input_geo,0))))# #show(input_geo)# vergeleken met  #Write(name(level(item(input_compare,0))))# #show(input_compare)#</p>
+ <p>
+ <a href="https://provincies.incijfers.be/?report=steekkaart_demografie&input_geo=#code(input_geo)#&keepworkspace=true" target="_top">    
+  Klik hier</a> voor een steekkaart over de demografie van #show(input_geo)#. 
+     
+ </p>
  <p>&nbsp;</p>
  <p>
  #show (pres_a, 395, 425)#
@@ -276,7 +283,7 @@ In de #Write(name(level(item(input_geo,0))))# #show(input_geo)# is <b>
 <section class="hoofdstuk">
 
 <h2>Evolutie van het fiscaal inkomen </h2>
-<div class="zweefrechts">#showInteractive(vis_2,600,425)#</div>
+<div class="zweefrechts">#show(vis_2,600,425)#</div>
 <p>&nbsp;</p>
 <p>
 De <a href="https://provincies.incijfers.be/jive/JiveObjectInfo.aspx?type=var&code=v1203_welvaartsindex" target="_blank">
