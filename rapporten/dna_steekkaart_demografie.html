@@ -2,7 +2,7 @@
 <html lang="nl-NL">
 <!-- door je instellingen en selecties tussen "fake HTML" te zetten, kan je deze eenvoudig samenklikken, dit werkt veel handiger -->
 <inputs>
-#
+# 
 input_geo=input
 {
     Type: Geo;
@@ -10,7 +10,7 @@ input_geo=input
     Instruction: "Kies het gebied dat je interesseert.";
     Level: [Geo.gemeente, Geo.deelgemeente, Geo.provincie];
     Min: 1;
-    Max: 1;
+    Max: 300;
 }
 
 input_compare=input
@@ -23,6 +23,7 @@ input_compare=input
     Min: 1;
     Max: 2;
 }
+
 #
 </inputs>
 <extra>
@@ -75,16 +76,7 @@ dichtstbevolkt = Presentation {
 	LayoutClass: "gesorteerdetabel";
 }
 
-dichtstbevolkt2 = Presentation {
-	Selection {
-		Ind.vp1111a_bevdicht;
-		MostRecentPeriod: 1;
-        Descendants(input_geo, statsec)
-	};
-	View: Table;
-	ViewDimensions: [dim_geo, dim_variable];
-	LayoutClass: "gesorteerdetabel";
-}
+
 
 
 /* maakt het gemakkelijker om het gekozen gebiedsniveau aan te spreken */
@@ -99,6 +91,17 @@ count = Presentation {
         };
         View: Table;
 }
+
+count_compare = Presentation {
+        Selection {
+                Ind.v1101_m;
+                MostRecentPeriod: 1;
+                                input_geo;
+                compare: input_compare;
+        };
+        View: Table;
+}
+
 
 #
 </extra>
@@ -144,6 +147,7 @@ absolutegroeibevolking = Presentation {
 	};
 	View: Line;
 	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "Grafiek_lijn_gebieden";
 }
 
 
@@ -185,8 +189,8 @@ tabelherkomst = Presentation {
     	[Item(MostRecentPeriods(Ind.v1111a_tot_bevolking, year, 18), 17), Item(MostRecentPeriods(Ind.v1111a_tot_bevolking, year, 18), 0)];
 		input_geo;
 		compare: input_compare;
-		CompareShowGeoIndividual: true;
-        CompareShowGeoTotal: false;		
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;		
 	};
 	View: Table;
 	ViewDimensions: [dim_variable, dim_geocompare, dim_period];
@@ -214,10 +218,12 @@ hh_1 = Presentation {
 		compare: input_compare;
 		Transformation: Growth;
 		BasePeriod: Item(MostRecentPeriods(Ind.v1115a_totaal_huishoudens, year, 18), 17);
-	};
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;
+        };
 	View: Line;
 	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
-	LayoutClass: "hh";
+	LayoutClass: "Grafiek_lijn_gebieden";
 }
 
 hh_2 = Presentation {
@@ -226,10 +232,12 @@ hh_2 = Presentation {
 		MostRecentPeriods(Ind.v1115a_totaal_huishoudens, year, 18);
 		input_geo;
 		compare: input_compare;
+				CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;
 	};
 	View: Line;
 	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
-	LayoutClass: "hh";
+	LayoutClass: "Grafiek_lijn_gebieden";
 }
 
 hh_3 = Presentation {
@@ -238,7 +246,9 @@ hh_3 = Presentation {
 		MostRecentPeriod: 1;
 		input_geo;
 		compare: item(input_compare,0);
-	};
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;
+        };
 	View: Pie;
 	ViewDimensions: [dim_variable, dim_geocompare];
 	LayoutClass: "hh_3";
@@ -250,7 +260,7 @@ hh_4 = Presentation {
 		MostRecentPeriod: 1;
 		input_geo;
 		SplitUp: Geo.deelgemeente;
-	};
+        };
 	View: MapPie;
 	ViewDimensions: [dim_geo, dim_variable, dim_period];
 	LayoutClass: "hh_4";
@@ -263,7 +273,8 @@ hh_5 = Presentation {
 		input_geo;
 		compare: input_compare;
 		Percentagedim: dim_variable;
-	};
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	};
 	View: BarStacked;
 	ViewDimensions: [dim_variable, dim_geocompare, dim_period];
 	LayoutClass: "hh_5";
@@ -280,28 +291,120 @@ bevdichtkaart = Presentation {
 		};
 	View: Map;
 	ViewDimensions: [dim_geo, dim_variable];
-    FavoriteGeoItem: geoitem(dichtstbevolkt2,0);
+    FavoriteGeoItem: geoitem(dichtstbevolkt,0);
 	LayoutClass: "detailkaart";
 }
+
+prognose_1 = Presentation {
+	Selection {
+		Ind.v1121_a_t;
+		[Per._1990, Per._1991, Per._1992, Per._1993, Per._1994, Per._1995, Per._1996, Per._1997, Per._1998, Per._1999, Per._2000, Per._2001, Per._2002, Per._2003, Per._2004, Per._2005, Per._2006, Per._2007, Per._2008, Per._2009, Per._2010, Per._2011, Per._2012, Per._2013, Per._2014, Per._2015, Per._2016, Per._2017, Per._2018, Per._2019, Per._2020, Per._2021, Per._2022, Per._2023, Per._2024, Per._2025, Per._2026, Per._2027];
+		input_geo;
+		Compare: input_compare;
+		Transformation: Growth;
+		BasePeriod: per._1990;
+		CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "Grafiek_lijn_gebieden";
+}
+
+prognose_2 = Presentation {
+	Selection {
+		Ind.v1121_a_t;
+		[Per._2017, Per._2027];
+		input_geo;
+		Compare: input_compare;
+		        CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Table;
+	ViewDimensions: [dim_geocompare, dim_period];
+	LayoutClass: "prognose_2";
+}
+
+prognose_3 = Presentation {
+	Selection {
+		Ind.v1121_a_t;
+		Per._2027;
+		input_geo;
+		Compare: input_compare;
+		Transformation: GrowthAbs;
+		BasePeriod: per._2017;
+		        CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Table;
+	ViewDimensions: [dim_geocompare, dim_period];
+	LayoutClass: "prognose_3";
+}
+
+prognose_4 = Presentation {
+	Selection {
+		Ind.v1121_a_t;
+		Per._2027;
+		input_geo;
+		Compare: input_compare;
+		Transformation: Growth;
+		BasePeriod: per._2017;
+		 CompareShowGeoIndividual: false;
+        CompareShowGeoTotal: true;	
+	};
+	View: Table;
+	ViewDimensions: [dim_geocompare, dim_period];
+	LayoutClass: "prognose_4";
+}
+
+prognose_5 = Presentation {
+	Selection {
+		[Ind.v1121_a_m, Ind.v1121_a_v, Ind.v1121_a_0_17, Ind.v1121_a_18_64, Ind.v1121_a_65p];
+		[Per._2017, Per._2027];
+		input_geo;
+		CompareShowGeoIndividual: false;
+		CompareShowGeoIndividualTotalize: true;
+	};
+	View: Bar;
+	ViewDimensions: [dim_period, dim_variable, dim_geo];
+	LayoutClass: "pres_a";
+}
+
+
 #
 </selections>    
 <head>
 <meta charset="utf-8" />
 
 <title>Steekkaart Demografie</title>
-<link type="text/css" rel="stylesheet" href="style/ipo_dynamic.css?027" />
+<link type="text/css" rel="stylesheet" href="https://provincies.incijfers.be//report/style/ipo_dynamic.css" />
+<link type="text/css" rel="stylesheet" href="https://provincies.incijfers.be//report/style/report_table.css" />
 </head>
 <body class="swingreport">
 <section class="container">
-    <p>&nbsp;</p>
+    <div>&nbsp;</div>
     <section class="hoofdstuk">
-        <h1>Basisgegevens Demografie in #Write(name(level(item(input_geo,0))))# #show(input_geo)#</h1>
+<h1>Basisgegevens Demografie in #if ListCount(Items(count, dim_geo))>3 then# 	
+#Write(name(level(item(input_geo,0))))# #Write(Item(input_geo,0))#, #Write(Item(input_geo,1))# en andere
+#else#
+#Write(name(level(item(input_geo,0))))# #show(input_geo)#</h1>
+#end if#</h1>
 
 <h2>Inhoud</h2>
 
-<lange code om onbekende deelgemeente uit te sluiten>
+<!--
+Hier zit iets fishy. Als je een selectie maakt met een gemeente en een Brusselse gemeente, dan krijg je een volstrekt onverwacht vergelijkingsgebied.
+verschil: #show(ListCount(Items(count_compare, dim_geocompare))-ListCount(Items(count, dim_geo)))#
+compare: #show(ListCount(Items(count_compare, dim_geocompare)))#
+geo: #show(ListCount(Items(count, dim_geo)))#
+
+#show(count_compare)#
+#show(count)#
+-->
+
+<lange code om onbekende deelgemeente, gemeente of provincie uit te sluiten>
 #if
-Equal(Code(item(input_geo,0)), "deelgemeente_99999onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11044onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11050onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11052onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11053onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11054onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11055onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11056onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11057onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12026onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13031onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13036onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13044onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13046onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13049onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13053onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21015onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23027onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23032onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23033onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23044onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23047onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23050onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23052onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23060onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23062onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23064onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23077onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23081onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23086onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23088onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23094onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23096onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23097onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23098onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23099onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23100onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23101onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23102onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23103onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23104onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23105onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24028onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24033onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24048onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24054onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24055onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24059onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24062onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24066onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24086onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24094onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24104onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24107onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24109onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24130onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24133onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24134onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24135onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24137onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31033onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31042onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34027onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34042onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36015onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37015onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41027onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41048onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41063onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41081onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41082onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42026onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42028onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44036onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44048onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44049onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44052onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44064onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44072onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44073onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44080onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44081onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45057onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45059onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45060onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45061onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45062onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45063onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45064onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45065onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71047onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71053onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71057onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71066onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71067onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71069onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71070onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73028onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73032onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73042onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73066onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73083onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73098onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73107onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73109onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_99999onbe")
+Equal(Code(item(input_geo,0)), "provincie_99999") OR Equal(Code(item(input_geo,0)), "gemeente_99999") OR Equal(Code(item(input_geo,0)), "deelgemeente_99999onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11044onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11050onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11052onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11053onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11054onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11055onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11056onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_11057onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12026onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_12040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13031onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13036onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13044onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13046onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13049onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_13053onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21015onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_21019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23027onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23032onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23033onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23044onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23047onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23050onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23052onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23060onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23062onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23064onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23077onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23081onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23086onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23088onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23094onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23096onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23097onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23098onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23099onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23100onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23101onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23102onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23103onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23104onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_23105onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24028onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24033onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24048onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24054onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24055onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24059onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24062onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24066onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24086onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24094onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24104onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24107onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24109onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24130onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24133onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24134onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24135onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_24137onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31033onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31042onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_31043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_32030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_33041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34027onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34042onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_34043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_35029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36015onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_36019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37015onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_37020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_38025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41027onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41048onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41063onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41081onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_41082onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42008onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42023onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42026onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_42028onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43005onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43007onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43010onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_43018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44012onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44019onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44036onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44043onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44048onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44049onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44052onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44064onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44072onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44073onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44080onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_44081onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45035onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45057onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45059onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45060onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45061onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45062onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45063onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45064onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_45065onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46013onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46014onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_46025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71002onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71011onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71016onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71017onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71024onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71034onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71045onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71047onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71053onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71057onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71066onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71067onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71069onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_71070onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72003onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72004onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72018onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72020onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72021onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72025onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72029onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72030onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72037onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72038onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72039onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_72041onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73001onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73006onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73009onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73022onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73028onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73032onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73040onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73042onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73066onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73083onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73098onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73107onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_73109onbe") OR Equal(Code(item(input_geo,0)), "deelgemeente_99999onbe")
 then#
 </lange>
 <p>U vroeg de demografische kerncijfers van <b>#show(input_geo)#</b>. Dit zijn de mensen met een fout of niet te lokaliseren adres in het Rijksregister. Daarom houden we het hier heel kort.
@@ -318,10 +421,16 @@ Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikkin
 
 
 <p>In dit rapport geven we enkele demografische kerncijfers van de <b>#Write(name(level(item(input_geo,0))))# #show(input_geo)#</b> weer.
-Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikking hebben. Via de wijzig knop kunt u zelf gebieden kiezen en deze vergelijken met andere gebieden.
+Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikking hebben.</p>
+<p>Via de wijzig knop kunt u zelf &eacute;&eacute;n of meer gebieden kiezen en deze vergelijken met andere gebieden. U kunt ook <a href="https://provincies.incijfers.be/databank?report=kiezen_op_kaart&keepworkspace=true" & target="_top">gebieden selecteren via kaart</a>.
  </p>
- <p>De meest recente <b>offici&euml;le statistiek van de bevolking</b> geeft voor
-     #Write(name(level(item(input_geo,0))))# #show(input_geo)# <b>
+ <p>De meest recente <b>offici&euml;le statistiek van de bevolking</b> geeft voor de 
+     #if ListCount(Items(count, dim_geo))>3 then#
+gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# #show(input_geo)#
+#end if#
+<b>
  #Write(data(inwonersofficieel,0,0))# inwoners</b> (1/1/#Name(Item(inwonersofficieel, dim_period, 0))#)</b>.
 </p>
  <p>De rest van dit rapport is gebaseerd op onze <b>eigen verwerking van het Rijksregister</b>. Dit laat ons toe het Wachtregister mee te nemen,
@@ -330,16 +439,38 @@ Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikkin
 <p>De bron van alle cijfers, kaarten en grafieken in dit rapport is het Rijksregister.</p>
  <p>&nbsp;</p>
  <p>&nbsp;</p>
+
+
+
+
  
 #if ListCount(Items(count, dim_geo))>1 then#
-<p>#show(introkaart2, 750, 450)#</p>
+<div align="center">
+	<figure>
+		#show(introkaart2, 750, 450)#
+		<figcaption></figcaption>
+	</figure>
+</div>
 #else if Equal(Code(level(item(input_geo,0))), "provincie") then#
-<p>#show(introkaart, 750, 400)#</p>
+<div align="center">
+	<figure>
+		#show(introkaart, 750, 400)#
+		<figcaption></figcaption>
+	</figure>
+</div>
 # else #
-    <p>
-    #show(introkaart, 400, 330)#
-    #show(introkaart2, 400, 330)#
-    </p>
+<div class="block-left">
+	<figure>
+		#show(introkaart, 400, 330)#
+		<figcaption></figcaption>
+	</figure>
+</div>
+<div class="block-right">	
+	<figure>
+		#show(introkaart2, 400, 330)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
 #end if#
 
 
@@ -352,26 +483,145 @@ Dit rapport is aangemaakt op basis van de data die we op #date()# ter beschikkin
         <h2>Basiskenmerken van de bevolking</h2>  
 <p>&nbsp;</p>
 <p>
-    In de #Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> wonen in totaal 
+    In de #if ListCount(Items(count, dim_geo))>3 then#
+gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b>
+#end if# wonen in totaal 
     <b>#Write(data(inwonersfeitelijk,0,0))#</b> mensen (#Write(mostrecentperiods(v1101_t,year,1))#), waarvan
     #Write(data(verzameltabel,0,0))# mannen en #Write(data(verzameltabel,1,0))# vrouwen.
 </p>
-    <p>De eerste grafiek toont de verhouding van de bevolking naar leeftijd in #Write(name(level(item(input_geo,0))))# #show(input_geo)# vergeleken met  #show(input_compare)#.</p>
+    <p>De eerste grafiek toont de verhouding van de bevolking naar leeftijd in 
+        #if ListCount(Items(count, dim_geo))>3 then#
+        de gekozen gebieden
+        #else#
+        de #Write(name(level(item(input_geo,0))))# #show(input_geo)#
+        #end if#
+    vergeleken met  #show(input_compare)#.</p>
     <p>De tweede grafiek toont de totale procentuele bevolkingsgroei.</p>
  <p>&nbsp;</p>
 
+
+<div class="block-left">	
+	<figure>
+		#showInteractive(pres_a, 395, 425)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
+<div class="block-right">	
+	<figure>
+		#showInteractive(absolutegroeibevolking, 395, 425)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
+
+</section>
+
+
+    <section class="hoofdstuk">
+        <h2>Bevolkingsprognose</h2>  
+<p>&nbsp;</p>
 <p>
- #show(pres_a, 395, 425)#
- #show(absolutegroeibevolking, 395, 425)#
+    Om de drie jaar maakt Statistiek Vlaanderen demografische prognoses. Wij laten hier de vooruitzichten zien 
+    die opgesteld zijn in 2018. Dit laat toe 
+     om vooruit te blikken naar 2027.
+    Voor meer info 
+<a href="https://provincies.incijfers.be/jive/JiveObjectInfo.aspx?type=var&code=v1121_a_t" target="_blank">zie de metadatafiche</a> 
+of de site van     <a href="http://www.statistiekvlaanderen.be/vlaamse-gemeentelijke-demografische-vooruitzichten--2018-2035" target="_blank">Statistiek Vlaanderen</a>.
+    <br>Prognoses zijn steeds oefeningen gebaseerd op huidige trends. Trends kunnen echter veranderen, waardoor de prognose fout kan blijken. Deze cijfers zijn dus enkel richtinggevend.
 </p>
-<p>
-</p>
+        #if Equal(Code(level(item(input_geo,0))), "deelgemeente") then #
+<p>Statistiek Vlaanderen maakt geen bevolkingsprognoses voor onderdelen van gemeenten. Enkel indien het rapport minstens op gemeenteniveau opgevraagd wordt, kunnen we hier cijfers meegeven.</p>
+        #else#
+<p>In de #if ListCount(Items(count, dim_geo))>3 then#
+gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b>
+#end if# wordt verwacht dat de 
+offici&euml;le bevolking evolueert van #Write(data(prognose_2,0,0))# in 2017 
+naar <b>#Write(data(prognose_2,0,1))#</b> in <b>2027</b>.<br>
+Je kan zelf meer leeftijdscategorie&euml;n opvragen via de 
+<a href="https://provincies.incijfers.be/jive?cat_open=Bevolking/Bevolkingsprognose&var=v1121_a_t&view=map&period=2017,2027&keepworkspace=true" target="_top">databank Provincies in Cijfers</a>.</p>
+<p>&nbsp;</p>
+
+<div align="center">
+<table class="j_report_table">
+  <thead>
+  <tr>
+    <th></th>
+    <TH style="text-align: right;">2017</th>
+    <TH style="text-align: right;">
+       2027</th>
+    <TH style="text-align: right;">
+        absolute groei</th>
+    <TH style="text-align: right;">procentuele groei</th>
+    </tr>
+    </thead>
+  <tbody>
+      <tr>
+    <th>#if ListCount(Items(count, dim_geo))>3 then#
+Gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# #show(input_geo)#
+#end if# </th>
+    <td>#Write(data(prognose_2,0,0))#</td>
+    <td style="color: grey;">#Write(data(prognose_2,0,1))#</td> 
+    <td style="color: grey; font-style: italic;">#Write(data(prognose_3,0,0))#</td>
+    <td style="color: grey; font-style: italic;">#Write(data(prognose_4,0,0))#%</td>
+    </tr>
+#if ListCount(Items(count_compare, dim_geocompare))-ListCount(Items(count, dim_geo))>0 then#
+  <tr>
+    <th> #if NOT Equal(Code(level(item(input_compare,0))), "gewest") then #
+        #Write(name(level(item(input_compare,0))))#
+        #end if #  
+        #Write(name(item(input_compare,0)))#
+	</th>
+    <td>#Write(data(prognose_2,1,0))#</td>
+    <td style="color: grey;">#Write(data(prognose_2,1,1))#</td> 
+    <td style="color: grey; font-style: italic;">#Write(data(prognose_3,1,0))#</td>
+    <td style="color: grey; font-style: italic;">#Write(data(prognose_4,1,0))#%</td></tr>
+#end if#
+#if ListCount(Items(count_compare, dim_geocompare))-ListCount(Items(count, dim_geo))=2 then#  <tr>
+    <th> #if NOT Equal(Code(level(item(input_compare,1))), "gewest") then #
+        #Write(name(level(item(input_compare,1))))#
+        #end if #  
+        #Write(name(item(input_compare,1)))#
+	</th>
+    <td>#Write(data(prognose_2,2,0))#</td>
+    <td style="color: grey;">#Write(data(prognose_2,2,1))#</td> 
+    <td style="color: grey; font-style: italic;">#Write(data(prognose_3,2,0))#</td>
+    <td style="color: grey; font-style: italic;">#Write(data(prognose_4,2,0))#%</td></tr>
+#end if#  
+</tbody>
+</table>  
+</div>
+<p>&nbsp;</p>
+
+<div class="block-left">	
+	<figure>
+		#showInteractive(prognose_5, 395, 425)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
+<div class="block-right">	
+	<figure>
+		#showInteractive(prognose_1, 395, 425)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
+
+#end if#   
+
 </section>
 
 <section class="hoofdstuk">
     <h2>Bevolkingsdichtheid</h2> 
      <p>&nbsp;</p>
-<p>De bevolkingsdichtheid van #Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> is <b>
+<p>De bevolkingsdichtheid van #if ListCount(Items(count, dim_geo))>3 then#
+de gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b>
+#end if# is <b>
 #Write(data(verzameltabel,2,0))#</b> inwoners per vierkante kilometer. 
 In #Write(name(level(item(input_compare,0))))# <b>#show(item(input_compare,0))#</b> is dit  
 <b>#Show(data{Ind.vp1111a_bevdicht;Item(mostrecentperiods(vp1111a_bevdicht,year,1));item(input_compare,0);})#</b> inwoners per km&sup2;.</p>
@@ -407,7 +657,11 @@ inwoners van niet-Belgische herkomst zijn, wordt geen resultaat weergegeven.</p>
 
 <h2>Huishoudens</h2>
 <p>Van de #Write(data(inwonersfeitelijk,0,0))# inwoners van 
-#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b> wonen in totaal 
+#if ListCount(Items(count, dim_geo))>3 then#
+de gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b>
+#end if# wonen in totaal 
 <b>#Write(data(verzameltabel,4,0))# mensen in private huishoudens</b> (#Write(mostrecentperiods(v1115a_totaal_huishoudens,year,1))#). 
 De overige #Write(data(verzameltabel,5,0))# 
 wonen in collectieve huishoudens, zoals rusthuizen, instellingen, gevangenissen, etc.</p>
@@ -416,34 +670,50 @@ wonen in collectieve huishoudens, zoals rusthuizen, instellingen, gevangenissen,
 <p>In de eerste grafiek tonen we de totale groei van het aantal huishoudens sinds 2000. De tweede grafiek toont hoe
 de gemiddelde huishoudsgrootte in dezelfde periode evolueerde. Om de relatief kleine veranderingen duidelijker zichtbaar te maken, begint deze
 grafiek doorgaans niet op nul.</p>
-    <p>
-    #show(hh_1, 400, 330)#
-    #show(hh_2, 400, 330)#
-    </p>
+
+<div class="block-left">	
+	<figure>
+		#showInteractive(hh_1, 400, 330)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
+<div class="block-right">	
+	<figure>
+		#showInteractive(hh_2, 400, 330)#
+		<figcaption></figcaption>
+	</figure>
+</div>    
+
 <p>&nbsp;</p>
 <p>We delen huishoudens op in drie types. We kijken naar alleenstaanden, meerpersoonshuishoudens met minderjarige kinderen
 en andere types meerpersoonshuishoudens.</p>
 <p>We tellen enkel minderjarige kinderen mee als deze ook een relatie als kind hebben met het gezinshoofd. 
 Dit heeft slechts een minimale impact op de cijfers (grootte-orde 1,5 promille).</p>
 <p>Via 
-<a href="https://provincies.incijfers.be/?var=v1115a_alleenw,v1115a_hh_enkel_meerd_k,v1115a_hh_zond_k,v1115a_hhtype_p_mk_min,v1115a_allst_ouder_minst_1_min_k,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
+<a href="https://provincies.incijfers.be/databank?var=v1115a_alleenw,v1115a_hh_enkel_meerd_k,v1115a_hh_zond_k,v1115a_hhtype_p_mk_min,v1115a_allst_ouder_minst_1_min_k,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
 deze link</a> 
 krijgt u een beeld van de verschillende types huishoudens binnen de indeling zoals hierboven. 
-<a href="https://provincies.incijfers.be/?var=v1115a_alleenw,v1115a_geh_paar_minst_1_min_k,v1115a_geh_paar_enkel_meerd_k,v1115a_geh_paar_zond_k,v1115a_sw_paar_minst_1_min_k,v1115a_sw_paar_enkel_meerd_k,v1115a_sw_paar_zond_k,v1115a_allst_ouder_minst_1_min_k,v1115a_allst_ouder_enkel_meerd_k,v1115a_ander,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
+<a href="https://provincies.incijfers.be/databank?var=v1115a_alleenw,v1115a_geh_paar_minst_1_min_k,v1115a_geh_paar_enkel_meerd_k,v1115a_geh_paar_zond_k,v1115a_sw_paar_minst_1_min_k,v1115a_sw_paar_enkel_meerd_k,v1115a_sw_paar_zond_k,v1115a_allst_ouder_minst_1_min_k,v1115a_allst_ouder_enkel_meerd_k,v1115a_ander,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
 Deze link</a> 
 toont de 'klassieke' LIPRO-indeling van huishoudens. 
 </p>
-<p>Hieronder deze indeling voor #Write(name(level(item(input_geo,0))))# 
-<b>#show(input_geo)#</b> (#Write(mostrecentperiods(v1115a_alleenw,year,1))#), in vergelijking met  
+<p>Hieronder deze indeling voor de #if ListCount(Items(count, dim_geo))>3 then#
+gekozen gebieden
+#else#
+#Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b>
+#end if# (#Write(mostrecentperiods(v1115a_alleenw,year,1))#), in vergelijking met  
 <b>#show(input_compare)#</b></b>.
 </p>
-<p>&nbsp;</p>
-    <p><div align="center">#show(hh_5, 600, 400)#</div>       
-        <!-- misschien doen als taart-in-kaart taartgrootte aanpasbaar is
-    #show(hh_3, 400, 400)#
-    #show(hh_4, 400, 400)#
-        -->
-    </p>
+
+<figure>
+	#showinteractive(hh_5, 600, 400)#
+	<figcaption></figcaption>
+</figure>
+
+<!-- misschien doen als taart-in-kaart taartgrootte aanpasbaar is
+#show(hh_3, 400, 400)#
+#show(hh_4, 400, 400)#
+-->
 
 
 </section>
