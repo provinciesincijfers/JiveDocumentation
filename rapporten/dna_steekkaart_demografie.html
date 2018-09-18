@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl-NL">
+    <head>
+<meta charset="utf-8" />
+
+<title>Steekkaart Demografie</title>
+<meta name="format-detection" content="telephone=no"/>
+<link type="text/css" rel="stylesheet" href="style/ipo_dynamic.css" />
+<link type="text/css" rel="stylesheet" href="style/report_table.css" />
+</head>
 <!-- door je instellingen en selecties tussen "fake HTML" te zetten, kan je deze eenvoudig samenklikken, dit werkt veel handiger -->
 <inputs>
 # 
@@ -373,13 +381,7 @@ prognose_5 = Presentation {
 
 #
 </selections>    
-<head>
-<meta charset="utf-8" />
 
-<title>Steekkaart Demografie</title>
-<link type="text/css" rel="stylesheet" href="https://provincies.incijfers.be//report/style/ipo_dynamic.css" />
-<link type="text/css" rel="stylesheet" href="https://provincies.incijfers.be//report/style/report_table.css" />
-</head>
 <body class="swingreport">
 <section class="container">
     <div>&nbsp;</div>
@@ -689,20 +691,22 @@ grafiek doorgaans niet op nul.</p>
 en andere types meerpersoonshuishoudens.</p>
 <p>We tellen enkel minderjarige kinderen mee als deze ook een relatie als kind hebben met het gezinshoofd. 
 Dit heeft slechts een minimale impact op de cijfers (grootte-orde 1,5 promille).</p>
-<p>Via 
-<a href="https://provincies.incijfers.be/databank?var=v1115a_alleenw,v1115a_hh_enkel_meerd_k,v1115a_hh_zond_k,v1115a_hhtype_p_mk_min,v1115a_allst_ouder_minst_1_min_k,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
-deze link</a> 
-krijgt u een beeld van de verschillende types huishoudens binnen de indeling zoals hierboven. 
-<a href="https://provincies.incijfers.be/databank?var=v1115a_alleenw,v1115a_geh_paar_minst_1_min_k,v1115a_geh_paar_enkel_meerd_k,v1115a_geh_paar_zond_k,v1115a_sw_paar_minst_1_min_k,v1115a_sw_paar_enkel_meerd_k,v1115a_sw_paar_zond_k,v1115a_allst_ouder_minst_1_min_k,v1115a_allst_ouder_enkel_meerd_k,v1115a_ander,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
-Deze link</a> 
-toont de 'klassieke' LIPRO-indeling van huishoudens. 
-</p>
+
 <p>Hieronder deze indeling voor de #if ListCount(Items(count, dim_geo))>3 then#
 gekozen gebieden
 #else#
 #Write(name(level(item(input_geo,0))))# <b>#show(input_geo)#</b>
 #end if# (#Write(mostrecentperiods(v1115a_alleenw,year,1))#), in vergelijking met  
 <b>#show(input_compare)#</b></b>.
+</p>
+<p><!--Via 
+<a href="https://provincies.incijfers.be/databank?var=v1115a_alleenw,v1115a_hh_enkel_meerd_k,v1115a_hh_zond_k,v1115a_hhtype_p_mk_min,v1115a_allst_ouder_minst_1_min_k,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
+deze link</a> 
+krijgt u een beeld van de verschillende types huishoudens binnen de indeling zoals hieronder. VERWIJDERD OMDAT "huishoudens zonder lipro kinderen" .
+OOK ALLEENSTAANDEN OMVAT, EN DA's GEWELDIG VERWARREND-->
+Via <a href="https://provincies.incijfers.be/databank?var=v1115a_alleenw,v1115a_geh_paar_minst_1_min_k,v1115a_geh_paar_enkel_meerd_k,v1115a_geh_paar_zond_k,v1115a_sw_paar_minst_1_min_k,v1115a_sw_paar_enkel_meerd_k,v1115a_sw_paar_zond_k,v1115a_allst_ouder_minst_1_min_k,v1115a_allst_ouder_enkel_meerd_k,v1115a_ander,v1115a_totaal_huishoudens&geoitem_codes=#Write(Code(input_geo))#&keepworkspace=true" target="_top">
+deze link</a> 
+kunt u de onderliggende categorie&euml;n volgens de 'klassieke' LIPRO-indeling van huishoudens raadplegen. 
 </p>
 
 <figure>
