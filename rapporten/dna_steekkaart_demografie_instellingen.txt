@@ -2,12 +2,26 @@
   <PropertySheet>
     <ID>default</ID>
     <PropertyGroup>
-      <ShowTitle>True</ShowTitle>
+      <ShowTitle>False</ShowTitle>
       <ShowSource>False</ShowSource>
       <ShowExcelLink>False</ShowExcelLink>
       <ShowTableLink>False</ShowTableLink>
       <ShowTableVarInfo>True</ShowTableVarInfo>
       <LegendDocking>Bottom</LegendDocking>
+      <UserVariableNames>
+        <Item>
+          <Key>vp1111a_0_17</Key>
+          <Value>0-17 jaar</Value>
+        </Item>
+        <Item>
+          <Key>vp1111a_18_64</Key>
+          <Value>18-64 jaar</Value>
+        </Item>
+        <Item>
+          <Key>vp1111a_65_of_ouder</Key>
+          <Value>65 en ouder</Value>
+        </Item>
+      </UserVariableNames>
     </PropertyGroup>
     <PropertyGroup>
       <Class>piramide</Class>
@@ -53,21 +67,6 @@
       <Class>pres_a</Class>
       <FavoriteGeoItem />
       <BarOrColumn>Bar</BarOrColumn>
-      <UserVariableNames>
-        <Item>
-          <Key>vp1111a_0_17</Key>
-          <Value>0-17 jaar</Value>
-        </Item>
-        <Item>
-          <Key>vp1111a_18_64</Key>
-          <Value>18-64 jaar</Value>
-        </Item>
-        <Item>
-          <Key>vp1111a_65_of_ouder</Key>
-          <Value>65 en ouder</Value>
-        </Item>
-      </UserVariableNames>
-      <PresentTitle>Leeftijden t.o.v. alle inwoners %p - %g</PresentTitle>
     </PropertyGroup>
     <PropertyGroup>
       <Class>pres_b</Class>
@@ -104,7 +103,7 @@
       <DataClassCount>7</DataClassCount>
       <DataClassesEqualAmounts>True</DataClassesEqualAmounts>
       <DataClasses />
-      <ShowTitle>True</ShowTitle>
+      <DefaultDivergingColorScheme>Blauwtinten</DefaultDivergingColorScheme>
     </PropertyGroup>
     <PropertyGroup>
       <Class>vis_6</Class>
@@ -211,6 +210,24 @@
         <Style>Regular</Style>
       </LabelFont>
       <ShowTitle>False</ShowTitle>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>prognose_5</Class>
+      <FavoriteGeoItem />
+      <BarOrColumn>Bar</BarOrColumn>
+    </PropertyGroup>
+    <PropertyGroup>
+      <Class>Grafiek_lijn_gebieden</Class>
+      <DefaultSequentialColorScheme>SSP_gebieden</DefaultSequentialColorScheme>
+      <DefaultDivergingColorScheme>SSP_gebieden</DefaultDivergingColorScheme>
+      <DefaultQualitativeColorScheme>SSP_gebieden</DefaultQualitativeColorScheme>
+      <MarkerStyle>None</MarkerStyle>
+      <ShowData>False</ShowData>
+      <ShowTitle>False</ShowTitle>
+      <AutomaticAxisCutOff>True</AutomaticAxisCutOff>
+      <LegendDocking>Bottom</LegendDocking>
+      <TitleColor>rgb(0, 0, 0)</TitleColor>
+      <TitleAlignment>TopLeft</TitleAlignment>
     </PropertyGroup>
   </PropertySheet>
 </PropertyDoc>
