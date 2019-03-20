@@ -9,17 +9,19 @@ Om hier keuzes in te maken, moet je drie concepten begrijpen. Deze staan los van
 - Gepubliceerde en niet gepubliceerde data
 
 
-## Toegangsgroepen
+## Toegangsgroepen & inloggen
 
 Iedereen die Swing gebruikt zit per definitie in een Toegangsgroep. 
 Ook mensen die gewoon je website bezoeken en verder niets doen. In Versie>Instellingen wordt bepaald welke Gebruiker gebruikt wordt om de rechten van buitenstaanders toe te kennen.
-Je kunt heel ver gaan in de organisatie van gebruikers in gebruikersgroepen en toegangsgroepen, of je kan hier niet of nauwelijks in differentiëren.
+Je kunt ervoor kiezen om heel ver te gaan in de organisatie van gebruikers in gebruikersgroepen en toegangsgroepen, of je kan hier niet of nauwelijks in differentiëren.
 
-Swing beheerders zijn gebruikers als elke andere, maar hebben als Gebruikerstype (via de tabel Gebruikersgroepen) het type Beheerder. Elke account waarmee je in Studio kunt inloggen, kan je dus ook in je live website (de productieomgeving) gebruiken.
+Alle gebruikers, behalve de "gastgebruiker" moeten inloggen. Die inlog kan je zowel in de gepubliceerde omgeving als in de nog-niet-geplubliceerde omgeving gebruiken (zie verder). Alle gebruikers kunnen in beide omgevingen inloggen. 
+Swing beheerders kunnen hun login in beide omgevingen gebruiken, maar ook nog eens in de Studio. Zij hebben als Gebruikerstype (via de tabel Gebruikersgroepen) het type Beheerder meegekregen. Elke account waarmee je in Studio kunt inloggen, kan je dus ook in je live website (de productieomgeving) gebruiken.
 In theorie zou je een Beheerder echter op basis van Toegangsgroepen de toegang tot de data zelf kunnen ontzeggen.
 
 Alle data waar je rechten op hebt, is raadpleegbaar. De Themaboom (zie volgende punt) dient enkel om dit *gemakkelijk* te maken voor mensen. Maar als je bijvoorbeeld de onderwerpcode kent, dan kan je ze sowieso raadplegen door  
 `?var=onderwerpcode` toe te voegen aan de URL van je website.
+
 
 ## Themaboom  en Toegangsgroepen
 
@@ -31,11 +33,12 @@ De zichtbaarheid van deze mappen kan je op diverse manieren organiseren.
 
 ## Gepubliceerde en niet-gepubliceerde data
 
-Op het moment dat je data in Swing toevoegt, zijn deze onmiddellijk in Swing beschikbaar via Versie>testen ("de testomgeving").
+Op het moment dat je data in Swing toevoegt, zijn deze onmiddellijk in Swing beschikbaar via Versie>testen ("de testomgeving", admin/jive).
 Maar enkel indien je rechten op deze data hebt.  
 Je kan ze enkel *gemakkelijk* raadplegen indien je ook het Thema kunt zien waar ze in staan.  
 Eens je de databank Publiceert, komt de data terecht in de echte website, "de productieomgeving".
 
+Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebruiker gaat uitzien, dan moet je in de admin/jive omgeving ook nog eens uitloggen. Immers blijf je anders ingelogt met je Beheerders-account, en die heeft normaal gezien steeds recht om alles te zien. Dit wordt wel eens vergeten, ook door de meest ervaren beheerders.
 
 
  # Implicaties
@@ -46,7 +49,7 @@ Eens je de databank Publiceert, komt de data terecht in de echte website, "de pr
  * Je kan een "externe" perfect toegang geven tot je "testomgeving", zonder dat je risico loopt dat die "te veel ziet". Maar de testomgeving is niet stabiel!
  * Je kan een "externe" perfect data laten zien die hij niet ziet in de Themaboom, door een link te delen van een presentatie. Op voorwaarde dat de data zelf niet afgeschermd is.
  
- ## Toekomstige policy op Provincies in Cijfer
+ ## Policy op Provincies in Cijfer
  
  ### Eén map met INDELING-EINDGEBRUIKERS.
  
@@ -56,13 +59,14 @@ Eens je de databank Publiceert, komt de data terecht in de echte website, "de pr
  
  De map bevat:
  * Submap EXTERN voor gasten
- * Submap DATA & ANALYSE met een uitgebreider aanbod voor onze eigen diensten. Dit minimaliseert dubbel beheer van de themaboom; idealiter bevat deze énkel wat niet in de map INDELING-EINDGEBRUIKERS/EXTERN past.
- * Thematische subgroepen
- * De map voor SWING CONNECTOR (omdat interne medewerkers dit ook moeten kunnen zien)
+ * Submap INTERN met een uitgebreider aanbod voor onze eigen diensten en speciale klanten. Deze bevat:
+ ** Alternatieve thematische indelinegn
+ ** Mappen voor Thematische werkgroepen (vb werking Klimaat)
+ ** De mappen voor SWING CONNECTOR
 
- ### Eén map om te TESTEN
+ ### Eén map om te TESTEN en met gevoelige data
 Deze map is enkel zichtbaar voor Swing Beheerders. Swing-beheerders zijn doorgaans ook "interne medewerkers", maar niet elke interne medewerker is een Swing beheerder.  
 Deze map bestaat enkel om dingen die nog niet af zijn gemakkelijk te kunnen raadplegen. Op die manier worden "interne medewerkers" hier niet mee lastiggevallen.  
 Wat hier staat is dus zowel beschikbaar in de testomgeving als in de productieomgeving. In beide gevallen enkel als je er rechten op hebt, enkel gemakkelijk vindbaar als je de map TESTMAP kunt zien. En in de productieomgeving als de data al gepubliceerd is.
- 
+
  
