@@ -4,7 +4,7 @@
 
 Dit zijn guidelines die we binnen Provincies in Cijfers hanteren.
 
-Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Basishandleiding%20kubussen.md)  eerst. Deze tekst bevat enkel aanvullende info.
+Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/kubussen/Basishandleiding%20kubussen.md)  eerst. Deze tekst bevat enkel aanvullende info.
 Ook een handleiding gezocht rond werken met geperecenteerde kubussen en het combineren van kubussen.
 
 Vergeet niet dat een kubus maximaal 100.000 combinaties mag bevatten. Om de combinaties te berekenen, neem je alle inhoudelijke  indelingen van de dataset (de "dimensieniveaus", voorbeeld: leeftijd, geslacht en burgerlijke staat, maar NIET jaar, gebied, aantal). Vervolgens neem je het product van het aantal keuzes per indeling. Bijvoorbeeld: 10 leeftijdsklassen * 2 geslachten * 4 burgerlijke staten = 80 combinaties. Stel dat je ook een "onbekend" geslacht hebt, dan wordt dit dus ```10*3*4```.
