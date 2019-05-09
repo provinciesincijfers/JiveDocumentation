@@ -1,0 +1,300 @@
+<report><code>rap_economie_v2</code><name>Steekkaart Economie</name><data>&lt;!DOCTYPE html&gt;
+&lt;html lang="nl-NL"&gt;
+&lt;!--inputs--&gt;
+&lt;!--ZOEK EN VERVANG ctr-h "hasselt.incijfers.be/jive" door het webadres van je stad--&gt;
+
+
+&lt;!--AAN TE PASSEN NAAR JUISTE NISCODE VAN JE STAD EN PROVINCIE--&gt;
+#
+
+input_geo=geo.gemeente._71022
+geolevel = level(item(input_geo, 0))
+input_geo2=geo.provincie._70000
+
+inwoners = Presentation {
+	Selection {
+		[Ind.dna_v1101_t];
+		MostRecentPeriod: 1;
+		input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable];
+}
+
+#
+&lt;!--selections--&gt;
+#
+
+
+
+vis_2 = Presentation {
+	Selection {
+		Ind.dna_v1203_welvaartsindex;
+		MostRecentPeriods(Ind.dna_v1203_welvaartsindex, year, 10);
+		input_geo;
+		BasePeriod: Item(MostRecentPeriods(Ind.dna_v1203_welvaartsindex, year, 10), 9);
+	};
+	View: Line;
+	ViewDimensions: [dim_period, dim_variable];
+	LayoutClass: "pres_b";
+}
+
+
+vis_3 = Presentation {
+	Selection {
+		[Ind.dna_v1201_ksz_loontrekkend, Ind.dna_v1201_ksz_zelfstandige, Ind.dna_v1201_ksz_werkzoekend, Ind.dna_v1201_ksz_pensioen, Ind.dna_v1201_ksz_kinderbijslag, Ind.dna_v1201_ksz_overige];
+		MostRecentPeriods(Ind.dna_v1201_ksz_kinderbijslag, year, 1);
+		input_geo;
+	};
+	View: Pie;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "vis_3";
+}
+
+
+vis_5 = Presentation {
+	Selection {
+		Ind.dna_v1402_act_onderneming;
+		MostRecentPeriods(Ind.dna_v1402_act_onderneming, year, 10);
+		input_geo;
+	};
+	View: Bar;
+	ViewDimensions: [dim_geo, dim_period, dim_variable];
+	LayoutClass: "pres_c";
+
+}
+
+vis_6 = Presentation {
+	Selection {
+		Ind.dna_vp1601_pand;
+		MostRecentPeriods(Ind.dna_vp1601_pand, year, 10);
+		input_geo;
+	};
+	View: Bar;
+	ViewDimensions: [dim_geo, dim_period, dim_variable];
+	LayoutClass: "pres_c";
+}
+
+
+
+#
+&lt;/selections&gt;    
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;title&gt;Economie&lt;/title&gt;
+&lt;link type="text/css" rel="stylesheet" href="style/huisstijl_Hasselt.css" /&gt;
+&lt;/head&gt;
+&lt;body class="swingreport"&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;section class="container"&gt;
+    &lt;section class="hoofdstuk"&gt;
+        &lt;h1&gt;Steekkkaart Economie | #Write(name(level(item(input_geo,0))))# #show(input_geo)#&lt;/h1&gt;
+
+&lt;h2&gt;Inhoud&lt;/h2&gt;
+&lt;p&gt;In deze steekkaart geven we enkele basiskenmerken van de economie in #show(input_geo)# weer.
+ &lt;/p&gt;
+
+ &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/section&gt;
+ 
+
+&lt;section class="hoofdstuk"&gt;
+    &lt;h2&gt;Ruimte voor bedrijvigheid&lt;/h2&gt;  
+&lt;div class="zweefrechts"&gt;    
+&lt;/div&gt;
+In de #Write(name(level(item(input_geo,0))))# #show(input_geo)# is &lt;b&gt; 
+    #Show(data{Ind.dna_vp1501_bedrijvigheid;Item(mostrecentperiods(dna_vp1501_bedrijvigheid,year,1));item(input_geo,0);})#%&lt;/b&gt;
+    van de &lt;a href="https://hasselt.incijfers.be/jive/JiveObjectInfo.aspx?type=var&amp;code=dna_vp1501_bedrijvigheid" target="_blank"&gt;bebouwde oppervlakte bestemd voor bedrijvigheid&lt;/a&gt;.
+In de #Write(name(level(item(input_geo2,0))))# #show(input_geo2)# is dat &lt;b&gt; 
+    #Show(data{Ind.dna_vp1501_bedrijvigheid;Item(mostrecentperiods(dna_vp1501_bedrijvigheid,year,1));item(input_geo2,0);})#%&lt;/b&gt;.
+
+&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;section class="hoofdstuk"&gt;
+
+&lt;h2&gt;Fiscale inkomens &lt;/h2&gt;
+&lt;p&gt;
+De &lt;a href="https://hasselt.incijfers.be/jive/JiveObjectInfo.aspx?type=var&amp;code=dna_v1203_welvaartsindex" target="_blank"&gt;
+    welvaartsindex&lt;/a&gt; is gebaseerd op het fiscaal inkomen per persoon. Het vergelijkt het gemiddelde inkomen per inwoner 
+    van een gebied met het gemiddelde van Belgi&amp;euml;, jaar per jaar. Voor Belgi&amp;euml; is de waarde steeds 100.
+    Waar men gemiddeld 10% minder verdient, zou de waarde 90 zijn.&lt;/p&gt;
+&lt;p&gt;De evolutie van deze waarde zegt dus enkel iets over de relatieve positie van #Write(name(level(item(input_geo,0))))# #show(input_geo)# 
+ten opzichte van Belgi&amp;euml;.&lt;br&gt;
+
+&lt;div class="zweefrechts"&gt;#show(vis_2,700,425)#&lt;/div&gt;
+
+In absolute termen evolueerde het inkomen van de gemiddelde inwoner van #show(input_geo)# van &lt;b&gt;
+#Show(data{Ind.dna_v1203_gem_inwoner;Item(mostrecentperiods(dna_v1203_gem_inwoner,year,11),10);item(input_geo,0);})# euro &lt;/b&gt;
+(#Write(Item(mostrecentperiods(dna_v1203_gem_inwoner,year,11),10))#) naar &lt;b&gt;
+#Show(data{Ind.dna_v1203_gem_inwoner;Item(mostrecentperiods(dna_v1203_gem_inwoner,year,1));item(input_geo,0);})# euro &lt;/b&gt;
+ (#Write(Item(mostrecentperiods(dna_v1203_gem_inwoner,year,1)))#).
+ In #show(level(input_geo2))# #show(input_geo2)# is dit van &lt;b&gt;
+#Show(data{Ind.dna_v1203_gem_inwoner;Item(mostrecentperiods(dna_v1203_gem_inwoner,year,11),10);item(input_geo2,0);})# euro &lt;/b&gt;
+naar &lt;b&gt;
+#Show(data{Ind.dna_v1203_gem_inwoner;Item(mostrecentperiods(dna_v1203_gem_inwoner,year,1));item(input_geo2,0);})# euro &lt;/b&gt;
+ge&amp;euml;volueerd.
+&lt;/section&gt;
+
+&lt;section class="hoofdstuk"&gt;
+&lt;h2&gt;Inwoners volgens hun socio-economische positie (#show(Item(mostrecentperiods(dna_v1201_ksz_kinderbijslag,year,1)))#)&lt;/h2&gt;
+&lt;p&gt;Op basis van de Kruispuntbank Sociale Zekerheid (Datawarehouse arbeidsmarkt en sociale bescherming) is het mogelijk om de inwoners van #Write(name(level(item(input_geo,0))))# #show(input_geo)#
+te classificeren op basis van hun relatie tot de arbeidsmarkt.
+&lt;/p&gt;
+&lt;div class="zweefrechts"&gt;#showInteractive(vis_3,700,325)#&lt;/div&gt;
+
+&lt;p&gt;Doordat de verwerking van de gegevens over kinderbijslag langer op zich laten wachten, kunnen we deze taart
+ slechts tot en met #show(Item(mostrecentperiods(dna_v1201_ksz_kinderbijslag,year,1)))# vol maken. U kunt 
+ &lt;a HREF="https://hasselt.incijfers.be/jive?var=dna_v1201_ksz_loontrekkend,dna_v1201_ksz_zelfstandige,dna_v1201_ksz_werkzoekend,dna_v1201_ksz_pensioen,dna_v1201_ksz_kinderbijslag,dna_v1201_ksz_overige&amp;geoitem_codes=#Write(Code(input_geo))#&amp;view=barstacked&amp;period=#Write(mostrecentperiods(dna_v1201_ksz_loontrekkend,year,10))#&amp;keepworkspace=true" target="_blank"&gt;
+hier een evolutiegrafiek van de beschikbare cijfers opvragen&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+ 
+&lt;/section&gt;
+
+
+
+&lt;section class="hoofdstuk"&gt;
+
+&lt;h2&gt;Evolutie van het aantal ondernemingen&lt;/h2&gt;
+
+&lt;p&gt;De statistiek van het 
+    &lt;a href="https://hasselt.incijfers.be/jive/JiveObjectInfo.aspx?type=var&amp;code=dna_v1402_act_onderneming" target="_blank"&gt;aantal ondernemingen&lt;/a&gt; 
+    komt van Statbel, als telling van het aantal BTW-plichtigen.&lt;/p&gt;
+
+&lt;div class="zweefrechts"&gt;#showInteractive(vis_5,600,425)#&lt;/div&gt;
+
+&lt;/section&gt;
+
+
+
+&lt;section class="hoofdstuk"&gt;
+
+&lt;h2&gt;Detailhandel&lt;/h2&gt;
+
+&lt;div class="zweefrechts"&gt;    
+&lt;/div&gt;
+&lt;p&gt;
+In de #Write(name(level(item(input_geo,0))))# #show(input_geo)# zijn er &lt;b&gt; 
+    #Show(data{Ind.dna_vp1601_pand;Item(mostrecentperiods(dna_vp1601_pand,year,1));item(input_geo,0);})#&lt;/b&gt;
+    &lt;a href="https://hasselt.incijfers.be/jive/JiveObjectInfo.aspx?type=var&amp;code=dna_vp1601_pand" target="_blank"&gt;handelspanden in brede zin&lt;/a&gt; 
+    per 1000 inwoners (#Write(Item(mostrecentperiods(dna_vp1601_pand,year,1)))#).&lt;br&gt;
+In 2008 waren ze dit nog #Show(data{Ind.dna_vp1601_pand;Per._2008;item(input_geo,0);})# 
+(#Write(name(level(item(input_geo,0))))# #show(input_geo)#).
+&lt;div class="zweefrechts"&gt;#showInteractive(vis_6,600,425)#&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;/section&gt;
+
+&lt;/section&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</data><datatype>html</datatype><static>false</static><settings>&lt;PropertyDoc&gt;
+  &lt;PropertySheet&gt;
+    &lt;ID&gt;default&lt;/ID&gt;
+    &lt;PropertyGroup&gt;
+      &lt;ShowTitle&gt;True&lt;/ShowTitle&gt;
+      &lt;ShowSource&gt;True&lt;/ShowSource&gt;
+      &lt;ShowExcelLink&gt;False&lt;/ShowExcelLink&gt;
+      &lt;ShowTableLink&gt;False&lt;/ShowTableLink&gt;
+      &lt;ShowTableVarInfo&gt;True&lt;/ShowTableVarInfo&gt;
+      &lt;LegendDocking&gt;Bottom&lt;/LegendDocking&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;pres_a&lt;/Class&gt;
+      &lt;FavoriteGeoItem /&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;BarOrColumn&gt;Bar&lt;/BarOrColumn&gt;
+      &lt;ShowLegendUnit&gt;False&lt;/ShowLegendUnit&gt;
+      &lt;ShowData&gt;True&lt;/ShowData&gt;
+      &lt;CropWhiteSpace&gt;True&lt;/CropWhiteSpace&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;pres_b&lt;/Class&gt;
+      &lt;ZoomLevel&gt;9&lt;/ZoomLevel&gt;
+      &lt;ViewCenter&gt;
+        &lt;X&gt;0&lt;/X&gt;
+        &lt;Y&gt;0&lt;/Y&gt;
+      &lt;/ViewCenter&gt;
+      &lt;ShowTotalsHorizontal&gt;False&lt;/ShowTotalsHorizontal&gt;
+      &lt;ShowTotalsVertical&gt;True&lt;/ShowTotalsVertical&gt;
+      &lt;ShowLegend&gt;False&lt;/ShowLegend&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;ShowLegendUnit&gt;False&lt;/ShowLegendUnit&gt;
+      &lt;CropWhiteSpace&gt;True&lt;/CropWhiteSpace&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;vis_6&lt;/Class&gt;
+      &lt;ShowRegressionLine&gt;True&lt;/ShowRegressionLine&gt;
+      &lt;FavoriteGeoItem /&gt;
+      &lt;ChildViewPositioning&gt;Horizontal&lt;/ChildViewPositioning&gt;
+      &lt;LayersSelection&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;LayerOpenStreetMap&lt;/Id&gt;
+          &lt;Enabled&gt;False&lt;/Enabled&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;4bb171e6-241f-4901-907a-81ba69106d28&lt;/Id&gt;
+          &lt;Enabled&gt;False&lt;/Enabled&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;LayerContour&lt;/Id&gt;
+          &lt;Enabled&gt;False&lt;/Enabled&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;f544f51b-9396-4d58-80ff-a1c535682219&lt;/Id&gt;
+          &lt;Enabled&gt;False&lt;/Enabled&gt;
+        &lt;/Item&gt;
+      &lt;/LayersSelection&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;vis_1&lt;/Class&gt;
+      &lt;LegendDocking&gt;Right&lt;/LegendDocking&gt;
+      &lt;FavoriteGeoItem /&gt;
+      &lt;ShowNames&gt;False&lt;/ShowNames&gt;
+      &lt;LabelFont&gt;
+        &lt;Family&gt;Tahoma&lt;/Family&gt;
+        &lt;Size&gt;6&lt;/Size&gt;
+        &lt;Style&gt;Regular&lt;/Style&gt;
+      &lt;/LabelFont&gt;
+      &lt;LayersSelection&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;LayerContour&lt;/Id&gt;
+          &lt;Enabled&gt;True&lt;/Enabled&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;LayerOpenStreetMap&lt;/Id&gt;
+          &lt;Enabled&gt;True&lt;/Enabled&gt;
+        &lt;/Item&gt;
+      &lt;/LayersSelection&gt;
+      &lt;ChildViewPositioning&gt;Horizontal&lt;/ChildViewPositioning&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;vis_3&lt;/Class&gt;
+      &lt;LegendDocking&gt;Left&lt;/LegendDocking&gt;
+      &lt;LabelFont&gt;
+        &lt;Family&gt;Tahoma&lt;/Family&gt;
+        &lt;Size&gt;8&lt;/Size&gt;
+        &lt;Style&gt;Regular&lt;/Style&gt;
+      &lt;/LabelFont&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;ShowLegend&gt;False&lt;/ShowLegend&gt;
+      &lt;ShowData&gt;True&lt;/ShowData&gt;
+      &lt;ShowNames&gt;True&lt;/ShowNames&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;vis_2&lt;/Class&gt;
+      &lt;AutomaticAxisCutOff&gt;True&lt;/AutomaticAxisCutOff&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;pres_c&lt;/Class&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;ShowData&gt;True&lt;/ShowData&gt;
+      &lt;ShowLegendUnit&gt;False&lt;/ShowLegendUnit&gt;
+    &lt;/PropertyGroup&gt;
+  &lt;/PropertySheet&gt;
+&lt;/PropertyDoc&gt;</settings></report>
