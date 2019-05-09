@@ -1,0 +1,772 @@
+<report><code>rap_basisonderwijs</code><name>Rapport basisonderwijs</name><data>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="nl-BE"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;title&gt;Rapport basisonderwijs&lt;/title&gt;
+
+&lt;link type="text/css" rel="stylesheet" href="style/ipo_dynamic_incl_tab.css?hfhfhv" /&gt;
+&lt;style&gt;
+	a:link {
+  text-decoration: none;
+}
+
+&lt;/style&gt;
+
+
+&lt;/head&gt;
+&lt;!-- door je instellingen en selecties tussen "fake HTML" te zetten, kan je deze eenvoudig samenklikken, dit werkt veel handiger --&gt;
+&lt;inputs&gt;
+#
+input_geo=input
+{
+    Type: Geo;
+    Caption: "Kies gebieden";
+    Instruction: "Kies &amp;eacute;&amp;eacute;n of meerdere gebieden.";
+    // hier je eigen gebiedsniveau ingeven (voor Gent - gebruik prov gegevens: hier dna_cs14 of geo.gent??)
+    Level: [Geo.wijk, Geo.gemeente];
+    Min: 1;
+    Max: 1;
+}
+
+input_compare=input
+{
+    Type: GeoItem;
+    Caption: "Kies vergelijkingsgebieden";
+    Instruction: "Kies het gebied waarmee je wil vergelijken.";
+    Subset: parents(input_geo);
+
+    //Default: [provincie._99999, gewest._99999];
+    Min: 1;
+    Max: 2;
+}
+
+#
+
+&lt;/inputs&gt;
+
+&lt;selections1&gt;
+#
+//Situering en algemene demografische cijfers
+kaart = Presentation {
+	Selection {
+		Ind.dna_v1111a_tot_bevolking;
+		MostRecentPeriod: 1;
+		Level(input_geo);
+	};
+	View: Map;
+	ViewDimensions: [dim_geo, dim_variable];
+	FavoriteGeoItem: input_geo;
+	LayoutClass: "kaart";
+	
+}
+// tabel geboortes
+pres_geboortes = Presentation {
+	Selection {
+		  // voor de centrumsteden: kies ind.dna_v1102_geboorte - Gent: kies eigen onderwerp omdat er ook gegevens beschikbaar zijn op wijkniveau 
+		Ind.dna_v1102_geboorte; 
+		//Ind.geb;
+		MostRecentPeriods(Ind.dna_v1102_geboorte,year,10);
+        input_geo;
+		Compare: [input_compare];
+	};
+	View: Table;
+	ViewDimensions: [dim_geocompare, dim_period];
+	LayoutClass: "tabel_1";
+}
+
+// tabel kinderen naar leeftijd
+pres_kind_lft_tabel = Presentation {
+	Selection {
+		[Ind.dna_v1111a_0_2, Ind.dna_v1111a_3_5, Ind.dna_v1111a_6_11];
+        MostRecentPeriods(Ind.dna_v1121_a_0_2,year,10);  
+        input_geo;
+
+	};
+	View: table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "table_data";
+}
+
+// grafiek prognoses
+pres_kind_lft_bar = Presentation {
+	Selection {
+		[Ind.dna_v1121_a_0_2, Ind.dna_v1121_a_3_5, Ind.dna_v1121_a_6_11];
+		[Per._2018, Per._2019, Per._2020, Per._2021, Per._2022, Per._2023, Per._2024, Per._2025, Per._2026, Per._2027, Per._2028];
+        input_geo;
+	};
+	View: BarStacked;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "bar_data";
+}
+
+#
+&lt;/selections1&gt;
+&lt;selections2&gt;
+
+#
+ // Onderwijscijfers naar woonplaats
+ 
+// leerlingenaantal in basisonderwijs (woonplaats)
+pres_5 = Presentation {
+	Selection {
+		[Ind.dna_v2301_lln_kleuter_gewoon, Ind.dna_v2301_lln_lager_gewoon, Ind.dna_v2301_lln_basis_gewoon];
+		MostRecentPeriods(Ind.dna_v2301_lln_basis_gewoon,year,10);
+		input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+// groei van leerlingenaantal in basisonderwijs woonplaats (lijngrafiek)
+pres_6 = Presentation {
+	Selection {
+		[ Ind.dna_v2301_lln_kleuter_gewoon, Ind.dna_v2301_lln_lager_gewoon,Ind.dna_v2301_lln_basis_gewoon];
+		MostRecentPeriods(Ind.dna_v2301_lln_basis_gewoon,year,10);
+        input_geo;
+        Transformation: Growth;
+		BasePeriod: Item(MostRecentPeriods(Ind.dna_v2301_lln_basis_gewoon,year,10),7);
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+
+// aandeel indicatorleerlingen naar woonplaats kleuteronderwijs
+pres_7_1 = Presentation {
+	Selection {
+		Ind.dna_vp2301_indicator_kleuter;
+		MostRecentPeriods(Ind.dna_vp2301_indicator_kleuter,year,10);
+		input_geo;
+		Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "line_data";
+
+}
+// aandeel indicatorleerlingen naar woonplaats lager onderwijs
+pres_7_2 = Presentation {
+	Selection {
+		Ind.dna_vp2301_indicator_lager;
+		MostRecentPeriods(Ind.dna_vp2301_indicator_lager,year,10);
+		input_geo;
+		Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "line_data";
+}
+
+//aandeel indicatorleerlingen naar woonplaats basisonderwijs
+pres_7_3 = Presentation {
+	Selection {
+		Ind.dna_vp2301_indicator_basis;
+		MostRecentPeriods(Ind.dna_vp2301_indicator_basis,year,10);
+		input_geo;
+		Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "line_data";
+}
+
+// evolutie onderwijskansarmoedeindex kleuteronderwijs
+pres_8_1 = Presentation {
+	Selection {
+		Ind.dna_vp2301_oki_kleuter;
+		MostRecentPeriods(Ind.dna_vp2301_oki_kleuter,year,10);
+		input_geo;
+		Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "line_data";
+}
+
+// evolutie onderwijskansarmoedeindex lager onderwijs
+pres_8_2 = Presentation {
+	Selection {
+		Ind.dna_vp2301_oki_lager;
+		MostRecentPeriods(Ind.dna_vp2301_oki_lager,year,10);
+		input_geo;
+		Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "line_data";
+}
+// evolutie onderwijskansarmoedeindex basisonderwijs
+pres_8_3 = Presentation {
+	Selection {
+		Ind.dna_vp2301_oki_basis;
+		MostRecentPeriods(Ind.dna_vp2301_oki_basis,year,10);
+		input_geo;
+		Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_geocompare, dim_period, dim_variable];
+	LayoutClass: "line_data";
+}
+
+// evolutie kansarmoedeindex kind en gezin
+pres_9 = Presentation {
+	Selection {
+		Ind.dna_vp3132_gebka_ku;
+		MostRecentPeriods(Ind.dna_vp3132_gebka_ku,year,10);
+		input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_geo, dim_period];
+	LayoutClass: "tabel_1";
+}
+
+// aandeel leerlingen met risicokenmerken 
+pres_10 = Presentation {
+	Selection {
+		[Ind.dna_vp2301_rkbuurt_1, Ind.dna_vp2301_rktoelage_1, Ind.dna_vp2301_rkopleidingmoeder_1, Ind.dna_vp2301_rktaal_1, Ind.dna_vp2301_lager_gewoon_sv_2plus];
+        MostRecentPeriod: 1;
+        input_geo;
+		Compare: [input_compare];
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+
+// Evolutie risicokenmerken 
+pres_11 = Presentation {
+	Selection {
+		[Ind.dna_vp2301_rkbuurt_1, Ind.dna_vp2301_rktoelage_1, Ind.dna_vp2301_rkopleidingmoeder_1, Ind.dna_vp2301_rktaal_1, Ind.dna_vp2301_lager_gewoon_sv_2plus];
+		MostRecentPeriods(Ind.dna_vp2301_rkbuurt_1,year,10);
+		input_geo;
+		Transformation: GrowthAbs;
+		BasePeriod: Item(MostRecentPeriods(Ind.dna_vp2301_rkbuurt_1,year,8),7);
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+// aantal leerlingen in buitengewoon basisonderwijis 
+pres_12 = Presentation {
+	Selection {
+		[Ind.dna_v2301_lln_kleuter_buitengewoon, Ind.dna_v2301_lln_lager_buitengewoon, Ind.dna_v2301_lln_basis_buitengewoon];
+		MostRecentPeriods(Ind.dna_v2301_lln_basis_buitengewoon,year,10);
+        input_geo;
+        };
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+
+// aandeel leerlingen in buitengwoon basisonderwijs
+pres_12_1 = Presentation {
+	Selection {
+		[Ind.dna_vp2301_lln_kleuter_buitengewoon, Ind.dna_vp2301_lln_lager_buitengewoon, Ind.dna_vp2301_lln_basis_buitengewoon];
+		MostRecentPeriods(Ind.dna_vp2301_lln_kleuter_buitengewoon,year,10);
+		input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+#
+&lt;/selections2&gt;
+&lt;selections3&gt;
+    #
+     // Onderwijscijfers naar vestigingsplaats
+
+pres_23 = Presentation {
+	Selection {
+		[ Ind.dna_v2302_lln_kleuter, Ind.dna_v2302_lln_lager,Ind.dna_v2302_lln_basis];
+		MostRecentPeriods(Ind.dna_v2302_lln_basis,year,10);
+        input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+
+pres_24 = Presentation {
+	Selection {
+		[ Ind.dna_v2302_lln_kleuter, Ind.dna_v2302_lln_lager, Ind.dna_v2302_lln_basis];
+		MostRecentPeriods(Ind.dna_v2302_lln_basis,year,10);
+        input_geo;
+		Transformation: Growth;
+		BasePeriod: Item(MostRecentPeriods(Ind.dna_v2301_lln_basis_gewoon,year,8),7);
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+
+
+pres_27_1 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_indicator_kleuter];
+		MostRecentPeriods(Ind.dna_vp2302_indicator_kleuter,year,10);
+        input_geo;
+        Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+pres_27_2 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_indicator_lager];
+		MostRecentPeriods(Ind.dna_vp2302_indicator_lager,year,10);
+        input_geo;
+        Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+pres_27_3 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_indicator_basis];
+		MostRecentPeriods(Ind.dna_vp2302_indicator_basis,year,10);
+        input_geo;
+        Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+
+pres_28_1 = Presentation {
+	Selection {
+		[ Ind.dna_vp2302_oki_kleuter];
+		MostRecentPeriods(Ind.dna_vp2302_oki_kleuter,year,10);
+        input_geo;
+        Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+pres_28_2 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_oki_lager];
+		MostRecentPeriods(Ind.dna_vp2302_oki_lager,year,10);
+        input_geo;
+        Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+pres_28_3 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_oki_basis];
+		MostRecentPeriods(Ind.dna_vp2302_oki_basis,year,10);
+        input_geo;
+        Compare: [input_compare];
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+pres_29 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_rkbuurt_1, Ind.dna_vp2302_rktoelage_1, Ind.dna_vp2302_rkopleidingmoeder_1, Ind.dna_vp2302_rktaal_1, Ind.dna_v2302_lager_gewoon_sv_2plus];
+		MostRecentPeriod: 1;
+        input_geo;
+		Compare: [input_compare];
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_geocompare];
+	LayoutClass: "tabel_1";
+}
+
+pres_30 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_rkbuurt_1, Ind.dna_vp2302_rktoelage_1, Ind.dna_vp2302_rkopleidingmoeder_1, Ind.dna_vp2302_rktaal_1, Ind.dna_vp2302_lager_gewoon_sv_2plus];
+		MostRecentPeriods(Ind.dna_vp2302_rkbuurt_1,year,10);
+        input_geo;
+		Transformation: GrowthAbs;
+		BasePeriod: per._2010;
+	};
+	View: Line;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "line_data";
+}
+
+pres_31 = Presentation {
+	Selection {
+		[Ind.dna_v2302_lln_kleuter_buitengewoon, Ind.dna_v2302_lln_lager_buitengewoon, Ind.dna_v2302_lln_basis_buitengewoon];
+		MostRecentPeriods(Ind.dna_v2302_lln_basis_buitengewoon,year,10);
+        input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+
+pres_31_1 = Presentation {
+	Selection {
+		[Ind.dna_vp2302_lln_kleuter_buitengewoon, Ind.dna_vp2302_lln_lager_buitengewoon, Ind.dna_vp2302_lln_basis_buitengewoon];
+        MostRecentPeriods(Ind.dna_vp2302_lln_kleuter_buitengewoon,year,10);
+        input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_1";
+}
+#
+&lt;/selections3&gt;
+&lt;body class="swingreport"&gt;
+
+&lt;div id="container"&gt;
+    &lt;!-- begin een eerste pagina --&gt;
+
+&lt;section class="hoofdstuk"&gt;
+&lt;h1&gt;Rapport Basisonderwijs | #Write(name(level(item(input_geo,0))))# #Write(Item(input_geo,0))#&lt;/h1&gt;
+&lt;h4&gt;Inhoudstafel&lt;/h4&gt;
+&lt;p&gt;&lt;a href="##h0"&gt;1 Situering en algemene inwonerscijfers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="##h1"&gt;2 Onderwijscijfers naar woonplaats&lt;/a&gt;&lt;/p&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h1_1"&gt;2.1 Evolutie van leerlingenaantallen&lt;/a&gt;&lt;br&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h1_2"&gt;2.2 Risicokenmerken&lt;/a&gt;&lt;br&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h1_3"&gt;2.3 Armoedeindicatoren&lt;/a&gt;&lt;br&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h1_4"&gt;2.4 Buitengewoon onderwijs&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href="##h2"&gt;3 Onderwijscijfers naar vestigingsplaats&lt;/a&gt;&lt;/p&gt;				    
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h2_1"&gt;3.1 Evolutie van leerlingenaantallen in basisonderwijs&lt;/a&gt;&lt;br&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h2_2"&gt;3.2 Risicokenmerken&lt;/a&gt;&lt;br&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h2_3"&gt;3.3 Armoedeindicatoren&lt;/a&gt;&lt;br&gt;
+&lt;span style="margin-left:2em"&gt;&lt;a href="##h2_4"&gt;3.4 Buitengewoon onderwijs&lt;/a&gt;&lt;br&gt;					
+
+&lt;p&gt;In dit rapport geven we enkele kerncijfers van &lt;strong&gt;&lt;b&gt;#LevelandName(input_geo)#&lt;/b&gt;&lt;/strong&gt;
+				weer met betrekking tot onderwijs. Het is aangemaakt op basis van de meest recente data die we ter beschikking hebben, d.d. &lt;strong&gt;&lt;b&gt;#date("dd-MM-yyyy")#&lt;/b&gt;&lt;/strong&gt;. 
+				De meest actuele versie vind je steeds online op de &lt;a href="https://roeselare.incijfers.be"&gt;website 'Roeselare in Cijfers'&lt;/a&gt;.
+                Via de wijzig knop kunt u zelf &amp;eacute;&amp;eacute;n of meer gebieden kiezen en deze vergelijken met andere gebieden. 
+                 &lt;/p&gt;
+&lt;h2&gt;&lt;A id="h0"&gt;&lt;/a&gt;1 Situering en algemene demografische cijfers&lt;/h2&gt;
+&lt;!-- kaart wordt enkel getoond als het input level wijk is --&gt;
+&lt;!-- voor de centrumsteden: check wat de gebiedsniveaucode is van je wijken als dit niet werkt --&gt;
+#if Equal(code(level(input_geo)), "wijk") then#
+&lt;h4&gt;Kaart: Ligging #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;figure&gt;#Show(kaart, 1600, 900, 3)#&lt;/figure&gt;
+#end if#
+&lt;/br&gt;
+
+#if Equal(code(level(input_geo)), "gemeente") then#
+&lt;h4&gt;Geboortes in #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;figure&gt;#Show(pres_geboortes, 1600, 900, 3)#&lt;/figure&gt;
+#end if#
+&lt;/br&gt;
+
+&lt;/br&gt;
+&lt;h4&gt;Kinderen naar leeftijd in #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;figure&gt;#Show(pres_kind_lft_tabel, 1600, 900, 3)#&lt;/figure&gt;
+&lt;/br&gt;
+&lt;!-- deze grafiek toon ik enkel als het input level gemeente is --&gt;
+&lt;!-- vermoed dat hier voor de centrumsteden ipv "gent" "stad" moet staan (of "gemeente", het is de gebiedsniveaucode van je stad) --&gt;
+#if Equal(code(level(input_geo)), "gemeente") then#
+&lt;h4&gt;Prognose: kinderen naar leeftijd in #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;figure&gt;#Show(pres_kind_lft_bar, 1600, 900, 3)#&lt;/figure&gt;
+#end if#
+
+&lt;!--EINDE PAGINA--&gt;
+&lt;/section&gt;
+
+&lt;!-- BEGIN EEN VOLGENDE PAGINA --&gt;
+&lt;section class="hoofdstuk"&gt;
+&lt;h2 id="h1"&gt;2 Onderwijscijfers naar woonplaats&lt;/h2&gt;
+&lt;p&gt;De gegevens hebben betrekking op alle leerlingen en studenten die les volgen in een Nederlandstalige school die
+gefinancierd of gesubsidieerd wordt door de Vlaamse Gemeenschap. Leerlingen die les volgen in priv&amp;eacute;scholen of
+scholen van de Franse Gemeenschap zijn dus niet opgenomen in deze cijfers.&lt;/p&gt;
+&lt;p&gt;De gegevens over de leerlingen in het schooljaar worden in februari verzameld. Dit betekent dat de gegevens van het
+jaar 2010 slaan op het schooljaar 2009-2010.&lt;/p&gt;
+&lt;p&gt;De leerlingen/studenten worden hier ingedeeld naar woonplaats. Deze woonplaats wordt gedefinieerd als het adres
+dat doorgegeven wordt aan de school. Dit adres verschilt mogelijk van het offici&amp;euml;le domicilieadres.&lt;/p&gt;
+&lt;h2 id="h1_1"&gt;2.1 Evolutie naar leerlingenaantallen naar &lt;b&gt;woonplaats (WP)&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;Het kleuter- en het lager onderwijs samen vormen het basisonderwijs.&lt;/p&gt;
+&lt;h4&gt;Leerlingenaantal in basisonderwijs in #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;figure&gt;#Show(pres_5, 1600, 900, 3)#&lt;/figure&gt;
+&lt;br&gt;
+&lt;h4&gt;Groei van leerlingenaantal in basisonderwijs in #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;figure&gt;#Show(pres_6, 1600, 750, 3)#&lt;/figure&gt;
+&lt;/section&gt;
+
+&lt;section class="hoofdstuk"&gt;
+&lt;h2 id="h1_2"&gt;2.2 Risicokenmerken naar woonplaats (WP)&lt;/h2&gt;
+&lt;p&gt;Om kinderen zoveel mogelijk gelijke kansen te geven, krijgen de
+                    scholen een extra pakket lestijden/lesuren en extra werkingsmiddelen voor kinderen die aan bepaalde gelijke
+                    kansenindicatoren voldoen. Voor het toekennen van extra werkingsmiddelen houdt men rekening met
+                    opleidingsniveau moeder, schooltoelage, thuistaal en een buurtindicator. Deze buurtindicator wordt niet gebruikt voor
+                    de toekenning van de extra lestijden.&lt;/p&gt;
+                    &lt;p&gt;&lt;li&gt;&lt;b&gt;Laagopgeleide moeder:&lt;/b&gt; Dit is het geval wanneer de moeder niet in het bezit is van een diploma of
+                    getuigschrift van het hoger secundair onderwijs.&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;Schooltoelage:&lt;/b&gt; De leerling scoort op deze indicator als hij in aanmerking komt voor een schooltoelage en
+                    deze aangevraagd heeft. Een leerling blijft scoren op deze indicator als hij het recht op schooltoelage
+                    verliest (bijvoorbeeld door veelvuldig spijbelen).&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;Nederlands is de thuistaal niet:&lt;/b&gt; De leerling scoort op de indicator &amp;##8216;taal&amp;##8217; wanneer hij/zij met niemand, of in
+                    een gezin met drie gezinsleden, met maximum &amp;eacute;&amp;eacute;n gezinslid Nederlands spreekt.&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;Buurtindicator:&lt;/b&gt; De leerlingen worden onderverdeeld volgens de buurt waarin ze wonen. Op basis van
+                    deze indicator wil men een kwart van de leerlingen extra financiering toekennen. Het gaat hierbij om de
+                    25% leerlingen die in buurten met het hoogste percentage schoolse vertraging wonen. Bij de berekening
+                    van dit percentage gaat men uit van het aantal 15-jarigen van de zes afgelopen jaren, die minstens twee
+                    jaar schoolse vertraging hadden. Leerlingen die behoren tot de trekkende bevolking en thuislozen scoren
+                    steeds op deze indicator.&lt;/li&gt;&lt;/p&gt;
+                    &lt;p&gt;Schoolse vordering wordt berekend op basis van een vergelijking tussen het leerjaar waarin de leerling is
+                    ingeschreven en het leerjaar waarin de leerling op grond van zijn geboortejaar en bij normale studievordering
+                    ingeschreven zou moeten zijn.&lt;/p&gt;
+                    &lt;/br&gt;
+                &lt;p&gt;&lt;strong&gt;Aandeel leerlingen met risicokenmerken in #LevelandName(input_geo)#&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_10, 1600, 750, 3)#&lt;/figure&gt;
+				&lt;p&gt;&lt;strong&gt;Evolutie risicokenmerken in #LevelandName(input_geo)#&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_11, 1600, 700, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+&lt;/section&gt;
+&lt;section class="hoofdstuk"&gt;
+&lt;h2 id="h1_3"&gt;2.3 Armoedeindicatoren naar woonplaats (WP)&lt;/h2&gt;
+&lt;/br&gt;
+&lt;p&gt;De 4 kenmerken samen vormen de onderwijs kansarmoede-indicator (OKI).&lt;/p&gt;
+				&lt;br&gt;	
+				&lt;h4&gt;Aandeel indicatorleerlingen in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;p&gt;&lt;strong&gt;kleuteronderwijs&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_7_1, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;lager onderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_7_2, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;basisonderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_7_3, 1600, 500, 3)#&lt;/figure&gt;
+			   	&lt;/div&gt;
+		&lt;/section&gt;
+		
+&lt;section class="hoofdstuk"&gt;	
+&lt;h4&gt;Evolutie onderwijskansarmoedeindex in #LevelandName(input_geo)#&lt;/h4&gt;
+&lt;/BR&gt;
+                &lt;p&gt;&lt;strong&gt;kleuteronderwijs&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_8_1, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;lager onderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_8_2, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;basisonderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_8_3, 1600, 500, 3)#&lt;/figure&gt;	
+			    &lt;br&gt;
+&lt;/section&gt;
+&lt;section class="hoofdstuk"&gt;	
+   &lt;h4&gt;Evolutie kansarmoedeindex Kind en Gezin voor #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;p&gt;Kansarmoede is een toestand waarbij mensen beknot worden in hun kansen om voldoende deel te hebben aan maatschappelijk hooggewaardeerde goederen, zoals onderwijs, arbeid, huisvesting. Het gaat hierbij niet om een eenmalig feit, maar om een duurzame toestand die zich voordoet op verschillende terreinen, zowel materi&amp;euml;le als immateri&amp;euml;le.&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_9, 1600, 750, 3)#&lt;/figure&gt;
+				&lt;br&gt;
+&lt;h2 id="h1_4"&gt;2.4 Buitengewoon onderwijs naar woonplaats (WP)&lt;/h2&gt;
+                &lt;p&gt;&lt;strong&gt;Aantal leerlingen in buitengewoon basisonderwijs in #LevelandName(input_geo)#&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_12, 1600, 750, 3)#&lt;/figure&gt;
+				&lt;br&gt;
+                &lt;p&gt;&lt;strong&gt;Aandeel leerlingen in buitengewoon basisonderwijs in #LevelandName(input_geo)#&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_12_1, 1600, 750, 3)#&lt;/figure&gt;
+&lt;/section&gt;
+
+&lt;section class="hoofdstuk"&gt;
+			    &lt;h2 id="h2"&gt;3 Onderwijscijfers naar vestigingsplaats&lt;/h2&gt;
+			    &lt;p&gt;De gegevens hebben betrekking op alle leerlingen en studenten die les volgen in een Nederlandstalige school die
+                gefinancierd of gesubsidieerd wordt door de Vlaamse Gemeenschap. Leerlingen die les volgen in priv&amp;eacute;scholen of
+                scholen van de Franse Gemeenschap zijn dus niet opgenomen in deze cijfers.&lt;/p&gt;
+                &lt;p&gt;De gegevens over de leerlingen/studenten worden in februari verzameld. Dit betekent dat de gegevens van het jaar
+                2010 slaan op het schooljaar 2009-2010.&lt;/p&gt;
+                &lt;p&gt;De leerlingen/studenten worden hier ingedeeld naar schoolgemeente, meer bepaald de vestigingsplaats van de school
+                waar ze ingeschreven zijn.&lt;/p&gt;
+                &lt;br&gt;
+				&lt;h2 id="h2_1"&gt;3.1 Evolutie van leerlingenaantallen naar vestigingsplaats (VP)&lt;/h2&gt;
+				&lt;p&gt;Het kleuter- en het lager onderwijs samen vormen het basisonderwijs.&lt;/p&gt;
+                &lt;br&gt;
+				&lt;h4&gt;Leerlingenaantal in basisonderwijs in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;figure&gt;#Show(pres_23, 1600, 750, 3)#&lt;/figure&gt;
+				&lt;br&gt;
+				&lt;h4&gt;Groei van leerlingenaantal in basisonderwijs in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;figure&gt;#Show(pres_24, 1600, 750, 3)#&lt;/figure&gt;
+		&lt;/section&gt;
+				
+	
+
+		&lt;section class="hoofdstuk"&gt;
+                &lt;h2 id="h2_2"&gt;3.2 Risicokenmerken naar vestigingsplaats (VP)&lt;/h2&gt;
+			    &lt;p&gt;Om kinderen zoveel mogelijk gelijke kansen te geven, krijgen de
+                    scholen een extra pakket lestijden/lesuren en extra werkingsmiddelen voor kinderen die aan bepaalde gelijke
+                    kansenindicatoren voldoen. Voor het toekennen van extra werkingsmiddelen houdt men rekening met
+                    opleidingsniveau moeder, schooltoelage, thuistaal en een buurtindicator. Deze buurtindicator wordt niet gebruikt voor
+                    de toekenning van de extra lestijden.&lt;/p&gt;
+                    &lt;p&gt;&lt;li&gt;&lt;b&gt;Laagopgeleide moeder:&lt;/b&gt; Dit is het geval wanneer de moeder niet in het bezit is van een diploma of
+                    getuigschrift van het hoger secundair onderwijs.&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;Schooltoelage:&lt;/b&gt; De leerling scoort op deze indicator als hij in aanmerking komt voor een schooltoelage en
+                    deze aangevraagd heeft. Een leerling blijft scoren op deze indicator als hij het recht op schooltoelage
+                    verliest (bijvoorbeeld door veelvuldig spijbelen).&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;Nederlands is de thuistaal niet:&lt;/b&gt; De leerling scoort op de indicator &amp;##8216;taal&amp;##8217; wanneer hij/zij met niemand, of in
+                    een gezin met drie gezinsleden, met maximum &amp;eacute;&amp;eacute;n gezinslid Nederlands spreekt.&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;Buurtindicator:&lt;/b&gt; De leerlingen worden onderverdeeld volgens de buurt waarin ze wonen. Op basis van
+                    deze indicator wil men een kwart van de leerlingen extra financiering toekennen. Het gaat hierbij om de
+                    25% leerlingen die in buurten met het hoogste percentage schoolse vertraging wonen. Bij de berekening
+                    van dit percentage gaat men uit van het aantal 15-jarigen van de zes afgelopen jaren, die minstens twee
+                    jaar schoolse vertraging hadden. Leerlingen die behoren tot de trekkende bevolking en thuislozen scoren
+                    steeds op deze indicator.&lt;/li&gt;&lt;/p&gt;
+                    &lt;p&gt;Schoolse vordering wordt berekend op basis van een vergelijking tussen het leerjaar waarin de leerling is
+                    ingeschreven en het leerjaar waarin de leerling op grond van zijn geboortejaar en bij normale studievordering
+                    ingeschreven zou moeten zijn.&lt;/p&gt;
+                &lt;h4&gt;Aandeel leerlingen met risicokenmerken in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;figure&gt;#Show(pres_29, 1600, 700, 3)#&lt;/figure&gt;
+				&lt;br&gt;
+				&lt;h4&gt;Evolutie risicokenmerken in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;figure&gt;#Show(pres_30, 1600, 700, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+		
+		&lt;/section&gt;
+		
+		&lt;section class="hoofdstuk"&gt;
+			    &lt;h2 id="h2_3"&gt;3.3 Armoedeindicatoren naar vestigingsplaats (VP)&lt;/h2&gt;
+				&lt;p&gt;De 4 kenmerken samen vormen de onderwijs kansarmoede-indicator (OKI).&lt;/p&gt;
+				&lt;h4&gt;Aandeel indicatorleerlingen in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;p&gt;&lt;strong&gt;&gt;kleuteronderwijs&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_27_1, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;lager onderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_27_2, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;basisonderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_27_3, 1600, 500, 3)#&lt;/figure&gt;
+		&lt;/section&gt;
+		
+		&lt;section class="hoofdstuk"&gt;
+			    &lt;h4&gt;Evolutie onderwijskansarmoedeindex in #LevelandName(input_geo)#&lt;/h4&gt;
+                &lt;p&gt;&lt;strong&gt;kleuteronderwijs&lt;/strong&gt;&lt;/p&gt;
+				&lt;figure&gt;#Show(pres_28_1, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;lager onderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_28_2, 1600, 500, 3)#&lt;/figure&gt;
+			    &lt;br&gt;
+			    &lt;p&gt;&lt;strong&gt;basisonderwijs&lt;/strong&gt;&lt;/p&gt;
+			    &lt;figure&gt;#Show(pres_28_3, 1600, 500, 3)#&lt;/figure&gt;
+		&lt;/section&gt;
+		
+		&lt;section class="hoofdstuk"&gt;
+			    &lt;br&gt;
+				&lt;h2 id="h2_4"&gt;3.4 Buitengewoon onderwijs naar vestigingsplaats (VP)&lt;/h2&gt;
+                &lt;h4&gt;Aantal leerlingen in buitengewoon basisonderwijs in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;figure&gt;#Show(pres_31, 1600, 750, 3)#&lt;/figure&gt;
+				&lt;br&gt;
+				&lt;h4&gt;Aandeel leerlingen in buitengewoon basisonderwijs in #LevelandName(input_geo)#&lt;/h4&gt;
+				&lt;figure&gt;#Show(pres_31_1, 1600, 750, 3)#&lt;/figure&gt;
+		&lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</data><datatype>html</datatype><static>false</static><settings>&lt;PropertyDoc&gt;
+  &lt;PropertySheet&gt;
+    &lt;ID&gt;default&lt;/ID&gt;
+    &lt;PropertyGroup&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;ShowSource&gt;True&lt;/ShowSource&gt;
+      &lt;GridLine&gt;
+        &lt;Color&gt;rgb(204, 204, 204)&lt;/Color&gt;
+        &lt;Width&gt;0&lt;/Width&gt;
+        &lt;Style&gt;Solid&lt;/Style&gt;
+      &lt;/GridLine&gt;
+      &lt;BaseFont&gt;
+        &lt;Family&gt;Calibri&lt;/Family&gt;
+        &lt;Size&gt;6&lt;/Size&gt;
+        &lt;Style&gt;Regular&lt;/Style&gt;
+      &lt;/BaseFont&gt;
+      &lt;GridLineHorizontal&gt;
+        &lt;Color&gt;rgb(204, 204, 204)&lt;/Color&gt;
+        &lt;Width&gt;1&lt;/Width&gt;
+        &lt;Style&gt;Solid&lt;/Style&gt;
+      &lt;/GridLineHorizontal&gt;
+      &lt;AutomaticAxisCutOff&gt;False&lt;/AutomaticAxisCutOff&gt;
+      &lt;LineWidth&gt;2&lt;/LineWidth&gt;
+      &lt;ShowGeoCompareGeolevelName&gt;False&lt;/ShowGeoCompareGeolevelName&gt;
+      &lt;CropWhiteSpace&gt;False&lt;/CropWhiteSpace&gt;
+      &lt;MinAreaSizePercentage&gt;100&lt;/MinAreaSizePercentage&gt;
+      &lt;BaseColor&gt;rgb(0, 0, 0)&lt;/BaseColor&gt;
+      &lt;HideCommonVariableDescription&gt;False&lt;/HideCommonVariableDescription&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;kaart&lt;/Class&gt;
+      &lt;LayersSelection&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;LayerOpenStreetMap&lt;/Id&gt;
+          &lt;Enabled&gt;True&lt;/Enabled&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Id&gt;LayerContour&lt;/Id&gt;
+          &lt;Enabled&gt;True&lt;/Enabled&gt;
+        &lt;/Item&gt;
+      &lt;/LayersSelection&gt;
+      &lt;DataClassCount&gt;2&lt;/DataClassCount&gt;
+      &lt;OverlayOpacity&gt;100&lt;/OverlayOpacity&gt;
+      &lt;ShowData&gt;False&lt;/ShowData&gt;
+      &lt;ShowNames&gt;False&lt;/ShowNames&gt;
+      &lt;ShowSource&gt;False&lt;/ShowSource&gt;
+      &lt;ShowLegend&gt;False&lt;/ShowLegend&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;FavoritePen&gt;
+        &lt;Color&gt;rgb(255, 0, 0)&lt;/Color&gt;
+        &lt;Width&gt;3&lt;/Width&gt;
+        &lt;Style&gt;Solid&lt;/Style&gt;
+      &lt;/FavoritePen&gt;
+      &lt;DefaultSequentialColorScheme&gt;wit&lt;/DefaultSequentialColorScheme&gt;
+      &lt;SourceFont&gt;
+        &lt;Family&gt;Calibri&lt;/Family&gt;
+        &lt;Size&gt;6&lt;/Size&gt;
+        &lt;Style&gt;Italic&lt;/Style&gt;
+      &lt;/SourceFont&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;tabel_1&lt;/Class&gt;
+      &lt;UserVariableNames&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;pbuurt_65plus&lt;/Key&gt;
+          &lt;Value&gt;% personen onder de financiële armoededrempel&lt;/Value&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;bevlft&lt;/Key&gt;
+          &lt;Value&gt;Aantal personen&lt;/Value&gt;
+        &lt;/Item&gt;
+      &lt;/UserVariableNames&gt;
+      &lt;ShowTotalsHorizontal&gt;False&lt;/ShowTotalsHorizontal&gt;
+      &lt;ShowTotalsVertical&gt;False&lt;/ShowTotalsVertical&gt;
+      &lt;LegendFont&gt;
+        &lt;Family&gt;Calibri&lt;/Family&gt;
+        &lt;Size&gt;6&lt;/Size&gt;
+        &lt;Style&gt;Italic&lt;/Style&gt;
+      &lt;/LegendFont&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;no_legend&lt;/Class&gt;
+      &lt;ShowLegend&gt;False&lt;/ShowLegend&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;line_data&lt;/Class&gt;
+      &lt;ShowData&gt;True&lt;/ShowData&gt;
+      &lt;LegendFont&gt;
+        &lt;Family&gt;Calibri&lt;/Family&gt;
+        &lt;Size&gt;6&lt;/Size&gt;
+        &lt;Style&gt;Italic&lt;/Style&gt;
+      &lt;/LegendFont&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;bar_data&lt;/Class&gt;
+      &lt;ShowData&gt;True&lt;/ShowData&gt;
+      &lt;LegendFont&gt;
+        &lt;Family&gt;Calibri&lt;/Family&gt;
+        &lt;Size&gt;6&lt;/Size&gt;
+        &lt;Style&gt;Italic&lt;/Style&gt;
+      &lt;/LegendFont&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;legend_onder&lt;/Class&gt;
+      &lt;LegendDocking&gt;Bottom&lt;/LegendDocking&gt;
+    &lt;/PropertyGroup&gt;
+  &lt;/PropertySheet&gt;
+&lt;/PropertyDoc&gt;</settings></report>
