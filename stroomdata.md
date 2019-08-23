@@ -13,3 +13,5 @@ Je kan niet tellen met stroomdata, je kan dus geen totaal bouwen op een subtotaa
 Voor het inlezen moet je lichtjes anders te werk gaan. Dit wordt uigelegd op de Help op Admin/Studio/Import. Belangrijk en niet intuïtief is dat je periode-veld (normaal PERIOD of JAAR) nu STROOM moet heten.
 Je werkt ook niet met een kolom met het geolevel, maar gebruikt in de plaats daarvan de code van het gebiedsniveau als kolomhoofd voor je "van" gebieden. De "naar" gebieden moeten van hetzelfde niveau zijn en krijgen "IDEM" als kolomhoofd.
 Je kan dus geen data inlezen "van" gemeente "naar" provincie. Een eindgebruiker kan dit wel: "hoeveel leerlingen 'van' een gemeente gaan 'naar' scholen in een bepaalde provincie".
+
+In provincies.incijfers.be beginnen we onderwerpen met stroomdata steeds met vs????, waarbij ???? staat voor de viercijferige themacode.
