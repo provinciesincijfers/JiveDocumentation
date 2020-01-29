@@ -1,26 +1,32 @@
 <report><code>sjabloon_rapport</code><name>Sjabloon voor rapporten</name><data>&lt;!DOCTYPE html&gt; 
 &lt;html lang="nl-NL"&gt; 
+&lt;!-- belangrijke wijzigingen in sjabloon:
+- toevoeging logica "a, b en c" ipv "a, b, c" bij opsomming gebieden (30/9/2019)
+- nieuwe stijl inhoudsopgave (31/10/2019)
+--&gt;
 &lt;!-- zoek op TODO om te weten wat je nog moet aanpassen!--&gt;
 &lt;!-- de inhoudelijk verantwoordelijke voor dit rapport is TODO --&gt;
 &lt;!-- TODO: verwijder deze regel als je "gebruik Scroll Script" in de Rapportentabel hebt geactiveerd --&gt;
-&lt;head&gt;
-&lt;layout&gt;
+&lt;head&gt;&lt;!-- dit deel bevat alles om je rapport voor te bereiden --&gt;
+&lt;layout&gt;&lt;!-- enkele algemene instellingen waar je verder niet aan moet komen--&gt;
 # 
 SetNoPrinting()
 SetPDFMargins(0.95, 1.5, 1, 1)
 #
 &lt;/layout&gt;
 &lt;meta charset="utf-8" /&gt;
-&lt;style&gt;
+&lt;style&gt;in
     /* enkel nodig indien je rapport specifieke CSS nodig wheeft */
+
+
 &lt;/style&gt;    
 &lt;title&gt;Rapport Sjabloon &lt;!--TODO naam aanpassen. Structuur is altijd "Rapport + thema" zonder gebiedsnaam--&gt;&lt;/title&gt;
 &lt;meta name="format-detection" content="telephone=no"/&gt;
 &lt;link type="text/css" rel="stylesheet" href="style/ipo_dynamic.css" /&gt;
 &lt;link type="text/css" rel="stylesheet" href="style/report_table.css" /&gt;
 
-&lt;swingcode&gt;
-&lt;inputs&gt;
+&lt;swingcode&gt;&lt;!-- hierin wordt de data verzameld--&gt;
+&lt;inputs&gt;&lt;!-- hier bepalen we wat een eindgebruiker kan kiezen --&gt;
 #
 input_geo=input
 {
@@ -50,14 +56,11 @@ input_compare=input
 #
 
 &lt;/inputs&gt;
-&lt;extra&gt; 
+&lt;extra&gt; &lt;!-- extra code om het rapport bij te sturen in diverse situaties --&gt;
 #
 /* maakt het gemakkelijker om het gekozen gebiedsniveau aan te spreken */
 geolevel = level(item(input_geo, 0))
 
-/* om gemakkelijk een steeds werkend vergelijkingsgebied te hebben voor z-scores */
-input_compare_first = item(input_compare,0)
-input_geo_splitup = Descendants(item(input_compare,0), geolevel)
 
 
 /* telt het aantal gekozen gebieden */
@@ -86,9 +89,7 @@ count_compare=ListCount(Items(telcompare, dim_geocompare))-count
 if count=1 then
         gekozen_gebied = name(item(input_geo,0))
     else if count=2 then 
-        // TODO deze kan beter indien we weten hoe tekst samen te voegen
-        // we willen hier eigenlijk = Concat(name(item(input_geo,0)), " en ", name(item(input_geo,1)))
-        gekozen_gebied = show(input_geo)
+        gekozen_gebied = show(input_geo, " en ")
     else if count&gt;2 then
         gekozen_gebied = "de gekozen gebieden"
 end if
@@ -109,6 +110,14 @@ else
     toon_totaal = false
 end if 
 
+/* schakelaar om tabellen te kantelen, te gebruiken wanneer er twee gebieden en twee vergelijkingsgebieden 
+gekozen zijn en daardoor de tabel te breed wordt voor de pagina*/
+if count=2 then
+	dimensies_aanpassen = [dim_geocompare, dim_variable, dim_period]
+else
+    dimensies_aanpassen = [dim_variable, dim_period, dim_geocompare]
+end if
+
 
 test_brussel = Presentation {
         Selection {
@@ -122,13 +131,12 @@ test_brussel = Presentation {
 
 
 
-/* maakt het gemakkelijker om het gekozen gebiedsniveau aan te spreken */
-gekozen_gebiedsniveau = level(item(input_geo, 0))
+
 /* om gemakkelijk een steeds werkend vergelijkingsgebied te hebben voor z-scores */
 input_compare_first = item(input_compare,0)
 input_compare_level = level(item(input_compare,0))
 input_compare_level_second = level(item(input_compare,1))
-input_geo_splitup = Descendants(item(input_compare,0), gekozen_gebiedsniveau)
+input_geo_splitup = Descendants(item(input_compare,0), geolevel)
 
 /* namen vergelijkingsgebieden */
 vergelijkingsgebied_first = name(item(input_compare,0))
@@ -174,12 +182,40 @@ introkaart2 = Presentation {
 	ViewDimensions: [dim_geocompare, dim_variable, dim_period];
 	LayoutClass: "introkaart";
 }
+
+introkaart3 = Presentation {
+	Selection {
+		Ind.v1111a_tot_bevolking;
+		MostRecentPeriod: 1;
+		input_compare;
+		SplitUp: geo.gemeente;
+	};
+	View: Map;
+	ViewDimensions: [dim_geo, dim_variable];
+	LayoutClass: "introkaart";
+	FavoriteGeoItem: Parent(item(input_geo,0), gemeente);
+}
+
+introkaart4 = Presentation {
+	Selection {
+		[Ind.v1111a_tot_bevolking];
+		MostRecentPeriod: 1;
+		Parent(item(input_geo,0), gemeente);
+		SplitUp: geo.deelgemeente;
+	};
+	View: Map;
+	ViewDimensions: [dim_geo, dim_variable, dim_period];
+	LayoutClass: "introkaart";
+	FavoriteGeoItem: item(input_geo,0);
+}
 #
 &lt;/extra&gt;
-&lt;selections&gt;
+&lt;selections&gt; &lt;!-- code voor de eigenlijke data-bevragingen / figuren --&gt;
 
 
 #
+
+/* begin voorbeeldpresentaties van het sjabloon. TODO: verwijderen. */
 
 tabel_bevolking = Presentation {
 	Selection {
@@ -231,49 +267,96 @@ tabel_vt024 = Presentation {
 	ViewDimensions: [dim_variable, dim_geocompare];
 }
 
+tabel_emissie_sector_tweejaren = Presentation {
+	Selection {
+		[Ind.v2501_emissie_hh, Ind.v2501_emissie_pcverv, Ind.v2501_emissie_openverv, Ind.v2501_emissie_tert, Ind.v2501_emissie_ind, Ind.v2501_emissie_lb, Ind.v2501_emissie_openverl, Ind.v2501_emissie_niet_toegekend, Ind.v2501_emissie_totaal];
+		[per._2011,item(mostrecentperiods(v2501_emissie_hh,year,1),0)];
+		input_geo;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+}
 
+
+stapelstaaf_emissie = Presentation {
+	Selection {
+		[Ind.v2501_emissie_hh, Ind.v2501_emissie_pcverv, Ind.v2501_emissie_openverv, Ind.v2501_emissie_tert, Ind.v2501_emissie_ind, Ind.v2501_emissie_lb, Ind.v2501_emissie_openverl, Ind.v2501_emissie_niet_toegekend];
+		MostRecentPeriod: 10;
+		input_geo;
+	};
+	View: BarStacked;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+	LayoutClass: "legende_onder";
+}
+
+stapelstaaf_delijn = Presentation {
+	Selection {
+		[Ind.v2105_lijn_buzzy, Ind.v2105_lijn_omni_25_59, Ind.v2105_lijn_omni_60p, Ind.v2105_lijn_omni_25_64, Ind.v2105_lijn_omni_65p];
+		MostRecentPeriods(Ind.v2105_lijn_buzzy, year, 7);		
+		input_geo;
+	};
+	View: BarStacked;
+	ViewDimensions: [dim_variable, dim_period, dim_geo];
+}
+
+voorbeeld_dimensies_kantelen = Presentation {
+	Selection {
+		[Ind.vp1121_a_65p, Ind.vp1121_a_80p];
+		[Per._2017, Per._2025, Per._2035];
+		input_geo;
+		compare: input_compare;
+		CompareShowGeoIndividual: toon_individueel;
+        CompareShowGeoTotal: toon_totaal;
+	};
+	View: Table;
+	ViewDimensions: dimensies_aanpassen;
+	LayoutClass: "tabel1";
+}
+
+
+/* einde voorbeeldpresentaties van het sjabloon. Begin hieronder de code voor je eigen presentaties.*/
+
+
+/* einde voorbereiding */
 #
 &lt;/selections&gt;    
 &lt;/swingcode&gt;
 &lt;/head&gt;
-&lt;body class="swingreport"&gt;
-&lt;section class="container"&gt;
+&lt;body class="swingreport"&gt;&lt;section class="container"&gt;
+    &lt;!-- dit deel bevat alles om je rapport effectief te laten zien--&gt;
     &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-    
-    
 
-    
-&lt;inleidende_hoofdstukken&gt;    
+&lt;!--inleidende_hoofdstukken--&gt;&lt;!-- dit deel bevat de intro in ruime zin van je rapport --&gt;
 
 
 
 
-&lt;section class="hoofdstuk"&gt;
+&lt;!-- te verwijderen hoofdstuk--&gt;
+&lt;section class="hoofdstuk"&gt;&lt;!-- dit soort section maakt "een valse pagina"--&gt;
 
 &lt;h1&gt;Gebruik van het Sjabloon&lt;/h1&gt;
 
 
 &lt;ul&gt;
-    &lt;li&gt;Gebruik dit rapport niet zonder ook het &lt;a href="https://share.vlaamsbrabant.be/share/page/site/socialeplanning/document-details?nodeRef=workspace://SpacesStore/44a23bf7-0262-41b1-bb4d-757cc38ace63"
-    target="_blank"&gt;draaiboek rapporten&lt;/a&gt; door te nemen. Lees ook &lt;a href="https://swing.eu/handleiding/Rapportenmodule/index.html" target="_blank"&gt;de handleiding van ABF zelf&lt;/a&gt;.
+    &lt;li&gt;Gebruik dit rapport niet zonder ook het &lt;a href="https://share.vlaamsbrabant.be/share/page/site/socialeplanning/document-details?nodeRef=workspace://SpacesStore/44a23bf7-0262-41b1-bb4d-757cc38ace63" target="_blank"&gt;draaiboek rapporten&lt;/a&gt; door te nemen. Lees ook &lt;a href="https://swing.eu/handleiding/Rapportenmodule/index.html" target="_blank"&gt;de handleiding van ABF zelf&lt;/a&gt;.
         &lt;/li&gt;
     &lt;li&gt;Ga naar de rapportentabel, klik op sjabloon_rapport en kies "Rapport Exporteren"&lt;/li&gt;
     &lt;li&gt;Unzip de export, en pas de &amp;lt;code&amp;gt;sjabloon_rapport&amp;lt;/code&amp;gt; aan naar de code van je rapport. Gebruik bij voorkeur van in het begin de definitieve code.
-    Sla op en Importeer Rapport.&lt;/li&gt;
+    Sla op en Importeer Rapport. Je gaat een opmerking krijgen dat bestaande rapporten overschreven zullen worden. Aangezien je net de idientificatiecode van het rapport hebt aangepast, mag je deze opmerking negeren.&lt;/li&gt;
     &lt;li&gt;Lees deze instructies, en verwijder vervolgens de "section" van dit "hoofdstuk"&lt;/li&gt;
     &lt;li&gt;Overal in dit rapport waar je &lt;b&gt;TODO&lt;/b&gt; ziet staan, moet je dingen doen&lt;/li&gt;
     &lt;li&gt;Overal waar &lt;b&gt;meta-todo&lt;/b&gt; staat, is er iets in dit sjabloon dat nog niet helemaal in orde is&lt;/li&gt;
     &lt;li&gt;Vanaf het eerste "inhoudelijk hoofdstuk" wordt dit sjabloon opgevuld met illustratieve code. Hou die even bij, en wis ze als je ze niet meer nodig hebt.&lt;/li&gt;
-    &lt;li&gt;Om grafieken aan te maken, zie &lt;a href="##h5"&gt;5. Grafieken, tabellen en kaarten&lt;/a&gt;
+    &lt;li&gt;Om grafieken aan te maken, zie &lt;a href="##h5"&gt;5. Grafieken, tabellen en kaarten&lt;/a&gt;&lt;/li&gt;
 
 &lt;/ul&gt;
 &lt;p&gt;
-Zie je fouten of potenti&amp;euml;le verbeteringen in dit sjabloon, &lt;a href="https://github.com/provinciesincijfers/PinC-taakopvolging/issues" tagert="_blank"&gt;plaats dan een issue&lt;/a&gt;.
+Zie je fouten of potenti&amp;euml;le verbeteringen in dit sjabloon, &lt;a href="https://github.com/provinciesincijfers/PinC-taakopvolging/issues" target="_blank"&gt;plaats dan een issue&lt;/a&gt;.
 
 &lt;/p&gt;
 &lt;/section&gt;
     
-&lt;!-- BEGIN TODO verwijder dit hoofdstuk als het rapport klaar is --&gt;
+&lt;!-- BEGIN TODO-lijst verwijder dit hoofdstuk als het rapport klaar is --&gt;
 &lt;section class="hoofdstuk"&gt;
 
 &lt;h1&gt;Todo lijst&lt;/h1&gt;
@@ -283,18 +366,25 @@ Zie je fouten of potenti&amp;euml;le verbeteringen in dit sjabloon, &lt;a href="
     &lt;ul&gt;
         &lt;li&gt;Eerste openstaande taakje&lt;/li&gt;
         &lt;li&gt;&lt;strike&gt;Afgevinkt taakje&lt;/strike&gt;&lt;/li&gt;
+        &lt;li&gt;meer voorbeelden jaartallen&lt;/li&gt;
+        &lt;li&gt;uitleggen&lt;/li&gt;
+        &lt;li&gt;werkt meest recente op basis van meerdere onderwerpen?&lt;/li&gt;
+        &lt;li&gt;voorbeeld met block left en block right&lt;/li&gt;
+        &lt;li&gt;afspreken standaardafmeting grafieken&lt;/li&gt;
+        &lt;li&gt;bij instructies: suggestie om alle rommel er direct uit te gooien&lt;/li&gt;
     &lt;/ul&gt;
     
 &lt;/section&gt;
 &lt;!-- EINDE TODO verwijder dit hoofdstuk als het rapport klaar is --&gt;
 
+&lt;!-- begin eigenlijke intro--&gt;
 &lt;section class="hoofdstuk"&gt;
             &lt;!-- regels: 
             NAAM GEBIED ENKEL INDIEN een enkel GEKOZEN GEBIED
             Rapport + thema + gebied --&gt;
 &lt;h1&gt;Rapport Naam 
 #if count=1 then#
-#write(geolevel)# #Show(input_geo)#
+#Show(input_geo)#
 #else#
 #end if#
 
@@ -312,11 +402,11 @@ of gebruik een gratis databank als https://unsplash.com/ --&gt;
 &lt;div&gt;&amp;nbsp;&lt;/div&gt;
 
 &lt;div align="center"&gt;
-    &lt;img src="../jive/Views/MasterPages/css/logos/2.png" style="min-width:100px;" width="18%" /&gt;
-    &lt;img src="images/li.png" style="min-width:100px;" width="18%" /&gt;
-    &lt;img src="../jive/Views/MasterPages/css/logos/5.png" style="min-width:100px;" width="18%" /&gt;
-    &lt;img src="images/vb.png" style="min-width:80px;" width="14%" /&gt;
-    &lt;img src="images/wv.png" style="min-width:100px;" width="18%" /&gt;
+    &lt;img src="images/an.png" style="min-width:100px;" width="18%"&gt;
+    &lt;img src="images/li.png" style="min-width:100px;" width="18%"&gt;
+    &lt;img src="images/ov.png" style="min-width:100px;" width="18%"&gt;
+    &lt;img src="images/vb.png" style="min-width:80px;" width="14%"&gt;
+    &lt;img src="images/wv.png" style="min-width:100px;" width="18%"&gt;
 &lt;/div&gt;
 
 &lt;div&gt;&amp;nbsp;&lt;/div&gt;
@@ -405,7 +495,7 @@ Deze waarschuwing kan weggeklikt worden. Ze staat in een "dontprint" sectie, wat
 
 
 &lt;!-- uitleg over bediening --&gt;
-&lt;p&gt;Momenteel krijgt u het rapport te zien voor &lt;b&gt;#Show(level(item(input_geo,0)))# #show(input_geo)#&lt;/b&gt;.
+&lt;p&gt;Momenteel krijgt u het rapport te zien voor &lt;b&gt;#Show(level(item(input_geo,0)))# #show(input_geo," en ")#&lt;/b&gt;.
 &lt;block class="dontprint"&gt;Klik op de "&lt;a href="##" onclick="Jive.RepWz.Show();"&gt;Wijzig&lt;/a&gt;" knop om andere gebieden en vergelijkingsgebieden kiezen.&lt;/block&gt;
 &lt;block class="printonly"&gt;Raadpleeg &lt;a href="https://provincies.incijfers.be/jive/report?id=rapport_TODO&amp;openinputs=true" target="_top"&gt;het rapport online&lt;/a&gt;
 om andere gebieden en vergelijkingsgebieden te kiezen.&lt;/block&gt;
@@ -419,7 +509,7 @@ Als je twee gebieden kiest, dan worden deze naast elkaar gezet. Kies je meer dan
 &lt;p&gt;
 &lt;!-- niveau 1: vertel enkel meer over vergelijkingsgebieden indien Brussel niet betrokken is--&gt;
 #if Equal((code(item(test_brussel,dim_geocompare,count))), "gewest_2000") then#
-Het huidige rapport vergelijkt &lt;b&gt;#show(input_geo)#&lt;/b&gt; met 
+Het huidige rapport vergelijkt &lt;b&gt;#show(input_geo," en ")#&lt;/b&gt; met 
     &lt;!-- niveau 2: indien er slechts een enkel vergelijkingsgebied is gekozen--&gt;
     #if count_compare=1 then#
     &lt;b&gt;#show(vergelijkingsgebied_first)#&lt;/b&gt;.
@@ -428,11 +518,11 @@ Het huidige rapport vergelijkt &lt;b&gt;#show(input_geo)#&lt;/b&gt; met
     &lt;b&gt;#Write(vergelijkingsgebied_first)#&lt;/b&gt;
         &lt;!-- niveau 3: toon enkel een link indien een "speciaal" vergelijkinsgebied--&gt;
         #if Equal(level(item(input_compare,0)), "gewest") OR Equal(level(item(input_compare,0)), "provincie")  then##else#
-        (&lt;a href="https://provincies.incijfers.be/databank?var=v1111a_tot_bevolking&amp;geolevel=#write(input_compare_level)#&amp;view=map&amp;favorite=#write(code(item(input_compare,0)))#&amp;keepworkspace=true" target="_blank"&gt;bekijk op kaart&lt;/a&gt;)
+        (&lt;a href="https://provincies.incijfers.be/databank?var=v1111a_tot_bevolking&amp;geolevel=#write(code(level(item(input_compare,0))))#&amp;view=map&amp;favorite=#write(code(item(input_compare,0)))#&amp;keepworkspace=true" target="_blank"&gt;bekijk op kaart&lt;/a&gt;)
         #end if#
     en 
         &lt;b&gt;#Write(vergelijkingsgebied_second)#&lt;/b&gt;&lt;!-- nog een niveau 3--&gt;#if Equal(level(item(input_compare,1)),"gewest") OR Equal(level(item(input_compare,1)), "provincie") then#.#else#
-        (&lt;a href="https://provincies.incijfers.be/databank?var=v1111a_tot_bevolking&amp;geolevel=#write(input_compare_level_second)#&amp;view=map&amp;favorite=#write(code(item(input_compare,1)))#&amp;keepworkspace=true" target="_blank"&gt;bekijk op kaart&lt;/a&gt;). 
+        (&lt;a href="https://provincies.incijfers.be/databank?var=v1111a_tot_bevolking&amp;geolevel=#write(code(level(item(input_compare,1))))#&amp;view=map&amp;favorite=#write(code(item(input_compare,1)))#&amp;keepworkspace=true" target="_blank"&gt;bekijk op kaart&lt;/a&gt;). 
         #end if#
     #end if#&lt;!-- einde niveau 2--&gt;
 Binnen dit rapport geven we de kaarten weer als een uitsplitsing van #Write(vergelijkingsgebied_first)#&lt;/a&gt;.
@@ -463,13 +553,14 @@ Binnen dit rapport geven we de kaarten weer als een uitsplitsing van #Write(verg
     Het &lt;a href="https://provincies.incijfers.be/dashboard" target="_blank"&gt;Dashboard&lt;/a&gt; van Provincies in Cijfers geeft je via de tegels een snel overzicht van het data-aanbod. 
     De optie &lt;a href="https://provincies.incijfers.be/databank" target="_blank"&gt;Databank&lt;/a&gt; geeft toegang tot een brede set gegevens die je zelf kan selecteren en combineren.&lt;/p&gt;
     
-    provincies.incijfers.be is een project van de 
+    provincies.incijfers.be is een product van de 
     &lt;a href="https://provincies.incijfers.be/databank?report=project_d_en_a&amp;keepworkspace=true" target="_blank"&gt;interprovinciale werking Data &amp; Analyse&lt;/a&gt;. Zij staan u graag bij
     met vragen over het gebruik van de tool, maar ook bredere vragen rond het gebruik van omgevingsdata bij lokale besturen.&lt;/p&gt;
 &lt;/p&gt;
 
 
 &lt;!-- deel dat op flexibele wijze voor introkaarten zorgt --&gt;
+
 #if count&gt;1 then#
 &lt;div align="center"&gt;
 	&lt;figure&gt;
@@ -481,6 +572,19 @@ Binnen dit rapport geven we de kaarten weer als een uitsplitsing van #Write(verg
 &lt;div align="center"&gt;
 	&lt;figure&gt;
 		#show(introkaart, 750, 400)#
+		&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+#else if Equal(Code(level(item(input_geo,0))), "deelgemeente") then#
+&lt;div class="block-left"&gt;
+	&lt;figure&gt;
+		#show(introkaart3, 400, 330)#
+		&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+&lt;div class="block-right"&gt;
+	&lt;figure&gt;
+		#show(introkaart4, 400, 330)#
 		&lt;figcaption&gt;&lt;/figcaption&gt;
 	&lt;/figure&gt;
 &lt;/div&gt;
@@ -499,39 +603,50 @@ Binnen dit rapport geven we de kaarten weer als een uitsplitsing van #Write(verg
 &lt;/div&gt;    
 
 #end if#
+
 &lt;!-- einde introkaart --&gt;
 
-&lt;!-- we gebruiken keeptogether om de inhoudsopgave op een enkele pagina te houden--&gt;
-&lt;div class="keeptogether"&gt;
+&lt;/section&gt;
 
-&lt;!-- todo: aanpassen aan je eigen rapport--&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;b&gt;Leeswijzer&lt;/b&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;Inleiding&lt;/b&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;&lt;a href="##h1"&gt;1. Basis titels&lt;/a&gt;&lt;/b&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="##h1p1"&gt;1.1 Titels&lt;/a&gt;&lt;/li&gt; 
-            &lt;li&gt;&lt;a href="##h1p2"&gt;1.2 In de tekst verwijzen naar cijfers uit grafieken&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="##h1p3"&gt;1.3 Verwijzen naar figuurnummers in de tekst&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="##h1p4"&gt;1.4 Propere conditionele secties bouwen&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href="##h2"&gt;&lt;b&gt;2. Omgaan met Brussel&lt;/b&gt;&lt;/a&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="##h2p1"&gt;2.1 Todo&lt;/a&gt;&lt;/li&gt; 
-            &lt;li&gt;&lt;a href="##h2p2"&gt;2.2 Todo &lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href="##h3"&gt;&lt;b&gt;3. Doorlinken naar andere rapporten&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="##h4"&gt;&lt;b&gt;4. Weergave PDF bijsturen&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="##h5"&gt;&lt;b&gt;5. Grafieken, tabellen en kaarten&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="##h5p1"&gt;5.1 Kaarten&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="##h5p2"&gt;5.2 Werken met een top 10&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;li&gt;&lt;a href="##voet"&gt;Begrippenlijst&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+
+
+
+&lt;section class="hoofdstuk"&gt;
+
+&lt;!-- we gebruiken keeptogether om de inhoudsopgave op een enkele pagina te houden--&gt;
+&lt;!-- je inhoud is een div, je groot hoofdstuk is een div binnen die div, je subtitels zijn een div
+    binnen de div van je groot hoofdstuk, etc --&gt;
+&lt;h2&gt;&lt;a name=hoofdstuk3&gt;&lt;/a&gt;Inhoudsopgave&lt;/h2&gt;
+
+&lt;div class="inhoudstafel keeptogether"&gt;
+    &lt;div&gt;Leeswijzer&lt;/div&gt;
+    &lt;div&gt;Inleiding&lt;/div&gt;
+    &lt;div class="groothoofdstuk"&gt;&lt;b&gt;&lt;a href="##h1"&gt;1. Basis titels&lt;/a&gt;&lt;/b&gt;&lt;/div&gt;
+        &lt;div class="subtitels"&gt;
+            &lt;div&gt;&lt;a href="##h1p1"&gt;1.1 Titels&lt;/a&gt;&lt;/div&gt; 
+            &lt;div&gt;&lt;a href="##h1p2"&gt;1.2 In de tekst verwijzen naar cijfers uit grafieken&lt;/a&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;a href="##h1p3"&gt;1.3 Verwijzen naar figuurnummers in de tekst&lt;/a&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;a href="##h1p4"&gt;1.4 Propere conditionele secties bouwen&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;div class="groothoofdstuk"&gt;&lt;a href="##h2"&gt;&lt;b&gt;2. Omgaan met Brussel&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="subtitels"&gt;
+            &lt;div&gt;&lt;a href="##h2p1"&gt;2.1 Todo&lt;/a&gt;&lt;/div&gt; 
+            &lt;div&gt;&lt;a href="##h2p2"&gt;2.2 Todo &lt;/a&gt;&lt;/div&gt;
+                &lt;div class="subsubtitels"&gt;
+                    &lt;div&gt;&lt;a href="##leeg"&gt;2.2.1 Todo&lt;/a&gt;&lt;/div&gt; 
+                    &lt;div&gt;&lt;a href="##leeg"&gt;2.2.2 Todo &lt;/a&gt;&lt;/div&gt;
+                &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;div class="groothoofdstuk"&gt;&lt;a href="##h3"&gt;&lt;b&gt;3. Doorlinken naar andere rapporten&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="groothoofdstuk"&gt;&lt;a href="##h4"&gt;&lt;b&gt;4. Weergave PDF bijsturen&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="groothoofdstuk"&gt;&lt;a href="##h5"&gt;&lt;b&gt;5. Grafieken, tabellen en kaarten&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="subtitels"&gt;
+            &lt;div&gt;&lt;a href="##h5p1"&gt;5.1 Kaarten&lt;/a&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;a href="##h5p2"&gt;5.2 Werken met een top 10&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;div class="groothoofdstuk"&gt;&lt;a href="##voet"&gt;Begrippenlijst&lt;/a&gt;&lt;/div&gt;
 &lt;/div&gt;
+
 
 
 &lt;/section&gt;
@@ -553,8 +668,7 @@ Binnen dit rapport geven we de kaarten weer als een uitsplitsing van #Write(verg
 
 &lt;/inleidende_hoofdstukken&gt;
 
-
-
+&lt;sjabloon_inhoudelijke_hoofdstukken&gt;&lt;!-- begin van voorbeelden inhoud sjabloon--&gt;
 
 &lt;section class="hoofdstuk"&gt;
         
@@ -621,7 +735,7 @@ Indien dat niet het geval is, dan staat het sowieso in de tabel, en vervalt de o
 	&lt;/figure&gt;
 	
 
-&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 
 
@@ -699,7 +813,7 @@ jongeren met VT in #Write(Item(input_geo,0))# voor elke 100 jongeren met VT in #
 #else#
 (er zijn meer of minder dan 2 gebieden gekozen)
 #end if#
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 
         
@@ -722,11 +836,11 @@ naar dezelfde grafiek. Of eerst naar grafiek 2 verwijzen en dan pas naar grafiek
 )
 en voor kaarten (
 &lt;span class="teller_kaarttekst"&gt;&lt;/span&gt;
-).&lt;br&gt;
+).&lt;br/&gt;
 Staat je figuurnummer aan het begin van de zin? Gebruik dan &lt;span class="teller_tabeltekst" style="text-transform: capitalize;"&gt;&lt;/span&gt;
 &lt;/p&gt;
 
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 
 
@@ -766,7 +880,7 @@ In die onvoorziene situatie willen we graag een foumelding geven aan onze gebrui
 Klik hier om dit te melden per mail.&lt;/a&gt;
 &lt;/div&gt;
 #end if#
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 
 
@@ -812,7 +926,7 @@ Er wordt iets anders getoond dan een gewest, wat ons leert dat de gekozen gebied
 #end if#
 &lt;/i&gt;&lt;/p&gt;
 
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
         &lt;/section&gt;
 
 
@@ -831,7 +945,7 @@ Dashboard Basisonderwijs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We verwijzen op deze manier naar rapporten: &lt;a href="https://provincies.incijfers.be/jive/report?id=rapport_detailhandel&amp;input_geo=#code(input_geo)#&amp;keepworkspace=true" target="_blank"&gt;Feitenfiche Detailhandel&lt;/a&gt; 
 &lt;/p&gt;
 
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 &lt;section class="hoofdstuk"&gt;
 &lt;h2&gt;&lt;a id="h4"&gt;&lt;/a&gt;4. Weergave PDF bijsturen&lt;/h2&gt;
@@ -853,6 +967,9 @@ Dashboard Basisonderwijs&lt;/a&gt;.&lt;/p&gt;
     &lt;br/&gt;
     Sommige dingen worden veroorzaakt door kleine foutjes in de HTML. Gooi de code eens door een online HTML validator om dit na te gaan. Opgelet: dit vereist enige kennis om te kunnen interpreteren.
 &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
+
 &lt;/section&gt;
 
 
@@ -888,9 +1005,16 @@ lay-out code van de grafieken hebben. Die vind je "achter het oogje" in een view
 https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_rapport. Je kan deze code daar rechtstreeks
 bewerken. Er is ook een user interface, via de Rapporten tabel, klik op de knop in de kolom "Presentatie instellingen".&lt;/p&gt;
 
+&lt;b&gt;Voorbeeld tabellen kantelen&lt;/b&gt;: 
+
+#show(voorbeeld_dimensies_kantelen)#
+
+
 &lt;p&gt;meta-todo: afspreken standaard grootte van grafieken&lt;/p&gt;
 &lt;p&gt;meta-todo: verzamelen goede voorbeelden standaardgrafieken&lt;/p&gt;
 
+
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 
 
@@ -900,7 +1024,7 @@ bewerken. Er is ook een user interface, via de Rapporten tabel, klik op de knop 
 &lt;p&gt;Interactieve kaarten zijn super leuk. Maar gebruik er slechts enkele per rapport. Door het herschalen loopt dit
 zeer traag in met name Internet Explorer, maar ook in andere browsers op wat tragere computers.&lt;/p&gt;
 
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 &lt;section class="hoofdstuk"&gt;
         &lt;h3&gt;&lt;a id="h5p2"&gt;&lt;/a&gt;5.2 Werken met een top 10&lt;/h3&gt;
@@ -909,11 +1033,75 @@ zeer traag in met name Internet Explorer, maar ook in andere browsers op wat tra
       &lt;p&gt;Voor het bevragen van de meest voorkomende items uit een kubus (vb top 10 nationaliteiten), zie 
       &lt;a href="https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_top10" target="_blank"&gt;sjabloon_top10&lt;/a&gt;&lt;/p&gt;
       &lt;/p&gt;
-        
+ 
+ &lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;       
 &lt;/section&gt;    
+
+&lt;/sjabloon_inhoudelijke_hoofdstukken&gt;
+
+&lt;echte_hoofstukken&gt;
+&lt;!-- gebruik het volgende hoofdstuk om van te beginnen met nieuwe inhoud --&gt;
+&lt;section class="hoofdstuk"&gt;
+        &lt;h3&gt;&lt;a id="TODO"&gt;Leeg hoofdstuk om van te vertrekken in je nieuw rapport.&lt;/a&gt;&lt;/h3&gt;
+      
+&lt;p&gt;
+    Deze paragraaf vertelt wat over onderstaande grafiek (namelijk &lt;span class="teller_grafiektekst"&gt;&lt;/span&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+    Daarna volgt een tabel (&lt;span class="teller_tabeltekst"&gt;&lt;/span&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+    En dan een kaart (&lt;span class="teller_kaarttekst"&gt;&lt;/span&gt;).
+&lt;/p&gt;
+
+&lt;p&gt;Stel dat je onderstaande figuur wil aanpassen. De bestaaande heet "tabel_bevolking".
+Als je die wilt vervangen door een nieuwe figuur, bijvoorbeeld pres_1 (die je reeds aan de "selections" hebt toegevoegd),
+vervang dan binnen je "figure" blok alle "tabel_bevolking" tekstjes door "pres_1".&lt;/p&gt;
         
+ 	&lt;figure&gt;
+        &lt;div class="teller_grafiek"&gt;&lt;!-- titel--&gt;
+            Basiskenmerken bevolking in #Write(gekozen_gebied)# en 
+            vergelijkingsgebieden
+            &lt;!-- conditioneel jaartal--&gt;
+            #if ListCount(Items(tabel_bevolking,dim_period))=1 then# 
+            (#show(Period(tabel_bevolking,0))#)
+            #else#
+            #end if#
+            &lt;!-- einde conditioneel jaartal --&gt;
+        &lt;/div&gt;
+            &lt;!-- figuur oproepen --&gt;
+    		#show(tabel_bevolking)#
+		&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;	
+	
+	 &lt;figure&gt;
+        &lt;div class="teller_tabel"&gt;Gemiddeld jaarinkomen 
+        #if ListCount(Items(tabel_inkomen,dim_period))=1 then#
+        (#show(Period(tabel_inkomen,0))#)
+        #else#
+        #end if#&lt;/div&gt;
+    		
+    		#show(tabel_inkomen)#
+		&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
 
+	 &lt;figure&gt;
+        &lt;div class="teller_kaart"&gt;Gemiddeld jaarinkomen 
+        #if ListCount(Items(tabel_inkomen_alt,dim_period))=1 then# (#show(Period(tabel_inkomen_alt,0))#)
+        #else#
+        #end if#&lt;/div&gt;
+    		
+    		#show(tabel_inkomen_alt)#
+		&lt;figcaption&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+	
 
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;/echte_hoofstukken&gt;
+
+&lt;voetnoten_ed&gt;&lt;!-- bevat voetnoten en aanverwanten--&gt;
         &lt;section class="hoofdstuk"&gt;
         &lt;a id="voet"&gt;&lt;/a&gt;
         &lt;!-- optionele hoofdstukjes op basis van onderstaande lijst
@@ -925,20 +1113,20 @@ zeer traag in met name Internet Explorer, maar ook in andere browsers op wat tra
 &lt;a name=voetnoot1&gt;&lt;/a&gt; &lt;a href="##voet1"&gt;1.&lt;/a&gt; &lt;b&gt;Voetnoot over voetnoten&lt;/b&gt;. Je kan natuurlijk enkel terugkeren naar &amp;eacute;&amp;eacute;n plaats waar je
 voetnoot gebruikt werd. Verwijs je op twee plaatsen naar een voetnoot, dan heb je een probleem.
 &lt;/p&gt;
-
+&lt;p&gt;&lt;a href="##top" class="dontprint"&gt;Terug naar de inleiding&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 
-
+&lt;/voetnoten_ed&gt;
 
 
 
 &lt;!-- todo: heb je je laatste pagina zeker afgesloten?--&gt;
 &lt;!-- einde van het rapport --&gt;        
     &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+    
 &lt;/section&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</data><datatype>html</datatype><static>false</static><settings>&lt;PropertyDoc&gt;
+&lt;/html&gt;</data><datatype>html</datatype><static>false</static><settings>&lt;PropertyDoc&gt;
   &lt;PropertySheet&gt;
     &lt;ID&gt;default&lt;/ID&gt;
     &lt;PropertyGroup&gt;
@@ -947,6 +1135,7 @@ voetnoot gebruikt werd. Verwijs je op twee plaatsen naar een voetnoot, dan heb j
       &lt;ShowExcelLink&gt;True&lt;/ShowExcelLink&gt;
       &lt;ShowTableLink&gt;True&lt;/ShowTableLink&gt;
       &lt;LegendDocking&gt;Bottom&lt;/LegendDocking&gt;
+      &lt;ShowGeoCompareGeolevelName&gt;False&lt;/ShowGeoCompareGeolevelName&gt;
       &lt;TitleFont&gt;
         &lt;Family&gt;Tahoma&lt;/Family&gt;
         &lt;Size&gt;10&lt;/Size&gt;
@@ -978,7 +1167,7 @@ voetnoot gebruikt werd. Verwijs je op twee plaatsen naar een voetnoot, dan heb j
         &lt;Size&gt;11&lt;/Size&gt;
         &lt;Style&gt;Regular&lt;/Style&gt;
       &lt;/AxisXFont&gt;
-      &lt;ShowData&gt;True&lt;/ShowData&gt;
+      &lt;ShowData&gt;False&lt;/ShowData&gt;
       &lt;ShowUnitInVariableName&gt;False&lt;/ShowUnitInVariableName&gt;
       &lt;LineOrSpline&gt;Line&lt;/LineOrSpline&gt;
       &lt;MarkerStyle&gt;Circle&lt;/MarkerStyle&gt;
