@@ -1,0 +1,542 @@
+<report><code>rap_armoede</code><name>Rapport Armoede</name><data>&lt;!DOCTYPE html&gt;
+&lt;html lang="nl-BE"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;title&gt;Rapport Armoede&lt;/title&gt;
+&lt;link type="text/css" rel="stylesheet" href="style/ipo_dynamic_incl_tab.css?hfhfhv" /&gt;
+&lt;style&gt;
+	a:link {
+  text-decoration: none;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;inputs&gt; &lt;!-- hier je eigen niscode invullen --&gt;
+#
+gemeente = geo.gemeente._44021
+#&lt;/inputs&gt;
+
+
+
+&lt;RechtopInkomen&gt;
+#
+//Bevolking onder Europese armoedegrens
+inkomen1 = Presentation {
+	Selection {
+	[Ind.dna_vp3108_vt_rechth_0_24_ip, Ind.dna_Vp3108_vt_rechth_25_64_ip];
+	MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+// hulpbehoevende ouderen met een laag inkomen
+inkomen2 = Presentation {
+	Selection {
+		Ind.dna_vp3105_igo;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+// leefloners
+inkomen3 = Presentation {
+	Selection {
+		[Ind.dna_vp3104_rmileefl_ip, Ind.dna_vp3104_rmhleefl_ip];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_mettotaal";
+}
+// lage inkomens
+inkomen4 = Presentation {
+	Selection {
+		[Ind.dna_vp1203bpa_bp_ik1, Ind.dna_vp1203bpa_bp_ik2];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel_mettotaal";
+}
+// kredietnemers met achterstallig krediet
+inkomen5 = Presentation {
+	Selection {
+		Ind.dna_vp3122_betal;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+
+//Huishoudens met betalingsmoeilijkheden
+
+inkomen6 = Presentation {
+	Selection {
+		Ind.sm_ar_betmoeil_samengesteld;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+
+//Moeilijkheden rondkomen met inkomen
+
+inkomen7 = Presentation {
+	Selection {
+		Ind.sm_ar_subjarm_rondk;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+#
+&lt;/RechtopInkomen&gt;
+&lt;RechtopArbeid&gt;
+# 
+// werkloosheidsdruk
+arbeid1 = Presentation {
+	Selection {
+		Ind.dna_vp1321_wlhdruk_t;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}  
+
+// langdurig werkzoekende NWWZ
+arbeid2 = Presentation {
+	Selection {
+		Ind.dna_vp1306_wz_zeerlang;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+// laaggeschoolde NWWZ
+arbeid3 = Presentation {
+	Selection {
+		Ind.dna_vp1304_wz_laag;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+// jonge nwwz
+arbeid4 = Presentation {
+	Selection {
+		Ind.dna_vp1323_nwwz_min25;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+// werkloosheidsgraad
+arbeid5 = Presentation {
+	Selection {
+		[Ind.dna_v1321_wlhgraad_t, Ind.dna_v1323_wlhgraad_min25];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+
+
+// lage werkintensiteit
+arbeid7 = Presentation {
+	Selection {
+		[Ind.sm_r_ar_lwi_gezin, Ind.sm_r_ar_lwi_kdn];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+#    
+    
+&lt;/RechtopArbeid&gt;
+&lt;RechtopGezin&gt;
+#
+// geboorten in kansarm gezin
+gezin1 = Presentation {
+	Selection {
+		Ind.dna_vp3132_kansarmoedeindex;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}  
+
+// alleenwonenden
+gezin2 = Presentation {
+	Selection {
+		[Ind.dna_vp1114a_alleenw, Ind.dna_vp1115a_alleenw_75p];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}  
+
+//eenoudergzinnen met minderjarig kind
+
+gezin3 = Presentation {
+	Selection {
+		Ind.dna_vp1115a_allst_ouder_minst_1_min_k;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}  
+
+// grote gezinnen
+gezin4 = Presentation {
+	Selection {
+		Ind.dna_vp1114a_5pers_plus;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}  
+
+#
+    
+&lt;/RechtopGezin&gt;
+&lt;RechtopWonen&gt;
+#
+//kandidaat-huurders van een sociale woning
+woon1 = Presentation {
+	Selection {
+		Ind.dna_vp2202_wachtlijst_shm_ip;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}  
+//elektriciteitsklanten met een budgetmeter
+woon2 = Presentation {
+	Selection {
+		[Ind.sm_r_ar_energarm_budgmetaard, Ind.dna_vp3123_elektr_meter];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+// afsluitingen
+woon3 = Presentation {
+	Selection {
+		[Ind.sm_r_ar_energarm_afslaard, Ind.sm_r_ar_energarm_afslelek];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+#
+&lt;/RechtopWonen&gt;
+&lt;RechtopOnderwijs&gt;
+#
+//leerlingen met risicoschoolloopbaan
+onderwijs1 = Presentation {
+	Selection {
+		[Ind.dna_vp2301_lager_gewoon_sv_1plus, Ind.dna_vp2301_so_sv_1plus, Ind.dna_vp2301_gsoa_sv_1plus, Ind.dna_vp2301_gsob_sv_1plus, Ind.dna_vp2301_aso_sv_1plus, Ind.dna_vp2301_tso_sv_1plus, Ind.dna_vp2301_bso_sv_1plus, Ind.dna_vp2301_kso_sv_1plus];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+//leerlingen met SES kenmerken
+
+onderwijs2 = Presentation {
+	Selection {
+		[Ind.dna_vp2301_indicator_basis, Ind.dna_vp2301_rktaal_1, Ind.dna_vp2301_so_indicator, Ind.dna_vp2301_so_rktaal_1];
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+onderwijs3 = Presentation {
+	Selection {
+		Ind.dna_vp2360_vsv_w;
+		MostRecentPeriod: 1;
+		geo.gemeente;
+	};
+	View: Table;
+	ViewDimensions: [dim_variable, dim_period];
+	LayoutClass: "tabel";
+}
+#    
+&lt;/RechtopOnderwijs&gt;
+&lt;body class="swingreport"&gt;
+
+&lt;div id="container"&gt;
+    &lt;!-- begin een eerste pagina --&gt;
+
+&lt;section class="hoofdstuk"&gt;
+&lt;h1&gt;Rapport Armoede | #LevelandName(gemeente)#&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+    Armoede is meer dan een gebrek aan inkomen en verwijst naar uitsluiting op meerdere levensdomeinen tegelijk. &lt;/br&gt;
+    Dit rapport is opgebouwd rond 5 levensdomeinen (gebaseerd op sociale grondrechten):
+&lt;/br&gt;
+&lt;ol&gt;
+    &lt;ul type="disc"&gt;
+        &lt;li&gt;&lt;a href="##h1"&gt;het recht op inkomen&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="##h2"&gt;het recht op arbeid&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="##h3"&gt;het recht op gezin&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="##h4"&gt;het recht op wonen&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="##h5"&gt;het recht op onderwijs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+&lt;/ol&gt;
+In deze domeinen bekijken we de relatieve aanwezigheid van groepen mensen voor wie de sociale grondrechten in het gedrang komen. 
+
+&lt;/br&gt;Het rapport is aangemaakt op basis van de meest recente data die we ter beschikking hebben, d.d. &lt;strong&gt;&lt;b&gt;#date("dd-MM-yyyy")#&lt;/b&gt;&lt;/strong&gt;. 
+				De meest actuele versie vind je steeds online op de &lt;a href="https://stad.gent/gentincijfers"&gt;website 'Gent in Cijfers'&lt;/a&gt;.
+               
+                 &lt;/p&gt;
+&lt;h2&gt;&lt;a id="h1"&gt;&lt;/a&gt;Recht op inkomen&lt;/h2&gt;
+&lt;p&gt;In welke mate komt het recht op inkomen in het gedrang voor de bevolking? Deze vraag beantwoorden we a.d.h.v. 4 indicatoren.&lt;/p&gt;
+&lt;h4&gt;Bevolking onder de Europese armoedegrens - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;De Europese armoedegrens valt samen met 60% van het mediaaninkomen in een bepaald gebied. Een goede schatter voor de bevolking die moet rondkomen met een inkomen onder de Europese armoedegrens is het aantal inwoners dat recht heeft op het voorkeurtarief in de ziekteverzekering. Het recht op dit voorkeurtarief is gekoppeld aan strenge inkomensvoorwaarden. &lt;/p&gt;
+&lt;figure&gt;#Show(inkomen1, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Hulpbehoevende ouderen met een laag inkomen - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Een indicator voor hulpbehoevende ouderen met een laag inkomen is het percentage 65-plussers met een tegemoetkoming voor hulp aan bejaarden, officieel gekend als &lt;i&gt;inkomensgarantie voor ouderen (IGO) of een gewaarborgd inkomen voor bejaarden (GIB)&lt;/i&gt;.&lt;/p&gt;
+&lt;figure&gt;#Show(inkomen2, 1600, 900, 3)#&lt;/figure&gt;
+
+&lt;h4&gt;Leefloners - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Ver onder de Europese armoedegrens ligt de wettelijke armoedegrens. Het leefloon als sociale bijstandsuitkering vult het inkomen aan tot de wettelijke armoedegrens. Het recht op inkomen komt dus zeer sterk in het gedrang voor wie het moet stellen met een leefloon of equivalent leefoon. &lt;/p&gt;
+&lt;figure&gt;#Show(inkomen3, 1600, 900, 3)#&lt;/figure&gt;
+&lt;/br&gt;
+&lt;h4&gt;Lage inkomens - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Hoeveel van de belastingplichtigen hebben een fiscaal inkomen lager dan 10.000 euro? Dat is de vraag naar de relatieve aanwezigheid van lage inkomens.&lt;/p&gt;
+&lt;figure&gt;#Show(inkomen4, 1600, 900, 3)#&lt;/figure&gt;
+&lt;/br&gt;
+&lt;!--EINDE PAGINA--&gt;
+&lt;/section&gt;
+&lt;!-- BEGIN EEN VOLGENDE PAGINA --&gt;
+&lt;section class="hoofdstuk"&gt;
+&lt;h4&gt;Kredietnemers met achterstallig krediet - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Hoeveel procent van alle kredietnemers heeft minstens &amp;eacute;&amp;eacute;n achterstallig krediet? Dat is de vraag naar afbetalingsproblemen van kredieten en zegt ook iets over de inkomenssituatie van de bevolking.&lt;/p&gt;
+&lt;figure&gt;#Show(inkomen5, 1600, 900, 3)#&lt;/figure&gt;
+
+&lt;h4&gt;Gezinnen met betalingsmoeilijkheden - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Aandeel (%) van de inwoners dat leeft in een huishouden met achterstallige betaling(en). &lt;br&gt;
+In de survey van de Stadsmonitor wordt gevraagd of het gedurende het afgelopen
+jaar is voorgekomen dat &amp;##8216;&amp;eacute;&amp;eacute;n of meer rekeningen niet (op
+tijd) konden betaald worden om financi&amp;euml;le redenen&amp;##8217;. Daarbij werden
+volgende soorten betalingen voorgelegd aan de respondent: 
+&lt;OL&gt;
+        &lt;li&gt;huishuur/lening voor de woning&lt;/li&gt;
+        &lt;li&gt;rekening van elektriciteit/water/gas/stookolie&lt;/li&gt;
+        &lt;li&gt;gezondheidsuitgaven&lt;/li&gt;
+        &lt;li&gt;terugbetaling van aankopen op afbetaling
+(uitgezonderd voor de woning)&lt;/li&gt;
+        &lt;li&gt;schoolkosten&lt;/li&gt;
+        &lt;li&gt;kinderopvang&lt;/li&gt;
+        &lt;li&gt;andere kosten&lt;/li&gt;
+&lt;/OL&gt;&lt;/p&gt;
+&lt;figure&gt;#Show(inkomen6, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Moeilijkheden rondkomen met inkomen - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Aandeel (%) van de inwoners dat aangeeft moeilijk rond te komen met het maandelijks beschikbare
+inkomen.&lt;br&gt;
+In de survey van de Stadsmonitor werd de volgende
+vraag voorgelegd: &lt;I&gt;Kan je gezin met
+het maandelijks beschikbaar inkomen rondkomen?&lt;/I&gt; 
+ &lt;/p&gt;
+&lt;figure&gt;#Show(inkomen7, 1600, 900, 3)#&lt;/figure&gt;
+&lt;/section&gt;
+
+
+&lt;section class="hoofdstuk"&gt;
+  &lt;h2&gt;&lt;a id="h2"&gt;&lt;/a&gt;Recht op arbeid&lt;/h2&gt;  
+&lt;h4&gt;Werkloosheidsdruk - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Hoeveel procent van de bevolking op actieve leeftijd is een NWWZ (niet-werkende werkzoekende)?&lt;/p&gt;
+&lt;figure&gt;#Show(arbeid1, 1600, 900, 3)#&lt;/figure&gt;
+
+&lt;h4&gt;Kwetsbare categorie&amp;euml;n onder NWWZ&lt;/h4&gt;
+&lt;p&gt;Onder de niet-werkende werkzoekende zijn er drie kwestbare categorie&amp;euml;n: 
+&lt;ol&gt;
+    &lt;Ul="disc"&gt;
+    &lt;Li&gt;wie langer dan twee jaar werkzoekend is&lt;/Li&gt;
+    &lt;li&gt;wie geen diploma secundair onderwijs heeft&lt;/li&gt;
+    &lt;li&gt;wie jonger dan 25 jaar is&lt;/li&gt;&lt;/Ul&gt;
+&lt;/ol&gt;&lt;/p&gt;
+&lt;h5&gt;Langdurig werkzoekenden - #LevelandName(gemeente)#
+&lt;p&gt;Aandeel van de NWWZ (niet-werkende werkzoekenden) die al langer dan 2 jaar werkzoekend zijn&lt;/p&gt;&lt;/h5&gt;
+&lt;figure&gt;#Show(arbeid2, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h5&gt;Laaggeschoolde NWWZ - #LevelandName(gemeente)#
+&lt;p&gt;Aandeel niet-werkende werkzoekenden (NWWZ) die geen diploma secundair onderwijs hebben.&lt;/p&gt;&lt;/h5&gt;
+&lt;figure&gt;#Show(arbeid3, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h5&gt;Jonge NWWZ - #LevelandName(gemeente)#
+&lt;p&gt;Aandeel niet-werkende werkzoekenden (NWWZ) die jonger zijn dan 25 jaar.&lt;/p&gt;&lt;/h5&gt;
+&lt;figure&gt;#Show(arbeid4, 1600, 900, 3)#&lt;/figure&gt;
+
+
+&lt;h4&gt;(Jeugd)werkloosheidsgraad - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;De werkloosheidsgraad geeft het percentage werklozen in de beroepsbevolking (werkende personen + werklozen) weer. De jeugdwerkloosheidsgraad geeft het percentage werklozen onder de beroepsbevolking jonger dan 25 jaar.&lt;/p&gt;
+&lt;figure&gt;#Show(arbeid5, 1600, 900, 3)#&lt;/figure&gt;
+
+&lt;h4&gt;Lage werkintensiteit - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Aandeel (%) personen van 0 tot 59 jaar dat leeft in een
+gezin waarvan de werkintensiteit lager is dan 0,2. De werkintensiteit
+varieert tussen 0 (geen enkel volwassen lid van het
+gezin werkt) tot 1 (alle volwassen leden van het gezin
+werken voltijds). De gezinnen met een werkintensiteit
+lager dan 0,2 worden beschouwd als gezinnen met een
+lage werkintensiteit.&lt;/p&gt;
+ &lt;figure&gt;#Show(arbeid7, 1600, 900, 3)#&lt;/figure&gt;
+ 
+&lt;/section&gt;
+&lt;section class="hoofdstuk"&gt;
+&lt;h2&gt;&lt;a id="h3"&gt;&lt;/a&gt;Recht op gezin&lt;/h2&gt;
+&lt;h4&gt;Geboorten in kansarm gezin - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Geboren worden in een kansarm gezin brengt het recht op gezin in gevaar. Kind &amp; Gezin screent jaarlijks de gezinnen waarin er een geboorte plaatsvindt. Volgens deze screening is een gezin kansarm als er problemen zijn op minstens drie van de zes criteria:
+&lt;ol&gt;
+&lt;ul type="disc"&gt;
+&lt;li&gt;het maandinkomen&lt;/li&gt;
+&lt;li&gt;de arbeidssituatie van de ouders&lt;/li&gt;
+&lt;li&gt;de huisvesting&lt;/li&gt;
+&lt;li&gt;het opleidingsniveau van de ouders&lt;/li&gt;
+&lt;li&gt;het stimulatieniveau naar de kinderen toe&lt;/li&gt;
+&lt;li&gt;de gezondheidssituatie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ol&gt;
+Om de jaarlijkse schommelingen te ondervangen, berekent Kind &amp; Gezin de teller en de noemer van de indicator als een gemiddelde van de 3 meest recente jaren. &lt;/p&gt;
+&lt;figure&gt;#Show(gezin1, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Alleenwonenden - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Alleen wonen is een risicofactor voor armoede. We bekijken het percentage alleenwonenden en het percentage alleenwonenden onder de 75-plussers. Voor deze groep is alleen wonen immers nog meer een risicofactor dan voor jongere leeftijdsgroepen, ook op vereenzaming.&lt;/p&gt;
+&lt;figure&gt;#Show(gezin2, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Eenoudergezinnen met minderjarig kind - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Eenoudergezinnen zijn een kwetsbare groep.&lt;/p&gt;
+&lt;figure&gt;#Show(gezin3, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Grote gezinnen - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Gezinnen van vijf of meer personen geven zicht op de kwetsbare groep van grote gezinnen.&lt;/p&gt;
+&lt;figure&gt;#Show(gezin4, 1600, 900, 3)#&lt;/figure&gt;
+&lt;/section&gt;
+&lt;section class="hoofdstuk"&gt;
+&lt;h2&gt;&lt;a id="h4"&gt;&lt;/a&gt;Recht op wonen&lt;/h2&gt;
+&lt;h4&gt;Kandidaat-huurders van een sociale woning - #LevelandName(gemeente)#&lt;/h4&gt;
+
+&lt;p&gt;Wie huurder is van een sociale woning, kan vaak niet terecht op de priv&amp;eacute;-huurmarkt en is meestal niet in staat om een woning als eigendom te verwerven. Kandidaat-huurders van een sociale woning staan op een wachtlijst voor een sociale woning. Voor hen komt zelfs het recht op sociaal wonen in het gedrang.&lt;/p&gt;
+&lt;figure&gt;#Show(woon1, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Elektriciteitsklanten met een budgetmeter - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Een indicator voor wie moeite heeft om de energiekosten van het wonen te betalen, zijn de klanten met een budgetmeter.In het geval van niet-betaling van de energiekosten mag een sociale leverancier overgaan tot het plaatsen van een budgetmeter of energiebegrenzer bij de klant. Je krijgt hier het aantal klanten met een budgetmeter t.o.v. het totaal aantal klanten.&lt;/p&gt;
+&lt;figure&gt;#Show(woon2, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Afgesloten toegangspunten elektriciteit en gas - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Het aandeel afgesloten toegangspunten elektriciteit (of
+aardgas) ten opzichte van het aantal toegangspunten
+elektriciteit (of aardgas) in de stad.&lt;br&gt;De overheid beschouwt het beschikken over energie
+als een basisrecht. Om de klant te beschermen is er een
+specifieke procedure die de leveranciers en de netbeheerders bij wanbetaling moeten volgen. Slechts in erg
+uitzonderlijke situaties kan de distributienetbeheerder
+de toevoer van elektriciteit en/of aardgas afsluiten. Vooraleer de sociale leverancier een gezin mag afsluiten
+wegens wanbetaling, moet hij het dossier voorleggen
+aan de lokale adviescommissie (LAC) van de gemeente.
+In geval van fraude, bij onveiligheid, bij leegstand of
+als de klant weigert om een contract te tekenen na
+verhuis, is geen LAC-advies nodig.&lt;/p&gt;
+&lt;figure&gt;#Show(woon3, 1600, 900, 3)#&lt;/figure&gt;
+
+&lt;/section&gt;
+&lt;section class="hoofdstuk"&gt;
+&lt;h2&gt;&lt;a id="h5"&gt;&lt;/a&gt;Recht op onderwijs&lt;/h2&gt;
+&lt;p&gt;Waar onderwijskansen in het gedrang komen, staat de toekomst van kinderen en jongeren op het spel.
+&lt;br&gt;De cijfers hieronder gaan telkens over de Gentse jongeren, met woonplaats (WP) in Gent (onafhankelijk van waar ze school lopen).&lt;/p&gt;
+&lt;h4&gt;Schoolse vertraging - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Schoolse vertraging is het aantal leerjaren vertraging dat een leerling oploopt ten aanzien van het leerjaar waarin hij zich zou bevinden als hij normaal zou vorderen.&lt;/p&gt;
+&lt;figure&gt;#Show(onderwijs1, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Indicatorleerlingen en leerlingen die thuis geen Nederlands spreken - #LevelandName(gemeente)#&lt;/h4&gt;
+
+&lt;p&gt;Een &lt;b&gt;indicatorleerling&lt;/b&gt; is een leerling die een schooltoelage ontvangt en/of een laaggeschoolde moeder heeft.&lt;/p&gt;
+&lt;figure&gt;#Show(onderwijs2, 1600, 900, 3)#&lt;/figure&gt;
+&lt;h4&gt;Vroegtijdige schoolverlaters - #LevelandName(gemeente)#&lt;/h4&gt;
+&lt;p&gt;Vroegtijdige schoolverlaters zijn schoolverlaters die de schoolloopbaan be&amp;euml;indigen zonder diploma. Dit verzwakt de kansen van deze jongeren op de arbeidsmarkt.&lt;/p&gt;
+&lt;figure&gt;#Show(onderwijs3, 1600, 900, 3)#&lt;/figure&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</data><datatype>html</datatype><static>false</static><settings>&lt;PropertyDoc&gt;
+  &lt;PropertySheet&gt;
+    &lt;ID&gt;default&lt;/ID&gt;
+    &lt;PropertyGroup&gt;
+      &lt;UserVariableNames&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;dna_vp3105_igo&lt;/Key&gt;
+          &lt;Value&gt;65-plussers met een tegemoetkoming 'hulp aan bejaarden' (t.o.v. alle 65-plussers)&lt;/Value&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;sm_ar_betmoeil_samengesteld&lt;/Key&gt;
+          &lt;Value&gt;gezinnen met betalingsmoeilijkheden (t.o.v alle gezinnen)&lt;/Value&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;dna_vp1115a_alleenw_75p&lt;/Key&gt;
+          &lt;Value&gt;alleenwonende 75-plussers (t.o.v. alle 75-plussers)&lt;/Value&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;dna_vp1115a_allst_ouder_minst_1_min_k&lt;/Key&gt;
+          &lt;Value&gt;alleenstaande ouder met minstens 1 minderjarig kind (t.o.v. alle private huishoudens)&lt;/Value&gt;
+        &lt;/Item&gt;
+        &lt;Item&gt;
+          &lt;Key&gt;dna_vp1114a_5pers_plus&lt;/Key&gt;
+          &lt;Value&gt;gezinnen met 5 of meer personen (t.o.v. alle private huishoudens)&lt;/Value&gt;
+        &lt;/Item&gt;
+        
+        &lt;Item&gt;
+          &lt;Key&gt;sm_ar_subjarm_rondk&lt;/Key&gt;
+          &lt;Value&gt;gezinnen die moeilijk rondkomen met inkomen (t.o.v alle gezinnen)&lt;/Value&gt;
+        &lt;/Item&gt;
+      &lt;/UserVariableNames&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;tabel&lt;/Class&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+
+    &lt;/PropertyGroup&gt;
+    &lt;PropertyGroup&gt;
+      &lt;Class&gt;tabel_mettotaal&lt;/Class&gt;
+      &lt;ShowTitle&gt;False&lt;/ShowTitle&gt;
+      &lt;ShowTotalsVertical&gt;True&lt;/ShowTotalsVertical&gt;
+    &lt;/PropertyGroup&gt;
+  &lt;/PropertySheet&gt;
+&lt;/PropertyDoc&gt;</settings></report>
