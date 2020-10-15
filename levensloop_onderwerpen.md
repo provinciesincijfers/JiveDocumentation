@@ -74,7 +74,7 @@ Wat doet die:
 
 Pas ook de namen aan naar "UITGEDOOFD (sinds NIEUWE DATUM) - oude onderwerpnaam"
    
-### 4. Uiteindelijk wissen van data
+### 4. Uiteindelijk verwijderen van onderwerpen / kubusdimensies
 
 Eventueel kan er op lange termijn overgegaan worden tot het volledig wissen van de onderwerpen uit Swing. Pas nadat een onderwerp uitgedoofd is, kan het gedelete worden. Dit vereist dat wij het deleten en aan de beheerder van de Swing Connector laten weten dat een onderwerp gewist moet worden bij de Connector-klanten.
 Als je een object uiteindelijk wil deleten, dan moet het eerst UITGEDOOFD zijn. Als de vorige stappen goed gebeurt zijn, kan dit geen problemen geven. De Swing Connector verwijdert nooit automatisch records. We moeten dit dus aan de ABF-Connectorbeheerder laten weten, zodat die deze stap manueel kan doorvoeren.
