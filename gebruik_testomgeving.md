@@ -53,16 +53,17 @@ Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebrui
  
  ### Eén map met INDELING-EINDGEBRUIKERS.
  
- Interne medewerkers zien de hele INDELING-EINDGEBRUIKERS  
- Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIEOMGEVING, zodat ze niet overweldigd worden door het data-aanbod  
- De rechten tot data op niveau van de statistische sectoren is geregeld via Toegangsgroepen, omwille van licentie-technische redenen  
+ Mensen met wie we projectmatig werken, zien de hele INDELING-EINDGEBRUIKERS  (door toe te kennen aan usergroup=users) 
+ Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIEOMGEVING, zodat ze niet overweldigd worden door het data-aanbod(zei vb usergroup=ruimte). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
+ De rechten tot data op niveau van de statistische sectoren is geregeld via Toegangsgroepen.  
  
  De map bevat:
  * Submap EXTERN voor gasten
  * Submap INTERN met een uitgebreider aanbod voor onze eigen diensten en speciale klanten. Deze bevat:
- ** Alternatieve thematische indelinegn
- ** Mappen voor Thematische werkgroepen (vb werking Klimaat)
- ** De mappen voor SWING CONNECTOR
+   - Alternatieve thematische indelingenn
+   - Mappen voor Thematische werkgroepen (vb werking Klimaat)
+   - De mappen voor SWING CONNECTOR
+   - Mappen om Dashboard te voeden
 
  ### Eén map om te TESTEN en met gevoelige data
 Deze map is enkel zichtbaar voor Swing Beheerders. Swing-beheerders zijn doorgaans ook "interne medewerkers", maar niet elke interne medewerker is een Swing beheerder.  
