@@ -175,6 +175,8 @@ SAVE TRANSLATE OUTFILE='kubus.xlsx'
 
 ## 3.	Importeren kubusbestand
 
+OPMERKING: in nieuwere Swing versies moet je EERST alle dimensies, dimensieniveaus en dimensieniveau-items aanmaken alvorens je data kunt inlezen.
+
 Je leest een kubusbestand in via Swing studio.
 •	Na het inloggen, kies je voor data > importeren
 •	Vervolgens klik je “bestand kiezen” aan, navigeer naar waar je kubusbestand staat en kies het kubusbestand
@@ -185,8 +187,9 @@ Je leest een kubusbestand in via Swing studio.
 ![afbeelding 11](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image11.jpg)
 ![afbeelding 12](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image12.jpg)
 
-•	Je krijgt een aantal opties te zien. Kruis optie “automatisch alle start- en eindperioden aanpassen” en “Eerst alle data verwijderen” aan
-•	Klik bij de bestandsnaam ook de optie “kolomindeling tonen” open
+*	Je krijgt een aantal opties te zien. Kruis optie “automatisch alle start- en eindperioden aanpassen” en “Eerst alle data verwijderen” aan
+* Kies by "data type" voor "data indicator/column"
+*	Klik bij de bestandsnaam ook de optie “kolomindeling tonen” open
 
 ![afbeelding 13](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image13.jpg)
 
