@@ -30,6 +30,10 @@ Dat betekent dat je voor elke dimensie die je wil aan gebruiken, je moet control
 * hoe je je eigen data naar die codes kunt vertalen
 * of je niet per ongeluk toch nog items toevoegt
 
+Naam van dimensieniveau en dimensie:
+* in woorden, met spaties (geen underscores laten staan!)
+* Dimensie met een hoofdletter, dimensieniveau met een kleine letter
+
 **Controleer bij elke nieuwe kubus of update of alle dimensieniveaus en dimensies in de gebruikersinterface een zinvolle naam hebben.**
 
 De codes binnen een dimensie kan je best als code invullen, niet als de waarde zoals die bij de gebruiker moet verschijnen. Hoe minder tekens, hoe beter. Vermijd speciale tekens en spaties, want die moeten door Swing vertaald worden naar een underscore. Dat duurt langer, en zorgt voor een verschil tussen je databestand en Jive. 
