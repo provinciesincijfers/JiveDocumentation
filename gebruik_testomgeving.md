@@ -1,12 +1,30 @@
-# Testen in Swing, en organiseren van toegang tot data
+# Toegang tot de data organiseren en user accounts aanmaken
 
-Om hier keuzes in te maken, moet je drie concepten begrijpen. Deze staan los van elkaar:
+Om hier keuzes in te maken, moet je dit begrijpen:
 
-- Toegangsgroepen
+- het verschil tussen testOMGEVING, productieOMGEVING, testMAP en productieMAP
+- Waarom je nooit "publiceren van data" mag zeggen
 
-- Het gebruik van de Themaboom in functie van Toegangsgroepen
+## De OMGEVING: Testomgeving & productieomgeving
 
-- Gepubliceerde en niet gepubliceerde data
+**Zeg niet publiceren van data, maar "Live zetten van Data"**
+
+Op het moment dat je data in Swing Studio toevoegt, zijn deze onmiddellijk in Swing beschikbaar via Versie>testen ("de testomgeving", https://provincies.incijfers.be/admin/jive).
+Maar enkel indien je rechten op deze data hebt.  
+Je kan ze enkel *gemakkelijk* raadplegen indien je ook het Thema kunt zien waar ze in staan.  
+Eens je de Databank **live zet** (functie Publish), komt de data terecht in de echte website, "de productieomgeving".
+
+Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebruiker gaat uitzien, dan moet je in de admin/jive omgeving ook nog eens uitloggen. Immers blijf je anders ingelogt met je Beheerders-account, en die heeft normaal gezien steeds recht om alles te zien. Dit wordt wel eens vergeten, ook door de meest ervaren beheerders.
+
+
+## De toegankelijkheid: 
+**Zeg niet publiceren van data, maar "Extern zetten van Data"**
+
+Op het moment dat je data wil delen met de hele wereld, kunnen we ze "extern zetten". Dit omvat:
+- je maakt de Onderwerpen zichtbaar door ze in een map onder EXTERN te zetten
+- je maakt de DimensionLevels van kubussen zichtbaar door ze toe te voegen aan de Accesgroup "extern"
+- je maakt de data op niveau statsec zichbaar door ze toe te voegen aan de Accesgroup "extern_statsec"
+- je zet de Databank live, zodat ze zichtbaar is in de productieomgeving
 
 
 ## Toegangsgroepen & inloggen
@@ -23,22 +41,13 @@ Alle data waar je rechten op hebt, is raadpleegbaar. De Themaboom (zie volgende 
 `?var=onderwerpcode` toe te voegen aan de URL van je website.
 
 
-## Themaboom  en Toegangsgroepen
+## Themaboom en Toegangsgroepen
 
 In de Themaboom organiseer je de inhoud van je Swing-versie in mappen.
 De zichtbaarheid van deze mappen kan je op diverse manieren organiseren. 
 * Je kan een map op "Onzichtbaar" zetten. Dan is ze onzichtbaar, voor iedereen, inclusief jezelf.
 * Je kan Gebruikers binden aan een bepaalde map. Ze kunnen dan enkel aanklikken wat er in die map en zijn submappen zit. Uiteraard kan je gebruikers ook binden aan de hoofdmap waar álles in zit.
 * Een gebruiker ziet enkel mappen die minstens één ding bevat waar die rechten op heeft.
-
-## Gepubliceerde en niet-gepubliceerde data
-
-Op het moment dat je data in Swing toevoegt, zijn deze onmiddellijk in Swing beschikbaar via Versie>testen ("de testomgeving", admin/jive).
-Maar enkel indien je rechten op deze data hebt.  
-Je kan ze enkel *gemakkelijk* raadplegen indien je ook het Thema kunt zien waar ze in staan.  
-Eens je de databank Publiceert, komt de data terecht in de echte website, "de productieomgeving".
-
-Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebruiker gaat uitzien, dan moet je in de admin/jive omgeving ook nog eens uitloggen. Immers blijf je anders ingelogt met je Beheerders-account, en die heeft normaal gezien steeds recht om alles te zien. Dit wordt wel eens vergeten, ook door de meest ervaren beheerders.
 
 
  # Implicaties
@@ -48,6 +57,7 @@ Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebrui
  * Je kan de twee combineren, en de rechten op de "externe" themaboom uitbreiden voor speciale bezoeker. Voorbeeld: "gast" ziet de data voor alle jaren, behalve het meest recente; "internen" zien óók het laatste jaar.
  * Je kan een "externe" perfect toegang geven tot je "testomgeving", zonder dat je risico loopt dat die "te veel ziet". Maar de testomgeving is niet stabiel!
  * Je kan een "externe" perfect data laten zien die hij niet ziet in de Themaboom, door een link te delen van een presentatie. Op voorwaarde dat de data zelf niet afgeschermd is.
+ 
  
  ## Policy op Provincies in Cijfer
  
@@ -66,10 +76,10 @@ Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebrui
    - De mappen voor SWING CONNECTOR
    - Mappen om Dashboard te voeden
 
- ### Eén map om te TESTEN en met gevoelige data
+ ### Eén map ADMIN ONLY met tests en gevoelige data
 Deze map is enkel zichtbaar voor Swing Beheerders. Swing-beheerders zijn doorgaans ook "interne medewerkers", maar niet elke interne medewerker is een Swing beheerder.  
 Deze map bestaat enkel om dingen die nog niet af zijn gemakkelijk te kunnen raadplegen. Op die manier worden "interne medewerkers" hier niet mee lastiggevallen.  
-Wat hier staat is dus zowel beschikbaar in de testomgeving als in de productieomgeving. In beide gevallen enkel als je er rechten op hebt, enkel gemakkelijk vindbaar als je de map TESTMAP kunt zien. En in de productieomgeving als de data al gepubliceerd is.
+Wat hier staat is dus zowel beschikbaar in de testomgeving als in de productieomgeving. In beide gevallen enkel als je er rechten op hebt, enkel gemakkelijk vindbaar als je de map ADMIN ONLY kunt zien. En in de productieomgeving als de data al gepubliceerd is.
 
 ## Praktisch
 
