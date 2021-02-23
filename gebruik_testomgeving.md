@@ -51,11 +51,12 @@ Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebrui
  
  ## Policy op Provincies in Cijfer
  
- ### Eén map met INDELING-EINDGEBRUIKERS.
+ ### Eén map met de PRODUCTIE omgeving.
  
- Mensen met wie we projectmatig werken, zien de hele INDELING-EINDGEBRUIKERS  (door toe te kennen aan usergroup=users) 
- Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIEOMGEVING, zodat ze niet overweldigd worden door het data-aanbod(zei vb usergroup=ruimte). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
- De rechten tot data op niveau van de statistische sectoren is geregeld via Toegangsgroepen.  
+ Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de mappen die we EXTERN laten zien en de mappen die we enkel INTERN laten zien. Dat doe je door hen aan de UserGroup *users* toe te kennen.
+ Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIE omgeving, zodat ze niet overweldigd worden door het data-aanbod (zie vb usergroup=ruimte). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
+ 
+ De rechten tot data op niveau van de statistische sectoren is geregeld via UserGroups.  
  
  De map bevat:
  * Submap EXTERN voor gasten
@@ -70,4 +71,29 @@ Deze map is enkel zichtbaar voor Swing Beheerders. Swing-beheerders zijn doorgaa
 Deze map bestaat enkel om dingen die nog niet af zijn gemakkelijk te kunnen raadplegen. Op die manier worden "interne medewerkers" hier niet mee lastiggevallen.  
 Wat hier staat is dus zowel beschikbaar in de testomgeving als in de productieomgeving. In beide gevallen enkel als je er rechten op hebt, enkel gemakkelijk vindbaar als je de map TESTMAP kunt zien. En in de productieomgeving als de data al gepubliceerd is.
 
- 
+## Praktisch
+
+### Afspraken
+
+* We maken geen groepsaccounts, maar individuele accounts
+* Structuur van de Usercode (en ook Login name): [tweelettercode voor de provincie]_[drielettercode van het project]_[voornaam gebruiker]. Bijvoorbeeld: an_eco_tom
+* Standaard voegen we toe aan de UserGroup "users"
+
+### Aanmaken van accounts
+
+* Maak een Excel aan van deze vorm:
+Login name | Username | MailAddress | UserGroup | Usercode
+-- | -- | -- | -- | --
+an_eco_iemand | Iemand | iemand@iets.be | users | an_eco_iemand
+wv_eco_anders | Anders | anders@ietsanders.be | users | wv_eco_anders
+
+* Importeer deze Excel als metadata in de [tabel Users in Studio](https://provincies.incijfers.be/Admin/Studio/Table?tableName=User). 
+* Wacht tot de Databank gepubliceerd is (als het snel moet gaan kan dit ook via https://provincies.incijfers.be/admin/jive)
+* Geef deze instructies aan de eindgebruikers:
+  * Ga naar https://provincies.incijfers.be/databank
+  * Klik op het hamburger-menu, vervolgens Inloggen:  
+  ![afbeelding](https://user-images.githubusercontent.com/10122639/108837147-23d9f280-75d2-11eb-9f8f-4c6cfbd5c0ad.png)
+  * Probeer niet in te loggen, maar ga rechtsreeks naar "Wachtwoord vergeten". Vul daar je e-mail adres in en wacht op een mail.
+  * Je krijgt verdere instructies per mail. In die mail staan je "naam" (username) en een tijdelijk paswoord.
+
+
