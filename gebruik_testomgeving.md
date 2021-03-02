@@ -85,9 +85,11 @@ Wat hier staat is dus zowel beschikbaar in de testomgeving als in de productieom
 
 ### Afspraken
 
-* We maken geen groepsaccounts, maar individuele accounts
+* We maken geen groepsaccounts, maar individuele accounts.
 * Structuur van de Usercode (en ook Login name): [tweelettercode voor de provincie]_[drielettercode van het project]_[voornaam gebruiker]. Bijvoorbeeld: an_eco_tom
 * Standaard voegen we toe aan de UserGroup "users"
+
+Opmerking: een gebruiker die meerdere keren een verkeerd paswoord ingeeft, wordt op "LockedOut" gezet. Die kunnen dan niet meer zonder hulp binnen. Je kan dat voorkomen door mensen een permanent wachtwoord te geven. Dit is natuurlijk een theoretisch veiligheidsrisico. Een gebruiker die LockedOut is, kan wel nog steeds een paswoord-reset e-mail aanvragen zonder hulp. 
 
 ### Aanmaken van accounts
 
