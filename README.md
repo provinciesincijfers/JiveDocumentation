@@ -103,10 +103,10 @@ Data definiëren doen we in de tabel Data > Onderwerpen. Hiermee wordt enkel het
 
 Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze onderwerpen verzameld. Er zijn **vier grote types** onderwerpen:
 
-- **Gewone of platte onderwerpen** : een reeks waarvoor we data hebben ingeladen per gebied en per jaar
-- **Kubus-onderwerpen** : een reeks waarvoor we data hebben ingeladen per gebied, per jaar en per combinatie van dimensies (vb leeftijd en geslacht). Meer info vind je `hier`.
-- **Stroomdata** : een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. `Meer over stroomdata`.
-- **Formule-onderwerpen** : onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet (zie hoofdstuk Formule-onderwerpen). Meer info vind je `hier`.
+- **Gewone of platte onderwerpen**: een reeks waarvoor we data hebben ingeladen per gebied en per jaar
+- **Kubus-onderwerpen**: een reeks waarvoor we data hebben ingeladen per gebied, per jaar en per combinatie van dimensies (vb leeftijd en geslacht). Meer info vind je `hier`.
+- **Stroomdata**: een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. `Meer over stroomdata`.
+- **Formule-onderwerpen**: onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet (zie hoofdstuk Formule-onderwerpen). Meer info vind je `hier`.
 
 &rarr; *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
 
