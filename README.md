@@ -5,31 +5,31 @@
 :point_right: vanaf &#39;Beheer in Swing&#39; kan je ook klikken om naar de bijhorende map te gaan
 
 
-Beheer van dit document/repo
+- Beheer van dit document/repo
 
-Basisinfrastructuur
+- Basisinfrastructuur
 
-Basisonderdelen beheer
+- Basisonderdelen beheer
 
-Basisafspraken beheer Swing
+- Basisafspraken beheer Swing
 
-Beheer in Swing Studio
+- Beheer in Swing Studio
 
-- [Algemeen databeheer](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/01.%20Algemeen%20databeheer)
-- [Data definiëren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren)
-- [Onderwerpentabel](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel)
-- [Data inlezen](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/04.%20Data%20inlezen)
-- [Themaboom – Toegang beheren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren)
-- [Metadata](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/06.%20Metadata)
-- [Rapporten](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/07.%20Rapporten)
-- [Dashboard](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/08.%20Dashboard)
-- [Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle)
+   - [Algemeen databeheer](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/01.%20Algemeen%20databeheer)
+   - [Data definiëren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren)
+   - [Onderwerpentabel](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel)
+   - [Data inlezen](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/04.%20Data%20inlezen)
+   - [Themaboom – Toegang beheren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren)
+   - [Metadata](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/06.%20Metadata)
+   - [Rapporten](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/07.%20Rapporten)
+   - [Dashboard](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/08.%20Dashboard)
+   - [Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle)
 
-[Communicatie](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/10.%20Communicatie)
+- [Communicatie](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/10.%20Communicatie)
 
-[Opleidingen](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/11.%20Opleidingen)
+- [Opleidingen](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/11.%20Opleidingen)
 
-[Meer weten?](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/12.%20Meer%20info)
+- [Meer weten?](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/12.%20Meer%20info)
 
 # Beheer van dit document/repo
 
