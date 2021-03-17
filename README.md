@@ -132,6 +132,7 @@ Meer info vind je `hier`.
 Dit vind je `hier` terug.
 
 
+
 ## Themaboom - toegang beheren
 
 Dit beheert de inhoud die je kan zien in de Databank, zowel voor ingelogde als niet ingelogde mensen. Maar ook wat er doorstroomt via de Connector of naar de Dashboards.
