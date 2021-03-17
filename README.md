@@ -40,7 +40,8 @@ Beheer in Swing Studio
 
 # Basisinfrastructuur
 
-![](RackMultipart20210317-4-ms2ohb_html_8b2c9aa6cb9fccbc.png)
+![image](https://user-images.githubusercontent.com/77432663/111486597-e9c6c100-8737-11eb-9de1-ed6df3ced1e3.png)
+
 
 # Basisonderdelen beheer
 
