@@ -59,8 +59,8 @@ Vanuit die toepassing kan je ook doorklikken naar **DashAdmin**, de beheerstool 
 
 **Swing Jive** heeft een &quot;live&quot; versie een &quot;test&quot; versie.
 
-- De &quot; **live**&quot; versie provincies.incijfers.be/databank staat op een krachtige server. Je kan er inloggen om gevoelige data of nog niet afgeronde thema&#39;s te raadplegen. Deze versie wordt ververst elke keer we &quot;de Databank live zetten&quot;.
-- De &quot; **test**&quot; versie provincies.incijfers.be/admin/jive staat op een server die enkel bedoeld is om te testen. Je bent er doorgaans ingelogd, maar je kan er uitloggen om te zien wat klanten straks zien op de &quot;live&quot; versie.
+- De &quot;**live**&quot; versie provincies.incijfers.be/databank staat op een krachtige server. Je kan er inloggen om gevoelige data of nog niet afgeronde thema&#39;s te raadplegen. Deze versie wordt ververst elke keer we &quot;de Databank live zetten&quot;.
+- De &quot;**test**&quot; versie provincies.incijfers.be/admin/jive staat op een server die enkel bedoeld is om te testen. Je bent er doorgaans ingelogd, maar je kan er uitloggen om te zien wat klanten straks zien op de &quot;live&quot; versie.
 
 ❓ *Tip om vlot te kunnen testen: Je komt veel over een onderwerp te weten door het op de testomgeving of in de echte databank op te vragen. Als je de onderwerpcode al weet, dan kan dat supersnel via:
 provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
