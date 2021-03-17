@@ -2,7 +2,7 @@
 
 **In dit document:**
 
-(vanaf &#39;Beheer in Swing&#39; kan je klikken om naar de bijhorende repo te gaan, of verder scrollen in dit document)
+:point_right: vanaf &#39;Beheer in Swing&#39; kan je klikken om naar de bijhorende repo te gaan, of verder scrollen in dit document
 
 
 Beheer van dit document/repo
