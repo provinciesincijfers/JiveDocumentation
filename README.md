@@ -35,6 +35,7 @@
 
 - **Kleine wijzigingen** mag je gewoon zo aanpassen.
 - Voor **grote wijzigingen** maak je eerst (indien het nog niet bestaat) een github issue aan waarnaar je vervolgens verwijst bij je aanpassingen. Laat dit ook weten aan Emilien. 
+
 :point_right: `Hier` vind je hoe op een correcte manier wijzigingen kan aanbrengen.
 - Wil je **inhoudelijk iets veranderen** (&quot;deze afspraak vind ik inhoudelijk niet goed&quot;)? Zet het dan op de agenda van de Redactiegroep.
 
