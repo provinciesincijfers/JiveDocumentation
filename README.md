@@ -99,7 +99,7 @@ Wat te doen in het geval van missing values vind je `hier`.
 
 ## Data Definiëren
 
-Data definiëren doen we in de tabel Data\&gt;Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar het hoofdstuk Themaboom Beheren.
+Data definiëren doen we in de tabel Data > Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar het hoofdstuk Themaboom Beheren.
 
 Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze onderwerpen verzameld. Er zijn **vier grote types** onderwerpen:
 
