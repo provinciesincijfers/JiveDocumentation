@@ -69,7 +69,7 @@ provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
 
 Je kan met dit soort parameters alle kanten op. Lees het na op [https://provincies.incijfers.be/databank?report=achter\_de\_schermen](https://provincies.incijfers.be/databank?report=achter_de_schermen)
 
-Of kijk hoe je URLS correct communiceert.
+Of kijk <mark> hoe je URLS correct communiceert </mark>.
 
 De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de **beta-omgeving** : [https://beta-provincies.incijfers.be/](https://beta-provincies.incijfers.be/) . Ook deze heeft een /databank en /admin/jive omgeving.
 
@@ -127,7 +127,7 @@ Meer info vind je hier.
 
 Dit vind je hier terug.
 
-## Themaboom- toegang beheren
+## Themaboom - toegang beheren
 
 Dit beheert de inhoud die je kan zien in de Databank, zowel voor ingelogde als niet ingelogde mensen. Maar ook wat er doorstroomt via de Connector of naar de Dashboards.
 
