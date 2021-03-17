@@ -2,7 +2,7 @@
 
 **In dit document:**
 
-:point_right: vanaf &#39;Beheer in Swing&#39; kan je klikken om naar de bijhorende repo te gaan, of verder scrollen in dit document
+:point_right: vanaf &#39;Beheer in Swing&#39; kan je ook klikken om naar de bijhorende map te gaan
 
 
 Beheer van dit document/repo
