@@ -69,7 +69,7 @@ provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
 
 Je kan met dit soort parameters alle kanten op. Lees het na op [https://provincies.incijfers.be/databank?report=achter\_de\_schermen](https://provincies.incijfers.be/databank?report=achter_de_schermen)
 
-Of kijk <mark> hoe je URLS correct communiceert </mark>.
+Of kijk hoe je URLS correct communiceert.
 
 De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de **beta-omgeving** : [https://beta-provincies.incijfers.be/](https://beta-provincies.incijfers.be/) . Ook deze heeft een /databank en /admin/jive omgeving.
 
@@ -109,7 +109,7 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 
 - Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!
 
-## Onderwerpen-tabel
+## Onderwerpentabel
 
 Voorbeeldbestand
 
@@ -119,7 +119,7 @@ Informatie over de belangrijkste velden vind je hier.
 
 Meer info over data inlezen vind je hier.
 
-### Data\&gt;Importeren - Keuzes bij upload
+### Data importeren - Keuzes bij upload
 
 Meer info vind je hier.
 
