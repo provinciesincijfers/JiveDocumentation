@@ -2,7 +2,7 @@
 
 **In dit document:**
 
-:point_right: vanaf &#39;Beheer in Swing&#39; kan je ook klikken om naar de bijhorende map te gaan
+:point_right: vanaf de titel &#39;Beheer in Swing&#39; kan je ook klikken op de titel zelf in het overzicht om rechtstreeks naar de bijhorende map te gaan
 
 
 - Beheer van dit document/repo
