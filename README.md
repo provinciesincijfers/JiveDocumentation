@@ -55,25 +55,23 @@ Vanuit die toepassing kan je ook doorklikken naar **DashAdmin**, de beheerstool 
 
 - Dit vereist dat de het `draaiboek voor controle van data` en/of `rapporten` is doorlopen
 - De Onderwerpen zijn in de Themaboom EXTERN gezet. De Rapporten zijn toegevoegd op de zes relevante plaatsen. De Dashboard-pagina is zichtbaar gemaakt
-- De Databank en/of het Dashboard worden _live gezet. **De Databank live zetten is dus maar een klein onderdeel van publiceren!**
+- De Databank en/of het Dashboard worden live gezet. **De Databank live zetten is dus maar een klein onderdeel van publiceren!**
 
 **Swing Jive** heeft een &quot;live&quot; versie een &quot;test&quot; versie.
 
 - De &quot; **live**&quot; versie provincies.incijfers.be/databank staat op een krachtige server. Je kan er inloggen om gevoelige data of nog niet afgeronde thema&#39;s te raadplegen. Deze versie wordt ververst elke keer we &quot;de Databank live zetten&quot;.
 - De &quot; **test**&quot; versie provincies.incijfers.be/admin/jive staat op een server die enkel bedoeld is om te testen. Je bent er doorgaans ingelogd, maar je kan er uitloggen om te zien wat klanten straks zien op de &quot;live&quot; versie.
 
-&rarr; Tip om vlot te kunnen testen? Je komt veel over een onderwerp te weten door het op de testomgeving of in de echte databank op te vragen. Als je de onderwerpcode al weet, dan kan dat supersnel via:
-
+&rarr; *Tip om vlot te kunnen testen? Je komt veel over een onderwerp te weten door het op de testomgeving of in de echte databank op te vragen. Als je de onderwerpcode al weet, dan kan dat supersnel via:
 provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
  provincies.incijfers.be/admin/jive?var=v1111a\_tot\_bevolking
-
-Je kan met dit soort parameters alle kanten op. Lees het na op [https://provincies.incijfers.be/databank?report=achter\_de\_schermen](https://provincies.incijfers.be/databank?report=achter_de_schermen)
+Je kan met dit soort parameters alle kanten op. Lees het na op [https://provincies.incijfers.be/databank?report=achter\_de\_schermen](https://provincies.incijfers.be/databank?report=achter_de_schermen)*
 
 Of kijk `hoe je URLS correct communiceert`.
 
 De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de **beta-omgeving** : [https://beta-provincies.incijfers.be/](https://beta-provincies.incijfers.be/) . Ook deze heeft een /databank en /admin/jive omgeving.
 
-&rarr; Hier kan je alles uittesten, alles kapot maken wat je wil, zonder enig risico voor de echte website. De data die erachter zit is een snapshot van de &quot;echte&quot; databank. Dat gaat dus snel verouderd zijn. Voorlopig is met Richard afgesproken dat we op afroep kunnen vragen om de recente versie daar neer te zetten. Op termijn kunnen we wellicht zelf een import-export operatie doen. Als je echt gaat prutsen, maak dan eerst een backup van de databank.
+&rarr; *Hier kan je alles uittesten, alles kapot maken wat je wil, zonder enig risico voor de echte website. De data die erachter zit is een snapshot van de &quot;echte&quot; databank. Dat gaat dus snel verouderd zijn. Voorlopig is met Richard afgesproken dat we op afroep kunnen vragen om de recente versie daar neer te zetten. Op termijn kunnen we wellicht zelf een import-export operatie doen. Als je echt gaat prutsen, maak dan eerst een backup van de databank.*
 
 Meer informatie over het gebruik van de test- en liveomgeving, vind je `hier`.
 
@@ -110,7 +108,7 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 - **Stroomdata** : een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. `Meer over stroomdata`.
 - **Formule-onderwerpen** : onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet (zie hoofdstuk Formule-onderwerpen). Meer info vind je `hier`.
 
-&rarr; Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!
+&rarr; *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
 
 
 ## Onderwerpentabel
