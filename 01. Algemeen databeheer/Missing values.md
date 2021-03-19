@@ -15,8 +15,9 @@ Als je van de bron **geen waarde** krijgt voor iets, dan kan dit betekenen:
 
 ❗   _Aangezien we -99999 gebruiken om PRAKTISCHE redenen, is dit eigenlijk niet altijd een TOGA (ten onrecht geen antwoord), waarvoor het technisch gezien bedoeld is.      Bijvoorbeeld is het &quot;aantal afgewerkte woningen volgens EPB-data&quot; in Brussel eigenlijk &quot;niet van toepassing&quot;, aangezien EPB een Vlaams instrument is. Toch willen we een ongeldig resultaat als we proberen dit op te tellen voor een Vlaamse en Brusselse gemeente!_
 
-  - Als het gaat om een ontbrekende waarde voor een gebied in Vlaanderen, die toch buiten het werkingsgebied van de bron is, dan hoort de hele reeks per definitie niet in PinC te zitten!
-  - Het gaat om een waarde voor een &quot;recente&quot; fusiegemeente die nog niet berekend werd door de bron. Dit is dus inhoudelijk een TOGA (-99999), en mag ook op die manier ingelezen worden.
+   - Als het gaat om een ontbrekende waarde voor een gebied in Vlaanderen, die toch buiten het werkingsgebied van de bron is, dan hoort de hele reeks per definitie niet in PinC te zitten!
+   - Het gaat om een waarde voor een &quot;recente&quot; fusiegemeente die nog niet berekend werd door de bron. Dit is dus inhoudelijk een TOGA (-99999), en mag ook op die manier ingelezen worden.
+
 - **De bron weet dat het er niet is**
   - Dit is het meest courante. Als je gewoon data over X verwerkt, krijg je enkel records waar X voorkomt. Maar eigenlijk weet je dat er geen X zijn in de andere records. Wij vullen daarom steeds onze uploadfiles aan met records met **de waarde 0** voor alle gebieden van het gebiedsniveau waarop je inleest. Indien een totaal de waarde 0 krijgt, krijgen ook de onderliggende subtotalen de waarde 0.
  Bij KUBUSSEN is dit soort aanpassing onhaalbaar. Immers zou je dan nullen moeten inlezen voor alle combinaties die in theorie mogelijk zijn.
