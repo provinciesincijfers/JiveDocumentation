@@ -33,7 +33,7 @@ Een voorbeeld is het aantal personenwagens. De gebruikte variabele meet niet het
 Dit betekent concreet dat vier van de vijf partijen in de redactieraad akkoord gaan. Dit wordt ter info doorgegeven aan de IPWG.
 
 
-❗**Noot: actualisatie van cijfers***
+❗***Noot: actualisatie van cijfers***
 
 _Er is iemand die zich engageert om de data binnen het jaar na publicatie te actualiseren_
 
