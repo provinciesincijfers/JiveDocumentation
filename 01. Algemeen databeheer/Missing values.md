@@ -78,7 +78,7 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 :arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
 
 
-###Online weergave van de verschillende types
+### Online weergave van de verschillende types
 
 :arrow_right:  [zie hier](https://provincies.incijfers.be//jive?workspace_guid=fe11217a-9cdc-44a9-893d-32cd70377046)
 
