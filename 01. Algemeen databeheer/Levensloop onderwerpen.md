@@ -57,11 +57,11 @@ Onderwerpen en kubusdimensies/kubusdimensie-itmes moeten uiteindelijk wel kunnen
 ### 2. De verantwoordelijke laat de onderwerpnaam beginnen met "UITDOVEND (sinds XX/XX/20XX) - oude onderwerpnaam"
 
 Pas de data verder nog niet aan. Op die manier blijft alles werken, maar krijgen "koppige" eindgebruikers toch een duidelijke waarschuwing. We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat toch het geval, laat dit dan weten aan info@provincies.incijfers.be . We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
-Je kan hiervoor [deze excel](https://share.vlaamsbrabant.be/share/page/site/socialeplanning/document-details?nodeRef=workspace://SpacesStore/838b2172-5b54-4ee6-afa2-c2c7ce99303a) (tabblad "uitdovend") gebruiken.
+Je kan hiervoor [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitdovend") gebruiken.
 
 ### 3. Na zes maand wissen we alle data.
 
-Dat kan heel eenvoudig aan de hand van [deze excel](https://share.vlaamsbrabant.be/share/page/site/socialeplanning/document-details?nodeRef=workspace://SpacesStore/838b2172-5b54-4ee6-afa2-c2c7ce99303a) (tabblad "uitgedoofd"). Vul daar in kolom A en B enkel de INDICATOR CODE en de NAME in; de rest wordt voor jou ingevuld.
+Dat kan heel eenvoudig aan de hand van [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitgedoofd"). Vul daar in kolom A en B enkel de INDICATOR CODE en de NAME in; de rest wordt voor jou ingevuld.
 
 Wat doet die:
 * We vervangen elk eerder bestaand cijfer door -99999 in 1970 door in de formule naar onderwerp v9999_uitdovend te verwijzen
