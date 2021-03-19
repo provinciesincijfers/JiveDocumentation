@@ -13,7 +13,7 @@ Als je van de bron **geen waarde** krijgt voor iets, dan kan dit betekenen:
 - **De bron weet het niet**
   - Vaak is een cijfer alleen voor Vlaanderen beschikbaar en niet voor Brussel. We mogen dan doorgaans GEEN som maken van een Brussels en een Vlaams gebied. Bijvoorbeeld mogen we voor bevolking-via-rijksregister Aalst niet met Anderlecht optellen! We moeten hier dus missing type **-99999** gebruiken.
 
-  ❗ Aangezien we -99999 gebruiken om PRAKTISCHE redenen, is dit eigenlijk niet altijd een TOGA (ten onrecht geen antwoord), waarvoor het technisch gezien bedoeld is.      Bijvoorbeeld is het &quot;aantal afgewerkte woningen volgens EPB-data&quot; in Brussel eigenlijk &quot;niet van toepassing&quot;, aangezien EPB een Vlaams instrument is. Toch willen we een ongeldig resultaat als we proberen dit op te tellen voor een Vlaamse en Brusselse gemeente!
+  ❗ ***Aangezien we -99999 gebruiken om PRAKTISCHE redenen, is dit eigenlijk niet altijd een TOGA (ten onrecht geen antwoord)***, waarvoor het technisch gezien bedoeld is.      Bijvoorbeeld is het &quot;aantal afgewerkte woningen volgens EPB-data&quot; in Brussel eigenlijk &quot;niet van toepassing&quot;, aangezien EPB een Vlaams instrument is. Toch willen we een ongeldig resultaat als we proberen dit op te tellen voor een Vlaamse en Brusselse gemeente!
 
   - Als het gaat om een ontbrekende waarde voor een gebied in Vlaanderen, die toch buiten het werkingsgebied van de bron is, dan hoort de hele reeks per definitie niet in PinC te zitten!
   - Het gaat om een waarde voor een &quot;recente&quot; fusiegemeente die nog niet berekend werd door de bron. Dit is dus inhoudelijk een TOGA (-99999), en mag ook op die manier ingelezen worden.
@@ -30,7 +30,7 @@ Als de bron een **gecensureerde waarde geeft** (en de waarde zelf NIET meegeeft)
 - Vanaf gemeentelijk niveau is dit een zeldzaam probleem. Leg de keuze voor op de Redactiegroep. Standaard kies je voor -99997. Maar dan moet je de data inlezen op meerdere gebiedsniveaus om überhaupt een resultaat te krijgen voor Vlaanderen of voor sommige arrondissementen etc. Soms is het sop de kolen niet waard, en kan je bijvoorbeeld een -99996 inladen (ontbreekt, maar een optelling waarin dit zit wordt wel weergegeven). Of je kan het sudoku-gewijs uitrekenen en het getal inladen (uiteraard verborgen onder een drempelwaarde).
 - Op subgemeentelijk niveau: vaker een groter probleem. In principe gebruik je een -99997
 
-❗ Het is NIET wenselijk om een &quot;onbekende waarde&quot; of nul in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.
+❗ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; of nul in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
 
 ###
 
