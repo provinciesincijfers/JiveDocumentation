@@ -67,7 +67,7 @@ Vanuit die toepassing kan je ook doorklikken naar **DashAdmin**, de beheerstool 
 :bulb: *Tip om vlot te kunnen testen: Je komt veel over een onderwerp te weten door het op de testomgeving of in de echte databank op te vragen. Als je de onderwerpcode al weet, dan kan dat supersnel via:
 provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
  provincies.incijfers.be/admin/jive?var=v1111a\_tot\_bevolking
-Je kan met dit soort parameters alle kanten op. Lees het [hier](https://provincies.incijfers.be/databank?report=achter_de_schermen) na*
+Je kan met dit soort parameters alle kanten op. Lees het [hier](https://provincies.incijfers.be/databank?report=achter_de_schermen) na.*
 
 Of kijk `hoe je URLS correct communiceert`.
 
