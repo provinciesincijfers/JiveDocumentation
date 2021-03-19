@@ -96,9 +96,9 @@ Alles over algemeen databeheer vind je [hier](https://github.com/provinciesincij
 
 - [Criteria](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Criteria%20voor%20opname%20in%20PinC.md) waaraan data moeten voldoen om in PinC opgenomen te worden.
 
--[Procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md) voor uitdovende onderwerpen.
+- [Procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md) voor uitdovende onderwerpen.
 
--Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
+- Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
 
 
 ## Data Definiëren
