@@ -58,14 +58,14 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 
 &quot;-99997&quot;: een verborgen waarde (door de dataleverancier gecensureerd)
 
-- Ontbrekende waarden leiden tot het ontbreken van elk resultaat dat hierop verder bouwt
+:arrow_right: Ontbrekende waarden leiden tot het ontbreken van elk resultaat dat hierop verder bouwt
 
 **Er is niets, maar dat kon ook niet anders** (vb: in dit gebied zijn geen meren!):
 
 &quot;-99998&quot;: niet van toepassing (kan hier niet voorkomen)
 
-- Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
-- Voorbeeld: ~~data van Brussel voor een Vlaamse premie~~ (strikt gezien correct, maar wij gebruiken het niet op die manier)
+:arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
+*Voorbeeld: ~~data van Brussel voor een Vlaamse premie~~ (strikt gezien correct, maar wij gebruiken het niet op die manier)*
 
 **Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van vissen in dit meer) :
 
@@ -75,7 +75,7 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 
 - je leest helemaal geen record in
 
-- Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
+:arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
 
 **Online weergave van de verschillende types** : [https://provincies.incijfers.be//jive?workspace\_guid=fe11217a-9cdc-44a9-893d-32cd70377046](https://provincies.incijfers.be//jive?workspace_guid=fe11217a-9cdc-44a9-893d-32cd70377046)
 
