@@ -7,7 +7,7 @@ Data in PinC moeten aan de volgende **vijf criteria** voldoen:
 Gebiedsdekkend betekent &#39;beschikbaar voor alle gemeenten op dezelfde manier&#39;. Gegevens op arrondissementsniveau zijn dus een uitzondering (zie punt 5).
 
 Hier staat &#39;gebiedsdekkend&#39;, en niet &#39;bevolkingsdekkend&#39;. Dit wil zeggen dat enquêtes kunnen voor zover ze voor alle gemeenten beschikbaar zijn op dezelfde manier (bv. de stads- en gemeentemonitor). Voorwaarden voor de opname van enquêtegegevens zijn dat het onder een aparte hoofding &#39;enquêtes&#39; komt en dat er betrouwbaarheidsintervallen bij staan. Dat laatste wil zeggen dat we over de originele data moeten beschikken. Gegevens die op basis van modellen zijn opgesteld vallen onder een aparte hoofding &#39;modellen&#39;.
-
+  
 
 2. **De gegevens zijn bij voorkeur minstens jaarlijks beschikbaar.**
 
