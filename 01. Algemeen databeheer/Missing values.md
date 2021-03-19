@@ -1,6 +1,6 @@
 # Hoe omgaan met gebied onbekend en ontbrekende gegevens
 
-##
+
 
 ## Praktische afspraken
 
@@ -32,9 +32,9 @@ Als de bron een **gecensureerde waarde geeft** (en de waarde zelf NIET meegeeft)
 
 ❗ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; of nul in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
 
-###
 
-###
+
+
 
 ### Onbekende locatie
 
@@ -78,7 +78,8 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 :arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
 
 
-###Online weergave van de verschillende types###
+###Online weergave van de verschillende types
+
 :arrow_right:  [zie hier](https://provincies.incijfers.be//jive?workspace_guid=fe11217a-9cdc-44a9-893d-32cd70377046)
 
 ❗ **Belangrijke implicatie** : als je data hebt die door de bron gecensureerd zijn, moet je dit in theorie inlezen als een type -99997 missing. MAAR alle afgeleide data (formules, gebiedsaggregaties) worden dan ook gecensureerd. Bijvoorbeeld: geen aantal werklozen voor Vlaanderen omdat die van Herstappe gecensureerd zijn! Dit kan dus aanleiding geven om de data incorrect toch als een -99996 in te lezen uit pragmatische overwegingen.
