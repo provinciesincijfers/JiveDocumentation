@@ -94,11 +94,12 @@ De toegankelijkheid wordt geregeld via de themaboom. Meer info vind je `hier`.
 
 Alles over algemeen databeheer vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/01.%20Algemeen%20databeheer).
 
-- [Criteria](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Criteria%20voor%20opname%20in%20PinC.md) waaraan data moeten voldoen om in PinC opgenomen te worden.
+Hier vind je informatie over:
 
-- [Procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md) voor uitdovende onderwerpen.
-
-- Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
+- Criteria waaraan data moeten voldoen om in PinC opgenomen te worden.
+- De procedure voor uitdovende onderwerpen.
+- Wat te doen in het geval van missing values.
+- De berekening van betrouwbaarheidsintervallen.
 
 
 ## Data Definiëren
