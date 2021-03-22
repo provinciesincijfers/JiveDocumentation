@@ -112,7 +112,7 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 - **Stroomdata**: een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. `Meer over stroomdata`.
 - **Formule-onderwerpen**: onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet (zie hoofdstuk Formule-onderwerpen). Meer info vind je `hier`.
 
-:exclamation: *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
+:grey_exclamation: *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
 
 
 ## Onderwerpentabel
