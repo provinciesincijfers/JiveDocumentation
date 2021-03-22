@@ -9,4 +9,4 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 - **Stroomdata** : een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. [Meer over stroomdata](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/stroomdata.md).
 - **Formule-onderwerpen** : onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet (zie hoofdstuk Formule-onderwerpen). Meer info vind je `hier`.
 
-❕_Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!_
+❕ ***Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!***
