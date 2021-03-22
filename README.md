@@ -73,7 +73,7 @@ Of kijk `hoe je URLS correct communiceert`.
 
 De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de [**beta-omgeving**](https://beta-provincies.incijfers.be/) . Ook deze heeft een /databank en /admin/jive omgeving.
 
-:exclamation: *Hier kan je alles uittesten, alles kapot maken wat je wil, zonder enig risico voor de echte website. De data die erachter zit is een snapshot van de &quot;echte&quot; databank. Dat gaat dus snel verouderd zijn. Voorlopig is met Richard afgesproken dat we op afroep kunnen vragen om de recente versie daar neer te zetten. Op termijn kunnen we wellicht zelf een import-export operatie doen. Als je echt gaat prutsen, maak dan eerst een backup van de databank.*
+:grey_exclamation: *Hier kan je alles uittesten, alles kapot maken wat je wil, zonder enig risico voor de echte website. De data die erachter zit is een snapshot van de &quot;echte&quot; databank. Dat gaat dus snel verouderd zijn. Voorlopig is met Richard afgesproken dat we op afroep kunnen vragen om de recente versie daar neer te zetten. Op termijn kunnen we wellicht zelf een import-export operatie doen. Als je echt gaat prutsen, maak dan eerst een backup van de databank.*
 
 Meer informatie over het gebruik van de test- en liveomgeving, vind je `hier`.
 
@@ -112,7 +112,7 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 - **Stroomdata**: een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. `Meer over stroomdata`.
 - **Formule-onderwerpen**: onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet (zie hoofdstuk Formule-onderwerpen). Meer info vind je `hier`.
 
-:exclamation: *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
+:grey_exclamation: *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
 
 
 ## Onderwerpentabel
