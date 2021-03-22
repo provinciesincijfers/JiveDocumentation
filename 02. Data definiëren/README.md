@@ -1,6 +1,6 @@
 # Data Definiëren
 
-Data definiëren doen we in de tabel Data < Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar `Themaboom Beheren`.
+Data definiëren doen we in de tabel Data < Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar [Themaboom Beheren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren).
 
 Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze onderwerpen verzameld. Er zijn **vier grote types** onderwerpen:
 
