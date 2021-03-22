@@ -1,7 +1,5 @@
 # Criteria voor opname in PinC
 
-test emilien
-
 Data in PinC moeten aan de volgende **vijf criteria** voldoen:
 
 1. **De gegevens moeten gebiedsdekkend zijn (niet noodzakelijk bevolkingsdekkend).**
