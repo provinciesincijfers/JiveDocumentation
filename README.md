@@ -93,7 +93,8 @@ De toegankelijkheid wordt geregeld via de themaboom. Meer info vind je `hier`.
 ## Algemeen databeheer
 
 Alles over algemeen databeheer vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/01.%20Algemeen%20databeheer).
-Hier vind je informatie over
+
+Hier vind je informatie over:
 
 - Criteria waaraan data moeten voldoen om in PinC opgenomen te worden.
 - De procedure voor uitdovende onderwerpen.
