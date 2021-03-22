@@ -99,7 +99,7 @@ Hier vind je informatie over:
 - Criteria waaraan data moeten voldoen om in PinC opgenomen te worden.
 - De procedure voor uitdovende onderwerpen.
 - Wat te doen in het geval van missing values.
-- En meer informatie over de berekening van betrouwbaarheidsintervallen.
+- De berekening van betrouwbaarheidsintervallen.
 
 
 ## Data Definiëren
