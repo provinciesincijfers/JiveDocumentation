@@ -13,3 +13,5 @@ In dit onderdeel vind je informatie over:
 Indien de inhoud van een Onderwerp radicaal zou wijzigen (vb vanaf nu betekent &quot;werkloosheid bij ouderen&quot; 55+ ipv 50+), maak dan een nieuw onderwerp aan. Je weet immers niet in welke context dit Onderwerp gebruikt wordt.*
 
 - Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
+
+- Heb je graag wat meer info over de berekening van betrouwbaarheidsintervallen? Dat kan hier voor meer uitleg, of hier voor een voorbeeld. 
