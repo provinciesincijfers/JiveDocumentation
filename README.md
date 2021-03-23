@@ -96,15 +96,15 @@ Alles over algemeen databeheer vind je [hier](https://github.com/provinciesincij
 
 Hier vind je informatie over:
 
-- Criteria waaraan data moeten voldoen om in PinC opgenomen te worden.
-- De procedure voor uitdovende onderwerpen.
-- Wat te doen in het geval van missing values.
-- De berekening van betrouwbaarheidsintervallen.
+- **Criteria** waaraan data moeten voldoen om in PinC opgenomen te worden.
+- De **procedure voor uitdovende onderwerpen**.
+- Wat te doen in het geval van **missing values**.
+- De berekening van **betrouwbaarheidsintervallen**.
 
 
 ## Data Definiëren
 
-Data definiëren doen we in de tabel Data > Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar het hoofdstuk Themaboom Beheren.
+Data definiëren doen we in de tabel Data > Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar het hoofdstuk `Themaboom Beheren`.
 
 Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze onderwerpen verzameld. Er zijn **vier grote types** onderwerpen:
 
