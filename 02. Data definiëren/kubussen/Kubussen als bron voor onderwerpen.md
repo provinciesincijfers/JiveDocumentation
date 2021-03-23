@@ -4,7 +4,7 @@ Om een bepaalde categorie in de formule te krijgen moet je de kubus benoemen, de
  
 `Cell(naam kubus , naam_dimensieniveau_itemcode, naam_dimensieniveau_itemcode)`
  
-Een paar voorbeelden:
+Een paar **voorbeelden:**
 
 Uit de kubus “Inwoners naar nationaliteit, leeftijd (10 klassen) en geslacht” willen we de 0 tem 9-jarigen en de 10 tem 19-jarigen optellen.
 - De naam van de kubus is natcube10
