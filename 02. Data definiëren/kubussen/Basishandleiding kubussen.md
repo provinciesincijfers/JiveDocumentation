@@ -186,20 +186,20 @@ SAVE TRANSLATE OUTFILE='kubus.xlsx'
 
 Je leest een kubusbestand in via Swing studio.
 
-•	Na het inloggen, kies je voor data > importeren
+•	Na het inloggen, kies je voor data > importeren.
 
-•	Vervolgens klik je “bestand kiezen” aan, navigeer naar waar je kubusbestand staat en kies het kubusbestand
+•	Vervolgens klik je “bestand kiezen” aan, navigeer naar waar je kubusbestand staat en kies het kubusbestand.
 
-•	Kies vervolgens voor upload
+•	Kies vervolgens voor upload.
 
 ![afbeelding 9](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image9.jpg)
 ![afbeelding 10](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image10.jpg)
 ![afbeelding 11](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image11.jpg)
 ![afbeelding 12](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image12.jpg)
 
-*	Je krijgt een aantal opties te zien. Kruis optie “automatisch alle start- en eindperioden aanpassen” en “Eerst alle data verwijderen” aan
-* Kies by "data type" voor "data indicator/column"
-*	Klik bij de bestandsnaam ook de optie “kolomindeling tonen” open
+*	Je krijgt een aantal opties te zien. Kruis optie “automatisch alle start- en eindperioden aanpassen” en “Eerst alle data verwijderen” aan.
+* Kies by "data type" voor "data indicator/column".
+*	Klik bij de bestandsnaam ook de optie “kolomindeling tonen” open.
 
 ![afbeelding 13](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image13.jpg)
 
@@ -208,7 +208,7 @@ Je leest een kubusbestand in via Swing studio.
 
 ![afbeelding 14](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image14.jpg)
 
-•	Vervolgens kies je links onder voor “importeren”
+•	Vervolgens kies je links onder voor “importeren”.
 
 ![afbeelding 15](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image15.jpg)
 
@@ -243,9 +243,9 @@ De dimensies aanpassen doe je in 2 stappen:
 Als je gedetailleerde informatie oplaadt, dan kan je die binnen Swing laten aggregeren tot eenvoudigere informatie. Bijvoorbeeld zou je nationaliteiten kunnen aggregeren naar landengroepen. Een eindgebruiker kan dan binnen een dimensie kiezen op welk dimensieniveau deze moet weergegeven worden. Je kan dit volledig inlezen via een excel-bestand. Zie de voorbeelden in deze map [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/vb_aggregatietabellen.xls) en [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/voorbeeld_aggragtietabellen_20171127.xls).
 De volgorde is zo:
 - je hebt een Dimensie nodig (vb nationaliteit)
-- je hebt twee (of meer) Dimensieniveau's nodig die binnen deze Dimensie een plaats hebben (vb. land, landengroep)
+- je hebt twee (of meer) Dimensieniveaus nodig die binnen deze Dimensie een plaats hebben (vb. land, landengroep)
 - deze Dimensieniveaus hebben Items nodig (vb Nederland, EU)
-- nu kan je een aggregatietabel inlezen (met daarin rijen die aan Swing vertellen "Nederland ligt in de EU)
+- nu kan je een aggregatietabel inlezen (met daarin rijen die aan Swing vertellen "Nederland ligt in de EU")
 
 
 ## 5.	Onderbrengen in de themaboom
