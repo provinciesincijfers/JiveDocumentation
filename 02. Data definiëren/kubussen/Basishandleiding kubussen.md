@@ -75,7 +75,7 @@ In eerste instantie wordt vanuit het betreffende basisbestand een bestand aangem
 -	Onderwerp: dit is de teller of de aantallen
 -	Dimensies: dit zijn de kenmerken (bv nationaliteit, leeftijdsindeling, economische sectoren). Er kunnen meerdere dimensies zijn, dus ook meerdere velden.
 
-Hou bij het design rekening met:
+**Hou bij het design rekening met:**
 - je kan **slechts één onderwerp opladen**. Maar je kan wel meerdere identieke kubussen opladen met andere onderwerpen, en die kubussen combineren.
 - kies **per dimensie slechts één dimensieniveau**. Als je meerdere leeftijdsindelingen wilt, laadt dan de meest gedetailleerde in, en gebruik aggregaties om er andere uit af te leiden
 - **het product van je dimensieniveauitems (2 geslachten * 10 leeftijdscategorieen = 20 combinaties) moet kleiner zijn dan 10.000**. Iedereen moet zichzelf terugvinden in elk dimensieniveau! Als bijvoorbeeld een dimensieniveau niet van toepassing is op een deel van de bevolking, dan moet je een categorie "niet van toepassing" voorzien.
