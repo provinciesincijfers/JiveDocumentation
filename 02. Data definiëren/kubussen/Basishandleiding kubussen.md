@@ -30,35 +30,35 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
     
 5.	Onderbrengen in de themaboom
 
-*Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
+❕ *Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
 
-*Deze handleiding gaat uit van het inladen van enkel data, waarbij Swing dan op basis daarvan de structuur van de data gaat achterhalen. Je kan ook de structuur zelf opladen, zodat Swing enkel nog de data in de juiste structuur moet steken. Dit kan op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)*
-*Je vindt [hier](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/kubussen/vb_metadata_kubus.xls) een voorbeeldbestand van Metadata over kubusdimensies en dimensie-aggregatie.*
+❕ *Deze handleiding gaat uit van het inladen van enkel data, waarbij Swing dan op basis daarvan de structuur van de data gaat achterhalen.* ***Je kan ook de structuur zelf opladen, zodat Swing enkel nog de data in de juiste structuur moet steken***. *Dit kan op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)*
+*Je vindt [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/voorbeeld_metadata_kubus_onderwijs_20171127.xlsx) een voorbeeldbestand van Metadata over kubusdimensies en dimensie-aggregatie.*
 
 ## 1.	Inleiding
 
-In Swing bestaat de mogelijkheid gegevens in te lezen in kubusvorm. Deze vorm laat toe om gegevens in te lezen met verschillende kenmerken, die bij raadpleging onderling gekruist kunnen worden. Zo kan men bevolkingsgegevens inlezen met de kenmerken nationaliteitsgroep, geslacht en leeftijd. Men kan dan via deze vorm bevolkingsgegevens opvragen van bijvoorbeeld een nationaliteitsgroep naar leeftijdsgroepen.
+In Swing bestaat de mogelijkheid gegevens in te lezen in kubusvorm. **Deze vorm laat toe om gegevens in te lezen met verschillende kenmerken, die bij raadpleging onderling gekruist kunnen worden.** Zo kan men bevolkingsgegevens inlezen met de kenmerken nationaliteitsgroep, geslacht en leeftijd. Men kan dan via deze vorm bevolkingsgegevens opvragen van bijvoorbeeld een nationaliteitsgroep naar leeftijdsgroepen.
 Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van Swing.
 
 ### 1.1 Conceptueel kader
-* *Dimensie*: conceptueel bestaande manier om de realiteit in te delen (vb. het concept leeftijd)
-* *Dimensieniveau*: de manier waarop dit concept zich uit in de kubus zoals je hem inleest (vb. leeftijdsindeling per 5 jaar)
-* *Dimensieniveau item*: één object binnen het dimensieniveau (vb. 0 te.m. 4 jarigen)
-* *Dimensieniveau itemcode*: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
-* *Dimensie-aggregatie*: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
+* **Dimensie**: conceptueel bestaande manier om de realiteit in te delen (vb. het concept leeftijd)
+* **Dimensieniveau**: de manier waarop dit concept zich uit in de kubus zoals je hem inleest (vb. leeftijdsindeling per 5 jaar)
+* **Dimensieniveau item**: één object binnen het dimensieniveau (vb. 0 te.m. 4 jarigen)
+* **Dimensieniveau itemcode**: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
+* **Dimensie-aggregatie**: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
 
 ### 1.1 Voor- en nadelen
 
-Voordelen:
+**Voordelen:**
 - de eindgebruiker (of de ondersteuner) heeft veel meer mogelijkheden om ad-hoc vragen toch in Swing te beantwoorden
 - je kan heel veel verwerkingen van een bron in één keer opladen
 - je kan de ingeladen data voor vanalles hergebruiken binnen swing
 
-Nadelen:
+**Nadelen:**
 - iets complexer voor eindgebruikers om te gebruiken, vooral om percentages te berekenen
 - fragiel: als een dimensieniveau lichtjes wijzigt, heb je veel beheer binnen Swing
 
-Quirks van Swing:
+**Quirks van Swing:**
 - geen overzicht van "kubussen die een bepaal dimensieniveau gebruiken"
 - geen controle bij inladen op "laat toe om al of niet nieuwe dimensieniveaucodes te maken"
 - sommige lege cellen in Excel worden toch als een dimensiecode herkend
@@ -68,7 +68,7 @@ Quirks van Swing:
 ## 2.	Aanmaak bestand
 
 In eerste instantie wordt vanuit het betreffende basisbestand een bestand aangemaakt in een formaat dat Swing Studio kan inlezen.
-Een bestand voor kubussen bestaat uit 5 types velden:
+**Een bestand voor kubussen bestaat uit 5 types velden:**
 -	Periode: jaar
 -	Gebiedsniveau: buurt (evt. wijk, postzone, district, stad)
 -	Gebieden: de buurtcodes (evt. wijkcodes, …) 
@@ -76,9 +76,9 @@ Een bestand voor kubussen bestaat uit 5 types velden:
 -	Dimensies: dit zijn de kenmerken (bv nationaliteit, leeftijdsindeling, economische sectoren). Er kunnen meerdere dimensies zijn, dus ook meerdere velden.
 
 Hou bij het design rekening met:
-- je kan slechts één onderwerp opladen. Maar je kan wel meerdere identieke kubussen opladen met andere onderwerpen, en die kubussen combineren.
-- kies per dimensie slechts één dimensieniveau. Als je meerdere leeftijdsindelingen wilt, laadt dan de meest gedetailleerde in, en gebruik aggregaties om er andere uit af te leiden
-- het product van je dimensieniveauitems (2 geslachten * 10 leeftijdscategorieen = 20 combinaties) moet kleiner zijn dan 10.000. Iedereen moet zichzelf terugvinden in elk dimensieniveau! Als bijvoorbeeld een dimensieniveau niet van toepassing is op een deel van de bevolking, dan moet je een categorie "niet van toepassing" voorzien.
+- je kan **slechts één onderwerp opladen**. Maar je kan wel meerdere identieke kubussen opladen met andere onderwerpen, en die kubussen combineren.
+- kies **per dimensie slechts één dimensieniveau**. Als je meerdere leeftijdsindelingen wilt, laadt dan de meest gedetailleerde in, en gebruik aggregaties om er andere uit af te leiden
+- **het product van je dimensieniveauitems (2 geslachten * 10 leeftijdscategorieen = 20 combinaties) moet kleiner zijn dan 10.000**. Iedereen moet zichzelf terugvinden in elk dimensieniveau! Als bijvoorbeeld een dimensieniveau niet van toepassing is op een deel van de bevolking, dan moet je een categorie "niet van toepassing" voorzien.
 
 ### 2.1.	Reeds bestaande kubus
 
@@ -89,7 +89,7 @@ Bij aanmaak van een kubus die reeds bestaat, dien je al deze velden op dezelfde 
 
 Indien de kubus nog aangemaakt moet worden, onderneem dan volgende stappen:
 
-*Stap 1: Check of de dimensies die de wil gebruiken reeds in de studio zijn aangemaakt*
+**Stap 1: Check of de dimensies die de wil gebruiken reeds in de studio zijn aangemaakt**
 
 Bepaalde dimensies kunnen in meerdere kubussen voorkomen, maar moeten in de studio maar een keer worden aangemaakt. Indien je dus in een nieuwe kubus een bepaalde bestaande dimensie wil invoeren (bijvoorbeeld een veelgebruikte leeftijdsindeling), is het belangrijk in je nieuw bestand een variabele aan te maken met dezelfde indeling en dezelfde naam. 
 De bestaande dimensies kan je controleren door in Swing Studio te kiezen voor Data > Dimensies. De kolomnaam voor een bestaande dimensie in je bestand moet overeenkomen met de Dimensiecode.
@@ -111,9 +111,9 @@ De code of naam van je categorie in je bestand moet overeenkomen met de itemcode
 ![afbeelding 5](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image5.jpg)
 
 
-*Stap 2: Aanmaak bestand*
+**Stap 2: Aanmaak bestand**
 
-Aan de hand van een voorbeeld beschrijven we het formaat van een bestand. Volgende velden zijn nodig:
+Aan de hand van een voorbeeld beschrijven we het formaat van een bestand. **Volgende velden zijn nodig:**
 -	Periode: jaar
 -	Gebiedsniveau: buurt (evt. wijk, postzone, district, stad)
 -	Gebieden: de buurtcodes (evt. wijkcodes, …) 
@@ -126,7 +126,7 @@ In onderstaand voorbeeld zien we bijvoorbeeld dat er volgens de eerste lijn onde
 ![afbeelding 6](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image6.jpg)
 
 
-Wanneer je het bestand samenstelt, neem volgende aandachtspunten in acht: 
+Wanneer je het bestand samenstelt, neem volgende **aandachtspunten** in acht: 
 -	Voor dimensies die al in andere kubussen zitten (zie stap 1): de kolomtitel=de dimensiecode en de categorieën=itemcodes
 -	Voor nieuwe dimensies mag de kolomtitel niet overeenstemmen met een van de bestaande dimensiecodes.
 -	Het onderwerp (teller) mag niet overeenstemmen met een reeds bestaande onderwerpcode. Dit controleer je door binnen Data > Onderwerpen te kiezen en vervolgens te controleren op het veld onderwerpcode.
@@ -137,7 +137,7 @@ Wanneer je het bestand samenstelt, neem volgende aandachtspunten in acht:
 
 
 
-Om een kubusbestand aan te maken op basis van een basisbestand werk je best met een SPSS-syntax die kan herhaald worden. Hieronder kan je een voorbeeldsyntax vinden
+Om een kubusbestand aan te maken op basis van een basisbestand werk je best met een SPSS-syntax die kan herhaald worden. Hieronder kan je een **voorbeeldsyntax** vinden
 
 ```
 *** In eerste instantie wordt het basisbestand opgeladen en worden eventueel nog een aantal variabelen aangemaakt ***
@@ -182,11 +182,14 @@ SAVE TRANSLATE OUTFILE='kubus.xlsx'
 
 ## 3.	Importeren kubusbestand
 
-OPMERKING: in nieuwere Swing versies moet je EERST alle dimensies, dimensieniveaus en dimensieniveau-items aanmaken alvorens je data kunt inlezen.
+❕ ***In nieuwere Swing versies moet je EERST alle dimensies, dimensieniveaus en dimensieniveau-items aanmaken alvorens je data kunt inlezen.***
 
 Je leest een kubusbestand in via Swing studio.
+
 •	Na het inloggen, kies je voor data > importeren
+
 •	Vervolgens klik je “bestand kiezen” aan, navigeer naar waar je kubusbestand staat en kies het kubusbestand
+
 •	Kies vervolgens voor upload
 
 ![afbeelding 9](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image9.jpg)
@@ -212,7 +215,7 @@ Je leest een kubusbestand in via Swing studio.
 
 ## 4.	Bewerken dimensies en onderwerp
 
-Wanneer je een bestaande kubus inleest, hoeft er verder niets te gebeuren. Bij nieuwe kubussen dienen onderwerp en nieuwe dimensies nog bewerkt te worden.
+Wanneer je een bestaande kubus inleest, hoeft er verder niets te gebeuren. **Bij nieuwe kubussen dienen onderwerp en nieuwe dimensies nog bewerkt te worden.**
 
 ### 4.1.	Onderwerp
 
@@ -224,7 +227,8 @@ Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aange
 ### 4.2.	Dimensies
 
 De dimensies aanpassen doe je in 2 stappen:
-Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen.   
+
+**Stap 1: bewerken dimensies**. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen.   
 •	Kies Data > Dimensies.  
 •	Pas vervolgens naam en metadata aan  
 
@@ -234,7 +238,7 @@ Stap 1: bewerken dimensies. Hier kan je onder andere de naam en de uitleg van de
 
 ### 4.3 Dimensie-aggregatie
 
-Als je gedetailleerde informatie oplaadt, dan kan je die binnen Swing laten aggregeren tot eenvoudigere informatie. Bijvoorbeeld zou je nationaliteiten kunnen aggregeren naar landengroepen. Een eindgebruiker kan dan binnen een dimensie kiezen op welk dimensieniveau deze moet weergegeven worden. Je kan dit volledig inlezen via een excel-bestand. Zie de voorbeelden in deze map.
+Als je gedetailleerde informatie oplaadt, dan kan je die binnen Swing laten aggregeren tot eenvoudigere informatie. Bijvoorbeeld zou je nationaliteiten kunnen aggregeren naar landengroepen. Een eindgebruiker kan dan binnen een dimensie kiezen op welk dimensieniveau deze moet weergegeven worden. Je kan dit volledig inlezen via een excel-bestand. Zie de voorbeelden in deze map [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/vb_aggregatietabellen.xls) en [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/voorbeeld_aggragtietabellen_20171127.xls).
 De volgorde is zo:
 - je hebt een Dimensie nodig (vb nationaliteit)
 - je hebt twee (of meer) Dimensieniveau's nodig die binnen deze Dimensie een plaats hebben (vb. land, landengroep)
@@ -245,7 +249,9 @@ De volgorde is zo:
 ## 5.	Onderbrengen in de themaboom
 
 •	Kies Weergave > Themaboom
-•	Je krijgt rechts te onderwerpenstructuur zoals deze in stad in cijfers te zien is. Links staan alle onderwerpen die in Swing Studio staan ingelezen. 
+
+•	Je krijgt rechts te onderwerpenstructuur zoals deze in stad in cijfers te zien is. Links staan alle onderwerpen die in Swing Studio staan ingelezen.
+
 •	Sleep het onderwerp van de gewenste kubus naar de map binnen de onderwerpenstructuur waar deze thuishoort.
 
 ![afbeelding 19](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image19.jpg)
