@@ -7,20 +7,16 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
 
 
 1.	Inleiding
-2.	Aanmaak bestand
-
-*2.1.	Reeds bestaande kubus*
-
-*2.2.	Nieuwe kubus*
-
+    1.1 Conceptueel kader
+    1.2 Voor- en nadelen
+3.	Aanmaak bestand
+    2.1.	Reeds bestaande kubus
+    2.2.	Nieuwe kubus
 3.	Importeren kubusbestand
 4.	Bewerken dimensies en onderwerp
-
-*4.1.	Onderwerp* 
-*4.2.	Dimensies*  
-*4.3.	Dimensie-aggregatie*  
-
-
+    4.1.	Onderwerp
+    4.2.	Dimensies
+    4.3.	Dimensie-aggregatie
 5.	Onderbrengen in de themaboom
 
 *Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
@@ -33,14 +29,14 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
 In Swing bestaat de mogelijkheid gegevens in te lezen in kubusvorm. Deze vorm laat toe om gegevens in te lezen met verschillende kenmerken, die bij raadpleging onderling gekruist kunnen worden. Zo kan men bevolkingsgegevens inlezen met de kenmerken nationaliteitsgroep, geslacht en leeftijd. Men kan dan via deze vorm bevolkingsgegevens opvragen van bijvoorbeeld een nationaliteitsgroep naar leeftijdsgroepen.
 Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van Swing.
 
-### Conceptueel kader
+### 1.1 Conceptueel kader
 * *Dimensie*: conceptueel bestaande manier om de realiteit in te delen (vb. het concept leeftijd)
 * *Dimensieniveau*: de manier waarop dit concept zich uit in de kubus zoals je hem inleest (vb. leeftijdsindeling per 5 jaar)
 * *Dimensieniveau item*: één object binnen het dimensieniveau (vb. 0 te.m. 4 jarigen)
 * *Dimensieniveau itemcode*: de code waarmee je verwijst naar een dimensieniveau item (vb. "X" verwijst naar "0 te.m. 4 jarigen")
 * *Dimensie-aggregatie*: de manier waarop Swing een gedetailleerd dimensieniveau vertaalt naar een algemener dimensiniveau, binnen dezelfde dimensie. Voorbeeld: "0 t.e.m. 4-jarigen" en "5 t.e.m. 9-jarigen" in het dimensieniveau "leeftijden per 5 jaar" kunnen vertaald worden naar "0 t.e.m. 9 jarigen" in het dimensieniveau "leeftijden per 10 jaar", uiteraard enkel indien beide indelingen tot dezelfde dimensie "leeftijd" behoren.
 
-### Voor- en nadelen
+### 1.1 Voor- en nadelen
 
 Voordelen:
 - de eindgebruiker (of de ondersteuner) heeft veel meer mogelijkheden om ad-hoc vragen toch in Swing te beantwoorden
