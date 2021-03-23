@@ -89,7 +89,7 @@ Bij aanmaak van een kubus die reeds bestaat, dien je al deze velden op dezelfde 
 
 Indien de kubus nog aangemaakt moet worden, onderneem dan volgende stappen:
 
-**Stap 1: Check of de dimensies die de wil gebruiken reeds in de studio zijn aangemaakt**
+**Stap 1: Check of de dimensies die je wil gebruiken reeds in de studio zijn aangemaakt**
 
 Bepaalde dimensies kunnen in meerdere kubussen voorkomen, maar moeten in de studio maar een keer worden aangemaakt. Indien je dus in een nieuwe kubus een bepaalde bestaande dimensie wil invoeren (bijvoorbeeld een veelgebruikte leeftijdsindeling), is het belangrijk in je nieuw bestand een variabele aan te maken met dezelfde indeling en dezelfde naam. 
 De bestaande dimensies kan je controleren door in Swing Studio te kiezen voor Data > Dimensies. De kolomnaam voor een bestaande dimensie in je bestand moet overeenkomen met de Dimensiecode.
@@ -235,6 +235,8 @@ De dimensies aanpassen doe je in 2 stappen:
 
 ![afbeelding 17](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image17.jpg)
 ![afbeelding 18](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image18.jpg)
+
+**Stap 2:** `Hier komt nog iets`
 
 ### 4.3 Dimensie-aggregatie
 
