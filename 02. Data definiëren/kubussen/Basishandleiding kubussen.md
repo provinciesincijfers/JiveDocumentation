@@ -7,16 +7,27 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
 
 
 1.	Inleiding
+
     1.1 Conceptueel kader
+    
     1.2 Voor- en nadelen
-3.	Aanmaak bestand
+
+2.	Aanmaak bestand
+
     2.1.	Reeds bestaande kubus
+    
     2.2.	Nieuwe kubus
+   
 3.	Importeren kubusbestand
+
 4.	Bewerken dimensies en onderwerp
+
     4.1.	Onderwerp
+    
     4.2.	Dimensies
+    
     4.3.	Dimensie-aggregatie
+    
 5.	Onderbrengen in de themaboom
 
 *Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
