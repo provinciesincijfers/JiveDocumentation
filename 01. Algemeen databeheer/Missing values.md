@@ -77,6 +77,16 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 
 :arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
 
+### Aggregatie 
+
+**Standaard worden onderwerpen geaggregeerd door Swing**. In uitzonderlijke gevallen lezen we de data hard in op meerdere niveaus bv. omdat we voor bepaalde gebieden geen data krijgen wegens censuur.
+
+Ook al worden de gegevens per geolevel afzonderlijk ingelezen, **je moet het onderwerp aggregeerbaar maken**. Dit wil zeggen: in de tabel Indicators de kolom “Aggregate geoitems” niet op 0 zetten, dus niet uitvinken. Anders ga je bv. niet de som kunnen nemen van twee gemeenten, ook als die beide geldige data hebben.
+
+Het is niet nodig om dit uit te vinken: **Swing geeft altijd voorkeur aan ingeladen data boven zelf-berekende data** (ttz, het cijfer dat we inlezen voor de provincie gaat gebruikt worden, niet het cijfer dat je gedeeltelijk zou kunnen berekenen op basis van de gemeenten; mocht er bv. geen enkele -99997 bij zitten).
+
+**Soms mogen onderwerpen echt niet geaggregeerd worden** door Swing, bv. als het om een mediaan gaat. **Zet dan de aggregatie uit.**
+
 
 ### Online weergave van de verschillende types
 
