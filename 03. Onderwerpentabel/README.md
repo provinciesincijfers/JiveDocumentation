@@ -10,7 +10,7 @@ Informatie over **tijdelijke onderwerpen** staat [hier](https://github.com/provi
 
 **Tips &amp; tricks:**
 
-- Je kan de functie** &quot;Item toevoegen&quot;** gebruiken, maar dit is **omslachtig als je meer dan één onderwerp wil toevoegen**.
+- Je kan de functie **&quot;Item toevoegen&quot;** gebruiken, maar dit is **omslachtig als je meer dan één onderwerp wil toevoegen**.
 - Als je **meerdere Onderwerpen** wil aanmaken of bijwerken, maak dan een **uploadfile**. Om een uploadfile te maken, klik enkele vergelijkbare Onderwerpen aan in de tabel Onderwerpen, en klik op Metadata exporteren. **Hou enkel de relevante kolommen over,** pas aan en importeer.
 - Als je Onderwerpen aanmaakt of bijwerkt via een uploadfile, laadt dan **enkel de velden op die je wil aanpassen**. Het enige dat je moét hebben, is de **Onderwerpcode**.
 - Je kan **Onderwerp-informatie importeren en exporteren via de knoppen onderaan het scherm**.
