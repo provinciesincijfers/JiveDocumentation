@@ -1,20 +1,20 @@
-# Gebruik van de functie treshold
+# Gebruik van de functie threshold
 
-## Algemeen
+## Over drempelwaarden
 
-- Dit is **de laagste waarde die door Swing getoond mag worden**. De waarde “0” (nul) vormt hier een uitzondering op, deze wordt wél getoond (dit is een algemene instelling).
+- De drempelwaarde is **de laagste waarde die door Swing getoond mag worden**. De waarde “0” (nul) vormt hier een uitzondering op, deze wordt wél getoond (dit is een algemene instelling).
 - De drempelwaarde is **geldig op alle gebiedsniveaus**. We moeten dus de strengste drempel hanteren. 
 - **Meest gebruikt is drempelwaarde 5**. 
 - We **volgen de drempelwaarde van de bron**, ook als die er zelf géén instelt. 
 - **Bij formuleonderwerpen moet je kiezen**. Voor een som kan je gewoon de drempel op het resultaat zetten. Bij breuken hanteer je een Drempelonderwerp, waarbij we de drempel van de teller instellen.
-- Het is ook mogelijk om via de **functie treshold(onderwerp_x)** de drempel van dit onderwerp te laten doorwerken. **We gebruiken dit NIET** omdat het ongewenste collateral damage heeft, zie hieronder.
+- Het is ook mogelijk om via de **functie threshold(onderwerp_x)** de drempel van dit onderwerp te laten doorwerken. **We gebruiken dit NIET** omdat het ongewenste collateral damage heeft, zie hieronder.
 
 ❕ ***Met Drempelonderwerpen kan je ook creatieve uitzonderingen bedenken.***
 
 
-## Ter info
+## Ter info: drempelwaarden strikter toepassen met de functie *Threshold*
 
-Het volgende deel is ter info. Er werd beslist om de functie treshold **niet** te gebruiken.
+Het volgende deel is ter info. Er werd beslist om de functie threshold **niet** te gebruiken.
 
 Binnen Swing was het tot nu toe onmogelijk om (automatisch) een drempelwaarde te zetten op zowel teller als noemer van een percentage. Dit kan nu wel.  
 
@@ -39,8 +39,9 @@ Dit stelt ons voor de keuze:
 Nadelen van dit doen:
 -	Meer metadata nodig om te begrijpen waarom bepaalde waarden niet getoond worden
 -	Je beslist voor de eindgebruiker wat relevant is om te zien of niet
--	Als je zelf dit “even wil negeren”, dan moet je bijvoorbeeld een gebruikersonderwerp aanmaken
+-	Je kan dit voor jezelf niet "snel even overrulen"
 -	Swing Connector kan hier nog niet echt mee om, en de eenvoudigste oplossing is dat wij de formules dubbel beheren
+- Er wordt meer gecensureerd dan we eigenlijk willen: als je binnen Swing a+b+c+d optelt, dan zal de som van a+b+c+d steeds gecensureerd worde, ook als er ergens maar eentje gecensureerd moet worden. Dat betekent dus dat je voor een ad hoc gebied op maat (op basis van enkele kleinere gebieden) je heel vaka geen resultaat gaat krijgen. ABF is niet op de vraag ingegaan om dit te herbekijken.
 
 Voordelen:
 -	Je beschermt mensen tegen foute interpretatie
@@ -49,12 +50,12 @@ Voordelen:
 
 Achter deze link enkele voorbeelden (eerst inloggen!):
 https://provincies.incijfers.be//jive?workspace_guid=493b7a43-636b-40b2-a799-d37c2a22afce
+Let hierbij op het verschil tussen wanneer je noemer totale bevolking hebt vs noemer NWWZ.
 
 1)	Tabel gesorteerd op ongecensureerd percentage (dit toont hoe de meeste extreme percentages weggefilterd worden door noemer-drempel)
 2)	Relatief kleine impact bij kaart op sectorniveau; vooral extreme waarden verdwijnen
 3)	Tabel; veel meer censuur indien drempel op basis van aantal NWWZ
 4)	Kaart die hetzelfde effect toont. Vooral de meer extreme waarden worden gefilterd
 5)	Maar op sectorniveau kan je plots zelf in een grotere stad niets meer zeggen
-6)	En 7): scatterplot die toont hoe de gigantische spreiding in % bij de kleine aantallen wordt verwijderd
-En 8: scatterplot waar je kan zien hoe op sectorniveau bijna alles zal gecensureerd worden.
-
+6)	En 7): vergelijk de scatterplots om te zien hoe de gigantische spreiding in % bij de kleine aantallen wordt verwijderd
+8) Maar op sectorniveau zal bijna alles gecensureerd worden.
