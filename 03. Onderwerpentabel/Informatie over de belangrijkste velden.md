@@ -21,7 +21,7 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
 
 Meer informatie
  verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin bron en methode wordt toegelicht. _Vb. 1205\_rsvz\_zelfstandigen\_voorbeeld\_metadata_
- Per BRON/thema voorzien we deze fiche met meer uitleg over de verschillende onderwerpen die tot deze bron behoren. Gebruik hiervoor het [Sjabloon Metadata](https://share.vlaamsbrabant.be/share/page/site/socialeplanning/documentlibrary?file=Draaiboek%20voor%20controle%20data%20en%20metadata.docx#filter=path%7C%2FProvincies%2520in%2520Cijfers%2FPraktische%2520afspraken%2FSjabloon%2520metadata%7C&amp;page=1).
+ Per BRON/thema voorzien we deze fiche met meer uitleg over de verschillende onderwerpen die tot deze bron behoren. Gebruik hiervoor het `Sjabloon Metadata`.
 
 **Opgelet:** Dit zal in de toekomst veranderen.
 
