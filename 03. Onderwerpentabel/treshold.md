@@ -6,7 +6,8 @@
 - De drempelwaarde is **geldig op alle gebiedsniveaus**. We moeten dus de strengste drempel hanteren. 
 - **Meest gebruikt is drempelwaarde 5**. 
 - We **volgen de drempelwaarde van de bron**, ook als die er zelf géén instelt. 
-- **Bij formuleonderwerpen moet je kiezen**. Voor een som kan je gewoon de drempel op het resultaat zetten. Bij breuken hanteer je een Drempelonderwerp, waarbij we de drempel van de teller instellen. Het is ook mogelijk om via de functie treshold(onderwerp_x) de drempel van dit onderwerp te laten doorwerken. We gebruiken dit NIET omdat het ongewenste collateral damage heeft.
+- **Bij formuleonderwerpen moet je kiezen**. Voor een som kan je gewoon de drempel op het resultaat zetten. Bij breuken hanteer je een Drempelonderwerp, waarbij we de drempel van de teller instellen.
+- Het is ook mogelijk om via de **functie treshold(onderwerp_x)** de drempel van dit onderwerp te laten doorwerken. **We gebruiken dit NIET** omdat het ongewenste collateral damage heeft, zie hieronder.
 
 ❕ ***Met Drempelonderwerpen kan je ook creatieve uitzonderingen bedenken.***
 
