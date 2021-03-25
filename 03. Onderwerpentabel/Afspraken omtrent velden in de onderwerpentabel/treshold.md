@@ -57,5 +57,6 @@ Let hierbij op het verschil tussen wanneer je noemer totale bevolking hebt vs no
 3)	Tabel; veel meer censuur indien drempel op basis van aantal NWWZ
 4)	Kaart die hetzelfde effect toont. Vooral de meer extreme waarden worden gefilterd
 5)	Maar op sectorniveau kan je plots zelf in een grotere stad niets meer zeggen
-6)	En 7): vergelijk de scatterplots om te zien hoe de gigantische spreiding in % bij de kleine aantallen wordt verwijderd
+6)	Bekijk samen met 
+7)	vergelijk de scatterplots om te zien hoe de gigantische spreiding in % bij de kleine aantallen wordt verwijderd
 8) Maar op sectorniveau zal bijna alles gecensureerd worden.
