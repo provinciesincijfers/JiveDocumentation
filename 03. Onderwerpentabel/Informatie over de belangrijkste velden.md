@@ -1,6 +1,6 @@
 # Informatie over de belangrijkste velden
 
-❕ Afspraken rond de verschillende velden vind je in [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel)
+❕ Afspraken rond de verschillende velden vind je in [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel).
 
 ## Volgnummer
 
