@@ -4,7 +4,7 @@ Informatie over de **belangrijkste velden** vind je hier.
 
 Informatie over **tijdelijke onderwerpen** staat hier. Omdat gebruikersonderwerpen niet langer bestaan, kan je hiervan gebruik maken om toch een &#39;ad hoc&#39;-onderwerp aan te maken.
 
-[Voorbeeldbestand](https://share.vlaamsbrabant.be/share/page/site/socialeplanning/document-details?nodeRef=workspace://SpacesStore/8bdb4be4-8e3e-4800-9f0d-c184d6ab5a89)
+[Voorbeeldbestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/01%20vb%20beschrijvende%20info.xlsx)
 
 **De uitzondering:** data die binnenkomt via een Swing Connector. Deze is te identificeren op basis van Beschermd = Ja. Hier heeft het géén zin om te bewerken in de Onderwerpentabel. Bij elke refresh van de data, worden je aanpassingen overschreven. Wil je toch iets aanpassen of een bestaand onderwerp vullen met data uit zo&#39;n onderwerp, maak dan gebruik van een formule.
 
