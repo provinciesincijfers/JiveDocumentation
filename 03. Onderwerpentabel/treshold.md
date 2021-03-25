@@ -13,7 +13,7 @@
 
 ## Ter info
 
-Het volgende deel is ter info. Er werd beslist om de treshold **niet** te gebruiken.
+Het volgende deel is ter info. Er werd beslist om de functie treshold **niet** te gebruiken.
 
 Binnen Swing was het tot nu toe onmogelijk om (automatisch) een drempelwaarde te zetten op zowel teller als noemer van een percentage. Dit kan nu wel.  
 
