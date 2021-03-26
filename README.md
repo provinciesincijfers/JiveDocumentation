@@ -109,7 +109,7 @@ Alles over data definiëren vind je [hier](https://github.com/provinciesincijfer
 Hier vind je informatie over: 
 - **Gewone of platte onderwerpen**
 - **Kubus-onderwerpen**
-- **Stroomdata*
+- **Stroomdata**
 - **Formule-onderwerpen**
 
 
