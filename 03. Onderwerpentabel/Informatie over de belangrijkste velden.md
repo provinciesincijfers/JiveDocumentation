@@ -54,7 +54,7 @@ Bepaalt het aantal cijfers na de komma. Kan ook gebruikt worden om te censureren
 
 ## Drempelwaarde
 
-Meer informatie over de drempelwaarde/treshold vind je hier.
+Meer informatie over de drempelwaarde/threshold vind je hier.
 
 ## Periodetype
 
