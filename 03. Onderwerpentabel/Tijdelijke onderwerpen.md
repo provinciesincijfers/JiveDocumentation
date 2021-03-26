@@ -2,7 +2,7 @@
 
 Het is niet langer mogelijk om met &quot;gebruikersonderwerpen&quot; te werken. Als je toch eens een &quot;ad hoc&quot;-onderwerp nodig hebt, maak dan een **tijdelijk onderwerp** aan.
 
-Een tijdelijk onderwerp is een Indicator als alle andere, maar hoeft niet te voldoen aan onze vormvereisten, en staat daarom dus ook NOOIT EXTERN. Voor tijdelijke onderwerpen geldt:
+Een tijdelijk onderwerp is een Indicator als alle andere, maar hoeft niet te voldoen aan onze vormvereisten, en staat daarom dus ook **NOOIT EXTERN**. Voor tijdelijke onderwerpen geldt:
 
 - Het onderwerp is TIJDELIJK. Tijdelijke onderwerpen die **ouder zijn dan drie maanden worden gewist.**
 - Indien het **toch langer** gebruikt wordt, dan is het teken dat het permanent nuttig is. **Maak dan een echt onderwerp** in de plaats, desnoods enkel INTERN.
