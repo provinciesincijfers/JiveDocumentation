@@ -72,7 +72,7 @@ Dit veld **mag niet ingevuld zijn bij berekende onderwerpen, tenzij indien uitzo
 
 ## Vrij tekstveld
 
-Dit moet ingevuld zijn met een **oplader en een controleur**, zie Verantwoordelijke opzoeken in PinC. De code heeft deze structuur: VB\_AN
+Dit moet ingevuld zijn met een **oplader en een controleur**, zie `Verantwoordelijke opzoeken in PinC`. De code heeft deze structuur: VB\_AN
 
 Hierbij staat het **eerste deel voor de inhoudelijk verantwoordelijke**. Het **tweede deel staat voor de controlerende partner**.
 
