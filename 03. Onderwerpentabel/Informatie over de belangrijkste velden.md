@@ -52,7 +52,7 @@ De afspraken rond datatype vind je [hier](https://github.com/provinciesincijfers
  
 ## Eenheid
 
-**Komt uit de Data \&gt; Eenheden**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Gelieve dus eerst te gaan kijken of de eenheid al bestaat.
+**Komt uit de Data > Eenheden**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Gelieve dus eerst te gaan kijken of de eenheid al bestaat.
 
 ## Afronding
 
