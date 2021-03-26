@@ -4,7 +4,7 @@
 - Indien het gaat over een **formule-onderwerp**, dan mag het ook een **korte beschrijving van de formule** zijn. Dit mag in woorden, en hoeft niet wanneer het bijvoorbeeld gaat over &quot;we tellen 0-10 jarigen op bij 11 tot 18 jarigen om tot het aantal –min 18 te komen.&quot;
 
 - De **beschrijving eindigt bij een berekend onderwerp** met [percentage], [promille], [ratio], …
-- **meer specifieke regels**:
+- **Meer specifieke regels**:
   - Gebruik niet EUR maar €
   - Schrijf niet 1000 maar 1.000
   - Voor leeftijdsgroepen
