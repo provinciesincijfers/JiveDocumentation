@@ -29,12 +29,13 @@ Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin b
 
 ## Bron
 
-Komt uit **Data \&gt; Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;.
-**! Bij percentages geven we enkel de Bron van de teller mee.** _
+Komt uit **Data > Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;.
 
-❕ _** Als onderwerpen de som vormen van andere onderwerpen uit verschillende Bronnen, of onderwerpen die gebaseerd zijn op een dataverwerking die meerdere bronnen combineert (vb VDAB-verrijkt-met-rijksregister) dan maken we een nieuwe bron van type &quot;Naam bron 1 &amp; Naam bron 2 | provincies.incijfers.be&quot;**_
+Bij** percentages** geven we **enkel de Bron van de teller** mee.
 
-##Formule
+❕ Als onderwerpen de som vormen van andere onderwerpen uit verschillende Bronnen, of onderwerpen die gebaseerd zijn op een dataverwerking die meerdere bronnen combineert (vb VDAB-verrijkt-met-rijksregister) dan maken we een nieuwe bron van type &quot;Naam bron 1 &amp; Naam bron 2 | provincies.incijfers.be&quot;
+
+## Formule 
 
  **Wanneer mogelijk kunnen nieuwe onderwerpen best via een formule gedefinieerd worden**. Bv: laad het aantal bijgebouwen en het aantal hoofgebouwen in, maar maak de som van alle gebouwen binnen Swing. Zeker voor verhoudingen is dit handig.
 
@@ -59,7 +60,7 @@ Bepaalt het aantal cijfers na de komma. Kan ook gebruikt worden om te censureren
 
 ## Drempelwaarde
 
-Meer informatie over de drempelwaarde/threshold vind je hier.
+Meer informatie over de drempelwaarde/threshold vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel/threshold.md).
 
 ## Periodetype
 
@@ -80,4 +81,4 @@ Hierbij staat het **eerste deel voor de inhoudelijk verantwoordelijke**. Het **t
 - Voor &quot;testjes&quot; gebruik je je eigen naam. Voor onderwerpen die nog geen controleur heb vul je alvast het eerste deel in.
 - Bij data die door onze partners beheerd worden, geven we dat als volgt aan: VB(ECO)\_AN(ECO)
 
-❕ _ **Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie het** _ _ `onderdeel controle`.** _
+❕ ***Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie het** `onderdeel controle`.***
