@@ -106,23 +106,21 @@ Hier vind je informatie over:
 
 Alles over data definiëren vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren).
 
-Data definiëren doen we in de tabel Data > Onderwerpen. Hiermee wordt enkel het onderwerp zelf aangemaakt. Wil je het zichtbaar maken, dan moet je straks nog naar het hoofdstuk `Themaboom Beheren`.
-
-Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze onderwerpen verzameld. Er zijn **vier grote types** onderwerpen:
-
-- **Gewone of platte onderwerpen**: een reeks waarvoor we data hebben ingeladen per gebied en per jaar
-- **Kubus-onderwerpen**: een reeks waarvoor we data hebben ingeladen per gebied, per jaar en per combinatie van dimensies (vb leeftijd en geslacht). Meer info vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen).
-- **Stroomdata**: een reeks waarvoor we data hebben ingeladen per gebied VAN, gebied NAAR en per jaar. Verder bouwen op stroomdata kan niet. [Meer over stroomdata](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/stroomdata.md).
-- **Formule-onderwerpen**: onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Informatie over het inlezen van Formule-onderwerpen vind je `hier`.
-
-:grey_exclamation: *Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!*
+Hier vind je informatie over: 
+- **Gewone of platte onderwerpen**
+- **Kubus-onderwerpen**
+- **Stroomdata*
+- **Formule-onderwerpen**
 
 
 ## Onderwerpentabel
 
-`Voorbeeldbestand`
+Meer informatie over de onderwerpentabel vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel).
 
-Informatie over de belangrijkste velden vind je `hier`.
+Hier vind je een voorbeeldbestand, en informatie over:
+- **De belangrijkste velden**
+- **Afspraken** rond deze velden
+- **Tijdelijke onderwerpen**
 
 
 ## Data inlezen
