@@ -30,9 +30,9 @@ Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin b
 ## Bron
 
 Komt uit **Data \&gt; Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;.
-_ **! Bij percentages geven we enkel de Bron van de teller mee.** _
+**! Bij percentages geven we enkel de Bron van de teller mee.** _
 
-❕ _**! Als onderwerpen de som vormen van andere onderwerpen uit verschillende Bronnen, of onderwerpen die gebaseerd zijn op een dataverwerking die meerdere bronnen combineert (vb VDAB-verrijkt-met-rijksregister) dan maken we een nieuwe bron van type &quot;Naam bron 1 &amp; Naam bron 2 | provincies.incijfers.be&quot;**_
+❕ _** Als onderwerpen de som vormen van andere onderwerpen uit verschillende Bronnen, of onderwerpen die gebaseerd zijn op een dataverwerking die meerdere bronnen combineert (vb VDAB-verrijkt-met-rijksregister) dan maken we een nieuwe bron van type &quot;Naam bron 1 &amp; Naam bron 2 | provincies.incijfers.be&quot;**_
 
 ##Formule
 
