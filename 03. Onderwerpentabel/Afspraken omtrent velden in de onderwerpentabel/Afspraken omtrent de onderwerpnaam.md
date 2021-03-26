@@ -17,6 +17,7 @@
 **Voorbeelden van onderwerpnamen die een teller en noemer hebben** (met uitzonderingen)
 
 | **Eenheid** | Naam | Beschrijving |
+|---|---|---|
 | promille[‰] | natuurlijk saldo (t.o.v. inwoners) | aantal geboorten min de sterfte per 1.000 inwoners |
 | ratio[ratio] | oprichtingsratio | opgerichte ondernemingen t.o.v. het aantal actieve ondernemingen \*100 [ratio] |
 | ratio\_100[per 100] | aanbodratio WZC (t.o.v. 65-plussers) | gerealiseerde capaciteit (erkend + erkenning in onderzoek) in woonzorgcentra per 100 inwoners van 65 jaar en ouder |
