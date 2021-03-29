@@ -1,4 +1,4 @@
-### Formule-onderwerpen
+# Formule-onderwerpen
 
 **Verhoudingen (inclusief percentages) maken we zoveel mogelijk aan als Formule-onderwerp.**
 
@@ -6,7 +6,7 @@ We maken steeds percentages aan als dit zinvol is.
 
 De **noemer moet steeds het aggregatieonderwerp** zijn. Als je noemer dus de som van twee cijfers is, dan moet je eerst een onderwerp maken met die som. Elke noemer heeft ook een zinvolle naam nodig.
 
-#### Naar andere perioden refereren
+## Naar andere perioden refereren
 
 **Standaard gebeurt de berekening op basis van data van dezelfde perioden**. Dus x + y betekent eigenlijk x\_periode1 + y\_periode1. Je kan hier van afwijken voor bijvoorbeeld een gemiddelde bevolking over twee jaar, of een cumulatief onderwerp.
 
