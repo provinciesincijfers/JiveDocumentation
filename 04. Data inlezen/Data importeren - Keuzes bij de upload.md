@@ -34,7 +34,7 @@ Na upload krijg je **mogelijk enkele meldingen**. Als je nieuwe onderwerpen toev
 
 
 - **Wou je eigenlijk geen onderwerpen toevoegen en kreeg je toch dit scherm?** Ga dan naar het einde van de onderwerpentabel en check wat je gedaan hebt!
-- ❕ **De Toegangsgroepen staan standaard aangevinkt met system, Intern en &quot;Extern (hoger niveau dan statsec)&quot **;. Data op statsec-niveau ingelezen moet je dus nog toevoegen aan de map &quot;Extern (mag op sectoreniveau getoond)&quot;. Data voor alle Belgische gemeenten mogen we niet zomaar online zetten. Door het laatste vinkje aan te zetten, kunnen ze wel in een rapport extern gebruikt worden. **Doe dit niet zonder af te stemmen met Joost.**
+- ❕ **De Toegangsgroepen staan standaard aangevinkt met system, Intern en &quot;Extern (hoger niveau dan statsec)&quot;**. Data op statsec-niveau ingelezen moet je dus nog toevoegen aan de map &quot;Extern (mag op sectoreniveau getoond)&quot;. Data voor alle Belgische gemeenten mogen we niet zomaar online zetten. Door het laatste vinkje aan te zetten, kunnen ze wel in een rapport extern gebruikt worden. **Doe dit niet zonder af te stemmen met Joost.**
 - **De data staat dus steeds op een of andere manier Extern**. Ze is (voor experts) steeds terug te vinden, zélfs als ze niet in de map EXTERN staat. Wil je héél gevoelige data in Swing steken, dan moeten we de architectuur herzien.
   - Voor meer info, zie het onderdeel [Toegang beheren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren).
 
