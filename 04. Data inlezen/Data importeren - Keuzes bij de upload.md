@@ -39,4 +39,4 @@ Na upload krijg je **mogelijk enkele meldingen**. Als je nieuwe onderwerpen toev
   - Voor meer info, zie het onderdeel [Toegang beheren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren).
 
 
-:bulb: ***Je kan je import afbreken. Let wel op dat er al data gedeeltelijk ingelezen kan zijn.***
+:bulb: **Je kan je import afbreken. Let wel op dat er al data gedeeltelijk ingelezen kan zijn.**
