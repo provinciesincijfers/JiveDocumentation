@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/77432663/112817072-56b85000-9082-11eb-9827-1aa2db4d2096.png)
 
-**Via de functie Data**  **\&gt; Importeren kan je zowat alle informatie die in Swing kan zitten importeren** (dus ook een Themaboom-structuur ofzo). Swing probeert zelf je bestand te herkennen, daarom moet je **&quot;Gegevenstype&quot; hierboven goed controleren**. Als dit niet juist is of leeg blijft, dan is de kans groot (maar niet absoluut) dat er iets mis is in je bestand.
+**Via de functie Data > Importeren kan je zowat alle informatie die in Swing kan zitten importeren** (dus ook een Themaboom-structuur ofzo). Swing probeert zelf je bestand te herkennen, daarom moet je **&quot;Gegevenstype&quot; hierboven goed controleren**. Als dit niet juist is of leeg blijft, dan is de kans groot (maar niet absoluut) dat er iets mis is in je bestand.
 
 **In dit voorbeeld gaat het om &quot;gewone gegevens**&quot;, data voor platte onderwerpen. Dit is &quot;Data – Onderwerp per kolom&quot;. Opgelet: als je bestand meerdere tabbladen heeft, worden deze standaard ALLEMAAL klaargezet voor upload. Ook je tabblad met testdata en instructies voor jezelf dus!
 
