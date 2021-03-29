@@ -1,6 +1,6 @@
-### Data \&gt; Importeren - Keuzes bij upload
+# Data > Importeren - Keuzes bij upload
 
-Stap 1
+##Stap 1
 
 ![](RackMultipart20210329-4-1ll0cok_html_53454d0121c4b8db.png)
 
@@ -16,7 +16,6 @@ Bij het opladen van data van dit type heb je vijf vinkjes die je aan en uit kunt
 - **Records met onbekende kenmerken overslaan** : zet dit vinkje aan als je weet dat er foute gebieden in je bestand zitten, maar je toch wil inladen. Handig als je een set hebt met ook de Waalse gemeenten, en die er niet zelf wil uitgooien. Nadeel: als er nog andere fouten in je bestand zitten, krijg je hier geen foutmelding voor! **Standaard uit laten staan dus**.
 - **Eerst alle data verwijderen** : dit wist alle data van de onderwerpen waar je aankomt. Dit is **slechts heel zelden nodig**. Voorbeeld: er is een kleine wijziging in methodologie, maar de data is niet meer beschikbaar voor de oudste drie jaar van de reeks. Als je dan de eerste optie én deze optie aanvinkt, dan verdwijnt elk spoor van die eerste drie jaar en heb je zeker alle data ververst.
 
-##
 
 ## Stap 2
 
