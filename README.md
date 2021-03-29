@@ -125,17 +125,13 @@ Hier vind je een voorbeeldbestand, en informatie over:
 
 ## Data inlezen
 
-Meer info over data inlezen vind je `hier`.
+Meer info over data inlezen vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/04.%20Data%20inlezen).
 
-
-### Data importeren - Keuzes bij upload
-
-Meer info vind je `hier`.
-
-### Formule-onderwerpen
-
-Dit vind je `hier` terug.
-
+Hier vind je:
+- De **algemene principes** met betrekking tot het inlezen van data
+- Een **oefenin**g om data in te lezen
+- Enkele **keuzes die je moet maken tijdens het importeren van data**
+- informatie over het inlezen van **formule-onderwerpen**
 
 
 ## Themaboom - toegang beheren
