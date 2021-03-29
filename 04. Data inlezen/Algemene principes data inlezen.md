@@ -51,7 +51,7 @@ Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld*
 
 Gebruik je de OUDE statsec2019, dan gebruik je voor gebied onbekend van fusiegemeenten de OUDE niscode van de gemeente2018 + ZZZZ. Gebruik je de NIEUWE statsec, dan gebruik je voor gebied onbekende de NIEUWE niscode van de gemeente + ZZZZ
 
-De tabel met enkel gewijzigde statsec/niscodes 2018-2019] staat [hier] (https://github.com/provinciesincijfers/gebiedsniveaus/blob/master/wijzigende\_gebiedsindelingen.md)
+De tabel met enkel gewijzigde statsec/niscodes 2018-2019] staat [hier](https://github.com/provinciesincijfers/gebiedsniveaus/blob/master/wijzigende\_gebiedsindelingen.md)
 
 Voor meer informatie over (de organisatie van) gebiedsniveaus, kan je [hier](https://github.com/provinciesincijfers/gebiedsniveaus) terecht.
 
