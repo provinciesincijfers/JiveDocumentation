@@ -24,7 +24,7 @@ Je kan **meerdere jaren, meerdere gebiedsniveaus en meerdere onderwerpen in éé
 
 In principe is **het énkel nodig op het &quot;laagste gebiedsniveau**&quot;. Swing telt die op naar hogere gebiedsniveaus. Wil je meer weten over (de organisatie van) gebiedsniveaus? Dat kan [hier](https://github.com/provinciesincijfers/gebiedsniveaus).
 
-**Je hoeft niet alle gegevens hard in te lezen**. Stel, je hebt een onderwerp met &quot;geboorten&quot; en een met &quot;sterften&quot;. Je hoeft dan geen saldo meer in te lezen, dat kan eenvoudig met een formule-onderwerp.
+**Je hoeft niet alle gegevens hard in te lezen**. Stel, je hebt een onderwerp met &quot;geboorten&quot; en een met &quot;sterften&quot;. Je hoeft dan geen saldo meer in te lezen, dat kan eenvoudig met een [formule-onderwerp](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md).
 
 **Uitzonderingen:**
 
