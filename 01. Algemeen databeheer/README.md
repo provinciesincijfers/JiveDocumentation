@@ -14,4 +14,4 @@ Indien de inhoud van een Onderwerp radicaal zou wijzigen (vb vanaf nu betekent &
 
 - Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
 
-- Heb je graag wat meer info over de berekening van betrouwbaarheidsintervallen? Dat kan [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/ABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg) voor meer uitleg, of [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/VB_StadAntwerpen_Metadata_Amon_20180604.xlsx) voor een voorbeeld. 
+- Heb je graag wat meer info over hoe Swing omgaat met betrouwbaarheidsintervallen bij steekproefdata? Dat kan [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/ABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg) voor meer uitleg, of [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/VB_StadAntwerpen_Metadata_Amon_20180604.xlsx) voor een voorbeeld. 
