@@ -8,7 +8,7 @@
 
 **In dit voorbeeld gaat het om &quot;gewone gegevens**&quot;, data voor platte onderwerpen. Dit is &quot;Data – Onderwerp per kolom&quot;. 
 
-❕ Als je bestand meerdere tabbladen heeft, worden deze standaard ALLEMAAL klaargezet voor upload. Ook je tabblad met testdata en instructies voor jezelf dus!
+❕ ***Als je bestand meerdere tabbladen heeft, worden deze standaard ALLEMAAL klaargezet voor upload. Ook je tabblad met testdata en instructies voor jezelf dus!***
 
 Bij het opladen van data van dit type heb je vijf vinkjes die je aan en uit kunt zetten:
 
