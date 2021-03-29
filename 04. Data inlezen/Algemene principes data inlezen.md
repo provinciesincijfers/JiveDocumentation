@@ -16,7 +16,7 @@ De **bestandsstructuur** voor platte onderwerpen is bijzonder eenvoudig:
 | statsec | 11001a01\_ | 2019 | 16 |
 | statsec | 11001a020 | 2019 | 2 |
 
-Voor meer informatie **over formule-onderwerpen** kan je hier terecht.
+Voor meer informatie **over formule-onderwerpen** kan je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md) terecht.
 
 Je kan **meerdere jaren, meerdere gebiedsniveaus en meerdere onderwerpen in één bestand** aanbieden. Er zijn geen duidelijke harde bovengrenzen aan, maar bij grotere bestanden gaat het wel eens mis. Meer dan een miljoen rijen, meer dan 60 kolommen, etc.
 
