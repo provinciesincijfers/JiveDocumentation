@@ -1,6 +1,6 @@
 # Data > Importeren - Keuzes bij upload
 
-##Stap 1
+## Stap 1
 
 ![](RackMultipart20210329-4-1ll0cok_html_53454d0121c4b8db.png)
 
