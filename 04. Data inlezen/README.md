@@ -1,9 +1,8 @@
 # Data inlezen
 
-Hier vind een paar **algemene principes** met betrekking tot het inlezen van data.
+[Hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Algemene%20principes%20data%20inlezen.md) vind je de **algemene principes** met betrekking tot het inlezen van data.
 
-Dit bevat informatie over
-
+Dit document bevat informatie over
 - Het bestandstype
 - De bestandsstructuur
 - De benodigde data
@@ -11,8 +10,8 @@ Dit bevat informatie over
 - Voor welke gebieden je moet inladen
 - Voor welke perioden je moet inladen
 
-Nood aan een **oefening om data in te lezen**? Dat kan hier]( https://share.vlaamsbrabant.be/share/page/site/socialeplanning/document-details?nodeRef=workspace://SpacesStore/9fb73992-5b6d-499a-ac17-641ea5112326).
+Nood aan een **oefening om data in te lezen**? Dat kan [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/02%20voorbereiding%20upload.xlsx).
 
-Tijdens het **importeren van data** zal je **keuzes** moeten laden. De mogelijke keuzes die je moet maken tijdens deze upload vind je [hier].
+Tijdens het **importeren van data** zal je **keuzes** moeten laden. De mogelijke keuzes die je moet maken tijdens deze upload vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Data%20importeren%20-%20Keuzes%20bij%20de%20upload.md).
 
-Voor informatie over het inlezen van **formule-onderwerpen** kan je [hier] terecht.
+Voor informatie over het inlezen van **formule-onderwerpen** kan je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md) terecht.
