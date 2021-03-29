@@ -1,4 +1,4 @@
-# Data > Importeren - Keuzes bij upload
+# Data > Importeren - Keuzes bij de upload
 
 ## Stap 1
 
