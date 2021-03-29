@@ -12,10 +12,10 @@
 
 Bij het opladen van data van dit type heb je vijf vinkjes die je aan en uit kunt zetten:
 
-- **Perioden automatisch aanpassen** : als het onderwerp maar tot 2018 beschikbaar was, maar je bent data voor 2019 aan het inladen, dan wordt indien aangevinkt dit rechtgezet. Dat zie je dan in Data \&gt; Onderwerpen in de kolom Eindperiode. **Standaard aanzetten** dus.
+- **Perioden automatisch aanpassen**: als het onderwerp maar tot 2018 beschikbaar was, maar je bent data voor 2019 aan het inladen, dan wordt indien aangevinkt dit rechtgezet. Dat zie je dan in Data > Onderwerpen in de kolom Eindperiode. **Standaard aanzetten** dus.
 - **Automatisch totaliseren**: is bijna nooit van toepassing. **Standaard uitzetten**.
 - **Records met alleen NVT verwijderen**: we willen soms juist die data hard inlezen. **Standaard uitzetten**.
-- **Records met onbekende kenmerken overslaan**: zet dit vinkje aan als je weet dat er foute gebieden in je bestand zitten, maar je toch wil inladen. Handig als je een set hebt met ook de Waalse gemeenten, en die er niet zelf wil uitgooien. Nadeel: als er nog andere fouten in je bestand zitten, krijg je hier geen foutmelding voor! **Standaard uit laten staan dus**.
+- **Records met onbekende kenmerken overslaan**: zet dit vinkje aan als je weet dat er foute gebieden in je bestand zitten, maar je toch wil inladen. Handig als je een set hebt met ook de Waalse gemeenten, en die er niet zelf wil uitgooien. Nadeel: als er nog andere fouten in je bestand zitten, krijg je hier geen foutmelding voor! **Standaard uit laten staan** dus.
 - **Eerst alle data verwijderen**: dit wist alle data van de onderwerpen waar je aankomt. Dit is **slechts heel zelden nodig**. Voorbeeld: er is een kleine wijziging in methodologie, maar de data is niet meer beschikbaar voor de oudste drie jaar van de reeks. Als je dan de eerste optie én deze optie aanvinkt, dan verdwijnt elk spoor van die eerste drie jaar en heb je zeker alle data ververst.
 
 
