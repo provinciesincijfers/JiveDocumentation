@@ -1,6 +1,6 @@
 # Algemene principes data inlezen
 
-## Bestandstype. 
+## Bestandstype
 
 Je kan de data aanbieden als **XLS, XLSX of CSV**. Vanuit gespecialiseerde data-software is CSV het stabielste. Excel-bestanden zijn handig als je de datapreparatie in Excel doet. Maar hou er rekening mee dat Excel-files eigenlijk heel rare beesten zijn. ASAP tools of copy-paste als platte tekst naar een nieuw tabblad kan wonderen doen.
 
