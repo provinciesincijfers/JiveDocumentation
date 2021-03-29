@@ -61,4 +61,5 @@ We laden waarden in **voor alle gebieden van het gekozen gebiedsniveau, ook als 
 
 ## Voor welke perioden inladen
 
-Je kan **voor één of meer perioden data** inladen. :grey\_exclamation: Bestaande data hoef je niet te overschrijven, tenzij je bron die herberekend kan hebben.
+Je kan **voor één of meer perioden data** inladen. 
+:grey\_exclamation: Bestaande data hoef je niet te overschrijven, tenzij je bron die herberekend kan hebben.
