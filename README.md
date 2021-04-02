@@ -137,28 +137,13 @@ Hier vind je:
 ## Themaboom - toegang beheren
 
 Dit beheert de inhoud die je kan zien in de Databank, zowel voor ingelogde als niet ingelogde mensen. Maar ook wat er doorstroomt via de Connector of naar de Dashboards.
+Meer informatie over de themaboom en het beheren van toegang vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren)
 
-Alles over het kader en de daaraan gekoppelde gebruikersaccounts vind je `hier`.
-
-De afspraken hieromtrent vind je `hier`.
-
-Voor technische aspecten kan je `hier` terecht.
-
-
-### Toegang beheren
-
-De toegang tot de data wordt voornamelijk geregeld via de Themaboom. Voor meer informatie hierover, ga naar `deze pagina`.
-
-Voornaamste zaken:
-
-- Gasten hebben enkel toegang tot de map EXTERN.
-- Speciale gebruikers (personeel provincie, centrumsteden of andere specifieke klanten met een account) kunnen inloggen op provincies.incijfers.be/databank en zien de map PRODUCTIE, waar zowel het INTERNE en EXTERNE deel te zien is.
-- Swing Beheerders hebben recht op alle mappen, ook de TESTMAP.
-
-
-### Architectuur van de toegangsgroepen
-
-Om dit mogelijk te maken hebben we `deze AccessGroups`.
+Hier vind je:
+- **Algemene informatie** over de toegang
+- Informatie over de **themaboom**
+- Informatie over **toegangsgroepen**
+- Alles over **gebruikersaccounts **
 
 
 ## Metadata
