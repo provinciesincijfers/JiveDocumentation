@@ -68,7 +68,8 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 - Geef **deze instructies** aan de eindgebruikers:
   - Ga naar [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank)
   - Klik op het hamburger-menu, vervolgens Inloggen:
+
 ![image](https://user-images.githubusercontent.com/77432663/113412718-4c1af500-93b9-11eb-8c77-ee01282eb15d.png)
 
-  - Probeer niet in te loggen, maar ga rechtsreeks naar &quot;Wachtwoord vergeten&quot;. Vul daar je e-mail adres in en wacht op een mail.
+- Probeer niet in te loggen, maar ga rechtsreeks naar &quot;Wachtwoord vergeten&quot;. Vul daar je e-mail adres in en wacht op een mail.
   - Je krijgt verdere instructies per mail. In die mail staan je &quot;naam&quot; (username) en een tijdelijk paswoord.
