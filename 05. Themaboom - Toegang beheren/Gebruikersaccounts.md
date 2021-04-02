@@ -1,6 +1,8 @@
-## Gebruikersaccounts: Wie krijgt een account, en wat krijgt die te zien?
+# Gebruikersaccounts
 
-**Iedereen heeft een gebruikersaccount** : zelfs gasten zijn &#39;ingelogd&#39; als user &quot;extern&quot;. Deze Users zijn geassocieerd met een UserGroup/Gebruikersgroep. Belangrijke UserGroups:
+## Wie krijgt een account, en wat krijgt die te zien?
+
+**Iedereen heeft een gebruikersaccount**: zelfs gasten zijn &#39;ingelogd&#39; als user &quot;extern&quot;. Deze Users zijn geassocieerd met een UserGroup/Gebruikersgroep. Belangrijke UserGroups:
 
 - **Swing Beheerders** hebben recht op **alle mappen** , ook de TESTMAP en doorgaans ook tot **Studio**.
   - Gebruikersgroep = **system**.
@@ -13,17 +15,14 @@
 
 Daarnaast kan er **maatwerk** gebeuren om mensen &quot;op te sluiten&quot; in een bepaald thema.
 
-Alles over accesgroups vind je hier terug.
+Alles over accesgroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md) terug.
 
-##
 
 ## Regels per gebruikersgroep
 
 ### System
 
-Deze account **wordt enkel gebruikt door de &quot;hoofdbeheerder&quot; van de provincie**. Indien er
-
-meerdere beheerders zijn, dan vragen zij een account aan van het type provincie\_voornaam. Enkel op die manier is het mogelijk om overzicht te houden van wat er gebeurt in de Databank.
+Deit account **wordt enkel gebruikt door de &quot;hoofdbeheerder&quot; van de provincie**. Indien er meerdere beheerders zijn, dan vragen zij een account aan van het type provincie\_voornaam. Enkel op die manier is het mogelijk om overzicht te houden van wat er gebeurt in de Databank.
 
 ###
 
@@ -39,21 +38,13 @@ Deze accounts zijn beschikbaar op vraag voor:
 
 Indien je iemand kan verder helpen met dit soort account die buiten deze categorieën valt, dan dient dit besproken te worden op de Redactieraad.
 
-### Opmerkingen
+## Opmerkingen
 
 - **Deze manier van werken is maar OK zolang er geen gevoelige data in de map PRODUCTIE staan**.
 
-Er is een inventarisatie gebeurd begin 2018, waaruit bleek dat dat niet het geval was. Indien dit in
+Er is een inventarisatie gebeurd begin 2018, waaruit bleek dat dat niet het geval was. Indien dit in de toekomst verandert, dan kunnen we de TESTMAP nog veranderen in een TEST- en BEVEILIGDE MAP.
 
-de toekomst verandert, dan kunnen we de TESTMAP nog veranderen in een TEST- en
-
-BEVEILIGDE MAP.
-
-- **De mappen van onze Projecten** (samenwerkingstrajecten met andere provinciale diensten) **staan nu in de map PRODUCTIE, zelfs als het project nog loopt**. Daarom staan deze aangeduid als &quot;in
-
-ontwikkeling&quot; zolang het project niet afgerond is.
-
-##
+- **De mappen van onze Projecten** (samenwerkingstrajecten met andere provinciale diensten) **staan nu in de map PRODUCTIE, zelfs als het project nog loopt**. Daarom staan deze aangeduid als &quot;in ontwikkeling&quot; zolang het project niet afgerond is.
 
 ## Praktisch
 
