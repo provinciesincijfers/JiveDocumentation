@@ -63,7 +63,6 @@ Er is een inventarisatie gebeurd begin 2018, waaruit bleek dat dat niet het geva
 | **Login name** | **Username** | **MailAddress** | **UserGroup** | **Usercode** |
 | --- | --- | --- | --- | --- |
 | an\_eco\_iemand | Iemand | [iemand@iets.be](mailto:iemand@iets.be) | users | an\_eco\_iemand |
-| --- | --- | --- | --- | --- |
 | wv\_eco\_anders | Anders | [anders@ietsanders.be](mailto:anders@ietsanders.be) | users | wv\_eco\_anders |
 
 - **Importeer deze Excel als metadata** in de [tabel Users in Studio](https://provincies.incijfers.be/Admin/Studio/Table?tableName=User).
@@ -71,6 +70,7 @@ Er is een inventarisatie gebeurd begin 2018, waaruit bleek dat dat niet het geva
 - Geef **deze instructies** aan de eindgebruikers:
   - Ga naar [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank)
   - Klik op het hamburger-menu, vervolgens Inloggen:
-[![](RackMultipart20210402-4-b0y2w7_html_6873a23280ff4107.png)](https://user-images.githubusercontent.com/10122639/108837147-23d9f280-75d2-11eb-9f8f-4c6cfbd5c0ad.png)
+![image](https://user-images.githubusercontent.com/77432663/113412718-4c1af500-93b9-11eb-8c77-ee01282eb15d.png)
+
   - Probeer niet in te loggen, maar ga rechtsreeks naar &quot;Wachtwoord vergeten&quot;. Vul daar je e-mail adres in en wacht op een mail.
   - Je krijgt verdere instructies per mail. In die mail staan je &quot;naam&quot; (username) en een tijdelijk paswoord.
