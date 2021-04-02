@@ -40,9 +40,7 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 
 ## Opmerkingen
 
-- **Deze manier van werken is maar OK zolang er geen gevoelige data in de map PRODUCTIE staan**.
-
-Er is een inventarisatie gebeurd begin 2018, waaruit bleek dat dat niet het geval was. Indien dit in de toekomst verandert, dan kunnen we de TESTMAP nog veranderen in een TEST- en BEVEILIGDE MAP.
+- **Deze manier van werken is maar OK zolang er geen gevoelige data in de map PRODUCTIE staan**. Er is een inventarisatie gebeurd begin 2018, waaruit bleek dat dat niet het geval was. Indien dit in de toekomst verandert, dan kunnen we de TESTMAP nog veranderen in een TEST- en BEVEILIGDE MAP.
 
 - **De mappen van onze Projecten** (samenwerkingstrajecten met andere provinciale diensten) **staan nu in de map PRODUCTIE, zelfs als het project nog loopt**. Daarom staan deze aangeduid als &quot;in ontwikkeling&quot; zolang het project niet afgerond is.
 
