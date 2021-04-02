@@ -4,7 +4,7 @@
 
 **In de Themaboom organiseer je de inhoud van je Swing-versie in mappen**. De zichtbaarheid van deze mappen kan je op diverse manieren organiseren.
 
-- Je kan een map op &quot; **Onzichtbaar**&quot; zetten. Dan is ze onzichtbaar, voor iedereen, inclusief jezelf.
+- Je kan een map op &quot;**Onzichtbaar**&quot; zetten. Dan is ze onzichtbaar, voor iedereen, inclusief jezelf.
 - Je kan **Gebruikers binden aan een bepaalde map**. Ze kunnen dan enkel aanklikken wat er in die map en zijn submappen zit. Uiteraard kan je gebruikers ook binden aan de hoofdmap waar álles in zit.
 - **Een gebruiker ziet enkel mappen die minstens één ding bevat waar die rechten op heeft**. meer informatie over gebruikersaccounts/usergroups vind je hier.
 
