@@ -30,7 +30,7 @@ Alles over **gebruikersaccounts** staat [hier](https://github.com/provinciesinci
 
 
 
-❕ **Test nieuwe producten in de Databank ook steeds**** als gast**. Zowel in /Databank als in /admin/jive kan je uitloggen. Een andere mogelijkheid is om [een incognito venster](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
+❕ **Test nieuwe producten in de Databank ook steeds als gast**. Zowel in /Databank als in /admin/jive kan je uitloggen. Een andere mogelijkheid is om [een incognito venster](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
 
 **Check ook:**
 
