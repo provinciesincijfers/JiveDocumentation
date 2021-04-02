@@ -48,7 +48,7 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 
 ### Afspraken
 
-- We maken **geen groepsaccounts** , maar individuele accounts.
+- We maken **geen groepsaccounts**, maar individuele accounts.
 - **Structuur van de Usercode** (en ook Login name): [tweelettercode voor de provincie]_[drielettercode van het project]_[voornaam gebruiker]. Bijvoorbeeld: an\_eco\_tom
 - Standaard voegen we toe aan de **UserGroup &quot;users**&quot;
 
@@ -56,7 +56,7 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 
 ### Aanmaken van accounts
 
-- Maak een **Excel aan van deze vorm** :
+- Maak een **Excel aan van deze vorm**:
 
 | **Login name** | **Username** | **MailAddress** | **UserGroup** | **Usercode** |
 | --- | --- | --- | --- | --- |
