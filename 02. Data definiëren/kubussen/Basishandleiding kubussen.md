@@ -29,6 +29,7 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
     4.3.	Dimensie-aggregatie
     
 5.	Onderbrengen in de themaboom
+6.	Wijzigingen in de structuur van je kubus
 
 ❕ *Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
 
@@ -258,4 +259,14 @@ De volgorde is zo:
 
 ![afbeelding 19](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image19.jpg)
 
+
+## 6. Wijzigingen in de structuur van je kubus
+
+Aanpassingen in de structuur van je kubus moet je in principe op dezelfde manier behandelen als die van gewone onderwerpen. Je moet in principe dimensieniveau-items die ophouden te bestaan [uitdovend maken](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md). In de praktijk is dat echter niet altijd haalbaar, vooral bij grotere wijzigingen. Overleg met de databeheerders om dit goed op te lossen.
+
+Indien een kubus in de Connector zit, heeft elke wijzigingen in de codes van de dimensies tot gevolg dat de automatische update stopt. Als je klaar bent met herwerken, moet je dus een seintje geven opdat ABF de aanpassingen kan doorvoeren in de klant-versies.
+
+*Praktisch*:
+- het gebruik van de beta kan hier heel nuttig zijn
+- het duurt bijzonder lang om dimensieniveauaggregatie te verwijderen, als je dit pas doet NA dat je dimensieniveauitems hebt verwijderd. Verwijderd dus EERST de aggregatietabellen. 
 
