@@ -15,7 +15,7 @@
 
 Daarnaast kan er **maatwerk** gebeuren om mensen &quot;op te sluiten&quot; in een bepaald thema.
 
-Alles over accesgroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md) terug.
+❕ Gebruikers zitten in een bepaalde gebruikersgroep/usergroup en die user groupps hebben recht op bepaalde accesgroups/toegangsgroepen. Alles over accesgroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md) terug.
 
 
 ## Regels per gebruikersgroep
