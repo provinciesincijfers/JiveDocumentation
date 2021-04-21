@@ -16,34 +16,34 @@ De **basisstructuur** is nu:
 
   - **INHOUDELIJKE MAPPEN**
 
-  - **GEBIEDSINDELINGEN** : info en onderwerpen ivm de gebieden
+  - **GEBIEDSINDELINGEN**: info en onderwerpen ivm de gebieden
 
   - **Thematische rapporten**
 
-- **INTERN** : enkel zichtbaar voor ingelogde eindgebruikers (speciale klanten, centrumsteden, medewerkers provincies, …)
+- **INTERN**: enkel zichtbaar voor ingelogde eindgebruikers (speciale klanten, centrumsteden, medewerkers provincies, …)
 
-  - **Thematische indeling** : gewone indeling, meestal ruimer dan wat extern staat
+  - **Thematische indeling**: gewone indeling, meestal ruimer dan wat extern staat
 
-  - **Projectmappen** : werkmappen van lopende projecten
+  - **Projectmappen**: werkmappen van lopende projecten
 
-  - **Rapporten** : overzicht van alle rapporten
+  - **Rapporten**: overzicht van alle rapporten
 
-  - **Swing Connectoren** : alle inkomende en uitgaande connectoren
+  - **Swing Connectoren**: alle inkomende en uitgaande connectoren
 
-  - **Dashboards** : de mappen die gebruikt worden om het Dashboard te voeden
+  - **Dashboards**: de mappen die gebruikt worden om het Dashboard te voeden
 
-- **TESTMAP** : enkel zichtbaar voor beheerders
+- **TESTMAP**: enkel zichtbaar voor beheerders
 
 
 ## Policy op Provincies in Cijfer
 
 ### Eén map met de PRODUCTIE omgeving
 
-Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de **mappen die we EXTERN laten zien en de mappen die we enkel INTERN** laten zien. Dat doe je door hen aan de `**UserGroup Users` toe te kennen** (meer info over usergroups). Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIE omgeving, zodat ze niet overweldigd worden door het data-aanbod (`zie vb usergroup=ruimte`). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
+Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de **mappen die we EXTERN laten zien en de mappen die we enkel INTERN** laten zien. Dat doe je door hen aan de **UserGroup Users` toe te kennen** ([meer info over usergroups](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Gebruikersaccounts.md)). Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIE omgeving, zodat ze niet overweldigd worden door het data-aanbod (`zie vb usergroup=ruimte`). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
 
 **De rechten tot data op niveau van de statistische sectoren is geregeld via `UserGroups`.**
 
-**De PRODUCTIE map bevat** :
+**De PRODUCTIE map bevat**:
 
 - Submap EXTERN voor gasten
 - Submap INTERN met een uitgebreider aanbod voor onze eigen diensten en speciale klanten. Deze bevat:
