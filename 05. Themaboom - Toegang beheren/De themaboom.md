@@ -10,9 +10,9 @@
 
 De **basisstructuur** is nu:
 
-**PRODUCTIE** : alles wat zichtbaar is voor eindgebruikers
+**PRODUCTIE**: alles wat zichtbaar is voor eindgebruikers
 
-- **EXTERN:** alles wat zichtbaar is voor niet-ingelogde eindgebruikers
+- **EXTERN**: alles wat zichtbaar is voor niet-ingelogde eindgebruikers
 
   - **INHOUDELIJKE MAPPEN**
 
@@ -62,7 +62,7 @@ Deze map is **enkel zichtbaar voor Swing Beheerders**. Swing-beheerders zijn doo
 
 - **Enkel rommelen in TESTMAP**, ook INTERN een beetje opgekuist houden.
 - **Geen grote wijzigingen** zonder advies van Redactiegroep.
-- **Logica hoofdletters** : THEMA > Map naam > Submap naam > onderwerp naam.
+- **Logica hoofdletters**: THEMA > Map naam > Submap naam > onderwerp naam.
 - **Mapnamen verschijnen soms in de titel van presentaties**. Als dit verwarrend kan zijn, maak ze dan niet &quot;Visible in title&quot; in titel (menu Edit achter rechtermuisklik op map).
 - Het is toegestaan om indien relevant bepaalde onderwerpen/mappen te **dupliceren** op meerdere plaatsen. Meld dit even bij de Redactiegroep vooraleer je dit doet.
 - **Onderwerpen beschikbaar op statsec** komen ook terug in de map **GEBIEDSINDELINGEN\&gt; beschikbaar vanaf statsec.**
