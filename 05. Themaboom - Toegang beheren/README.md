@@ -28,7 +28,7 @@ Alles over **gebruikersaccounts** staat [hier](https://github.com/provinciesinci
 - Enkele praktische afspraken
 - Het aanmaken van accounts
 
-
+❕ **Gebruikers zitten in een bepaalde gebruikersgroep/usergroup en die user gruops hebben recht op bepaalde accesgroups/toegangsgroepen.**
 
 ❕ **Test nieuwe producten in de Databank ook steeds als gast**. Zowel in /Databank als in /admin/jive kan je uitloggen. Een andere mogelijkheid is om [een incognito venster](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
 
