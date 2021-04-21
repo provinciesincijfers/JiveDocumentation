@@ -15,14 +15,15 @@
 
 Daarnaast kan er **maatwerk** gebeuren om mensen &quot;op te sluiten&quot; in een bepaald thema.
 
-❕ Gebruikers zitten in een bepaalde gebruikersgroep/usergroup en die user groupps hebben recht op bepaalde accesgroups/toegangsgroepen. Alles over accesgroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md) terug.
+Alles over accesgroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md) terug.
 
 
 ## Regels per gebruikersgroep
 
 ### System
 
-Deit account **wordt enkel gebruikt door de &quot;hoofdbeheerder&quot; van de provincie**. Indien er meerdere beheerders zijn, dan vragen zij een account aan van het type provincie\_voornaam. Enkel op die manier is het mogelijk om overzicht te houden van wat er gebeurt in de Databank.
+Deze accounts **worden enkel gebruikt door de Swingbeheerders van de provincie**. Oorspronkelijk was er slechts één account per provincie. Indien er meerdere beheerders zijn, dan moeten ze met een **persoonlijke system account werken**. Die zien er doorgeens uit als `provincie_voornaam`. 
+Deze persoonlijke accounts maken het mogelijk om zicht te krijgen op wat er precies gebeurt in de Studio omgeving. Dit is noodzakelijk om te begrijpen wat er allemaal gebeurt.
 
 
 ### Users
