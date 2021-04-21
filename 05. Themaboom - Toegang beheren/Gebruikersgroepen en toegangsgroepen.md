@@ -17,11 +17,11 @@ Bekijk zeker ook [dit](https://github.com/provinciesincijfers/JiveDocumentation/
 
 De zichtbaarheid van de mappen wordt georganiseerd via de themaboom. Om dit mogelijk te maken hebben we **deze**  **AccessGroups**.
 
-- **extern** : bevat ALLE onderwerpen, maar niet alle gebiedsniveaus. Statsec ontbreekt, en enkele gebiedsindelingen die niet voor iedereen relevant zijn. Ze bevat ook een subset van DimensieNiveaus die voor iedereen beschikbaar mogen zijn
-- **extern\_statsec** : bevat een subset van onderwerpen die expliciet toegankelijk zijn gemaakt op niveau statsec
-- **extern\_gembelg** : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
-- **system** : dit moet STEEDS op &quot;alles tonen&quot; voor alles blijven staan. Anders kan je zelfs als admin niet meer alles zien!
-- **intern** : bevat op dit moment ook gewoon alles
+- **extern**: bevat ALLE onderwerpen, maar niet alle gebiedsniveaus. Statsec ontbreekt, en enkele gebiedsindelingen die niet voor iedereen relevant zijn. Ze bevat ook een subset van DimensieNiveaus die voor iedereen beschikbaar mogen zijn
+- **extern\_statsec**: bevat een subset van onderwerpen die expliciet toegankelijk zijn gemaakt op niveau statsec
+- **extern\_gembelg* : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
+- **system**: dit moet STEEDS op &quot;alles tonen&quot; voor alles blijven staan. Anders kan je zelfs als admin niet meer alles zien!
+- **intern**: bevat op dit moment ook gewoon alles
 
 We gebruiken de Access Groups om **enkele zaken voor niet-ingelogde eindgebruikers af te schermen**. Met name:
 
@@ -47,9 +47,12 @@ _Wil je nieuwe dimensieniveaus publiceren, dan moet het dimensieniveau_ _toegevo
 
 ## Wie krijgt een account, en wat krijgt die te zien?
 
-**Iedereen heeft een gebruikersaccount**: zelfs gasten zijn &#39;ingelogd&#39; als user &quot;extern&quot;. Deze Users zijn geassocieerd met een **UserGroup/Gebruikersgroep**. Belangrijke UserGroups:
+**Iedereen heeft een gebruikersaccount**: zelfs gasten zijn &#39;ingelogd&#39; als user &quot;extern&quot;. Deze Users zijn geassocieerd met een **UserGroup/Gebruikersgroep**.
+Gebruikers zitten in een bepaalde gebruikersgroep/usergroup en die user groups hebben recht op bepaalde accesgroups/toegangsgroepen.
 
-- **Swing Beheerders** hebben recht op **alle mappen** , ook de TESTMAP en doorgaans ook tot **Studio**.
+Belangrijke UserGroups:
+
+- **Swing Beheerders** hebben recht op **alle mappen**, ook de TESTMAP en doorgaans ook tot **Studio**.
   - Gebruikersgroep = **system**.
 - **Speciale gebruikers** (personeel provincie, centrumsteden of andere specifieke klanten met een account) kunnen inloggen op provincies.incijfers.be/databank en zien de map **PRODUCTIE,** waar zowel het **INTERNE en EXTERNE** deel te zien is.
   - Gebruikersgroep = **users.**
@@ -76,9 +79,7 @@ Deze persoonlijke accounts maken het mogelijk om zicht te krijgen op wat er prec
 Deze accounts kunnen **alle data in PRODUCTIE** zien.
 
 Deze accounts zijn beschikbaar op vraag voor:
-
 - **medewerkers van de provincie**
-
 - **medewerkers van de gemeenten**
 
 Indien je iemand kan verder helpen met dit soort account die buiten deze categorieën valt, dan dient dit besproken te worden op de Redactieraad.
