@@ -1,12 +1,12 @@
 # De themaboom
 
-**De toegang is geregeld via de Themaboom**. Dit impliceert dat **alle data die in Swing zit, in principe raadpleegbaar is voor iedereen** - alleen is het niet eenvoudig ze te vinden. Enkel de afscherming van statsec en van oude jaargangen geldt altijd. Dit is een keuze die de zaak veel beheersbaarder houdt, MAAR betekent dat **écht gevoelige data geen plaats heeft in Swing**. Meer informatie over toegangsgroepen/accesgroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md).
+**De toegang is geregeld via de Themaboom**. Dit impliceert dat **alle data die in Swing zit, in principe raadpleegbaar is voor iedereen** - alleen is het niet eenvoudig ze te vinden. Enkel de afscherming van statsec en van oude jaargangen geldt altijd. Dit is een keuze die de zaak veel beheersbaarder houdt, MAAR betekent dat **écht gevoelige data geen plaats heeft in Swing**. Meer informatie over toegangsgroepen/accesgroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangs-%20en%20gebruikersgroepen.md).
 
 **In de Themaboom organiseer je de inhoud van je Swing-versie in mappen**. De zichtbaarheid van deze mappen kan je op diverse manieren organiseren.
 
 - Je kan een map op &quot;**Onzichtbaar**&quot; zetten. Dan is ze onzichtbaar, voor iedereen, inclusief jezelf.
 - Je kan **Gebruikers binden aan een bepaalde map**. Ze kunnen dan enkel aanklikken wat er in die map en zijn submappen zit. Uiteraard kan je gebruikers ook binden aan de hoofdmap waar álles in zit.
-- **Een gebruiker ziet enkel mappen die minstens één ding bevat waar die rechten op heeft**. meer informatie over gebruikersaccounts/usergroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Gebruikersaccounts.md).
+- **Een gebruiker ziet enkel mappen die minstens één ding bevat waar die rechten op heeft**. meer informatie over gebruikersaccounts/usergroups vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangs-%20en%20gebruikersgroepen.md).
 
 De **basisstructuur** is nu:
 
