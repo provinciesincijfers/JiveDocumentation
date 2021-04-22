@@ -147,14 +147,7 @@ Hier vind je:
 
 ## Metadata
 
-Voorlopig vind je alles over de opmaak van metadatafiches `hier`. We zijn echter bezig om dit proces grotendeels automatisch te laten verlopen via PinC. Meer info volgt nog.
-
-Voor de opmaak van de metadatafiches gebruik je het `Sjabloon Metadata`.
-
-De toelichting hieromtrent vind je `hier`.
-
-Indien er **voor één Bron (zie verder) meerdere PDF&#39;s** zijn, dan moet er nog een **HTML-bestand** aangemaakt worden dat aan de bron gekoppeld wordt. In dit HTML bestand worden de links gezet naar de verschillende fiches die met deze bron te maken hebben.
-
+Al de informatie over [Metadata](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/06.%20Metadata) vind je binnen de [interne Teamsomgeving](https://teams.microsoft.com/_?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e#/files/Uploadfiles%20PinC?threadId=19:51c8556c2f0c4552b8acc0b7c93024b7@thread.tacv2&ctx=channel&rootfolder=%252Fteams%252FDA-Interprovincialewerking%252FGedeelde%2520documenten%252FUploadfiles%2520PinC%252F00%2520Metadatafiches%2520PinC%252FSjabloon%2520metadata) onder Uploadfiles PinC > 00 Metadatafiches PinC > Sjabloon metadata.
 
 ## Rapporten
 
