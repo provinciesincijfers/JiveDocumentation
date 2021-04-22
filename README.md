@@ -129,7 +129,7 @@ Meer info over data inlezen vind je [hier](https://github.com/provinciesincijfer
 
 Hier vind je:
 - De **algemene principes** met betrekking tot het inlezen van data
-- Een **oefenin**g om data in te lezen
+- Een **oefening** om data in te lezen
 - Enkele **keuzes die je moet maken tijdens het importeren van data**
 - informatie over het inlezen van **formule-onderwerpen**
 
@@ -142,8 +142,7 @@ Meer informatie over de themaboom en het beheren van toegang vind je [hier](http
 Hier vind je:
 - **Algemene informatie** over de toegang
 - Informatie over de **themaboom**
-- Informatie over **toegangsgroepen**
-- Alles over **gebruikersaccounts **
+- Alles wat je ooit wou weten over **toegangsgroepen en gebruikersgroepen**
 
 
 ## Metadata
