@@ -15,13 +15,11 @@
 - Afspraken
 - Technische aspecten
 
-Informatie over **toegangsgroepen** staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md).
+Informatie over **toegangs- en gebruikersgroepen** staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangs-%20en%20gebruikersgroepen.md).
 
 - Toegangsgroepen en inloggen
 - Themaboom en toegangsgroepen
 - Implicaties van toegangsgroepen
-
-Alles over **gebruikersaccounts** staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Gebruikersaccounts.md).
 
 - Wij krijgt een account, en wat krijgt die te zien?
 - De regels per gebruikersgroep
