@@ -151,7 +151,10 @@ Al de informatie over [Metadata](https://github.com/provinciesincijfers/JiveDocu
 
 ## Rapporten
 
-Zie `draaiboek Rapporten aanmaken`.
+Binnen [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/07.%20Rapporten) vind je:
+- Het draaiboek om rapporten aan te maken
+- De rapporten voorbereid door de werkgroep OBMI
+- Cursussen hoe je rapporten in Swing anmaakt
 
 
 ## Dashboard
