@@ -159,7 +159,9 @@ Binnen [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/
 
 ## Dashboard
 
-Zie `draaiboek dashboard`.
+In [deze map](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/08.%20Dashboard/README.md) vind je:
+- Het **Draaiboek** om een dashboard aan te maken
+- Een **handleiding**
 
 
 ## Controle
