@@ -132,6 +132,7 @@ Wanneer je het bestand samenstelt, neem volgende **aandachtspunten** in acht:
 -	Voor nieuwe dimensies mag de kolomtitel niet overeenstemmen met een van de bestaande dimensiecodes.
 -	Het onderwerp (teller) mag niet overeenstemmen met een reeds bestaande onderwerpcode. Dit controleer je door binnen Data > Onderwerpen te kiezen en vervolgens te controleren op het veld onderwerpcode.
 -	Er mogen geen lege cellen zijn. Indien bepaalde gegevens niet bekend zijn, voorzie een code voor ontbrekende waarden.
+-	Swing schijnt 1.7 miljoen rijen per bestand te aanvaarden (ervaring 2021-04)
 
 ![afbeelding 7](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image7.jpg)
 ![afbeelding 8](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image8.jpg)
