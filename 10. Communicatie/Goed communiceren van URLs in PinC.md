@@ -8,7 +8,7 @@
 
 Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je wil ook je impact kunnen meten, dan dient het **resultaat** er uit te zien als het onderstaande:
 
-\&gt; De klant ziet een [link](https://provincies.incijfers.be/jive/report/?id=rapport_detailhandel&amp;openinputs=true&amp;project=ff_preview), en de link verwijst naar https://provincies.incijfers.be/jive/report/?id=rapport\_ **jouwrapport** &amp;openinputs=true&amp;mtm\_campaign= **jouw-project**
+> De klant ziet een [link](https://provincies.incijfers.be/jive/report/?id=rapport_detailhandel&amp;openinputs=true&amp;project=ff_preview), en de link verwijst naar https://provincies.incijfers.be/jive/report/?id=rapport\_ **jouwrapport** &amp;openinputs=true&amp;mtm\_campaign= **jouw-project**
 
 ## Ingrediënten van een goede URL
 
