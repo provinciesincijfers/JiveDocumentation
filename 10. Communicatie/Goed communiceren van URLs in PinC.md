@@ -15,55 +15,57 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
 - Wat je URL ook is: **klik er eens op voor je hem uitstuurt**. Check of je niet toevallig ingelogd bent in de databank, want dan heb je misschien meer rechten als je klant
 
 - **Bijsturen ervaring van de klant**
-  - Voor ***rapportcommunicatie***. Stel, je rapport heeft rapportcode rapport\_detailhandel. Begin dan met `https://provincies.incijfers.be/Jive/report?id=_rapport\_detailhandel`
+  - Voor ***rapportcommunicatie***. Stel, je rapport heeft rapportcode rapport_detailhandel. Begin dan met `https://provincies.incijfers.be/Jive/report?id=_rapport_detailhandel`
  Er zijn ook andere manieren om rapporten te laten zien, maar standaard gebruiken we deze.
-    - Je kan verrijken met `_&amp;openinputs=true`_ om rechtsreeks te landen op het keuzeschermpje voor gebieden
-    - Of je kan verrijken met `_&amp;input\_geo=_gemeente\_11002` indien je naar gemeente Antwerpen stuurt en hen rechtsreeks naar het rapport voor hun gemeente wil sturen
+    - Je kan verrijken met `&openinputs=true` om rechtsreeks te landen op het keuzeschermpje voor gebieden
+    - Of je kan verrijken met `&input_geo=gemeente_11002` indien je naar gemeente Antwerpen stuurt en hen rechtsreeks naar het rapport voor hun gemeente wil sturen
   - Voor communiceren van ***een cijfer in de Databank*** zelf.
     - Ideaal voor maatwerk. Als je kan antwoorden op basis van data uit de Databank, doe dat dan. En als je dat doet, doe het dan bij voorkeur met een **deellink** , eerder dan met een dump. Maar let op:
       - zo&#39;n link bevat ook je gebruikersonderwerpen en je eigen gebiedsgroepen
       - die overrulet standaard wat mensen al hadden in hun sessie (openstaande presentaties, eigen onderwerpen/groepen)
-    - Je kan ook een presentatie samenstellen aan de hand **van complexere parameters** , zie [Achter de schermen van de databank](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen). Voeg steeds `_&amp;keepworkspace=true`_ toe aan je URL. Dit respecteert wat ze al hadden en voegt je nieuwe presentatie gewoon toe aan hun sessie
+    - Je kan ook een presentatie samenstellen aan de hand **van complexere parameters** , zie [Achter de schermen van de databank](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen). Voeg steeds `&keepworkspace=true` toe aan je URL. Dit respecteert wat ze al hadden en voegt je nieuwe presentatie gewoon toe aan hun sessie
 
   - Voor communiceren van een **Dashboard**.
     - Als je naar een **specifieke pagina** wil verwijzen, dan kan dat eenvoudig door de **URL te kopiëren die je bovenaan ziet**. Bijvoorbeeld: https://provincies.incijfers.be/dashboard/Nationaliteit-en-herkomst/
  ❕ Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
-    - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?_regionlevel=_gemeente_&amp;regioncode=_24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem)
+    - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?regionlevel=_gemeente_&regioncode=24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem)
 - **Verzamelen van gegevens over het succes van je communicatie:**
 
-**Voeg steeds aan het einde van je URL nog MINSTENS toe** _ **mtm\_campaign=** _ **naam\_van\_je\_project.** Dit laat toe om te filteren hoeveel van onze bezoekers binnenkomen via projectcommunicatie, en welk project dan wel precies. Hoe beter je je naam kiest, hoe beter je kan rapporten. Als je bijvoorbeeld altijd begint met &quot;provant\_&quot; , dan kan je eenvoudig rapporteren over alle campagnes van provant. Je kunt het effect van je campagne dan meten via Matomo.
+**Voeg steeds aan het einde van je URL nog MINSTENS toe:**  ***mtm_campaign=naam_van_je_project.*** 
+Dit laat toe om te filteren hoeveel van onze bezoekers binnenkomen via projectcommunicatie, en welk project dan wel precies. Hoe beter je je naam kiest, hoe beter je kan rapporten. Als je bijvoorbeeld altijd begint met &quot;provant_&quot; , dan kan je eenvoudig rapporteren over alle campagnes van provant. Je kunt het effect van je campagne dan meten via Matomo.
 
 ### Matomo URLs opstellen
 
-´mtm\_campaign=naam´       pinc-nieuwsbrief-februari-2021
+´mtm_campaign=naam´       pinc-nieuwsbrief-februari-2021
 
 Unieke omschrijving van de campagne, in zijn geheel. Dat mag dus de andere parameters herhalen als je dat wenst.
 
-´mtm\_kwd=keyword´         dashboard-demografie, rapport-bevolking, update-bevolking
+´mtm_kwd=keyword´         dashboard-demografie, rapport-bevolking, update-bevolking
 
 Inhoudelijke omschrijving van de link, indien ze gewenst.
 
-´mtm\_source=bron´         pinc-nieuwsbrief, limburgincijfers
+´mtm_source=bron´         pinc-nieuwsbrief, limburgincijfers
 
 Het specifieke kanaal waarmee je communiceerde.
 
-´mtm\_medium=medium´       e-mail, website, social-media
+´mtm_medium=medium´       e-mail, website, social-media
 
 Het type kanaal waarmee je communiceerde.
 
-´mtm\_content=inhoud´      [inhoudelijke omschrijving van hoe je de link aanbracht]
+´mtm_content=inhoud´      [inhoudelijke omschrijving van hoe je de link aanbracht]
 
 Optioneel, bijvoorbeeld de tekstomschrijving die je gebruikte in je pagina. Ik heb de indruk dat dit automatisch aangevuld wordt adhv de tekst in de link zelf.
 
 :grey_exclamation: ***Gebruik overal kleine letters.  Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.***
 
 **Je URL stel je als volgt samen:**
+(let op de plaatsing van het vraagteken)
 
-\&gt; ´https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING **?** mtm\_campaign=naam&amp;mtm\_kwd=keyword&amp;mtm\_source=bron&amp;mtm\_medium=medium&amp;mtm\_content=inhoud´
+> ´https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud´
 
 OF
 
-\&gt; ´https://provincies.incijfers.be/WAAR **?** JE-NAAR-TOE-WIL-IN-SWING&amp;mtm\_campaign=naam&amp;mtm\_kwd=keyword&amp;mtm\_source=bron&amp;mtm\_medium=medium&amp;mtm\_content=inhoud´
+> 'https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud´
 
 Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan voor je met Matomo parameters begon.**
 
