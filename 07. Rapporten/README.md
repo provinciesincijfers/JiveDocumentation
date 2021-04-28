@@ -1,12 +1,12 @@
 # Rapporten
 
-Bij het opstellen van **nieuwe rapporten**, volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/07.%20Rapporten/Draaiboek%20rapport%20aanmaken.docx).
+Bij het opstellen van **nieuwe rapporten**, volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/07.%20Rapporten/Draaiboek%20rapport%20aanmaken.docx).
 
 In de studio vind je het **sjabloon voor rapporten** alsook het **ontwikkelsjabloon voor grafiekstijl**.
 
 De rapporten zelf staan in **HTML bestanden**. Bij elk rapport hoort nog een deel visualisatie-instellingen. Die kan je bijvoorbeeld &quot;achter het oogje&quot; terugvinden in de preview van je rapport. De bestanden zijn te herkennen aan [rapportnaam]\_instellingen.txt. Er kan ook gebruik gemaakt worden van sw5r bestanden. Deze omvatten ook de instelling, maar zijn minder goed leesbaar. Deze kunnen in één stap geïmporteerd worden in Swing.
 
-De **allernieuwste versie van rapporten** kan je steeds raadplegen met een **link** als `[https://provincies.incijfers.be/admin/jive/report/?id=sjabloon\_rapport&amp;openinputs=true](https://provincies.incijfers.be/admin/jive/report/?id=sjabloon_rapport&amp;openinputs=true)`
+Rapporten in ontwikkeling kan je steeds **in de onwtikkelomgeving** raadplegen met een **link** als `https://provincies.incijfers.be/admin/jive/report/?id=sjabloon_rapport&openinputs=true`
 
 De rapporten voorbereid door de **werkgroep OBMI** staan in de map [&quot;centrumsteden&quot;](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/07.%20Rapporten/centrumsteden).
 
