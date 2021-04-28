@@ -20,7 +20,7 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
     - Je kan verrijken met `&openinputs=true` om rechtsreeks te landen op het keuzeschermpje voor gebieden
     - Of je kan verrijken met `&input_geo=gemeente_11002` indien je naar gemeente Antwerpen stuurt en hen rechtsreeks naar het rapport voor hun gemeente wil sturen
   - Voor communiceren van ***een cijfer in de Databank*** zelf.
-    - Ideaal voor maatwerk. Als je kan antwoorden op basis van data uit de Databank, doe dat dan. En als je dat doet, doe het dan bij voorkeur met een **deellink** , eerder dan met een dump. Maar let op:
+    - Ideaal voor maatwerk. Als je kan antwoorden op basis van data uit de Databank, doe dat dan. En als je dat doet, doe het dan bij voorkeur met een **deellink**, eerder dan met een dump. Maar let op:
       - zo&#39;n link bevat ook je gebruikersonderwerpen en je eigen gebiedsgroepen
       - die overrulet standaard wat mensen al hadden in hun sessie (openstaande presentaties, eigen onderwerpen/groepen)
     - Je kan ook een presentatie samenstellen aan de hand **van complexere parameters** , zie [Achter de schermen van de databank](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen). Voeg steeds `&keepworkspace=true` toe aan je URL. Dit respecteert wat ze al hadden en voegt je nieuwe presentatie gewoon toe aan hun sessie
