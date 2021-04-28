@@ -8,18 +8,18 @@
 
 Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je wil ook je impact kunnen meten, dan dient het **resultaat** er uit te zien als het onderstaande:
 
-> De klant ziet een [link](https://provincies.incijfers.be/jive/report/?id=rapport_detailhandel&amp;openinputs=true&amp;project=ff_preview), en de link verwijst naar https://provincies.incijfers.be/jive/report/?id=rapport\_ **jouwrapport** &amp;openinputs=true&amp;mtm\_campaign= **jouw-project**
+> De klant ziet een [link](https://provincies.incijfers.be/jive/report/?id=rapport_detailhandel&amp;openinputs=true&amp;project=ff_preview), en de link verwijst naar https://provincies.incijfers.be/jive/report/?id=rapport\_**jouwrapport**&amp;openinputs=true&amp;mtm\_campaign=**jouw-project**
 
 ## Ingrediënten van een goede URL
 
 - Wat je URL ook is: **klik er eens op voor je hem uitstuurt**. Check of je niet toevallig ingelogd bent in de databank, want dan heb je misschien meer rechten als je klant
 
 - **Bijsturen ervaring van de klant**
-  - Voor _ **rapportcommunicatie** _. Stel, je rapport heeft rapportcode rapport\_detailhandel. Begin dan met `_https://provincies.incijfers.be/Jive/report?id=_rapport\_detailhandel`
+  - Voor ***rapportcommunicatie***. Stel, je rapport heeft rapportcode rapport\_detailhandel. Begin dan met `https://provincies.incijfers.be/Jive/report?id=_rapport\_detailhandel`
  Er zijn ook andere manieren om rapporten te laten zien, maar standaard gebruiken we deze.
     - Je kan verrijken met `_&amp;openinputs=true`_ om rechtsreeks te landen op het keuzeschermpje voor gebieden
     - Of je kan verrijken met `_&amp;input\_geo=_gemeente\_11002` indien je naar gemeente Antwerpen stuurt en hen rechtsreeks naar het rapport voor hun gemeente wil sturen
-  - Voor communiceren van _ **een cijfer in de Databank** _ zelf.
+  - Voor communiceren van ***een cijfer in de Databank*** zelf.
     - Ideaal voor maatwerk. Als je kan antwoorden op basis van data uit de Databank, doe dat dan. En als je dat doet, doe het dan bij voorkeur met een **deellink** , eerder dan met een dump. Maar let op:
       - zo&#39;n link bevat ook je gebruikersonderwerpen en je eigen gebiedsgroepen
       - die overrulet standaard wat mensen al hadden in hun sessie (openstaande presentaties, eigen onderwerpen/groepen)
@@ -27,7 +27,7 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
 
   - Voor communiceren van een **Dashboard**.
     - Als je naar een **specifieke pagina** wil verwijzen, dan kan dat eenvoudig door de **URL te kopiëren die je bovenaan ziet**. Bijvoorbeeld: https://provincies.incijfers.be/dashboard/Nationaliteit-en-herkomst/
- :grey\_exclamation: Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
+ ❕ Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
     - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?_regionlevel=_gemeente_&amp;regioncode=_24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem)
 - **Verzamelen van gegevens over het succes van je communicatie:**
 
@@ -55,7 +55,7 @@ Het type kanaal waarmee je communiceerde.
 
 Optioneel, bijvoorbeeld de tekstomschrijving die je gebruikte in je pagina. Ik heb de indruk dat dit automatisch aangevuld wordt adhv de tekst in de link zelf.
 
-:grey\_exclamation: _ **Gebruik overal kleine letters.  Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.** _
+:grey_exclamation: ***Gebruik overal kleine letters.  Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.***
 
 **Je URL stel je als volgt samen:**
 
