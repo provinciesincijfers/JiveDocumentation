@@ -36,24 +36,23 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
 Dit laat toe om te filteren hoeveel van onze bezoekers binnenkomen via projectcommunicatie, en welk project dan wel precies. Hoe beter je je naam kiest, hoe beter je kan rapporten. Als je bijvoorbeeld altijd begint met &quot;provant_&quot; , dan kan je eenvoudig rapporteren over alle campagnes van provant. Je kunt het effect van je campagne dan meten via Matomo.
 
 ### Matomo URLs opstellen
-
-´mtm_campaign=naam´       pinc-nieuwsbrief-februari-2021
+`mtm_campaign=naam`       pinc-nieuwsbrief-februari-2021
 
 Unieke omschrijving van de campagne, in zijn geheel. Dat mag dus de andere parameters herhalen als je dat wenst.
 
-´mtm_kwd=keyword´         dashboard-demografie, rapport-bevolking, update-bevolking
+`mtm_kwd=keyword`         dashboard-demografie, rapport-bevolking, update-bevolking
 
 Inhoudelijke omschrijving van de link, indien ze gewenst.
 
-´mtm_source=bron´         pinc-nieuwsbrief, limburgincijfers
+`mtm_source=bron`         pinc-nieuwsbrief, limburgincijfers
 
 Het specifieke kanaal waarmee je communiceerde.
 
-´mtm_medium=medium´       e-mail, website, social-media
+`mtm_medium=medium`       e-mail, website, social-media
 
 Het type kanaal waarmee je communiceerde.
 
-´mtm_content=inhoud´      [inhoudelijke omschrijving van hoe je de link aanbracht]
+`mtm_content=inhoud`      [inhoudelijke omschrijving van hoe je de link aanbracht]
 
 Optioneel, bijvoorbeeld de tekstomschrijving die je gebruikte in je pagina. Ik heb de indruk dat dit automatisch aangevuld wordt adhv de tekst in de link zelf.
 
