@@ -69,7 +69,7 @@ provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
  provincies.incijfers.be/admin/jive?var=v1111a\_tot\_bevolking
 Je kan met dit soort parameters alle kanten op. Lees het [hier](https://provincies.incijfers.be/databank?report=achter_de_schermen) na.*
 
-Of kijk `hoe je URLS correct communiceert`.
+Of kijk [hoe je URLS correct communiceert](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
 De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de [**beta-omgeving**](https://beta-provincies.incijfers.be/) . Ook deze heeft een /databank en /admin/jive omgeving.
 
@@ -173,7 +173,7 @@ In [deze map](https://github.com/provinciesincijfers/JiveDocumentation/blob/mast
 
 # Communicatie
 
-Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert in PinC?** Kijk dan [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/10.%20Communicatie). 
+Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert in PinC?** Klik dan [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/10.%20Communicatie). 
 
 
 # Opleidingen
