@@ -176,7 +176,7 @@ Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert in PinC
 
 # Opleidingen
 
-[Hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/11.%20Opleidingen) vind je de bestanden met de documenten die je gebruikt om opleidingen voor je Swing-omgeving te maken.
+[Hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/11.%20Opleidingen) vind je de bestanden met de documenten die je gebruikt om **opleidingen voor je Swing-omgeving** te maken.
 
 # Meer info
 
