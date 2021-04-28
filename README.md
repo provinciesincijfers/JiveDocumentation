@@ -75,9 +75,7 @@ De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunne
 
 :grey_exclamation: *Hier kan je alles uittesten, alles kapot maken wat je wil, zonder enig risico voor de echte website. De data die erachter zit is een snapshot van de &quot;echte&quot; databank. Dat gaat dus snel verouderd zijn. Voorlopig is met Richard afgesproken dat we op afroep kunnen vragen om de recente versie daar neer te zetten. Op termijn kunnen we wellicht zelf een import-export operatie doen. Als je echt gaat prutsen, maak dan eerst een backup van de databank.*
 
-Meer informatie over het gebruik van de test- en liveomgeving, vind je `hier`.
-
-De toegankelijkheid wordt geregeld via de themaboom. Meer info vind je `hier`.
+Meer informatie over het gebruik van de test- en liveomgeving vind je binnen [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren). Hier vind je tevens informatie over de themaboom, die de toegangkelijkheid regelt.
 
 
 # Basisafspraken beheer Swing
