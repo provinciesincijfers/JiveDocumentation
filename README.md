@@ -164,7 +164,7 @@ In [deze map](https://github.com/provinciesincijfers/JiveDocumentation/blob/mast
 
 ## Controle
 
-[Hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle) vind je 
+[Hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle) vind je: 
 - Het **Draaiboek** voor controle
 - De **Checklist** voor een grondige controle van de databank
 
