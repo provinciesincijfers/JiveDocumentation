@@ -38,34 +38,39 @@ Dit laat toe om te filteren hoeveel van onze bezoekers binnenkomen via projectco
 ### Matomo URLs opstellen
 `mtm_campaign=naam`       pinc-nieuwsbrief-februari-2021
 
-Unieke omschrijving van de campagne, in zijn geheel. Dat mag dus de andere parameters herhalen als je dat wenst.
+= Unieke omschrijving van de campagne, in zijn geheel. Dat mag dus de andere parameters herhalen als je dat wenst.
+
 
 `mtm_kwd=keyword`         dashboard-demografie, rapport-bevolking, update-bevolking
 
-Inhoudelijke omschrijving van de link, indien ze gewenst.
+= Inhoudelijke omschrijving van de link, indien ze gewenst.
+
 
 `mtm_source=bron`         pinc-nieuwsbrief, limburgincijfers
 
-Het specifieke kanaal waarmee je communiceerde.
+= Het specifieke kanaal waarmee je communiceerde.
+
 
 `mtm_medium=medium`       e-mail, website, social-media
 
-Het type kanaal waarmee je communiceerde.
+= Het type kanaal waarmee je communiceerde.
+
 
 `mtm_content=inhoud`      [inhoudelijke omschrijving van hoe je de link aanbracht]
 
-Optioneel, bijvoorbeeld de tekstomschrijving die je gebruikte in je pagina. Ik heb de indruk dat dit automatisch aangevuld wordt adhv de tekst in de link zelf.
+= Optioneel, bijvoorbeeld de tekstomschrijving die je gebruikte in je pagina. Ik heb de indruk dat dit automatisch aangevuld wordt adhv de tekst in de link zelf.
 
-:grey_exclamation: ***Gebruik overal kleine letters.  Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.***
+
+:grey_exclamation: ***Gebruik overal kleine letters. Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.***
 
 **Je URL stel je als volgt samen:**
 (let op de plaatsing van het vraagteken)
 
-> ´https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud´
+> `https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud`
 
 OF
 
-> 'https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud´
+> `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud`
 
 Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan voor je met Matomo parameters begon.**
 
