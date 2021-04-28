@@ -15,7 +15,7 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
 - Wat je URL ook is: **klik er eens op voor je hem uitstuurt**. Check of je niet toevallig ingelogd bent in de databank, want dan heb je misschien meer rechten als je klant
 
 - **Bijsturen ervaring van de klant**
-  - Voor ***rapportcommunicatie***. Stel, je rapport heeft rapportcode rapport_detailhandel. Begin dan met `https://provincies.incijfers.be/Jive/report?id=_rapport_detailhandel`
+  - Voor ***rapportcommunicatie***. Stel, je rapport heeft rapportcode rapport_detailhandel. Begin dan met `https://provincies.incijfers.be/Jive/report?id=rapport_detailhandel`
  Er zijn ook andere manieren om rapporten te laten zien, maar standaard gebruiken we deze.
     - Je kan verrijken met `&openinputs=true` om rechtsreeks te landen op het keuzeschermpje voor gebieden
     - Of je kan verrijken met `&input_geo=gemeente_11002` indien je naar gemeente Antwerpen stuurt en hen rechtsreeks naar het rapport voor hun gemeente wil sturen
