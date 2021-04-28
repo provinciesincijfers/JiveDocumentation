@@ -28,7 +28,7 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
   - Voor communiceren van een **Dashboard**.
     - Als je naar een **specifieke pagina** wil verwijzen, dan kan dat eenvoudig door de **URL te kopiëren die je bovenaan ziet**. Bijvoorbeeld: https://provincies.incijfers.be/dashboard/Nationaliteit-en-herkomst/
     
- ❕ Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
+     ❕ Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
     - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?regionlevel=_gemeente_&regioncode=24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem)
 - **Verzamelen van gegevens over het succes van je communicatie:**
 
