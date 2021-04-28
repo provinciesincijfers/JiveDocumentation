@@ -173,7 +173,7 @@ In [deze map](https://github.com/provinciesincijfers/JiveDocumentation/blob/mast
 
 # Communicatie
 
-Wil je meer weten hoe je op een correcte manier URL&#39;s communiceert in PinC? Bekijk dan zeker `deze pagina`.
+Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert in PinC?** Kijk dan [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/10.%20Communicatie). 
 
 
 # Opleidingen
