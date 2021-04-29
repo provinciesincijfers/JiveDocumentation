@@ -180,5 +180,8 @@ Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert in PinC
 
 # Meer info
 
-Nood aan nog wat meer info? Je kan altijd op de helpknopjes klikken in de Swingomgeving, of je kan de `basishandleiding` erbij nemen.
-
+Nood aan nog wat meer info? Dan kan je terecht in [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/12.%20Meer%20weten) voor:
+- De h**andleiding om gebruik te maken van de Databank** van PinC
+- **Handleidingen voor Swingproducten**
+- De **basishandleiding**
+of je kan gebruik maken van de **help-knopjes** binnen de Swing omgeving.
