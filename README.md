@@ -2,7 +2,8 @@
 
 **In dit document:**
 
-:point_right: vanaf de titel &#39;Beheer in Swing&#39; kan je ook klikken op de titel zelf in het overzicht om rechtstreeks naar de bijhorende map te gaan
+:point_right: vanaf de titel &#39;Beheer in Swing&#39; kan je ook klikken in het overzicht op de titel zelf om rechtstreeks naar de bijhorende map te gaan. 
+❕ ***Beheer van dit document, Basisinfrastructuur, Basisonderdelen beheer en Basisafspraken beheer Swing staan enkel binnen dit document opgesomd.***
 
 
 - Beheer van dit document/repo
