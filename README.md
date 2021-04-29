@@ -29,7 +29,7 @@
 
 - [Opleidingen](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/11.%20Opleidingen)
 
-- [Meer weten?](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/12.%20Meer%20info)
+- [Meer weten?](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/12.%20Meer%20weten)
 
 # Beheer van dit document/repo
 
