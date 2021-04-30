@@ -1,7 +1,7 @@
 # Communicatie
 
-Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert** in PinC? Bekijk dan zeker [deze pagina](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md). Hier vind je
-- Enkele **basisprincipes**
+Wil je meer weten **hoe je op een correcte manier URL&#39;s communiceert** in PinC? Bekijk dan zeker [deze pagina](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md). Hier vind je:
+- De **basisprincipes**
 - **Ingrediënten** van een goede URL
 - Hoe je **Matomo URLS** opstelt
 - Enkele leidraden om met je **communicatoren te communiceren** over de URLS
