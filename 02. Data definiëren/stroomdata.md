@@ -1,7 +1,7 @@
 # Stroomdata
 
 Bij stroomdata heb je in plaats van een cijfer voor één gebied **een cijfer over de relatie tussen een gebied en een ander gebied**.
-Bijvoorbeeld hoevel mensen fietsen van gemeente A naar gemeente B.
+Bijvoorbeeld hoeveel mensen fietsen van gemeente A naar gemeente B.
 
 Het gebruik van deze gegevens is iets complexer in Swing, en het is gemakkelijk om zo veel data te vragen dat het echt niet meer werkt.
 Maar het kan bijzonder nuttig zijn, bijvoorbeeld om op kaart te laten zien waar gebruikers van diensten in een bepaalde plaats vandaan komen. 
