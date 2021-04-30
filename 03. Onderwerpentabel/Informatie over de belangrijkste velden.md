@@ -72,7 +72,7 @@ Dit veld **mag niet ingevuld zijn bij berekende onderwerpen, tenzij indien uitzo
 
 ## Vrij tekstveld
 
-Dit moet ingevuld zijn met een **oplader en een controleur**, zie `Verantwoordelijke opzoeken in PinC`. De code heeft deze structuur: VB\_AN
+Dit moet ingevuld zijn met een **oplader en een controleur**, zie [onderdeel Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle). De code heeft deze structuur: VB\_AN
 
 Hierbij staat het **eerste deel voor de inhoudelijk verantwoordelijke**. Het **tweede deel staat voor de controlerende partner**.
 
@@ -81,4 +81,4 @@ Hierbij staat het **eerste deel voor de inhoudelijk verantwoordelijke**. Het **t
 - Voor &quot;testjes&quot; gebruik je je eigen naam. Voor onderwerpen die nog geen controleur heb vul je alvast het eerste deel in.
 - Bij data die door onze partners beheerd worden, geven we dat als volgt aan: VB(ECO)\_AN(ECO)
 
-❕ ***Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie het** `onderdeel controle`.***
+❕ ***Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie zie [onderdeel Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle).***
