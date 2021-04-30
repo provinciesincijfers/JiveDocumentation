@@ -23,7 +23,7 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
 ## Meer informatie
 
 Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin bron en methode wordt toegelicht. _Vb. 1205\_rsvz\_zelfstandigen\_voorbeeld\_metadata_
- Per BRON/thema voorzien we deze fiche met meer uitleg over de verschillende onderwerpen die tot deze bron behoren. Gebruik hiervoor het `Sjabloon Metadata`.
+ Per BRON/thema voorzien we deze fiche met meer uitleg over de verschillende onderwerpen die tot deze bron behoren. Gebruik hiervoor het Sjabloon Metadata dat je terugvindt binnen [Teams > D&A Interprovinciale werking > Uploadfiles PinC > 00 Metadatafiches PinC](https://teams.microsoft.com/_?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e#/files/Uploadfiles%20PinC?threadId=19:51c8556c2f0c4552b8acc0b7c93024b7@thread.tacv2&ctx=channel&rootfolder=%252Fteams%252FDA-Interprovincialewerking%252FGedeelde%2520documenten%252FUploadfiles%2520PinC%252F00%2520Metadatafiches%2520PinC%252FSjabloon%2520metadata).
 
 ❕ **Opgelet:** Dit zal in de toekomst veranderen.
 
