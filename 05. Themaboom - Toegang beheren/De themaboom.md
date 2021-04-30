@@ -39,9 +39,9 @@ De **basisstructuur** is nu:
 
 ### Eén map met de PRODUCTIE omgeving
 
-Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de **mappen die we EXTERN laten zien en de mappen die we enkel INTERN** laten zien. Dat doe je door hen aan de **UserGroup Users toe te kennen**. Meer info over usergroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Gebruikersaccounts.md). Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIE omgeving, zodat ze niet overweldigd worden door het data-aanbod (`zie vb usergroup=ruimte`). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
+Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de **mappen die we EXTERN laten zien en de mappen die we enkel INTERN** laten zien. Dat doe je door hen aan de **UserGroup Users toe te kennen**. Meer info over usergroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Gebruikersaccounts.md). Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIE omgeving, zodat ze niet overweldigd worden door het data-aanbod (zie vb usergroup=ruimte). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
 
-**De rechten tot data op niveau van de statistische sectoren is geregeld via `UserGroups`.**
+**De rechten tot data op niveau van de statistische sectoren is geregeld via UserGroups (en daarnaan gekoppeld de AccesGroups).**
 
 **De PRODUCTIE map bevat**:
 
