@@ -47,7 +47,7 @@ We lezen nieuwe data *bij voorkeur in op &quot;gemeente&quot;*. Oude data mag ge
 
 ***Statsec2019 of statsec?***
 
-Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld**. Deze **moeten dus in**** statsec2019 ingelezen**.
+Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld**. Deze **moeten dus in statsec2019 worden ingelezen**.
 
 Gebruik je de OUDE statsec2019, dan gebruik je voor gebied onbekend van fusiegemeenten de OUDE niscode van de gemeente2018 + ZZZZ. Gebruik je de NIEUWE statsec, dan gebruik je voor gebied onbekende de NIEUWE niscode van de gemeente + ZZZZ
 
