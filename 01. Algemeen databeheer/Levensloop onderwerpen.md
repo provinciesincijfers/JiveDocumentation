@@ -1,6 +1,6 @@
 # Hoe omgaan met te verwijderen data
 
-Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kunnen we onderwerpen **en kubusdimensies** niet zomaar deleten (of codes wijzigen). Want:
+Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kunnen we **onderwerpen en kubusdimensies niet zomaar deleten (of codes wijzigen)**. Want:
 
 - ze verdwijnt dan uit de Themaboom
 - Dashboard geeft foutmeldingen
