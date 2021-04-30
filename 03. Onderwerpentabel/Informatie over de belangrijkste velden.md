@@ -81,4 +81,4 @@ Hierbij staat het **eerste deel voor de inhoudelijk verantwoordelijke**. Het **t
 - Voor &quot;testjes&quot; gebruik je je eigen naam. Voor onderwerpen die nog geen controleur heb vul je alvast het eerste deel in.
 - Bij data die door onze partners beheerd worden, geven we dat als volgt aan: VB(ECO)\_AN(ECO)
 
-❕ ***Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie zie [onderdeel Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle).***
+❕ ***Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie [onderdeel Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle).***
