@@ -1,6 +1,6 @@
 # De themaboom
 
-**De toegang is geregeld via de Themaboom**. Dit impliceert dat **alle data die in Swing zit, in principe raadpleegbaar is voor iedereen** - alleen is het niet eenvoudig ze te vinden. Enkel de afscherming van statsec en van oude jaargangen geldt altijd. Dit is een keuze die de zaak veel beheersbaarder houdt, MAAR betekent dat **écht gevoelige data geen plaats heeft in Swing**. Meer informatie over toegangsgroepen/accesgroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangs-%20en%20gebruikersgroepen.md).
+**De toegang is geregeld via de Themaboom**. Dit impliceert dat **alle data die in Swing zit, in principe raadpleegbaar is voor iedereen** - alleen is het niet eenvoudig ze te vinden. Enkel de afscherming van statsec en van oude jaargangen geldt altijd. Dit is een keuze die de zaak veel beheersbaarder houdt, MAAR betekent dat **écht gevoelige data geen plaats heeft in Swing**. Meer informatie over toegangsgroepen/accessgroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangs-%20en%20gebruikersgroepen.md).
 
 **In de Themaboom organiseer je de inhoud van je Swing-versie in mappen**. De zichtbaarheid van deze mappen kan je op diverse manieren organiseren.
 
@@ -41,7 +41,7 @@ De **basisstructuur** is nu:
 
 Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de **mappen die we EXTERN laten zien en de mappen die we enkel INTERN** laten zien. Dat doe je door hen aan de **UserGroup Users toe te kennen**. Meer info over usergroups staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Gebruikersaccounts.md). Specifieke doelgroepen kunnen eventueel toegewezen worden aan een map binnen de PRODUCTIE omgeving, zodat ze niet overweldigd worden door het data-aanbod (zie vb usergroup=ruimte). Dit doen we doorgaans NIET, omdat mensen data willen combineren.
 
-**De rechten tot data op niveau van de statistische sectoren is geregeld via UserGroups (en daarnaan gekoppeld de AccesGroups).**
+**De rechten tot data op niveau van de statistische sectoren is geregeld via UserGroups (en daarnaan gekoppeld de AccessGroups).**
 
 **De PRODUCTIE map bevat**:
 
