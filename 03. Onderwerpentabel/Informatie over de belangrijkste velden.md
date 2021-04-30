@@ -40,7 +40,7 @@ Bij **percentages** geven we **enkel de Bron van de teller** mee.
  **Wanneer mogelijk kunnen nieuwe onderwerpen best via een formule gedefinieerd worden**. Bv: laad het aantal bijgebouwen en het aantal hoofgebouwen in, maar maak de som van alle gebouwen binnen Swing. Zeker voor verhoudingen is dit handig.
 
 De teller kan bestaan uit verschillende (kubus)onderwerpen. De noemer moet je ook als aggregatieonderwerp aanduiden, en mag daarom slechts uit 1 onderwerp bestaan.
- Zie ook onderdeel `Formule onderwerpen`.
+ Zie ook onderdeel [Formule onderwerpen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md).
 
 ## Aggregatie-onderwerp
 
