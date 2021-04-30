@@ -57,7 +57,7 @@ Vanuit die toepassing kan je ook doorklikken naar **DashAdmin**, de beheerstool 
 
 **Publiceren** of extern zetten is het proces waarmee dingen publiek zichtbaar gezet worden:
 
-- Dit vereist dat de het `draaiboek voor controle van data` en/of `rapporten` is doorlopen
+- Dit vereist dat de het [draaiboek voor controle](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) is doorlopen
 - De Onderwerpen zijn in de Themaboom EXTERN gezet. De Rapporten zijn toegevoegd op de zes relevante plaatsen. De Dashboard-pagina is zichtbaar gemaakt
 - De Databank en/of het Dashboard worden live gezet. **De Databank live zetten is dus maar een klein onderdeel van publiceren!**
 
