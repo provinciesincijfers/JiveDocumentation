@@ -20,7 +20,7 @@ De **noemer moet steeds het aggregatieonderwerp** zijn. Als je noemer dus de som
 
 data\_from\_period(v1101\_t,&quot;+1&quot;) + v1101\_t - v1101\_t
 
-*Enkel en alleen_ _data\_from\_period(v1101\_t,&quot;+1&quot;) werkt niet, omdat je formule-onderwerp dan geen referentiekader heeft. We tellen er v1101\_t bij op om de perioden van dat onderwerp te krijgen. Vervolgens trekken we het er weer af, omdat we dat aantal helemaal niet willen gebruiken!*
+*Enkel en alleen "data\_from\_period(v1101\_t,&quot;+1&quot;)" werkt niet, omdat je formule-onderwerp dan geen referentiekader heeft. We tellen er v1101\_t bij op om de perioden van dat onderwerp te krijgen. Vervolgens trekken we het er weer af, omdat we dat aantal helemaal niet willen gebruiken!*
 
 - Je kunt ook &quot; **toekomstige jaren**&quot; bevragen.
 
