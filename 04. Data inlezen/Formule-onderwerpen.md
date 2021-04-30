@@ -22,6 +22,6 @@ data\_from\_period(v1101\_t,&quot;+1&quot;) + v1101\_t - v1101\_t
 
 *Enkel en alleen "data\_from\_period(v1101\_t,&quot;+1&quot;)" werkt niet, omdat je formule-onderwerp dan geen referentiekader heeft. We tellen er v1101\_t bij op om de perioden van dat onderwerp te krijgen. Vervolgens trekken we het er weer af, omdat we dat aantal helemaal niet willen gebruiken!*
 
-- Je kunt ook &quot; **toekomstige jaren**&quot; bevragen.
+- Je kunt ook &quot;**toekomstige jaren**&quot; bevragen.
 
 :grey\_exclamation: Let op: **je kunt best een begin- of eindjaar instellen**: Bij een gemiddelde bevolking op basis van een onderwerp dat in 1990 begint, ga je immers in 1990 enkel missings krijgen in je afgeleid onderwerp.
