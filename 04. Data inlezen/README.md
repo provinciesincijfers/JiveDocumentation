@@ -2,7 +2,7 @@
 
 [Hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Algemene%20principes%20data%20inlezen.md) vind je de **algemene principes** met betrekking tot het inlezen van data.
 
-Dit document bevat informatie over
+Dit document bevat informatie over:
 - Het bestandstype
 - De bestandsstructuur
 - De benodigde data
