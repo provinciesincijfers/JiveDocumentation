@@ -34,7 +34,7 @@ In principe is **het énkel nodig op het &quot;laagste gebiedsniveau**&quot;. Sw
 
 ## Op welke gebiedsniveaus inladen
 
-**Standaard lezen we in op niveau statsec** (statistische sectoren) **OF statsec2019** (statistische sectoren van voor de aanpassing 2019/2020) **OF gemeente2018** (de gemeenten van voor de fusie) **OF gemeent** e (de huidige gemeenten zoals in voege sinds 2019). Voor niet-aggregeerbare data, beschikken we idealiter voor elk van de onderliggende gebieden over data:
+**Standaard lezen we in op niveau statsec** (statistische sectoren) **OF statsec2019** (statistische sectoren van voor de aanpassing 2019/2020) **OF gemeente2018** (de gemeenten van voor de fusie) **OF gemeente** (de huidige gemeenten zoals in voege sinds 2019). Voor niet-aggregeerbare data, beschikken we idealiter voor elk van de onderliggende gebieden over data:
 
 ![image](https://user-images.githubusercontent.com/77432663/112810470-59637700-907b-11eb-8679-de865c6e05b4.png)
 
