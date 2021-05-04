@@ -4,7 +4,7 @@
 
 ## Volgnummer
 
-Dit wordt wordt **automatisch toegekend**. Voeg dit dus niét toe aan je uploadfile.
+Dit wordt **automatisch toegekend**. Voeg dit dus niét toe aan je uploadfile.
 
 ## Onderwerpcode
 
