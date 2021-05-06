@@ -137,7 +137,7 @@ Hier vind je:
 ## Themaboom - toegang beheren
 
 Dit beheert de inhoud die je kan zien in de Databank, zowel voor ingelogde als niet ingelogde mensen. Maar ook wat er doorstroomt via de Connector of naar de Dashboards.
-Meer informatie over de themaboom en het beheren van toegang vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren)
+Meer informatie over de themaboom en het beheren van toegang vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/05.%20Themaboom%20-%20Toegang%20beheren).
 
 Hier vind je:
 - **Algemene informatie** over de toegang
