@@ -52,6 +52,8 @@ De afspraken rond datatype vind je [hier](https://github.com/provinciesincijfers
  
 ## Eenheid
 
+De afspraken rond de eenheid vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel/Afspraken%20omtrent%20de%20eenheid.md).
+
 **Komt uit de Data > Eenheden**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Gelieve dus eerst te gaan kijken of de eenheid al bestaat.
 
 ## Afronding
