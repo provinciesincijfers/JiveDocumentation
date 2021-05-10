@@ -5,7 +5,7 @@
 Dit zijn guidelines die we binnen Provincies in Cijfers hanteren.
 
 Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md)  eerst. **Deze tekst bevat enkel aanvullende info.**
-Ook een handleiding gezocht rond werken met geperecenteerde kubussen en het combineren van kubussen.
+Ook een handleiding gezocht rond werken met gepercenteerde kubussen en het combineren van kubussen.
 
 ❕ Vergeet niet dat een kubus **maximaal 100.000 combinaties mag bevatten**. Om de combinaties te berekenen, neem je alle inhoudelijke  indelingen van de dataset (de "dimensieniveaus", voorbeeld: leeftijd, geslacht en burgerlijke staat, maar NIET jaar, gebied, aantal). Vervolgens neem je het product van het aantal keuzes per indeling. 
 
@@ -36,7 +36,9 @@ Naam van dimensieniveau en dimensie:
 * in woorden, met spaties (geen underscores laten staan!)
 * Dimensie met een hoofdletter, dimensieniveau met een kleine letter
 
-**Controleer bij elke nieuwe kubus of update of alle dimensieniveaus en dimensies in de gebruikersinterface een zinvolle naam hebben.**
+Controleer bij elke nieuwe kubus of update of **alle dimensieniveaus en dimensies in de gebruikersinterface een zinvolle naam** hebben.
+
+❕ ***Het datamodel moet exact hetzelfde zijn als je twee kubussen wilt combineren (=formulekubussen). M.a.w.: alle dimensieniveaus moeten hetzelfde zijn. **
 
 **De codes binnen een dimensie kan je best als code invullen, niet als de waarde zoals die bij de gebruiker moet verschijnen.** Hoe minder tekens, hoe beter. Vermijd speciale tekens en spaties, want die moeten door Swing vertaald worden naar een underscore. Dat duurt langer, en zorgt voor een verschil tussen je databestand en Jive. 
 Je maakt best eerst dimensies aan, alvorens de data zelf in te laden. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5).
