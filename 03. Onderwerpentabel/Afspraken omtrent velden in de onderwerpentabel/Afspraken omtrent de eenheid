@@ -1,0 +1,4 @@
+# Afspraken omtrent de eenheid
+
+- Als in de naam al bv. verlichting per km staat, schrijf bij unit dan enkel kwh en niet: kwh/km.
+- zie [Afspraken omtrent de beschrijving(https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel/Afspraken%20omtrent%20de%20beschrijving.md): ook hier weer: een deel van het geheel, bv bij promille, dan promille gebruiken, anders ratio
