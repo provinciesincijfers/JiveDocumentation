@@ -123,7 +123,7 @@ De teller kan bestaan uit verschillende (kubus)onderwerpen. De noemer moet je oo
 ## Eenheid
 
 - Als in de naam al bv. verlichting per km staat, schrijf bij unit dan enkel kwh en niet: kwh/km.
-- Zie [Afspraken omtrent de beschrijving](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel/Afspraken%20omtrent%20de%20beschrijving.md): Wanneer het gaat over een deel van het geheel, bv. bij promille, dan gebruik je [promille], anders [ratio].
+- Zie Afspraken omtrent de beschrijving: Wanneer het gaat over een deel van het geheel, bv. bij promille, dan gebruik je [promille], anders [ratio].
 
 
 ❕ **Komt uit de Data > Eenheden**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Gelieve dus eerst te gaan kijken of de eenheid al bestaat.
@@ -135,7 +135,7 @@ Absolute aantallen zijn gehele getallen, de rest (bv. promille, % en ratio's) is
 
 ## Drempelwaarde
 
-Meer informatie over de drempelwaarde/threshold vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Afspraken%20omtrent%20velden%20in%20de%20onderwerpentabel/threshold.md).
+Meer informatie over de drempelwaarde/threshold vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/threshold.md).
 
 ## Periodetype
 
