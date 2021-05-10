@@ -38,7 +38,7 @@ Naam van dimensieniveau en dimensie:
 
 Controleer bij elke nieuwe kubus of update of **alle dimensieniveaus en dimensies in de gebruikersinterface een zinvolle naam** hebben.
 
-❕ ***Het datamodel moet exact hetzelfde zijn als je twee kubussen wilt combineren (=formulekubussen). M.a.w.: alle dimensieniveaus moeten hetzelfde zijn. **
+❕ ***Het datamodel moet exact hetzelfde zijn als je twee kubussen wilt combineren (=formulekubussen). M.a.w.: alle dimensieniveaus moeten hetzelfde zijn.***
 
 **De codes binnen een dimensie kan je best als code invullen, niet als de waarde zoals die bij de gebruiker moet verschijnen.** Hoe minder tekens, hoe beter. Vermijd speciale tekens en spaties, want die moeten door Swing vertaald worden naar een underscore. Dat duurt langer, en zorgt voor een verschil tussen je databestand en Jive. 
 Je maakt best eerst dimensies aan, alvorens de data zelf in te laden. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5).
