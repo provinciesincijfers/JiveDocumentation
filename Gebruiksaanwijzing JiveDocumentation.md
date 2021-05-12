@@ -104,7 +104,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 
 ### Wil je een markdown bestand bewerken?
 1. **Open de markdown file** of scroll naar onder in de map indien je de README file wil aanpassen.
-2. Klik op het **potlood **(1).
+2. Klik op het **potlood**(1).
 
 ![image](https://user-images.githubusercontent.com/77432663/117947601-a42a0d00-b310-11eb-8aa2-ce8ca72697e4.png)
 
