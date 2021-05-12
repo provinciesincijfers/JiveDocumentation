@@ -9,7 +9,7 @@ Wanneer je surft naar **github.com/provinciesincijfers** kom je op de interprovi
 3. Binnen <> Code zie je eerst **12 verschillende mappen** die de opdeling van alle praktische afspraken volgen.
 4. Wanneer je naar onder scrollt, komt je op het **overzichtsdocument** terecht (JiveDocumenattion – Start to Swing). Dit is in Markdown (.md) formaat, zodat het automatisch rechtstreeks getoond wordt binnen Github.
 5. De onderdelen **&#39;Basisinfrastructuur&#39;, &#39;Basisonderdelen beheer&#39; en &#39;Basisafspraken beheer Swing&#39; staan rechtstreeks in dit overzichtsdocument**. Vanaf &#39;Beheer in Swing Studio&#39; staat alles in de bijhorende mappen. Het overzichtsdocument beschrijft enkel de inhoud van deze mappen.
-6. Wanneer je **doorklikt naar een map** , zie je de verschillende **bestanden opgelijst**. Hier kan je gewoon op klikken. Onderaan staat een beschrijving van de inhoud van de map. Dit is de README.file (hieronder meer daarover).
+6. Wanneer je **doorklikt naar een map**, zie je de verschillende **bestanden opgelijst**. Hier kan je gewoon op klikken. Onderaan staat een beschrijving van de inhoud van de map. Dit is de README.file (hieronder meer daarover).
 
 ## Zoeken
 
