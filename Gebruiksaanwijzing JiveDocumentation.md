@@ -103,14 +103,14 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 
 
 ### Wil je een markdown bestand bewerken?
-1. Open de markdown file of scroll naar onder in de map indien je de README file wil aanpassen.
-2. Klik op het potlood (1).
+1. **Open de markdown file** of scroll naar onder in de map indien je de README file wil aanpassen.
+2. Klik op het **potlood **(1).
 
 ![image](https://user-images.githubusercontent.com/77432663/117947601-a42a0d00-b310-11eb-8aa2-ce8ca72697e4.png)
 
 
-3. Je kan binnen deze ruimte gewoon typen, maar je moet zelf nog de lay-out toevoegen (2). Meer info vind je [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
-4. Je kan je file previewen door op het Oogje &#39;Preview&#39; te klikken (3).
+3. Je kan **binnen deze ruimte gewoon typen, maar je moet zelf nog de lay-out toevoegen** (2). Meer info vind je [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
+4. Je kan je file **previewen** door op het Oogje &#39;Preview&#39; te klikken (3).
 
 ![image](https://user-images.githubusercontent.com/77432663/117947697-befc8180-b310-11eb-9700-0550a435f15b.png)
 
