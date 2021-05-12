@@ -20,7 +20,7 @@ Je kan op verschillende manieren zoeken binnen JiveDocumentation
 3. Nog makkelijker: via de **zoekfunctie**. Dit kan op 2 manieren:
  - (1): Klik links bovenaan in de zoekbalk en typ een **sleutelwoord** in. In de opties die daaronder verschijnen, kan je ervoor kiezen om binnen de repository te zoeken waarin je zit (in dit geval: JiveDocumentation), te zoeken binnen de organisatie (in dit geval: Provinciesincijfers), of in heel Github. Kies de eerste optie. Vervolgens zie je de zoekresultaten.
 
- - (2): Zoeken op **bestandsnaam**. Dit kan via de knop &#39;Go to file&#39;. Op deze pagina zie je bovenaan ´JiveDocumentation / ´staan. Naast deze schuine streep typ je (een deel van) de bestandsnaam. In de lijst daaronder kan je dan klikken op het juiste document.
+ - (2): Zoeken op **bestandsnaam**. Dit kan via de knop &#39;Go to file&#39;. Op deze pagina zie je bovenaan ´JiveDocumentation /´staan. Naast deze schuine streep typ je (een deel van) de bestandsnaam. In de lijst daaronder kan je dan klikken op het juiste document.
 
 ![image](https://user-images.githubusercontent.com/77432663/117945780-f5390180-b30e-11eb-9b81-a5022ebdc705.png)
 
@@ -80,7 +80,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 
 ### Heb je een word-bestand en wil je het als markdown bestand toevoegen?
 
-: grey_exclamation: ***Door een Word-bestand als Markdown toe te voegen, wordt het bestand rechtstreeks getoond op Github en moet je het niet eerst downloaden.***
+:grey_exclamation: ***Door een Word-bestand als Markdown toe te voegen, wordt het bestand rechtstreeks getoond op Github en moet je het niet eerst downloaden.***
 
 1. **Maak je Word-bestand op**
 2. **Converteer** het naar Markdown via [een converter.](https://word2md.com/)
@@ -93,11 +93,11 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 9. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt (zie hierboven).
 10. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
-**Een ander bestand toevoegen?**
+### Wil je een ander bestand toevoegen?
 
 1. Kies dan voor &#39;**Add file**&#39; en dan &#39;**Upload files**' (zie hierboven).
 2. **Selecteer je bestand en laadt op.**
-3. **Beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan** , en daaronder nog wat meer uitleg indien je dit wenst.
+3. **Beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst.
 4. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt (zie hierboven).
 5. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
@@ -114,8 +114,8 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 
 ![image](https://user-images.githubusercontent.com/77432663/117947697-befc8180-b310-11eb-9700-0550a435f15b.png)
 
-5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan** , en daaronder nog wat meer uitleg indien je dit wenst (5).
-6. Klik dan op de groene &#39; **Commit new file**&#39; knop die tevoorschijn komt (6).
+5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst (5).
+6. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt (6).
 7. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
 ![image](https://user-images.githubusercontent.com/77432663/117947744-c91e8000-b310-11eb-9470-76ffdba3cadf.png)
@@ -147,18 +147,18 @@ Een **tutorial** vind je [hier](https://www.youtube.com/watch?v=77W2JSL7-r8).
 3. Heb je de repository **al gekloond**? **Haal dan eerst de veranderingen die gemaakt zijn op Github zelf binnen**. Dit gebeurt immers niet automatisch. Dit doe je door Github Desktop te openen, ervoor te zorgen dat je current repository op &#39;JiveDocumentation&#39; staat (1) en je binnen de masterbranch werkt (2), en dan op &#39;Pull Origin&#39; te klikken (3).
 4. **Open de gekloonde repository** (4). Deze ziet er net hetzelfde uit als je andere mappen op je pc.
 
-![image](https://user-images.githubusercontent.com/77432663/117947871-e2273100-b310-11eb-8081-47cf424fd3d0.png)
+![image](https://user-images.githubusercontent.com/77432663/117948956-ebfd6400-b311-11eb-8ee7-5cc2ea5cb8fd.png)
 
 5. **Voeg/Bewerk de bestanden** die je wilt toevoegen/bewerken binnen je kloon.
   a. Markdown files maak je het best aan via je kladblok of Notepad++, dat je dan opslaat als bestandsnaam.md
   b. Voor het converteren van een Word- naar Markdown-bestand, zie hierboven onder &#39;Heb je een word bestand en wil je het als markdown bestand toevoegen?
 6. **Keer terug naar de Github Desktop applicatie**. Je zal zien dat er onder de tab Changes een **opsomming** zal staan van al je **veranderingen** (1). In de volgende screenshot paste ik het word-document &#39;Checklist grondige controle databank&#39; aan.
 7. Typ in het vak onderaan naast je icoon een **korte samenvatting van je veranderingen** (2) en voorzie eventueel een meer uitgebreide beschrijving in het vak daaronder.
-8. Klik op &#39; **Commit to master**&#39; (3).
-9. Rechts verschijnt de blauwe knop &#39; **Push origin**&#39; (ziet er hetzelfde uit als de &#39;Pull origin&#39; knop. Klik hierop om je veranderingen naar de &#39;echte&#39; Github te laten doorstromen.
+8. Klik op &#39;**Commit to master**&#39; (3).
+9. Rechts verschijnt de blauwe knop &#39;**Push origin**&#39; (ziet er hetzelfde uit als de &#39;Pull origin&#39; knop. Klik hierop om je veranderingen naar de &#39;echte&#39; Github te laten doorstromen.
 10. **Na goedkeuring** van mij of Joost zullen de veranderingen dan toegevoegd worden.
 
-![image](https://user-images.githubusercontent.com/77432663/117948021-0a169480-b311-11eb-827d-f3df6a15b91a.png)
+![image](https://user-images.githubusercontent.com/77432663/117948882-d8ea9400-b311-11eb-965a-e794ef35e2f2.png)
 
 
 ## Good to know
