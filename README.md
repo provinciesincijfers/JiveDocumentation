@@ -8,15 +8,10 @@
 
 
 - Beheer van dit document/repo
-
 - Basisinfrastructuur
-
 - Basisonderdelen beheer
-
 - Basisafspraken beheer Swing
-
 - Beheer in Swing Studio
-
    - [Algemeen databeheer](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/01.%20Algemeen%20databeheer)
    - [Data definiëren](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren)
    - [Onderwerpentabel](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel)
@@ -35,11 +30,7 @@
 
 # Beheer van dit document/repo
 
-- **Kleine wijzigingen** mag je gewoon zo aanpassen.
-- Voor **grote wijzigingen** maak je eerst (indien het nog niet bestaat) een github issue aan waarnaar je vervolgens verwijst bij je aanpassingen. Laat dit ook weten aan Emilien. 
-
-:point_right: `Hier` vind je hoe op een correcte manier wijzigingen kan aanbrengen.
-- Wil je **inhoudelijk iets veranderen** (&quot;deze afspraak vind ik inhoudelijk niet goed&quot;)? Zet het dan op de agenda van de Redactiegroep.
+Alles wat je ooit wou weten over hoe je met /JiveDocumentation werkt, staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Gebruiksaanwijzing%20JiveDocumentation.md).
 
 
 # Basisinfrastructuur
