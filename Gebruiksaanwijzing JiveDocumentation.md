@@ -2,7 +2,7 @@
 
 ## Situering
 
-Wanneer je surft naar **github.com/provinciesincijfers** kom je op de interprovinciale Github pagina terecht. Hier vind je **verschillende repositories** ; dit zijn verschillende ruimtes binnen de /provinciesincijfers ruimte. Een beetje zoals de kanalen binnen de Interprovinciale Teamsomgeving. Zo heb je bv PinC-taakopvolging, waar de issuetracker zich bevindt en JiveDocumentation, waar alle praktische afspraken staan.
+Wanneer je surft naar **github.com/provinciesincijfers** kom je op de interprovinciale Github pagina terecht. Hier vind je **verschillende repositories**; dit zijn verschillende ruimtes binnen de /provinciesincijfers ruimte. Een beetje zoals de kanalen binnen de Interprovinciale Teamsomgeving. Zo heb je bv PinC-taakopvolging, waar de issuetracker zich bevindt en JiveDocumentation, waar alle praktische afspraken staan.
 
 1. Klik op **JiveDocumentation**.
 2. Nu kom je automatisch in **<> Code** terecht. Hier bevinden zich alle documenten. Naast <> Code, staat de tab &#39;Issues&#39;, waar je problemen kan signaleren.
