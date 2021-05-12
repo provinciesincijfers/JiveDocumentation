@@ -164,8 +164,8 @@ Een **tutorial** vind je [hier](https://www.youtube.com/watch?v=77W2JSL7-r8).
 ## Good to know
 
 - [Hier](https://guides.github.com/) vind je allerlei **guides**. De volgende kunnen zeer interessant zijn:
- - Getting Started with GitHBub Pages: Voor wanneer je pagina&#39;s wilt bewerken.
- - Master issues: Hoe je issues aanmaakt e.d.
- - Mastering Markdown: meer informatie over Markdown.
+  - Getting Started with GitHBub Pages: Voor wanneer je pagina&#39;s wilt bewerken.
+  - Master issues: Hoe je issues aanmaakt e.d.
+  - Mastering Markdown: meer informatie over Markdown.
 - Een **foto toevoegen** kan het makkelijkst via Github Online. Dan kan je gewoon de foto copy pasten wanneer je een markdown document bewerkt binnen github. De juiste link verschijnt dan vanzelf. Via de Desktop applicatie kan dit niet.
 - **Mappen** maak je aan of bewerk je het makkelijkst via Github Desktop.
