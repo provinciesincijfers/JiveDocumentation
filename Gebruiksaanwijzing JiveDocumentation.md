@@ -134,7 +134,7 @@ Kortweg komt het erop neer dat je via deze applicatie een **kopie maakt op jouw 
 
 Een groot voordeel van Github Desktop is dat je eerst in een kopie werkt en **veranderingen niet automatisch doorstromen** naar de &#39;echte&#39; Github. Hierdoor is er meer ruimte om zaken uit te proberen.
 
-**Meer informatie** over hoe te beginnen met Github Desktop vind je [hier](https://github.com/provinciesincijfers/provinciesincijfers/wiki/Beginnen-met-Github-Desktop). Daar wordt het voorbeeld voor de repository kadaster-post-processing getoond. De URL voor JiveDocumentation is dan:
+💡 **Meer informatie** over hoe te beginnen met Github Desktop vind je [hier](https://github.com/provinciesincijfers/provinciesincijfers/wiki/Beginnen-met-Github-Desktop). Daar wordt het voorbeeld voor de repository kadaster-post-processing getoond. De URL voor JiveDocumentation is dan:
 
 ´[https://github.com/provinciesincijfers/JiveDocumentation](https://github.com/provinciesincijfers/JiveDocumentation)´
 
