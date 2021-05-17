@@ -46,8 +46,8 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
   - Percentages, promilles, ratio&#39;s, … worden omgeschreven met (t.o.v. inwoners, …)
   - Als het over bevolkingsprognoses gaat, voeg je achteraan [projecties] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [projecties]
 
-❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald. 
-***
+❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald.***
+
 **Voorbeelden van onderwerpnamen die een teller en noemer hebben** (met uitzonderingen)
 
 | **Eenheid** | Naam | Beschrijving |
