@@ -79,7 +79,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 
 
 5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst (5).
-6. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt (6).
+6. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt (6). Vergeet niet te verwijzen naar eventuele Issues waarop je nieuwe pagina is gebaseerd (zie eerder).
 7. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
 ![image](https://user-images.githubusercontent.com/77432663/117947239-4d243800-b310-11eb-8b53-5bad9fd6f703.png)
@@ -97,7 +97,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 6. **Selecteer je bestand**.
 7. **Controleer** zeker of alles van lay-out goed geconverteerd is. Moet je nog zaken aanpassen? Zie dan verder hoe je documenten moet bewerken.
 8. **Beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst.
-9. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt (zie hierboven).
+9. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt. Vergeet niet te verwijzen naar eventuele Issues waarop je wijziging is gebaseerd (zie eerder).
 10. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
 ### Wil je een ander bestand toevoegen?
@@ -105,7 +105,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 1. Kies dan voor &#39;**Add file**&#39; en dan &#39;**Upload files**' (zie hierboven).
 2. **Selecteer je bestand en laadt op.**
 3. **Beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst.
-4. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt (zie hierboven).
+4. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt. Vergeet niet te verwijzen naar eventuele Issues waarop je wijziging is gebaseerd (zie eerder)
 5. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
 
@@ -122,7 +122,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 ![image](https://user-images.githubusercontent.com/77432663/118491965-d035fb80-b71f-11eb-9250-76e733ddda02.png)
 
 5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst (5).
-6. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt (6).
+6. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt (6). Vergeet niet te verwijzen naar eventuele Issues waarop je wijziging is gebaseerd (zie eerder).
 7. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
 ![image](https://user-images.githubusercontent.com/77432663/117947744-c91e8000-b310-11eb-9470-76ffdba3cadf.png)
@@ -160,7 +160,7 @@ Een **tutorial** vind je [hier](https://www.youtube.com/watch?v=77W2JSL7-r8).
   a. Markdown files maak je het best aan via je kladblok of Notepad++, dat je dan opslaat als bestandsnaam.md
   b. Voor het converteren van een Word- naar Markdown-bestand, zie hierboven onder &#39;Heb je een word bestand en wil je het als markdown bestand toevoegen?
 6. **Keer terug naar de Github Desktop applicatie**. Je zal zien dat er onder de tab Changes een **opsomming** zal staan van al je **veranderingen** (1). In de volgende screenshot paste ik het word-document &#39;Checklist grondige controle databank&#39; aan.
-7. Typ in het vak onderaan naast je icoon een **korte samenvatting van je veranderingen** (2) en voorzie eventueel een meer uitgebreide beschrijving in het vak daaronder.
+7. Typ in het vak onderaan naast je icoon een **korte samenvatting van je veranderingen** (2) en voorzie eventueel een meer uitgebreide beschrijving in het vak daaronder. Vergeet niet te verwijzen naar eventuele Issues waarop je wijziging is gebaseerd (zie eerder).
 8. Klik op &#39;**Commit to master**&#39; (3).
 9. Rechts verschijnt de blauwe knop &#39;**Push origin**&#39; (ziet er hetzelfde uit als de &#39;Pull origin&#39; knop. Klik hierop om je veranderingen naar de &#39;echte&#39; Github te laten doorstromen.
 10. **Na goedkeuring** van mij of Joost zullen de veranderingen dan toegevoegd worden.
