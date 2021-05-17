@@ -42,8 +42,8 @@ Een speciaal type hiervan zijn de `README.md` bestanden. Een .md bestand met zo&
 ### Wil je wijzigingen maken?
 
 - **Kleine wijzigingen**  mag je gewoon zo aanpassen.
-- Wil je  **inhoudelijk iets veranderen**  (&quot;deze afspraak vind ik inhoudelijk niet goed&quot;)? Zet het dan eerst op de agenda van de Redactiegroep.
-- Voor  **inhoudelijke en grote wijzigingen**  maak je eerst (indien het nog niet bestaat) een Github issue aan waarnaar je vervolgens verwijst bij je aanpassingen. Dit kan je aangeven bij &#39;Commit changes' (zie hieronder voor meer uitleg) als: 'deze aanpassing sluit issue x'. Laat dit ook weten aan Emilien.
+- Wil je **inhoudelijk iets veranderen** (&quot;deze afspraak vind ik inhoudelijk niet goed&quot;)? Zet het dan eerst op de agenda van de Redactiegroep.
+- Voor **inhoudelijke en grote wijzigingen** maak je eerst (indien het nog niet bestaat) een Github issue aan waarnaar je vervolgens verwijst bij je aanpassingen. Dit kan je aangeven bij &#39;Commit changes' (zie hieronder voor meer uitleg) als: 'deze aanpassing sluit issue x'. Laat dit ook weten aan Emilien.
 
 Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github zelf, of via Github Desktop.
 
@@ -65,13 +65,13 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 
 ![image](https://user-images.githubusercontent.com/77432663/117946824-ed2d9180-b30f-11eb-8859-8749baf08598.png)
 
-2. **Geef eerst een naam aan je file en eindig met .md** anders wordt hij niet juist weergegeven (2).
+2. **Geef eerst een naam aan je file en eindig met ".md"** anders wordt hij niet juist weergegeven (2).
 3. **Schrijf in de witruimte je tekst** (dit is in markdown formaat) (3). Je kan hierin gewoon typen, maar je moet zelf nog de lay-out toevoegen. Meer info [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
 4. Je kan je file **previewen** door op het Oogje &#39;Preview&#39; te klikken (4).
 
 ![image](https://user-images.githubusercontent.com/77432663/117947031-1b12d600-b310-11eb-945a-1b083a7de7e3.png)
 
-5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan** , en daaronder nog wat meer uitleg indien je dit wenst (5).
+5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst (5).
 6. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt (6).
 7. **Na goedkeuring** van mij of Joost zal de file dan toegevoegd worden.
 
@@ -112,7 +112,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 3. Je kan **binnen deze ruimte gewoon typen, maar je moet zelf nog de lay-out toevoegen** (2). Meer info vind je [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
 4. Je kan je file **previewen** door op het Oogje &#39;Preview&#39; te klikken (3).
 
-![image](https://user-images.githubusercontent.com/77432663/117947697-befc8180-b310-11eb-9700-0550a435f15b.png)
+![image](https://user-images.githubusercontent.com/77432663/118491965-d035fb80-b71f-11eb-9250-76e733ddda02.png)
 
 5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst (5).
 6. Klik dan op de groene &#39;**Commit new file**&#39; knop die tevoorschijn komt (6).
