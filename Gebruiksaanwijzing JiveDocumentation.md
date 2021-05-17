@@ -4,8 +4,8 @@
 
 Wanneer je surft naar **github.com/provinciesincijfers** kom je op de interprovinciale Github pagina terecht. Hier vind je **verschillende repositories**; dit zijn verschillende ruimtes binnen de /provinciesincijfers ruimte. Een beetje zoals de kanalen binnen de Interprovinciale Teamsomgeving. Zo heb je bv PinC-taakopvolging, waar de issuetracker zich bevindt en JiveDocumentation, waar alle praktische afspraken staan.
 
-1. Klik op **JiveDocumentation**.
-2. Nu kom je automatisch in **<> Code** terecht. Hier bevinden zich alle documenten. Naast <> Code, staat de tab &#39;Issues&#39;, waar je problemen kan signaleren.
+1. Klik op [**JiveDocumentation**](https://github.com/provinciesincijfers/JiveDocumentation).
+2. Nu kom je automatisch in het tabblad **<> Code** terecht. Hier bevinden zich alle documenten. Naast <> Code, staat de tab &#39;Issues&#39;, waar je problemen kan signaleren.
 3. Binnen <> Code zie je eerst **12 verschillende mappen** die de opdeling van alle praktische afspraken volgen.
 4. Wanneer je naar onder scrollt, komt je op het **overzichtsdocument** terecht (JiveDocumenattion – Start to Swing). Dit is in Markdown (.md) formaat, zodat het automatisch rechtstreeks getoond wordt binnen Github.
 5. De onderdelen **&#39;Basisinfrastructuur&#39;, &#39;Basisonderdelen beheer&#39; en &#39;Basisafspraken beheer Swing&#39; staan rechtstreeks in dit overzichtsdocument**. Vanaf &#39;Beheer in Swing Studio&#39; staat alles in de bijhorende mappen. Het overzichtsdocument beschrijft enkel de inhoud van deze mappen.
