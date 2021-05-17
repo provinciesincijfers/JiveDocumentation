@@ -69,7 +69,8 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 3. **Schrijf in de witruimte je tekst** (dit is in markdown formaat) (3). Je kan hierin gewoon typen, maar je moet zelf nog de lay-out toevoegen. Meer info [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
 4. Je kan je file **previewen** door op het Oogje &#39;Preview&#39; te klikken (4).
 
-![image](https://user-images.githubusercontent.com/77432663/117947031-1b12d600-b310-11eb-945a-1b083a7de7e3.png)
+![image](https://user-images.githubusercontent.com/77432663/118492115-fd82a980-b71f-11eb-8d98-1921a7037336.png)
+
 
 5. Ben je tevreden met het resultaat? Scroll dan naar onder en **beschrijf** in de ruimte &#39;Create new file&#39; **kort wat je hebt gedaan**, en daaronder nog wat meer uitleg indien je dit wenst (5).
 6. Klik dan op de groene &#39;**Commit new file**' knop die tevoorschijn komt (6).
