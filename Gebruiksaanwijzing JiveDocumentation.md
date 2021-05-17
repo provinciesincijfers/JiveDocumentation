@@ -29,9 +29,14 @@ Je kan op verschillende manieren zoeken binnen JiveDocumentation
 
 ## Soorten bestanden en hoe deze te openen
 
+### Markdown
+
 Veel van de bestanden zijn in **Markdown formaat**. Je kan gewoon op deze bestanden klikken, en dan worden ze rechtstreeks getoond. Markdown is een manier om tekst weer te geven online. Door bestanden in Markdown op Github te plaatsen, worden ze automatisch rechtstreeks getoond.
 
-Een speciaal type hiervan zijn de `README.md` bestanden. Een .md bestand met zo&#39;n naam, is het eerste bestand dat je ziet wanneer je een repository opent (zoals het [overzichtsdocument](https://github.com/provinciesincijfers/JiveDocumentation) (scroll naar onder)) of een map opent. Dit bestand zal je dus binnen elke map zien staan en wordt automatisch onder de inhoud getoond.
+Om je tekst te lay-outen, kan je hier [hier](https://guides.github.com/features/mastering-markdown/) terecht voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail, [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) voor een gemakkelijk cheatsheet en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
+
+
+Een speciaal type markdown bestandhiervan zijn de `README.md` bestanden. Een .md bestand met zo&#39;n naam, is het eerste bestand dat je ziet wanneer je een repository opent (zoals het [overzichtsdocument](https://github.com/provinciesincijfers/JiveDocumentation) (scroll naar onder)) of een map opent. Dit bestand zal je dus binnen elke map zien staan en wordt automatisch onder de inhoud getoond.
 
 **Andere formaten**, zoals excel of word, moet je **eerst downloaden**. Klik hiervoor eerst op de file, en dan op &#39;Download&#39;.
 
@@ -66,7 +71,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 ![image](https://user-images.githubusercontent.com/77432663/117946824-ed2d9180-b30f-11eb-8859-8749baf08598.png)
 
 2. **Geef eerst een naam aan je file en eindig met ".md"** anders wordt hij niet juist weergegeven (2).
-3. **Schrijf in de witruimte je tekst** (dit is in markdown formaat) (3). Je kan hierin gewoon typen, maar je moet zelf nog de lay-out toevoegen. Meer info [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
+3. **Schrijf in de witruimte je tekst** (dit is in markdown formaat) (3). Je kan hierin gewoon typen, maar je moet zelf nog de lay-out toevoegen. Voor meer info, scroll terug naar 'Soorten bestanden en hoe deze te openen' > 'Markdown'.
 4. Je kan je file **previewen** door op het Oogje &#39;Preview&#39; te klikken (4).
 
 ![image](https://user-images.githubusercontent.com/77432663/118492115-fd82a980-b71f-11eb-8d98-1921a7037336.png)
@@ -110,7 +115,7 @@ Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github
 ![image](https://user-images.githubusercontent.com/77432663/117947601-a42a0d00-b310-11eb-8aa2-ce8ca72697e4.png)
 
 
-3. Je kan **binnen deze ruimte gewoon typen, maar je moet zelf nog de lay-out toevoegen** (2). Meer info vind je [hier](https://guides.github.com/features/mastering-markdown/) voor een algemeen overzicht, [hier](https://www.markdownguide.org/basic-syntax/) voor de basis syntax in meer detail en [hier](https://gist.github.com/rxaviers/7360908) voor emoji&#39;s because why not.
+3. Je kan **binnen deze ruimte gewoon typen, maar je moet zelf nog de lay-out toevoegen** (2). Voor meer info, scroll terug naar 'Soorten bestanden en hoe deze te openen' > 'Markdown'.
 4. Je kan je file **previewen** door op het Oogje &#39;Preview&#39; te klikken (3).
 
 ![image](https://user-images.githubusercontent.com/77432663/118491965-d035fb80-b71f-11eb-9250-76e733ddda02.png)
