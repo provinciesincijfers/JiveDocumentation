@@ -49,7 +49,7 @@ Een speciaal type markdown bestandhiervan zijn de `README.md` bestanden. Een .md
 - **Kleine wijzigingen**  mag je gewoon zo aanpassen.
 - Wil je **inhoudelijk iets veranderen** (&quot;deze afspraak vind ik inhoudelijk niet goed&quot;)? Zet het dan eerst op de agenda van de Redactiegroep.
 - Voor **inhoudelijke en grote wijzigingen** maak je eerst (indien het nog niet bestaat) een Github issue aan waarnaar je vervolgens verwijst bij je aanpassingen.
-- Als je een w**ijziging doet naar aanleiding van een discussie op Github**, zet dan steeds de link naar die discussie in de beschrijving bij je "commit" bericht. Er wordt dan automatisch in die discussie een verwijzing naar je aanpassing toegevoegd. In het aangepaste document zal je automatisch kunnen zien op welke discussie je wijziging is gebaseerd. Als je schrijft 'closes url-van-het-issue', dan kan het Issue zelfs automatisch afgesloten worden.
+- Als je een **wijziging doet naar aanleiding van een discussie op Github**, zet dan steeds de link naar die discussie in de beschrijving bij je "commit" bericht. Er wordt dan automatisch in die discussie een verwijzing naar je aanpassing toegevoegd. In het aangepaste document zal je automatisch kunnen zien op welke discussie je wijziging is gebaseerd. Als je schrijft 'closes url-van-het-issue', dan kan het Issue zelfs automatisch afgesloten worden.
 
 Zie verder voor meer uitleg hoe je wijzigingen kan aanbrengen. Dit kan op Github zelf, of via Github Desktop.
 
