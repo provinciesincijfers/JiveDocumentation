@@ -72,7 +72,7 @@ OF
 
 > `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud`
 
-Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan voor je met Matomo parameters begon.**
+Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.**
 
 ## Communiceren met je communicatoren
 
