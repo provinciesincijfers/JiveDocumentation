@@ -35,6 +35,10 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
 **Voeg steeds aan het einde van je URL nog MINSTENS toe:**  ***mtm_campaign=naam_van_je_project.*** 
 Dit laat toe om te filteren hoeveel van onze bezoekers binnenkomen via projectcommunicatie, en welk project dan wel precies. Hoe beter je je naam kiest, hoe beter je kan rapporten. Als je bijvoorbeeld altijd begint met &quot;provant_&quot; , dan kan je eenvoudig rapporteren over alle campagnes van provant. Je kunt het effect van je campagne dan meten via Matomo.
 
+
+Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of Databank-presentaties. Bijvoorbeeld "toon een kaart met de totale bevolking per gemeente in het meest recent beschikbare jaar". Deze methodes worden uitgelegd in de documentatie [Meer uit provincies.incijfers.be halen](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen) (achter_de_schermen)
+
+
 ### Matomo URLs opstellen
 `mtm_campaign=naam`       pinc-nieuwsbrief-februari-2021
 
@@ -72,11 +76,11 @@ OF
 
 > `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud`
 
-Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.**
+Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.** Dit wordt automatisch voor jou gedaan als je [de Excel in deze map](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/10.%20Communicatie/sjabloon_links.xlsx) gebruikt, of het sjabloon voor de nieuwsbrief op Teams.
 
 ## Communiceren met je communicatoren
 
-**Controleer zélf je communicatiemensen**. Er is al gecommuniceerd over **provincie**.incijfers.be (op het moment dat dat nog op een heel mottige pagina uitkwam) en bijna met een rapportcode van een uitdovend rapport. **Wees dus op je hoede.**
+**Controleer zélf de links**. Er is al gecommuniceerd over **provincie**.incijfers.be (op het moment dat dat een error gaf) en bijna met een rapportcode van een uitdovend rapport. **Wees dus op je hoede.**
 
 Je kan wellicht **best zelf een URL prepareren** en vragen dat ze die gebruiken. Stuur deze eventueel door als een txt of wordbestand in bijlage, want sommige provincies gebruiken software die alle links ontvangen via Outlook vervangt door iets dat over een virusscanner gaat. En het is niet de bedoeling dat onze klanten over de virusscanner van de provincie gaan.
 
@@ -85,3 +89,6 @@ Vraag dat ze bij voorkeur de **afgewerkte tekst op voorhand doorsturen, inclusie
 Vraag dat ze **alle links die gebruikt worden ook eens aanklikken**.
 
 **In nieuwsbrief-systemen worden links intern vervangen door een &quot;tracking url&quot;.** Dat kan geen kwaad en is compatibel met onze eigen registratie. Het is dus geen probleem als je in hun tekst iets raars ziet staan, zolang je bij het aanklikken ervan maar de URL te zien krijgt die jij vooropgesteld had.
+
+Een handige manier om mensen te helpen toch zelf goede links te genereren, is [deze Excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/10.%20Communicatie/sjabloon_links.xlsx) met een tabblad die heel kort uitlegt hoe je een link kunt maken, en een tweede tabblad om deze Matomo-proof te maken.
+
