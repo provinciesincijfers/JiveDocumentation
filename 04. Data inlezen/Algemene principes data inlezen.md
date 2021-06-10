@@ -4,7 +4,7 @@
 
 Je kan de data aanbieden als **XLS, XLSX of CSV**. Vanuit gespecialiseerde data-software is CSV het stabielste. Excel-bestanden zijn handig als je de datapreparatie in Excel doet. Maar hou er rekening mee dat Excel-files eigenlijk heel rare beesten zijn. ASAP tools of copy-paste als platte tekst naar een nieuw tabblad kan wonderen doen.
 
-Een **sjabloon voor courante upload-situaties** `[vind je hier](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/04.%20Data%20inlezen/000_voorbeeld_upload.xlsx)`.
+Een **sjabloon voor courante upload-situaties** [vind je hier](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/04.%20Data%20inlezen/000_voorbeeld_upload.xlsx).
 
 ## Bestandsstructuur
 
