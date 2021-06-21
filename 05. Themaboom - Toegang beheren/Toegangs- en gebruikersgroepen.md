@@ -32,7 +32,7 @@ Dus:
 
 _Wil je nieuwe data op niveau_ _statsec publiceren, dan moeten de onderwerpen toegevoegd worden aan de lijst Indicators van de rij extern\_statsec in de tabel AccessGroups._
 
-_Wil je nieuwe dimensieniveaus publiceren, dan moet het dimensieniveau_ _toegevoged worden aan de lijst DimLevels van de rij extern in de tabel AccessGroups_
+_Wil je nieuwe dimensieniveaus publiceren, dan moet het dimensieniveau_ _toegevoegd worden aan de lijst DimLevels van de rij extern in de tabel AccessGroups_
 
 ## Implicaties
 
