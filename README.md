@@ -91,6 +91,7 @@ Hier vind je informatie over:
 - De **procedure voor uitdovende onderwerpen**.
 - Wat te doen in het geval van **missing values**.
 - De berekening van **betrouwbaarheidsintervallen in Swing**.
+- Wat te doen bij **nieuwe datareeksen**. 
 
 
 ## Data Definiëren
