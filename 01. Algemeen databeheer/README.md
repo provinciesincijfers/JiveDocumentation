@@ -15,3 +15,7 @@ Indien de inhoud van een Onderwerp radicaal zou wijzigen (vb vanaf nu betekent &
 - Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
 
 - Heb je graag wat meer info over hoe Swing omgaat met betrouwbaarheidsintervallen bij steekproefdata? Dat kan [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/ABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg) voor meer uitleg, of [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/VB_StadAntwerpen_Metadata_Amon_20180604.xlsx) voor een voorbeeld. 
+
+💡 Heb je **nieuwe interessante datareeksen** gevonden die op PinC kunnen komen? Maak dan een [**issue**](https://github.com/provinciesincijfers/PinC-taakopvolging/issues) aan en laat het op de **Redactiegroep** voorkomen (via Milestones). Eventueel kan je ook nog collega’s D&A taggen in je post. Wanneer je het fiat hebt gekregen en je data uiteindelijk opgeladen is, laat dit dan ook weten binnen je aangemaakte issue.
+
+:grey_exclamation: ***Vergeet hierbij zeker niet de [procedure voor Controle](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) te volgen en de Redactiegroep per mail op de hoogte te stellen na de controle!***
