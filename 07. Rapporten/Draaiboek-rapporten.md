@@ -91,7 +91,7 @@ De taken rond Rapporten worden verzameld in : <https://github.com/provinciesinci
 - We zetten dynamisch bevraagde **kerncijfers (met eenheid %)** en de **naam** van de gebieden in het rapport systematisch in **vet**
 - Verwijzingen naar *grafieken, tabellen, kaarten* in de tekst worden *cursief* weergegeven
 - Voor evoluties van absolute aantallen mét vergelijking raden we het **gebruik van index-cijfers** aan. Dit wordt best uitgelegd in een Voetnoot
-- We zetten tekst BOVEN de grafiek die ze omschrijft
+- We zetten tekst BOVEN de figuur die ze omschrijft
 - Je mag verwijzen naar externe links. Tijdens periodieke controle kijken we na of er dode links zijn.
 
 **Hoofdstukken**
