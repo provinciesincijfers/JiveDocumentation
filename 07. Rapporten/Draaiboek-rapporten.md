@@ -1,7 +1,7 @@
 # Rapporten: afspraken en procedures
 
 ## Inhoud
-[Afspraken](#_Toc16074191)
+[Afspraken]()
 
 [Types Rapporten](#_Toc16074192)
 
@@ -32,8 +32,8 @@
 
 
 
-![](Aspose.Words.6dbbe2cf-b4ec-48c3-9b7e-27e2bfb0084d.001.png)
-# **Afspraken**
+
+# Afspraken
 Dit hoofdstuk bevat de afspraken in verband met rapporten in grote lijnen. We bedoelen hier alle interactieve rapporten mee die gebouwd worden met de rapportenmodule van provincies.incijfers.be. Deze “Rapporten” bestaan uit drie types. Het meest gebruikte type is “Inhoudelijk Rapport”. Voor eindgebruikers noemen we dit kortweg “Rapport”. Als je spraakverwarring wil vermijden, gebruik dan “swingrapport” voor het overkoepelende woord en “inhoudelijk rapport” voor het subtype.
 
 Nieuwe “Inhoudelijke Rapporten” vertrekken van het [sjabloon voor rapporten](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_rapport). Dit bevat heel wat impliciete afspraken. Deze zie je niet enkel in de tekst, maar ook in de broncode.
