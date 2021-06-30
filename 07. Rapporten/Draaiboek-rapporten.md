@@ -3,31 +3,31 @@
 ## Inhoud
 [Afspraken](Draaiboek-rapporten.md#afspraken)
 
-[Types Rapporten](#_Toc16074192)
+[Types Rapporten](Draaiboek-rapporten.md#types-rapporten)
 
-[Inhoudelijk/vormgeving afspraken](#_Toc16074193)
+[Inhoudelijk/vormgeving afspraken](Draaiboek-rapporten.md#Inhoudelijkvormgeving-afspraken)
 
-[Beheer tabel Rapporten in Swing](#_Toc16074194)
+[Beheer tabel Rapporten in Swing](Draaiboek-rapporten.md#Beheer-tabel-Rapporten-in-Swing)
 
-[Niet-gebiedsdekkende info, adhv “beschikbaar voor sommige provincies”](#_Toc16074195)
+[Niet-gebiedsdekkende info](Draaiboek-rapporten.md#Niet-gebiedsdekkende-info)
 
-[Procedure voor aanmaak van een nieuw rapport](#_Toc16074196)
+[Procedure voor aanmaak van een nieuw rapport](Draaiboek-rapporten.md#procedure-voor-aanmaak-van-een-nieuw-rapport)
 
-[Voorbereidend werk](#_Toc16074197)
+[Voorbereidend werk](Draaiboek-rapporten.md#voorbereidend-werk)
 
-[Aanmaak van het rapport](#_Toc16074198)
+[Aanmaak van het rapport](Draaiboek-rapporten.md#aanmaak-van-het-rapport)
 
-[Methodologie 1: als de rapport-maker zelf niet gaat leren programmeren](#_Toc16074199)
+[Methodologie 1: als de rapport-maker zelf niet gaat leren programmeren](Draaiboek-rapporten.md#methodologie-1-als-de-rapport-maker-zelf-niet-gaat-leren-programmeren)
 
-[Methodologie 2 : als de rapport-maker wil zelf wel gaat leren programmeren](#_Toc16074200)
+[Methodologie 2 : als de rapport-maker wil zelf wel gaat leren programmeren](Draaiboek-rapporten.md#methodologie-2--als-de-rapport-maker-zelf-wel-gaat-leren-programmeren)
 
-[Eindfase](#_Toc16074201)
+[Eindfase](Draaiboek-rapporten.md#Eindfase)
 
-[Controleren](#_Toc16074202)
+[Controleren](Draaiboek-rapporten.md#Controleren)
 
-[Publiceren](#_Toc16074203)
+[Publiceren](Draaiboek-rapporten.md#Publiceren)
 
-[Harmoniseren](#_Toc16074204)
+[Harmoniseren](Draaiboek-rapporten.md#Harmoniseren)
 
 
 
@@ -186,7 +186,7 @@ Welke vinkjes aan en uitzetten:
 |Gebruik Base href|aan|
 |Gebruik Scroll script|aan|
 
-## **Niet-gebiedsdekkende info, adhv “beschikbaar voor sommige provincies”**
+## **Niet-gebiedsdekkende info**
 
 In principe is er in Provincies in Cijfers geen plaats voor data die niet voor alle provincies beschikbaar is. Zie [Criteria voor opname in PinC](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Criteria%20voor%20opname%20in%20PinC.md).
 
