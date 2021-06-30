@@ -1,6 +1,6 @@
 # Rapporten
 
-Bij het opstellen van **nieuwe rapporten**, volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/07.%20Rapporten/Draaiboek%20rapport%20aanmaken.docx).
+Bij het opstellen van **nieuwe rapporten**, volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](Draaiboek-rapporten.md).
 
 In de studio vind je het **sjabloon voor rapporten** alsook het **ontwikkelsjabloon voor grafiekstijl**.
 
