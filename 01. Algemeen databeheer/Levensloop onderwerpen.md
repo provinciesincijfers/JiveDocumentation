@@ -2,7 +2,6 @@
 
 Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kunnen we **onderwerpen en kubusdimensies niet zomaar deleten (of codes wijzigen)**. Want:
 
-- ze verdwijnt dan uit de Themaboom
 - Dashboard geeft foutmeldingen
 - opgeslagen links en werkruimtebestanden van klanten werken niet meer
 - rapporten werken niet meer
@@ -61,7 +60,7 @@ Je kan hiervoor [deze excel](https://github.com/provinciesincijfers/JiveDocument
 
 ### 3. Na zes maand wissen we alle data.
 
-Dat kan heel eenvoudig aan de hand van [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitgedoofd"). Vul daar in kolom A en B enkel de INDICATOR CODE en de NAME in; de rest wordt voor jou ingevuld.
+Dat kan heel eenvoudig aan de hand van [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitgedoofd"). Vul daar in kolom A en B enkel de INDICATOR CODE en de NAME in; de rest wordt voor jou ingevuld.
 
 Wat doet die:
 * We vervangen elk eerder bestaand cijfer door -99999 in 1970 door in de formule naar onderwerp v9999_uitdovend te verwijzen
