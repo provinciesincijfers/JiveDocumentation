@@ -146,7 +146,8 @@ SAVE TRANSLATE OUTFILE='C:\temp\kubusbrussel\upload_kubus2501_co2_emissie.xlsx'
   /VERSION=12
   /MAP
   /FIELDNAMES VALUE=NAMES
-  /CELLS=VALUES.
+  /CELLS=VALUES
+/replace.
 
 delete variables kubus2501_co2_emissie.
 compute kubus2501_verbruik=-99999.
@@ -157,4 +158,5 @@ SAVE TRANSLATE OUTFILE='C:\temp\kubusbrussel\upload_kubus2501_verbruik.xlsx'
   /VERSION=12
   /MAP
   /FIELDNAMES VALUE=NAMES
-  /CELLS=VALUES.
+  /CELLS=VALUES
+/replace.
