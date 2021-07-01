@@ -13,6 +13,10 @@ Bijvoorbeeld: 10 leeftijdsklassen * 2 geslachten * 4 burgerlijke staten = 80 com
 
 ❕ Laat je uploadfile nakijken vooraleer je deze oplaadt. Maak de kubus aan in Swing via een uploadfile (zie onder).
 
+❕ Bij kubussen op gemeenteniveau waar géén data voor Brussel beschikbaar is, lezen we -99999 waarden in (voor zover dit nodig is volgens [onze missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md) regels.
+Een bestand om de nodige data daarvoor aan te maken vind je in de submap [kubussen/brussel-invullen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen).
+
+
 ## Inlaadbestanden
 
 ❕ **Een kubus bestaat vaak uit héél veel rijen.** XLSX kan niet meer dan ongeveer een miljoen rijen aan, dus je importbestand moet mogelijk verdeeld worden. 
