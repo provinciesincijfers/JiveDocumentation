@@ -139,7 +139,7 @@ Wanneer je het bestand samenstelt, neem volgende **aandachtspunten** in acht:
 
 
 
-Om een kubusbestand aan te maken op basis van een basisbestand werk je best met een SPSS-syntax die kan herhaald worden. Hieronder kan je een **voorbeeldsyntax** vinden
+Om een kubusbestand aan te maken op basis van een basisbestand werk je best met een programma dat herhaald kan worden. Hieronder kan je een **voorbeeldsyntax in SPSS** vinden. Een praktijkvoorbeeld voor de kadasterkubus [vind je hier](https://github.com/provinciesincijfers/kadaster-post-processing/blob/master/basisverwerking/03%20kubus%20voor%20swing.sps).
 
 ```
 *** In eerste instantie wordt het basisbestand opgeladen en worden eventueel nog een aantal variabelen aangemaakt ***
@@ -228,17 +228,19 @@ Via het onderwerp (de teller) worden de metadata van de kubus aangepast en aange
 
 ### 4.2.	Dimensies
 
-De dimensies aanpassen doe je in 2 stappen:
-
-**Stap 1: bewerken dimensies**. Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen.   
+Hier kan je onder andere de naam en de uitleg van de dimensie aanpassen.   
 •	Kies Data > Dimensies.  
 •	Pas vervolgens naam en metadata aan  
 
-
 ![afbeelding 17](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image17.jpg)
+
+### 4.3.	Dimensie-niveaus
+
+Hier kan je de naam van het dimensieniveau aanpassen, en doorklikken naar de Items van dit dimensieniveau.
+
 ![afbeelding 18](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image18.jpg)
 
-**Stap 2:** `Hier komt nog iets`
+
 
 ### 4.3 Dimensie-aggregatie
 
