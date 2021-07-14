@@ -7,7 +7,7 @@ Dit zijn guidelines die we binnen Provincies in Cijfers hanteren.
 Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md)  eerst. **Deze tekst bevat enkel aanvullende info.**
 Ook een handleiding gezocht rond werken met gepercenteerde kubussen en het combineren van kubussen.
 
-❕ Vergeet niet dat een kubus **maximaal 100.000 combinaties mag bevatten**. Om de combinaties te berekenen, neem je alle inhoudelijke  indelingen van de dataset (de "dimensieniveaus", voorbeeld: leeftijd, geslacht en burgerlijke staat, maar NIET jaar, gebied, aantal). Vervolgens neem je het product van het aantal keuzes per indeling. 
+❕ Vergeet niet dat een kubus **maximaal 100.000 combinaties mag bevatten**. Om de combinaties te berekenen, neem je alle inhoudelijke  indelingen van de dataset (de "dimensieniveaus", voorbeeld: leeftijd, geslacht en burgerlijke staat, maar NIET jaar, gebied, aantal). Vervolgens neem je het product van het aantal keuzes per indeling.  Swing doet ook nog een controle van de hoeveelheid data na inladen en comprimeren. Dus zelfs als je je aan de 100.000 combinaties houdt, kan het zijn dat er toch nog een error opduikt.
 
 Bijvoorbeeld: 10 leeftijdsklassen * 2 geslachten * 4 burgerlijke staten = 80 combinaties. Stel dat je ook een "onbekend" geslacht hebt, dan wordt dit dus ```10*3*4```.
 
@@ -20,7 +20,7 @@ Een bestand om de nodige data daarvoor aan te maken vind je in de submap [kubuss
 ## Inlaadbestanden
 
 ❕ **Een kubus bestaat vaak uit héél veel rijen.** XLSX kan niet meer dan ongeveer een miljoen rijen aan, dus je importbestand moet mogelijk verdeeld worden. 
-Je kunt ook een CSV inladen, dit schijnt beter te werken dan opgesplitste XLSX inladen. Ook deze hebben een maximumformaat. We weten nog niet wat het maximum is. Zie [Github issue](https://github.com/provinciesincijfers/bugsinjive/issues/3).
+Je kunt ook een CSV inladen, dit schijnt beter te werken dan opgesplitste XLSX inladen.
 
 In de toekomst zou dit ook moeten kunnen in JSON formaat. Data en de metadata zijn dan in één bestand op te nemen en kunnen ingelezen worden via Jive Services (Bulk API). 
 
