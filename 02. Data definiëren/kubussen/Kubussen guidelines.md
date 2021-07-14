@@ -42,6 +42,8 @@ Naam van dimensieniveau en dimensie:
 
 Controleer bij elke nieuwe kubus of update of **alle dimensieniveaus en dimensies in de gebruikersinterface een zinvolle naam** hebben.
 
+Zorg voor een logische volgorde van de items in je dimensieniveau. Zorg er zeker voor dat je "restcategorie" als laatste staat.
+
 ❕ ***Het datamodel moet exact hetzelfde zijn als je twee kubussen wilt combineren (=formulekubussen). M.a.w.: alle dimensieniveaus moeten hetzelfde zijn.***
 
 **De codes binnen een dimensie kan je best als code invullen, niet als de waarde zoals die bij de gebruiker moet verschijnen.** Hoe minder tekens, hoe beter. Vermijd speciale tekens en spaties, want die moeten door Swing vertaald worden naar een underscore. Dat duurt langer, en zorgt voor een verschil tussen je databestand en Jive. 
