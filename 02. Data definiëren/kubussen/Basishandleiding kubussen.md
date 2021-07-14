@@ -1,7 +1,7 @@
 
 # Handleiding aanmaak en inlezen kubussen in Swing Studio
 
-Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies in Cijfers, en geen officiële documentatie. Als je een fout ziet of een suggestie voor verbetering hebt, open dan [een Issue](https://github.com/provinciesincijfers/JiveDocumentation/issues)!
+Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en provincies.incijfers.be, en geen officiële documentatie. Als je een fout ziet of een suggestie voor verbetering hebt, open dan [een Issue](https://github.com/provinciesincijfers/JiveDocumentation/issues)!
 
 ## Inhoud
 
@@ -33,7 +33,7 @@ Disclaimer: dit is de neerslag van de ervaring van Stad Antwerpen en Provincies 
 
 ❕ *Dit is een algemene beginnershandleiding. Neem dit document eerst door om de basics te leren kennen, maar check vooraleer je data begint in te laden ook de [guidelines rond kubussen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md) die we voor Provincies in Cijfers hebben afgesproken.* 
 
-❕ *Deze handleiding gaat uit van het inladen van enkel data, waarbij Swing dan op basis daarvan de structuur van de data gaat achterhalen.* ***Je kan ook de structuur zelf opladen, zodat Swing enkel nog de data in de juiste structuur moet steken***. *Dit kan op basis van één excelbestand. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)*
+❕ ***Je kunt best eerst de structuur van je kubus opladen, zodat Swing enkel nog de data in de juiste structuur moet steken*** (zie hoofdstuk 2). *Dit kan op basis van één excelbestand. Zie hiervoor de [map met voorbeelden](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden) en deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze laatste pagina niet kunt zien, contacteer dan de Swing Helpdesk)*
 *Je vindt [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/voorbeeld_metadata_kubus_onderwijs_20171127.xlsx) een voorbeeldbestand van Metadata over kubusdimensies en dimensie-aggregatie.*
 
 ## 1.	Inleiding
@@ -68,18 +68,38 @@ Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van S
 
 ## 2.	Aanmaak bestand
 
+Je kunt best twee bestanden aanmaken:
+- een met de data
+- een met de metadata
+- 
+### Data
+
 In eerste instantie wordt vanuit het betreffende basisbestand een bestand aangemaakt in een formaat dat Swing Studio kan inlezen.
 **Een bestand voor kubussen bestaat uit 5 types velden:**
 -	Periode: jaar
 -	Gebiedsniveau: buurt (evt. wijk, postzone, district, stad)
 -	Gebieden: de buurtcodes (evt. wijkcodes, …) 
 -	Onderwerp: dit is de teller of de aantallen
--	Dimensies: dit zijn de kenmerken (bv nationaliteit, leeftijdsindeling, economische sectoren). Er kunnen meerdere dimensies zijn, dus ook meerdere velden.
+-	Dimensieniveaus: dit zijn de kenmerken (bv nationaliteit, leeftijdsindeling, economische sectoren). Er kunnen meerdere dimensies zijn, dus ook meerdere velden.
+
+Voor zeker ook de [algemene principes data inlezen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Algemene%20principes%20data%20inlezen.md).
 
 **Hou bij het design rekening met:**
 - je kan **slechts één onderwerp opladen**. Maar je kan wel meerdere identieke kubussen opladen met andere onderwerpen, en die kubussen combineren.
 - kies **per dimensie slechts één dimensieniveau**. Als je meerdere leeftijdsindelingen wilt, laadt dan de meest gedetailleerde in, en gebruik aggregaties om er andere uit af te leiden
-- **het product van je dimensieniveauitems (2 geslachten * 10 leeftijdscategorieen = 20 combinaties) moet kleiner zijn dan 10.000**. Iedereen moet zichzelf terugvinden in elk dimensieniveau! Als bijvoorbeeld een dimensieniveau niet van toepassing is op een deel van de bevolking, dan moet je een categorie "niet van toepassing" voorzien.
+- **het product van je dimensieniveauitems (2 geslachten * 10 leeftijdscategorieen = 20 combinaties) moet kleiner zijn dan 100.000**. Iedereen moet zichzelf terugvinden in elk dimensieniveau! Als bijvoorbeeld een dimensieniveau niet van toepassing is op een deel van de bevolking, dan moet je een categorie "niet van toepassing" voorzien.
+
+### Metadata
+Maak een excel met deze tabbladen:
+- Indicator: dit bevat de metadata over het onderwerp zelf. Dit verschijnt in de lijst Indicators en later in de themaboom. [Meer info over definiëren van onderwerpen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Informatie%20over%20de%20belangrijkste%20velden.md).
+- Dimensions: hier definieer je de Dimensies die je nodig hebt. Reeds bestaande dimensies hoef je niet op te nemen. Er kan per Dimensions lechts één Dimension Level opgenomen worden!
+- Dimension levels: hier definieer je de dimensieniveaus van je data. Dit zijn de effectieve kruisingen in je databestand.
+- Een tabblad per dimension level met de dimensie-items: hier omschrijf je de codes die in je databestand kunnen voorkomen.
+
+Lees dit éérst in, best in volgorde zoals hier beschreven.
+Een voorbeeld van een dergelijke Excel [vind je hier](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden/voorbeeld_metadata_kubus_onderwijs_20171127.xlsx). In de map voorbeelden binnen de huidige map vind je nog enkele voorbeelden.
+
+
 
 ### 2.1.	Reeds bestaande kubus
 
@@ -128,10 +148,10 @@ In onderstaand voorbeeld zien we bijvoorbeeld dat er volgens de eerste lijn onde
 
 
 Wanneer je het bestand samenstelt, neem volgende **aandachtspunten** in acht: 
--	Voor dimensies die al in andere kubussen zitten (zie stap 1): de kolomtitel=de dimensiecode en de categorieën=itemcodes
--	Voor nieuwe dimensies mag de kolomtitel niet overeenstemmen met een van de bestaande dimensiecodes.
+-	Voor dimensieniveaus die al in andere kubussen zitten (zie stap 1): de kolomtitel=de dimensieniveaucode en de categorieën=itemcodes
+-	Voor nieuwe dimensieniveaus mag de kolomtitel niet overeenstemmen met een van de bestaande dimensieniveaucodes.
 -	Het onderwerp (teller) mag niet overeenstemmen met een reeds bestaande onderwerpcode. Dit controleer je door binnen Data > Onderwerpen te kiezen en vervolgens te controleren op het veld onderwerpcode.
--	Er mogen geen lege cellen zijn. Indien bepaalde gegevens niet bekend zijn, voorzie een code voor ontbrekende waarden.
+-	Er mogen geen lege rijen zijn. Verwijder deze indien nodig. Opgelet: in kubussen op gemeenteniveau [vullen we brekende missings in voor Brussel](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen) als dit volgens [onze afspraken rond missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md) nodig is.
 -	Swing schijnt 1.7 miljoen rijen per bestand te aanvaarden (ervaring 2021-04)
 
 ![afbeelding 7](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/images/image7.jpg)
@@ -251,6 +271,8 @@ De volgorde is zo:
 - deze Dimensieniveaus hebben Items nodig (vb Nederland, EU)
 - nu kan je een aggregatietabel inlezen (met daarin rijen die aan Swing vertellen "Nederland ligt in de EU")
 
+Er zijn ook **niet-aggregeerbare dimensies** mogelijk. Bijvoorbeeld kan het zijn dat je weet dat je met missing values zit op bepaalde kruisingen. Dat kan je oplossen door ook het totaal in te lezen. Maar dan mag Swing uiteraard NIET de som nemen van het totaal en de beschikbare subtotalen. Bij de Dimension level kan je dit instellen met *Aggregate type* > *no aggregation*. [Hier een voorbeeld van dergelijke kubus](https://provincies.incijfers.be/databank?var=kubus2603_overnachtingen&keepworkspace=true).
+
 
 ## 5.	Onderbrengen in de themaboom
 
@@ -272,4 +294,9 @@ Indien een kubus in de Connector zit, heeft elke wijzigingen in de codes van de 
 *Praktisch*:
 - het gebruik van de beta kan hier heel nuttig zijn
 - het duurt bijzonder lang om dimensieniveauaggregatie te verwijderen, als je dit pas doet NA dat je dimensieniveauitems hebt verwijderd. Verwijderd dus EERST de aggregatietabellen. 
+
+
+## 7. Onderwerpen afleiden uit kubussen
+
+Je kunt in sommige omstandigheden databeheer sterk beperken door één kubus in te lezen, en daar een hoop onderwerpen uit af te leiden. [Meer info in een afzonderlijk document](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20als%20bron%20voor%20onderwerpen.md).
 
