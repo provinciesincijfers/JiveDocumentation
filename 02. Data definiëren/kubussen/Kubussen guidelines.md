@@ -26,6 +26,7 @@ In de toekomst zou dit ook moeten kunnen in JSON formaat. Data en de metadata zi
 
 **Je kan een kubus volledig definiëren op basis van één excelbestand.** Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)
 
+**Om praktische redenen is het vaak handig om data en metadata afzonderlijk aan te bieden**. Immers ga je vaak stap voor stap de metadata inlezen. Bij elke geslaagde stap moet je het hele bestand opnieuw uploaden. Je wil niet tien keer zitten wachten eer alle data ook effectief is geupload!
 
 ## Dimensieniveaus
 
