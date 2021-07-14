@@ -254,7 +254,7 @@ Dat betekent je rapport toevoegen aan:
 - De landingspagina van de Databank (Report > report files > landingspagina.html)
 - Themaboom: extern (bij het thema en bij “Thematische rapporten) en interne (Rapporten>In productie) Themaboom
 - Dashboard: bij het relevante thema én in het overzicht van rapporten
-- Link toevoegen in rapport Kerncijfers
+- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse_steekkaart)
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 
