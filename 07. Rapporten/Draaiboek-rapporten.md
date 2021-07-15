@@ -277,3 +277,29 @@ Je rapport is sowieso beschikbaar voor wie de link heeft. De bovenstaande zaken 
 
 Je kan massaal PDF’s genereren. Bij een grote release is dat nuttig om een momentopname te hebben van hoe dit rapport initieel gecommuniceerd werd. Zie <https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_genereer_pdf> .  Je ziet daar ook hoe je dit kunt gebruiken om een cache op te bouwen die het rapport sneller maakt.
 
+# Procedure voor het verwijderen van een rapport
+
+Hiervoor volgen we dit stappenplan:
+
+## Binnen het rapport zelf
+
+- De verantwoordelijke voor het rapport **wist de inhoud** van het rapport en **verwijst indien nodig door naar andere relevante rapporten**.
+- Pas binnen je script de titel van het rapport aan zodat je krijgt: **'rapportnaam – Doorverwijzing'**
+- Pas bij Reports:
+  - De naam aan naar: **'UITDOVEND (sinds xx/xx/20xx) – rapportnaam'**
+  - Verander de **Searchtag** naar '**echt-archief**'.
+
+## De verantwoordelijke kijkt na waar het rapport gebruikt wordt en past zoveel mogelijk zelf aan
+
+- **Kiezen op kaart** (report kiezen\_op\_kaart). Verwijderen van het geschikte gebiedsniveau.
+- **Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.
+- **De landingspagina van de Databank** (Report>report files>landingspagina.html)
+- **Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.
+- **Themaboom** : extern (bij het thema en bij "Thematische rapporten") en interne (Rapporten>In productie) Themaboom.
+- **Dashboard:** bij het relevante thema én in het overzicht van rapporten.
+- Controleer of je rapport in de **andere rapporten** dient verwijderd te worden. Gebruik hiervoor de searchtag 'echt-productie'.
+
+_**:grey_exclamation: [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md).**_ Haal je rapport ook uit deze lijst. 
+
+## Na zes maanden wissen we het rapport definitief
+  
