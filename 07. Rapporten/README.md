@@ -1,6 +1,6 @@
 # Rapporten
 
-Bij het opstellen van **nieuwe rapporten**, volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](Draaiboek-rapporten.md).
+Bij het opstellen van **nieuwe rapporten** en het **verwijderen van oude rapporten**, volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](Draaiboek-rapporten.md).
 
 In de studio vind je het **sjabloon voor rapporten** alsook het **ontwikkelsjabloon voor grafiekstijl**.
 
