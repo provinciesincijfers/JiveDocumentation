@@ -1,5 +1,7 @@
 # Hoe omgaan met te verwijderen data
 
+Voor de procedure voor het verwijderen van een rapport, verwijzen we door naar het [Draaiboek rapporten]( https://github.com/provinciesincijfers/JiveDocumentation/blob/master/07.%20Rapporten/Draaiboek-rapporten.md)
+
 Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kunnen we **onderwerpen en kubusdimensies niet zomaar deleten (of codes wijzigen)**. Want:
 
 - Dashboard geeft foutmeldingen
