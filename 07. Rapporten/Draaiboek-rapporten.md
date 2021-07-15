@@ -29,6 +29,7 @@
 
 [Harmoniseren](Draaiboek-rapporten.md#Harmoniseren)
 
+[Procedure voor het verwijderen van een rapport](Draaiboek-rapporten.md#(Procedure voor het verwijderen van een rapport)
 
 
 
