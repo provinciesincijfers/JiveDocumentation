@@ -28,6 +28,8 @@
 
 - [Meer weten?](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/12.%20Meer%20weten)
 
+- [Bijzonder databeheer](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/13.%20Bijzonder%20databeheer)
+
 # Beheer van dit document/repo
 
 Alles wat je ooit wou weten over hoe je met /JiveDocumentation werkt, staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/Gebruiksaanwijzing%20JiveDocumentation.md).
@@ -90,7 +92,6 @@ Hier vind je informatie over:
 - **Criteria** waaraan data moeten voldoen om in PinC opgenomen te worden.
 - De **procedure voor uitdovende onderwerpen**.
 - Wat te doen in het geval van **missing values**.
-- De berekening van **betrouwbaarheidsintervallen in Swing**.
 - Wat te doen bij **nieuwe datareeksen**. 
 
 
@@ -144,7 +145,7 @@ Al de informatie over [Metadata](https://github.com/provinciesincijfers/JiveDocu
 ## Rapporten
 
 Binnen [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/07.%20Rapporten) vind je:
-- Het **draaiboek** om rapporten aan te maken
+- Het **draaiboek** om rapporten aan te maken en te verwijderen
 - De rapporten voorbereid door de **werkgroep OBMI**
 - **Cursussen** over hoe je rapporten aanmaakt in Swing
 
@@ -178,4 +179,10 @@ Nood aan nog wat meer info? Dan kan je terecht in [deze map](https://github.com/
 - De **handleiding om gebruik te maken van de Databank** van PinC
 - **Handleidingen voor Swingproducten**
 - De **basishandleiding**
-of je kan gebruik maken van de **help-knopjes** binnen de Swing omgeving.
+of je kan gebruik maken van de **help-knopjes** binnen de Swing omgeving
+
+# Bijzonder databeheer
+
+Binnen deze map kan je terecht voor:
+- De berekening van **betrouwbaarheidsintervallen in Swing**
+- Informatie over de **verschillende types kaartlagen**
