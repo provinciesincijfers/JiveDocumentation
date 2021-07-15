@@ -183,6 +183,6 @@ of je kan gebruik maken van de **help-knopjes** binnen de Swing omgeving
 
 # Bijzonder databeheer
 
-Binnen deze map kan je terecht voor:
+Binnen [deze map](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/13.%20Bijzonder%20databeheer) kan je terecht voor:
 - De berekening van **betrouwbaarheidsintervallen in Swing**
 - Informatie over de **verschillende types kaartlagen**
