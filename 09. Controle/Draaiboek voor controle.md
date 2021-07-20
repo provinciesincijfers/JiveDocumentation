@@ -91,7 +91,7 @@ Hiervoor gebruiken we de kolom **&quot;vrij tekstveld&quot; in Studio**, zodat d
 - DNA Data &amp; Analyse (dit is default en wordt daarom NIET in de code gezet)
 - ECO Economie
 - KLI Klimaat
-- TUR Toerisme
+- TOE Toerisme
 - DET Detailhandel
 - LAN Landbouw
 
