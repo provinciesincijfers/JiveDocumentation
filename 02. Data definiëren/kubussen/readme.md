@@ -6,3 +6,4 @@ Binnen deze map vind je:
 - De [guidelines](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md) die we binnen Provincies in Cijfers hanteren.
 - Hoe je een [onderwerp maakt op basis van een kubus](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20als%20bron%20voor%20onderwerpen.md). 
 - Enkele [voorbeelden](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/voorbeelden).
+- Hoe je [missing values voor Brussel kunt inlezen](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen) (enkel indien kubus op gemeenteniveau)
