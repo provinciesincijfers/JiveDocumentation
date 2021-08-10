@@ -20,7 +20,6 @@ Als je van de bron **geen waarde** krijgt voor iets, dan kan dit betekenen:
 
 - **De bron weet dat het er niet is**
   - Dit is het meest courante. Als je gewoon data over X verwerkt, krijg je enkel records waar X voorkomt. Maar eigenlijk weet je dat er geen X zijn in de andere records. Wij vullen daarom steeds onze uploadfiles aan met records met **de waarde 0** voor alle gebieden van het gebiedsniveau waarop je inleest. Indien een totaal de waarde 0 krijgt, krijgen ook de onderliggende subtotalen de waarde 0.
- Bij KUBUSSEN is dit soort aanpassing onhaalbaar. Immers zou je dan nullen moeten inlezen voor alle combinaties die in theorie mogelijk zijn.
   - Het kan uitzonderlijk ook gebeuren dat de bron zowel voor Vlaanderen als Brussel geldige cijfers kan geven, maar dat het eenvoudig maar in één van de twee gewesten in de praktijk voorkomt. In dat geval moet je dus 0 inlezen op de gebieden van beide gewesten waarvoor cijfers ontbreken.
 
 Als de bron een **gecensureerde waarde geeft** (en de waarde zelf NIET meegeeft):
@@ -32,7 +31,7 @@ Als de bron een **gecensureerde waarde geeft** (en de waarde zelf NIET meegeeft)
 
 ❕ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; of nul in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
 
-
+❕ ***Bij KUBUSSEN zijn dit soort aanpassing grotendeels onhaalbaar.*** Immers zou je dan data moeten inlezen voor alle combinaties die in theorie mogelijk zijn. De enige **uitzondering** is dat we waar nodig wél brekende missings (-99999) inlezen in eenvoudige kubussen op gemeenteniveau. [Meer info hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen)
 
 
 
