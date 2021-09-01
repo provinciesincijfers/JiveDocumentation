@@ -8,7 +8,7 @@ END DATA.
 DATASET NAME dataset0 WINDOW=FRONT.
 
 *** VUL AANTAL PERIODEN AAN, bijvoorbeeld 10 jaren wordt per=1 to 10***.
-***De XSave werkt enkel indien de map 'C:/temp/kubusbrussel' bestaat***
+***De XSave werkt enkel indien de map 'C:/temp/kubusbrussel' bestaat***.
     
  LOOP per=1 to 9. 
 XSAVE outfile='C:\temp\kubusbrussel\period.sav' /keep all. 
@@ -47,7 +47,7 @@ DATASET NAME ontdubbeld WINDOW=FRONT.
 compute var0=$casenum.
 EXECUTE.
 
-***Zorg ervoor dat de excel in de juiste map staat***
+***Zorg ervoor dat de excel in de juiste map staat***.
 
 GET DATA
   /TYPE=XLSX
@@ -132,7 +132,7 @@ EXECUTE.
 *** EINDE TE KOPIËREN BLOK***.
 
 sort cases var0 (a).
-* DELETE OOK VAR3, VAR4 etc INDIEN VERLENGD. Al deze variabelen zijn slechts hulpvariabelen
+* DELETE OOK VAR3, VAR4 etc INDIEN VERLENGD. Al deze variabelen zijn slechts hulpvariabelen.
 
 delete variables per geo dim1 dim2 var0.
 
