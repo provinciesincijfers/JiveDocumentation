@@ -1,4 +1,4 @@
-* Encoding: windows-1252.
+* Encoding: UTF-8.
 *** VAST GEDEELTE ***.
 dataset declare.
 DATA LIST FREE /var0.
@@ -8,7 +8,9 @@ END DATA.
 DATASET NAME dataset0 WINDOW=FRONT.
 
 *** VUL AANTAL PERIODEN AAN, bijvoorbeeld 10 jaren wordt per=1 to 10***.
-LOOP per=1 to 9. 
+***De XSave werkt enkel indien de map 'C:/temp/kubusbrussel' bestaat***
+    
+ LOOP per=1 to 9. 
 XSAVE outfile='C:\temp\kubusbrussel\period.sav' /keep all. 
 END LOOP. 
 EXECUTE. 
@@ -44,6 +46,8 @@ DATASET NAME ontdubbeld WINDOW=FRONT.
 *** PAS NIETS AAN***.
 compute var0=$casenum.
 EXECUTE.
+
+***Zorg ervoor dat de excel in de juiste map staat***
 
 GET DATA
   /TYPE=XLSX
@@ -125,10 +129,11 @@ MATCH FILES /FILE=*
   /TABLE='toevoegen'
   /BY dim2.
 EXECUTE.
-*** EINDE TE KOPIËREN BLOK***.
+*** EINDE TE KOPIÃ‹REN BLOK***.
 
 sort cases var0 (a).
-* DELETE OOK VAR3, VAR4 etc INDIEN VERLENGD.
+* DELETE OOK VAR3, VAR4 etc INDIEN VERLENGD. Al deze variabelen zijn slechts hulpvariabelen
+
 delete variables per geo dim1 dim2 var0.
 
 
@@ -160,3 +165,4 @@ SAVE TRANSLATE OUTFILE='C:\temp\kubusbrussel\upload_kubus2501_verbruik.xlsx'
   /FIELDNAMES VALUE=NAMES
   /CELLS=VALUES
 /replace.
+* EINDE AFWERKING.
