@@ -37,7 +37,7 @@
 # Afspraken
 Dit hoofdstuk bevat de afspraken in verband met rapporten in grote lijnen. We bedoelen hier alle interactieve rapporten mee die gebouwd worden met de rapportenmodule van provincies.incijfers.be. Deze “Rapporten” bestaan uit drie types. Het meest gebruikte type is “Inhoudelijk Rapport”. Voor eindgebruikers noemen we dit kortweg “Rapport”. Als je spraakverwarring wil vermijden, gebruik dan “swingrapport” voor het overkoepelende woord en “inhoudelijk rapport” voor het subtype.
 
-Nieuwe “Inhoudelijke Rapporten” vertrekken van het [sjabloon voor rapporten](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_rapport). Dit bevat heel wat impliciete afspraken. Deze zie je niet enkel in de tekst, maar ook in de broncode.
+Nieuwe “Inhoudelijke Rapporten” vertrekken van het [sjabloon voor rapporten](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_rapport_vertrekproject). Dit kan je copy-pasten en zet al je direct op weg om de meeste afspraken te volgen. Daarnaast vind je heel wat code en afspraken in [sjabloon grafiekstijl](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_grafiekstijl).
 
 De taken rond Rapporten worden verzameld in : <https://github.com/provinciesincijfers/PinC-taakopvolging/issues>. Gelieve problemen met rapporten daar te melden.
 
