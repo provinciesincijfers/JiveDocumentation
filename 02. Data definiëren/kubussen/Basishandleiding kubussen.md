@@ -92,7 +92,7 @@ Voor zeker ook de [algemene principes data inlezen](https://github.com/provincie
 ### Metadata
 Maak een excel met deze tabbladen:
 - Indicator: dit bevat de metadata over het onderwerp zelf. Dit verschijnt in de lijst Indicators en later in de themaboom. [Meer info over definiëren van onderwerpen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Informatie%20over%20de%20belangrijkste%20velden.md).
-- Dimensions: hier definieer je de Dimensies die je nodig hebt. Reeds bestaande dimensies hoef je niet op te nemen. Er kan per Dimensions lechts één Dimension Level opgenomen worden!
+- Dimensions: hier definieer je de Dimensies die je nodig hebt. Reeds bestaande dimensies hoef je niet op te nemen. Er kan per Dimension slechts één Dimension Level opgenomen worden!
 - Dimension levels: hier definieer je de dimensieniveaus van je data. Dit zijn de effectieve kruisingen in je databestand.
 - Een tabblad per dimension level met de dimensie-items: hier omschrijf je de codes die in je databestand kunnen voorkomen.
 
