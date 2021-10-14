@@ -32,7 +32,7 @@ Per onderwerp staat dit ook aangegeven **in Swing in het &quot;vrij tekstveld&qu
 
 ### Procedure
 
-1. Verantwoordelijke provincie zorgt voor **upload + checkt de gegevens** voor en na upload in het systeem. Eens deze provincie tevreden met het resultaat, dan geven ze een seintje aan de controlerende partner.
+1. Verantwoordelijke provincie zorgt voor **upload + checkt de gegevens** voor en na upload in het systeem. Eens deze provincie tevreden met het resultaat, dan geven ze een seintje aan de controlerende partner. Stuur (zeker bij externen) altijd de link mee naar het controledocumenten. Degene die op Github staan, zijn het meest up to date. 
 
 2. De tweede verantwoordelijke (check) doet een **controle** op de ingevoerde gegevens zoals hieronder beschreven.
 
@@ -49,7 +49,7 @@ Per onderwerp staat dit ook aangegeven **in Swing in het &quot;vrij tekstveld&qu
 ### Waar controleren?
 
 - Binnen de werkgroep Economie controleert men elkaars uploadfiles. Dit is de excel die klaar staat voor upload naar Swing. Alle uploadfiles horen op Teams te staan.
-- Het beste is om te controleren in de **testomgeving**: [https://provincies.incijfers.be/admin/jive](https://provincies.incijfers.be/admin/jive). Als het gaat om updates, dan is dit de enige eenvoudige manier om te testen zonder dat eindgebruikers potentieel foute data kunnen zien.
+- Het is **aangeraden om te controleren in de testomgeving**: [https://provincies.incijfers.be/admin/jive](https://provincies.incijfers.be/admin/jive). In Excel files komen komen sommige fouten immers niet naar boven. Als het gaat om updates, dan is dit de enige eenvoudige manier om te testen zonder dat eindgebruikers potentieel foute data kunnen zien.
 - Als de **data enkel INTERN staan**, dan moet de controlerende partner uiteraard over een account beschikken.
 - Als de **data enkel INTERN staat én het gaat om nieuwe data**, dan kan er zonder problemen getest worden in de gepubliceerde [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank) omgeving
 

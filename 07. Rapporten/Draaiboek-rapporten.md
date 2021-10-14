@@ -1,5 +1,6 @@
 # Rapporten: afspraken en procedures
 
+
 ## Inhoud
 [Afspraken](Draaiboek-rapporten.md#afspraken)
 
@@ -205,7 +206,7 @@ In die sectie rond de specifieke provincie kan er eventueel doorgelinkt worden n
 # **Procedure voor aanmaak van een nieuw rapport**
 
 ## **Voorbereidend werk:**
-- Analyseer beschikbare data in PinC. Maak een selectie. Zie je nog gaten, onderzoek dan of deze opgevuld kunnen worden. Als je nieuwe data toevoegt aan PinC in functie van een Rapport, dan moet deze ook EXTERN gepubliceerd worden. De [gewoonlijke regels](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) gelden dan: eerst laten nakijken, dan pas publiceren; overleg met Redactiegroep vóór publicatie. De data wordt met grote voorkeur gepubliceerd vóór of tegelijk met het Rapport zelf.
+- Analyseer beschikbare data in PinC. Maak een selectie. Zie je nog gaten, onderzoek dan of deze opgevuld kunnen worden. Als je nieuwe data toevoegt aan PinC in functie van een Rapport, dan moet deze ook EXTERN gepubliceerd worden. Uitzondering: Dit is niet nodig wanneer er subtotalen in de themaboom staan en er een ad hoc totaal nodig is voor een rapport. De [gewoonlijke regels](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) gelden dan: eerst laten nakijken, dan pas publiceren; overleg met Redactiegroep vóór publicatie. De data wordt met grote voorkeur gepubliceerd vóór of tegelijk met het Rapport zelf.
 - Kies een concept: bij voorkeur wat onder hoofdstuk 2 als Rapport wordt benoemd. Steekkaarten maken we niet meer bij, wegens te veel overlappend met Dashboard; tabellenrapporten in principe aanvullend op inhoudelijke rapporten.
 - Doe een eerste ruw voorstel naar de interprovinciale groep: een inhoudstafel + een reeks grafieken.
 - Werk het rapport uit volgens een van onderstaande methodologieën.
@@ -237,6 +238,7 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 Stap 5: wanneer je rapport klaar is, laat het (opnieuw) rondgaan voor feedback. Het is aanvaardbaar om hierbij een strakke deadline te geven, op voorwaarde dat je mensen de kans geeft om uitstel te vragen.
 
 Stap 6: nieuwe data/onderwerpen moeten in principe in de EXTERN themaboom terecht komen. Geef mee aan de Redactiegroep waar je dit gaat doen.
+(Uitzondering: Dit is niet nodig wanneer er subtotalen in de themaboom staan en er een ad hoc totaal nodig is voor een rapport)
 
 
 ## **Eindfase**
