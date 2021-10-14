@@ -1,0 +1,221 @@
+* Encoding: windows-1252.
+*** VAST GEDEELTE ***.
+dataset declare dataset0.
+DATA LIST FREE /var0.
+BEGIN DATA
+0
+END DATA.
+DATASET NAME dataset0 WINDOW=FRONT.
+
+***De XSave werkt enkel indien de map 'C:/temp/kubusbrussel' bestaat***.
+
+*** VUL AANTAL PERIODEN AAN, bijvoorbeeld 10 jaren wordt per=1 to 10***.
+LOOP per=1 to 38. 
+XSAVE outfile='C:\temp\kubusbrussel\period.sav' /keep all. 
+END LOOP. 
+EXECUTE. 
+GET file 'C:\temp\kubusbrussel\period.sav'. 
+DATASET NAME ontdubbeld WINDOW=FRONT.
+dataset close dataset0.
+
+*** VUL AANTAL GEBIEDEN AAN (dit is altijd 20 op gemeenteniveau)***.
+LOOP geo=1 to 20. 
+XSAVE outfile='C:\temp\kubusbrussel\geoitem.sav' /keep all. 
+END LOOP. 
+EXECUTE. 
+GET file 'C:\temp\kubusbrussel\geoitem.sav'. 
+DATASET NAME ontdubbeld WINDOW=FRONT.
+
+*** VUL AANTAL ITEMS EERSTE DIMENSIE AAN***.
+LOOP dim1=1 to 7. 
+XSAVE outfile='C:\temp\kubusbrussel\dim1.sav' /keep all. 
+END LOOP. 
+EXECUTE. 
+GET file 'C:\temp\kubusbrussel\dim1.sav'. 
+DATASET NAME ontdubbeld WINDOW=FRONT.
+
+*** VUL AANTAL ITEMS TWEEDE DIMENSIE AAN***.
+LOOP dim2=1 to 4. 
+XSAVE outfile='C:\temp\kubusbrussel\dim2.sav' /keep all. 
+END LOOP. 
+EXECUTE. 
+GET file 'C:\temp\kubusbrussel\dim2.sav'. 
+DATASET NAME ontdubbeld WINDOW=FRONT.
+
+*** VUL AANTAL ITEMS TWEEDE DIMENSIE AAN***.
+LOOP dim3=1 to 8. 
+XSAVE outfile='C:\temp\kubusbrussel\dim3.sav' /keep all. 
+END LOOP. 
+EXECUTE. 
+GET file 'C:\temp\kubusbrussel\dim3.sav'. 
+DATASET NAME ontdubbeld WINDOW=FRONT.
+
+*** KOPIEER EN PAS AAN INDIEN MEER DIMENSIES ***.
+
+*** PAS NIETS AAN***.
+compute var0=$casenum.
+EXECUTE.
+
+***Zorg ervoor dat de excel in de juiste map staat***.
+
+GET DATA
+  /TYPE=XLSX
+  /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
+  /SHEET=name 'period'
+  /CELLRANGE=FULL
+  /READNAMES=ON
+  /DATATYPEMIN PERCENTAGE=95.0
+  /HIDDEN IGNORE=YES.
+EXECUTE.
+DATASET NAME toevoegen WINDOW=FRONT.
+compute per=$casenum.
+EXECUTE.
+
+dataset activate ontdubbeld.
+sort cases per (a).
+MATCH FILES /FILE=*
+  /TABLE='toevoegen'
+  /BY per.
+EXECUTE.
+
+GET DATA
+  /TYPE=XLSX
+  /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
+  /SHEET=name 'geoitem'
+  /CELLRANGE=FULL
+  /READNAMES=ON
+  /DATATYPEMIN PERCENTAGE=95.0
+  /HIDDEN IGNORE=YES.
+EXECUTE.
+DATASET NAME toevoegen WINDOW=FRONT.
+compute geo=$casenum.
+EXECUTE.
+
+dataset activate ontdubbeld.
+sort cases geo (a).
+MATCH FILES /FILE=*
+  /TABLE='toevoegen'
+  /BY geo.
+EXECUTE.
+
+GET DATA
+  /TYPE=XLSX
+  /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
+  /SHEET=name 'dim1'
+  /CELLRANGE=FULL
+  /READNAMES=ON
+  /DATATYPEMIN PERCENTAGE=95.0
+  /HIDDEN IGNORE=YES.
+EXECUTE.
+DATASET NAME toevoegen WINDOW=FRONT.
+compute dim1=$casenum.
+EXECUTE.
+
+dataset activate ontdubbeld.
+sort cases dim1 (a).
+MATCH FILES /FILE=*
+  /TABLE='toevoegen'
+  /BY dim1.
+EXECUTE.
+
+*** KOPIEER BLOK HIERONDER INDIEN MEER DIMENSIES (en pas lichtjes aan!)***.
+GET DATA
+  /TYPE=XLSX
+  /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
+  /SHEET=name 'dim2'
+  /CELLRANGE=FULL
+  /READNAMES=ON
+  /DATATYPEMIN PERCENTAGE=95.0
+  /HIDDEN IGNORE=YES.
+EXECUTE.
+DATASET NAME toevoegen WINDOW=FRONT.
+compute dim2=$casenum.
+EXECUTE.
+
+dataset activate ontdubbeld.
+sort cases dim2 (a).
+MATCH FILES /FILE=*
+  /TABLE='toevoegen'
+  /BY dim2.
+EXECUTE.
+*** EINDE TE KOPIEREN BLOK***.
+
+GET DATA
+  /TYPE=XLSX
+  /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
+  /SHEET=name 'dim3'
+  /CELLRANGE=FULL
+  /READNAMES=ON
+  /DATATYPEMIN PERCENTAGE=95.0
+  /HIDDEN IGNORE=YES.
+EXECUTE.
+DATASET NAME toevoegen WINDOW=FRONT.
+compute dim3=$casenum.
+EXECUTE.
+
+dataset activate ontdubbeld.
+sort cases dim3 (a).
+MATCH FILES /FILE=*
+  /TABLE='toevoegen'
+  /BY dim3.
+EXECUTE.
+dataset close toevoegen.
+
+sort cases var0 (a).
+* DELETE OOK VAR3, VAR4 etc INDIEN VERLENGD. Al deze variabelen zijn slechts hulpvariabelen.
+
+delete variables per geo dim1 dim2 dim3 var0.
+
+
+* AFWERKING (specifiek per kubus).
+compute per=2200.
+if char.index(period,"2016")>0 per=2016.
+EXECUTE.
+
+string geolevel (a15).
+if per = 2016 geolevel="gemeente2018".
+if per = 2200 geolevel="gemeente".
+EXECUTE.
+
+
+DATASET ACTIVATE ontdubbeld.
+DATASET COPY  extra.
+DATASET ACTIVATE  extra.
+FILTER OFF.
+USE ALL.
+SELECT IF (per = 2016).
+EXECUTE.
+
+compute geolevel="gemeente".
+
+DATASET ACTIVATE  ontdubbeld.
+ADD FILES /FILE=*
+  /FILE='extra'.
+EXECUTE.
+dataset close extra.
+
+delete variables per.
+
+compute kubus2603_aankomsten=-99999.
+EXECUTE.
+
+SAVE TRANSLATE OUTFILE='C:\temp\kubusbrussel\upload_kubus2603_aankomsten.xlsx'
+  /TYPE=XLS
+  /VERSION=12
+  /MAP
+  /FIELDNAMES VALUE=NAMES
+  /CELLS=VALUES
+/replace.
+
+delete variables kubus2603_aankomsten.
+compute kubus2603_overnachtingen=-99999.
+EXECUTE.
+
+SAVE TRANSLATE OUTFILE='C:\temp\kubusbrussel\upload_kubus2603_overnachtingen.xlsx'
+  /TYPE=XLS
+  /VERSION=12
+  /MAP
+  /FIELDNAMES VALUE=NAMES
+  /CELLS=VALUES
+/replace.
+* EINDE AFWERKING.

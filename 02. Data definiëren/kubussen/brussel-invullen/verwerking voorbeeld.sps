@@ -1,23 +1,24 @@
-* Encoding: UTF-8.
+* Encoding: windows-1252.
 *** VAST GEDEELTE ***.
-dataset declare.
+dataset declare dataset0.
 DATA LIST FREE /var0.
 BEGIN DATA
 0
 END DATA.
 DATASET NAME dataset0 WINDOW=FRONT.
 
-*** VUL AANTAL PERIODEN AAN, bijvoorbeeld 10 jaren wordt per=1 to 10***.
 ***De XSave werkt enkel indien de map 'C:/temp/kubusbrussel' bestaat***.
-    
- LOOP per=1 to 9. 
+
+*** VUL AANTAL PERIODEN AAN, bijvoorbeeld 10 jaren wordt per=1 to 10***.
+LOOP per=1 to 38. 
 XSAVE outfile='C:\temp\kubusbrussel\period.sav' /keep all. 
 END LOOP. 
 EXECUTE. 
 GET file 'C:\temp\kubusbrussel\period.sav'. 
 DATASET NAME ontdubbeld WINDOW=FRONT.
+dataset close dataset0.
 
-*** VUL AANTAL GEBIEDEN AAN***.
+*** VUL AANTAL GEBIEDEN AAN (dit is altijd 20 op gemeenteniveau)***.
 LOOP geo=1 to 20. 
 XSAVE outfile='C:\temp\kubusbrussel\geoitem.sav' /keep all. 
 END LOOP. 
@@ -26,7 +27,7 @@ GET file 'C:\temp\kubusbrussel\geoitem.sav'.
 DATASET NAME ontdubbeld WINDOW=FRONT.
 
 *** VUL AANTAL ITEMS EERSTE DIMENSIE AAN***.
-LOOP dim1=1 to 10. 
+LOOP dim1=1 to 7. 
 XSAVE outfile='C:\temp\kubusbrussel\dim1.sav' /keep all. 
 END LOOP. 
 EXECUTE. 
@@ -34,14 +35,14 @@ GET file 'C:\temp\kubusbrussel\dim1.sav'.
 DATASET NAME ontdubbeld WINDOW=FRONT.
 
 *** VUL AANTAL ITEMS TWEEDE DIMENSIE AAN***.
-LOOP dim2=1 to 12. 
+LOOP dim2=1 to 4. 
 XSAVE outfile='C:\temp\kubusbrussel\dim2.sav' /keep all. 
 END LOOP. 
 EXECUTE. 
 GET file 'C:\temp\kubusbrussel\dim2.sav'. 
 DATASET NAME ontdubbeld WINDOW=FRONT.
-
 *** KOPIEER EN PAS AAN INDIEN MEER DIMENSIES ***.
+
 
 *** PAS NIETS AAN***.
 compute var0=$casenum.
@@ -109,7 +110,7 @@ MATCH FILES /FILE=*
   /BY dim1.
 EXECUTE.
 
-*** KOPIEER BLOK HIERONDER INDIEN MEER DIMENSIES***.
+*** KOPIEER BLOK HIERONDER INDIEN MEER DIMENSIES (en pas lichtjes aan!)***.
 GET DATA
   /TYPE=XLSX
   /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
@@ -129,12 +130,33 @@ MATCH FILES /FILE=*
   /TABLE='toevoegen'
   /BY dim2.
 EXECUTE.
-*** EINDE TE KOPIËREN BLOK***.
+*** EINDE TE KOPIEREN BLOK***.
+
+GET DATA
+  /TYPE=XLSX
+  /FILE='C:\temp\kubusbrussel\kubusbrussel.xlsx'
+  /SHEET=name 'dim3'
+  /CELLRANGE=FULL
+  /READNAMES=ON
+  /DATATYPEMIN PERCENTAGE=95.0
+  /HIDDEN IGNORE=YES.
+EXECUTE.
+DATASET NAME toevoegen WINDOW=FRONT.
+compute dim3=$casenum.
+EXECUTE.
+
+dataset activate ontdubbeld.
+sort cases dim3 (a).
+MATCH FILES /FILE=*
+  /TABLE='toevoegen'
+  /BY dim3.
+EXECUTE.
+dataset close toevoegen.
 
 sort cases var0 (a).
 * DELETE OOK VAR3, VAR4 etc INDIEN VERLENGD. Al deze variabelen zijn slechts hulpvariabelen.
 
-delete variables per geo dim1 dim2 var0.
+delete variables per geo dim1 dim2 dim3 var0.
 
 
 * AFWERKING (specifiek per kubus).
