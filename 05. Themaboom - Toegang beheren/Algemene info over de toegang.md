@@ -22,4 +22,4 @@ Op het moment dat je data wil delen met de hele wereld, kunnen we ze &quot;exter
 - je maakt de **data op niveau statsec zichbaar** door ze toe te voegen aan de **Accesgroup &quot;extern\_statsec&quot;.**
 - je zet de **Databank live** , zodat ze zichtbaar is in de productieomgeving.
 
-Meer informatie over Accessgroups/Toegangsgroepen vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangsgroepen.md).
+Meer informatie over Accessgroups/Toegangsgroepen vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/05.%20Themaboom%20-%20Toegang%20beheren/Toegangs-%20en%20gebruikersgroepen.md).
