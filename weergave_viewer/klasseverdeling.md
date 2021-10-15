@@ -15,5 +15,5 @@ Klasse 5: [ondergrens + 6/3 van een z-score] TOT [hoogste waarde]
 
 **Opmerkingen**: 
 - deze logica wordt ook aangehouden als je meer dan vijf klassen hebt. De laagste en de hoogste klassen blijven ongewijzigd; enkel de tussenliggende klassen worden verfijnd. Dit wordt door ABF zelf als ongewenst beschouwd (mail 19-4-2021) en zullen ze herbekijken
-- de berekening wordt gedaan inclusief vergelijkingsgebieden en "gebieden onbekend"  (ABF-melding 77723). Zie bijvoorbeeld het verschil tussen [deze presentaties](https://provincies.incijfers.be/jive?workspace_guid=d15cbb5c-871c-4481-8e26-19c272968347) 
+- de berekening wordt gedaan inclusief vergelijkingsgebieden en "gebieden onbekend"  (ABF-melding 77723). Zie bijvoorbeeld het verschil tussen [deze presentaties](https://provincies.incijfers.be/jive?workspace_guid=d15cbb5c-871c-4481-8e26-19c272968347) . Opmerking: dit is gewijzigd; deze twee kaarten geven nu wel hetzelfde resultaat!
 - de logica is soms anders uitgelegd (zie ABF-melding 77698 en 47986)
