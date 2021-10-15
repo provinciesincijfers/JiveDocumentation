@@ -230,7 +230,7 @@ Stap 3: het eigenlijke rapport programmeren. Als je hiermee aan de slag gaat, vr
 Stap 4: indien je nog niet veel feedback hebt gekregen, stuur je draft dan rond van zodra die wat presentabel is.
 Om feedback te vragen, kan je werken met een link als deze: 
 
-https://provincies.incijfers.be/admin/jive/report/?id=rapport\_wonen&openinputs=true
+https://provincies.incijfers.be/admin/jive/report/?id=rapport_wonen&openinputs=true
 (in ADMIN, dus de allerrecentste versie. Met “open inputs”, dus mensen moeten niet wachten op Aalst alvorens een gebied te kiezen)
 
 De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als commentaar op een export in PDF aangeleverd wordt.
