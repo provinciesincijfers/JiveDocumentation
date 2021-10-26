@@ -1,5 +1,9 @@
 # JiveDocumentation - Start to Swing
 
+Dit is de landingspagina voor alles wat betreft dagelijks beheer van provincies.incijfers.be, voor een groot stuk gaat het dan om Swing Studio.
+[Hier meer info over wat we allemaal met Github doen](https://github.com/provinciesincijfers/provinciesincijfers), en [over *hoe* je dat doet](https://github.com/provinciesincijfers/provinciesincijfers/wiki).
+
+
 **In dit document:**
 
 :point_right: vanaf de titel &#39;Beheer in Swing&#39; kan je ook klikken in het overzicht op de titel zelf om rechtstreeks naar de bijhorende map te gaan. 
