@@ -6,6 +6,8 @@
 
 De **noemer moet steeds het aggregatieonderwerp** zijn. Als je noemer dus de som van twee cijfers is, dan moet je eerst een onderwerp maken met die som. Elke noemer heeft ook een zinvolle naam nodig.
 
+Voor afspraken en praktische info, zie [Informatie over de belangrijkste velden](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Informatie%20over%20de%20belangrijkste%20velden.md#formule).
+
 ## Naar andere perioden refereren
 
 **Standaard gebeurt de berekening op basis van data van dezelfde perioden**. Dus x + y betekent eigenlijk x\_periode1 + y\_periode1. Je kan hier van afwijken voor bijvoorbeeld een gemiddelde bevolking over twee jaar, of een cumulatief onderwerp.
