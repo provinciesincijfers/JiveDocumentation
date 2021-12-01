@@ -119,5 +119,6 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 
   - Probeer niet in te loggen, maar ga rechtsreeks naar &quot;Wachtwoord vergeten&quot;. Vul daar je e-mail adres in en wacht op een mail.
   - Je krijgt verdere instructies per mail. In die mail staan je &quot;naam&quot; (username) en een tijdelijk paswoord.
+  - Eens ingelogd, zie je de gewoonlijke Inhoud onder de map EXTERN. Ga naar de map INTERN, en zoek daar de map van je Project.
 
 
