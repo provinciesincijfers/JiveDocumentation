@@ -24,7 +24,7 @@
 
 [Eindfase](Draaiboek-rapporten.md#Eindfase)
 
-[Controleren](Draaiboek-rapporten.md#Controleren)
+[Laten controleren](Draaiboek-rapporten.md#laten-controleren)
 
 [Publiceren](Draaiboek-rapporten.md#Publiceren)
 
