@@ -242,12 +242,16 @@ Stap 6: nieuwe data/onderwerpen moeten in principe in de EXTERN themaboom terech
 
 
 ## **Eindfase**
-### Controleren
-- Verzamelen een laatste keer feedback via de Redactiegroep. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [de checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx).
+
 - Ga na of je nog verwijzingen naar andere Rapporten kunt invoegen in je tekst
 - Technische controle HTML. Vraag aan Joost als je geen HTML-expert bent. 
   Gooi je HTML code door een html-validator. Dit is enkel het deel vanaf <body>. Gebruik bijvoorbeeld <https://www.freeformatter.com/html-validator.html> . Niet alle opmerkingen zijn even relevant, en sommige opmerkingen zijn normaal binnen de context van Swing. Vervang op voorhand dubbele ## door enkele # en verwijder de selecties (uiteraard niet in het echte rapport).
 - Zoek in de code op het woord TODO en los alle openstaande issues op. Indien het rapport gepubliceerd kan worden zonder dit op te lossen, kan je er eventueel TODO-longterm van maken.
+
+### Laten controleren
+- Verzamelen een laatste keer feedback via de Redactiegroep. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [de checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx).
+- https://provincies.incijfers.be/admin/jive/report/?id=rapport_wonen&openinputs=true (in ADMIN, dus de allerrecentste versie. Met “open inputs”, dus mensen moeten niet wachten op Aalst alvorens een gebied te kiezen)
+- Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing
 
 ### Publiceren
 Dat betekent je rapport toevoegen aan:
