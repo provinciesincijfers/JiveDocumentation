@@ -200,8 +200,8 @@ Dat betekent je rapport toevoegen aan:
 
 - Kiezen op kaart (report kiezen\_op\_kaart. Op de geschikte gebiedsniveaus toevoegen)
 - Gebiedsinfo (report gebiedsinfo. Meerdere keren toevoegen!)
-- De landingspagina van de Databank (Report \&gt; report files \&gt; landingspagina.html)
-- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten) en interne (Rapporten\&gt;In productie) Themaboom
+- De landingspagina van de Databank (Report > report files > landingspagina.html)
+- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten) en interne (Rapporten>In productie) Themaboom
 - Dashboard: bij het relevante thema én in het overzicht van rapporten
 - Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart)
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
@@ -235,9 +235,9 @@ Hiervoor volgen we dit stappenplan:
 
 - **Kiezen op kaart** (report kiezen_op_kaart). Verwijderen van het geschikte gebiedsniveau.
 - **Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.
-- **De landingspagina van de Databank** (Report\&gt;report files\&gt;landingspagina.html)
+- **De landingspagina van de Databank** (Report>report files>landingspagina.html)
 - **Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.
-- **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;) en interne (Rapporten\&gt;In productie) Themaboom.
+- **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;) en interne (Rapporten>In productie) Themaboom.
 - **Dashboard:** bij het relevante thema én in het overzicht van rapporten.
 - Controleer of je rapport in de **andere rapporten** dient verwijderd te worden. Gebruik hiervoor de searchtag &#39;echt-productie&#39;.
 
