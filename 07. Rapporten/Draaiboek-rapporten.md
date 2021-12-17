@@ -241,10 +241,10 @@ Hiervoor volgen we dit stappenplan:
 - **Dashboard:** bij het relevante thema én in het overzicht van rapporten.
 - Controleer of je rapport in de **andere rapporten** dient verwijderd te worden. Gebruik hiervoor de searchtag &#39;echt-productie&#39;.
 
-❕ [_ **Lijst rapporten en verantwoordelijken op Github** _](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)_ **.** _ Haal je rapport ook uit deze lijst.
+❕ [**Lijst rapporten en verantwoordelijken op Github**](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md). ***Haal je rapport ook uit deze lijst.***
 
 **Na zes maanden wissen we het rapport definitief**
 
 # Procedure voor het vervangen van een bestaand rapport
 
-'TODO Joost'
+`TODO Joost`
