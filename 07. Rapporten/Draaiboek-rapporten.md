@@ -150,21 +150,21 @@ Werk het rapport verder uit in Word + verzamel de grafieken in swing
 
 Laat je begeleiden door Joost.
 
-Stap 1: maak een export van sjabloon_rapport_vertrekproject. Pas in die export de Rapportcode aan van &quot;sjabloon_rapport&quot; naar &quot;rapport_themavanjouwrapport&quot;. Laadt op naar Swing, en pas daar verder aan. Geef het een naam in de stijl van de andere rapporten en vul de kolom &quot;Zoektermen&quot; aan met &quot;InOpmaak-JouwNaam&quot;
+- Stap 1: maak een export van sjabloon_rapport_vertrekproject. Pas in die export de Rapportcode aan van &quot;sjabloon_rapport&quot; naar &quot;rapport_themavanjouwrapport&quot;. Laadt op naar Swing, en pas daar verder aan. Geef het een naam in de stijl van de andere rapporten en vul de kolom &quot;Zoektermen&quot; aan met &quot;InOpmaak-JouwNaam&quot;
 
-Stap 2: verzamel al je grafieken onder één link. Als je ze voor je ziet in Databank, verander dan eenvoudig de url van provincies.incijfers.be/databank in provincies.incijfers.be/admin/jive . Je ziet nog steeds hetzelfde! Als je nu ingelogd bent, dan kan je je presentaties nu &quot;toevoegen als rapport&quot;. Je krijgt dan direct een vertrekpunt voor je presentaties. Pas de Rapportcode aan naar preselecties\_rapport\_themavanjouwrapport zodat we weten wat dit voor een ding is.
+- Stap 2: verzamel al je grafieken onder één link. Als je ze voor je ziet in Databank, verander dan eenvoudig de url van provincies.incijfers.be/databank in provincies.incijfers.be/admin/jive . Je ziet nog steeds hetzelfde! Als je nu ingelogd bent, dan kan je je presentaties nu &quot;toevoegen als rapport&quot;. Je krijgt dan direct een vertrekpunt voor je presentaties. Pas de Rapportcode aan naar preselecties\_rapport\_themavanjouwrapport zodat we weten wat dit voor een ding is.
 
-Stap 3: het eigenlijke rapport programmeren. Als je hiermee voor het eerst aan de slag gaat, vraag een basiscursus aan bij Joost
+- Stap 3: het eigenlijke rapport programmeren. Als je hiermee voor het eerst aan de slag gaat, vraag een basiscursus aan bij Joost
 
-Stap 4: Zoek in de code op het woord TODO en los alle openstaande issues op. Indien het rapport gepubliceerd kan worden zonder dit op te lossen, kan je er eventueel TODO-longterm van maken.
+- Stap 4: Zoek in de code op het woord TODO en los alle openstaande issues op. Indien het rapport gepubliceerd kan worden zonder dit op te lossen, kan je er eventueel TODO-longterm van maken.
 
-Stap 5: stuur je draft rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Om feedback te vragen, kan je werken met een link als deze:
+- Stap 5: stuur je draft rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Om feedback te vragen, kan je werken met een link als deze:
 
 [https://provincies.incijfers.be/admin/jive/report/?id=rapport\_wonen&amp;openinputs=true](https://provincies.incijfers.be/admin/jive/report/?id=rapport_wonen&amp;openinputs=true) (in ADMIN, dus de aller recentste versie. Met &quot;open inputs&quot;, dus mensen moeten niet wachten op Aalst alvorens een gebied te kiezen). Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
 
 De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als commentaar op een export in PDF aangeleverd wordt. Opgelet: op dit moment is het NIET meer aanvaardbaar om feedback te geven over de inhoud zelf.
 
-Stap 6: wanneer je rapport klaar is, laat het (opnieuw) rondgaan voor feedback via redactiegroep. Het is aanvaardbaar om hierbij een strakke deadline te geven, op voorwaarde dat je mensen de kans geeft om uitstel te vragen.
+- Stap 6: wanneer je rapport klaar is, laat het (opnieuw) rondgaan voor feedback via redactiegroep. Het is aanvaardbaar om hierbij een strakke deadline te geven, op voorwaarde dat je mensen de kans geeft om uitstel te vragen.
 
 Uitzondering: Dit is niet nodig wanneer er subtotalen in de themaboom staan en er een ad hoc totaal nodig is voor een rapport.
 
