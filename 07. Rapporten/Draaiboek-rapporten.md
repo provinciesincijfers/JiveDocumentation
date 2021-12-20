@@ -6,6 +6,8 @@
 
 [Types Rapporten](Draaiboek-rapporten.md#types-rapporten)
 
+[Eerste stappen om een nieuw rapport aan te maken in tabel Rapporten in Swing](Eerste-stappen-om-een-nieuw-rapport-aan-te-maken-in-tabel-Rapporten-in-Swing)
+
 [Procedure voor aanmaak van een nieuw rapport](Draaiboek-rapporten.md#procedure-voor-aanmaak-van-een-nieuw-rapport)
 
 [Procedure voor het verwijderen van een rapport](Draaiboek-rapporten.md#Procedure-voor-het-verwijderen-van-een-rapport)
@@ -65,7 +67,7 @@ Maak zeker ook gebruik van volgende documenten:
 - Bestemd voor: de leek en beleidsmakers/ambtenaren die relatief oppervlakkig met het thema bezig zijn
 - Vb. steekkaart Demografie en Economie
 
-**Eerste stappen om een nieuw rapport aan te maken in tabel Rapporten in Swing**
+# Eerste stappen om een nieuw rapport aan te maken in tabel Rapporten in Swing
 
 De tabel met alle Rapporten wordt rap heel groot. Om het overzichtelijk te houden, gebruik je zoveel mogelijk onderstaande regels. Rapporten die hier niet aan voldoen kunnen op elk moment verwijderd worden.
 
@@ -166,7 +168,6 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 
 - Stap 6: wanneer je rapport klaar is, laat het (opnieuw) rondgaan voor feedback via redactiegroep. Het is aanvaardbaar om hierbij een strakke deadline te geven, op voorwaarde dat je mensen de kans geeft om uitstel te vragen.
 
-Uitzondering: Dit is niet nodig wanneer er subtotalen in de themaboom staan en er een ad hoc totaal nodig is voor een rapport.
 
 ## Eindfase
 
