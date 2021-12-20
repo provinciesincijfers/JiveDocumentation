@@ -6,7 +6,7 @@
 
 [Types Rapporten](Draaiboek-rapporten.md#types-rapporten)
 
-[Eerste stappen om een nieuw rapport aan te maken in tabel Rapporten in Swing](Eerste-stappen-om-een-nieuw-rapport-aan-te-maken-in-tabel-Rapporten-in-Swing)
+[Eerste stappen om een nieuw rapport aan te maken in tabel Rapporten in Swing](Draaiboek-rapporten.md#Eerste-stappen-om-een-nieuw-rapport-aan-te-maken-in-tabel-Rapporten-in-Swing)
 
 [Procedure voor aanmaak van een nieuw rapport](Draaiboek-rapporten.md#procedure-voor-aanmaak-van-een-nieuw-rapport)
 
