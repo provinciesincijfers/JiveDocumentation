@@ -16,7 +16,9 @@ De **basisstructuur** is nu:
 
   - **INHOUDELIJKE MAPPEN**
 
-  - **GEBIEDSINDELINGEN**: info en onderwerpen ivm de gebieden. ❕ _**Als je indicatoren hebt op statsec niveau, voeg deze dan ook toe aan deze map!**_
+  - **GEBIEDSINDELINGEN**: info en onderwerpen ivm de gebieden. 
+    
+      ❕ _**Heb je nieuwe indicatoren op statsec niveau? Voeg deze dan ook toe aan deze map!**_
 
   - **Thematische rapporten**
 
