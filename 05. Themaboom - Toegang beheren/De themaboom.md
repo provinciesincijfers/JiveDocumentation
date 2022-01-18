@@ -16,7 +16,7 @@ De **basisstructuur** is nu:
 
   - **INHOUDELIJKE MAPPEN**
 
-  - **GEBIEDSINDELINGEN**: info en onderwerpen ivm de gebieden
+  - **GEBIEDSINDELINGEN**: info en onderwerpen ivm de gebieden. ❕ _**Als je indicatoren hebt op statsec niveau, voeg deze dan ook toe aan deze map!**_
 
   - **Thematische rapporten**
 
@@ -60,12 +60,12 @@ Deze map is **enkel zichtbaar voor Swing Beheerders**. Swing-beheerders zijn doo
 
 ### Afspraken
 
+- **Onderwerpen beschikbaar op statsec** komen ook terug in de map **GEBIEDSINDELINGEN > beschikbaar vanaf statsec.**
 - **Enkel rommelen in TESTMAP**, ook INTERN een beetje opgekuist houden.
 - **Geen grote wijzigingen** zonder advies van Redactiegroep.
 - **Logica hoofdletters**: THEMA > Map naam > Submap naam > onderwerp naam.
 - **Mapnamen verschijnen soms in de titel van presentaties**. Als dit verwarrend kan zijn, maak ze dan niet &quot;Visible in title&quot; in titel (menu Edit achter rechtermuisklik op map).
 - Het is toegestaan om indien relevant bepaalde onderwerpen/mappen te **dupliceren** op meerdere plaatsen. Meld dit even bij de Redactiegroep vooraleer je dit doet.
-- **Onderwerpen beschikbaar op statsec** komen ook terug in de map **GEBIEDSINDELINGEN > beschikbaar vanaf statsec.**
 - **Voor alle thema&#39;s waar dit relevant is, maken we percentages aan** (zie [Formule-onderwerpen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md)). **De aantallen zetten we steeds eerst in de themaboom, dan pas de percentages**.
   - We zetten de **percentages in een submap indien er meer dan 12 onderwerpen in totaal in de hoofdmap zouden terechtkomen.** Deze submap zetten we voor de onderwerpen (zie screenshot).
   - Het is toegestaan om een submap te gebruiken bij **minder dan 12 onderwerpen** als dit in de context logischer is. Deze submap heet &quot;percentages&quot; indien er alleen percentages in zitten, indien er ook andere verhoudingen in zitten heet ze &quot;relatieve cijfers&quot;.
