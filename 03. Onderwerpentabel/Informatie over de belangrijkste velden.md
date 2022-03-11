@@ -133,7 +133,7 @@ De teller kan bestaan uit verschillende (kubus)onderwerpen. De noemer moet je oo
 ## Afronding
 
 Bepaalt het aantal cijfers na de komma. Kan ook gebruikt worden om te censureren. Bijvoorbeeld door af te ronden op 10-tallen.
-Absolute aantallen zijn gehele getallen, de rest (bv. promille, % en ratio's) is standaard 1 cijfer na de kmoma, tenzij meerdere effectief beter zijn.
+Absolute aantallen zijn gehele getallen, de rest (bv. promille, % en ratio's) is standaard 1 cijfer na de komma, tenzij meerdere effectief beter zijn.
 
 ## Drempelwaarde
 
