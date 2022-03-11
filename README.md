@@ -43,6 +43,7 @@ Alles wat je ooit wou weten over hoe je met /JiveDocumentation werkt, staat [hie
 
 ![image](https://user-images.githubusercontent.com/77432663/111486597-e9c6c100-8737-11eb-9de1-ed6df3ced1e3.png)
 
+Dit schema toont enkel de "gewone" omgeving. Zo ongeveer deze hele structuur bestaat ook met de prefix "accept" en met de prefix "beta". De eerste dient om nieuwe versies van de software te kunnen testen. De inhoud daarvan kan elk moment wijzigen. De "beta" dient om een veilige speeltuin te hebben en wordt af en toe overschreven met de inhoude van de gewone omgeving. De beta-versie wordt vaak gebruikt om meer tijd te hebben [om data te controleren](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md). Als deze in de gewone versie wordt ingelezen, duurt het immers maar een paar dagen eer deze data live komt te staan.
 
 # Basisonderdelen beheer
 
