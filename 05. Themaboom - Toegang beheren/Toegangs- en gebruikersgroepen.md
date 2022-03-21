@@ -7,7 +7,7 @@ Bekijk zeker ook [dit](https://github.com/provinciesincijfers/JiveDocumentation/
 
 ## Toegangsgroepen &amp; inloggen
 
-**Iedereen die Swing gebruikt zit per definitie in een Toegangsgroep/Accessgroup**. Ook mensen die gewoon je website bezoeken en verder niets doen. In **Versie > Instellingen** wordt bepaald welke Gebruiker gebruikt wordt om de rechten van buitenstaanders toe te kennen. Je kunt ervoor kiezen om heel ver te gaan in de organisatie van gebruikers in gebruikersgroepen en toegangsgroepen, of je kan hier niet of nauwelijks in differentiëren.
+**Iedereen die de Databank (Swing Viewer) gebruikt zit per definitie in een Toegangsgroep/Accessgroup**. Ook mensen die gewoon je website bezoeken en verder niets doen. In **Versie > Instellingen** wordt bepaald welke Gebruiker gebruikt wordt om de rechten van buitenstaanders toe te kennen. Je kunt ervoor kiezen om heel ver te gaan in de organisatie van gebruikers in gebruikersgroepen en toegangsgroepen, of je kan hier niet of nauwelijks in differentiëren.
 
 **Alle gebruikers, behalve de &quot;gastgebruiker&quot; moeten inloggen**. Die inlog kan je zowel in de gepubliceerde omgeving als in de nog-niet-gepubliceerde omgeving gebruiken (zie verder). Alle gebruikers kunnen in beide omgevingen inloggen. Swing beheerders kunnen hun login in beide omgevingen gebruiken, maar ook nog eens in de Studio. Zij hebben als Gebruikerstype (via de tabel Gebruikersgroepen) het type Beheerder meegekregen. **Elke account waarmee je in Studio kunt inloggen, kan je dus ook in je live website (de productieomgeving) gebruiken**. In theorie zou je een Beheerder echter op basis van Toegangsgroepen de toegang tot de data zelf kunnen ontzeggen.
 
