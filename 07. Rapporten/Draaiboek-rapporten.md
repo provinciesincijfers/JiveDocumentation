@@ -248,4 +248,7 @@ Hiervoor volgen we dit stappenplan:
 
 # Procedure voor het vervangen van een bestaand rapport
 
-`TODO Joost`
+Volg de procedure voor het schrijven van rapporten zoals hierboven beschreven.
+
+Ook hier is communicatie van groot belang. Als je het rapport herwerkt van een collega(‘s), betrek hen dan ook in de verschillende fasen van het proces zodat ook zij feedback kunnen geven, naast de leden van de Redactiegroep.
+
