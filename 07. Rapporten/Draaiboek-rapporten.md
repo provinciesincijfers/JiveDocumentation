@@ -212,6 +212,8 @@ Vul in de tabel Reports de SEARCHTAGS in met echt-productie
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
+**OPGELET**: als je rapport niet voldoet aan de standaard bedieningsmogelijkheden (logica één/twee/veel gemeenten of provincies te kiezen), dan moet je dit expliciet melden. De bovenstaande checklist kan je dan ook niet blind volgen, want zo gaat vanuit allerlei plaatsen per ongeluk naar het rapport voor gemeente Aalst gelinkt worden. 
+
 **Extra tips**
 
 Je rapport is sowieso beschikbaar voor wie de link heeft. De bovenstaande zaken zorgen enkel dat het vindbaar wordt.
