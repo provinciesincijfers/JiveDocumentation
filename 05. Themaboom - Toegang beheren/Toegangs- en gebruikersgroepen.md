@@ -60,8 +60,13 @@ Belangrijke UserGroups:
   - Gebruikersgroep = **users.**
   - Ze hebben recht op zowel INTERN als drie EXTERNE AccessGroups.
 - **Gasten** hebben enkel toegang tot de map **EXTERN.**
-  - Gebruikersgroep = **extern.**
-  - In de tabel AccessGroups wordt bepaald dat ze landen op het thema EXTERN. Ze krijgen toegang tot de drie EXTERNE AccessGroups. 
+  - User: extern. Dit wordt ingesteld via Accounts>Account settings, "Guest user login"
+  - UserGroup = **extern.**. Hier wordt bepaald dat ze landen op de map in de CategoryTree EXTERN. Ze krijgen toegang tot de drie EXTERNE AccessGroups. 
+- Gebruikers van de [odata service](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen) hebben enkel toegang tot de AccessGroup **open_data**
+  - User: open_data_user. Dit wordt ingesteld via Accounts>Account settings, "Open data user"
+  - UserGroup = **open_data.**. Hier wordt bepaald dat ze toegang hebben tot de AccessGroups _extern_statsec_ en _open_data_. De inhoud van _open_data_ is de lijst Indicators binnen deze AccessGroup. Deze wordt periodiek manueel ingevuld met de inhoud van de CategoryTree map EXTERN [tijdens het aanvullen van de Connector](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
+
+
 
 Daarnaast kan er **maatwerk** gebeuren om mensen &quot;op te sluiten&quot; in een bepaald thema.
 
