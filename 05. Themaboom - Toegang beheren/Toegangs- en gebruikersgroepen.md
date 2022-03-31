@@ -19,14 +19,16 @@ De zichtbaarheid van de mappen wordt georganiseerd via de themaboom. Om dit moge
 
 - **extern**: bevat ALLE onderwerpen, maar niet alle gebiedsniveaus. Statsec ontbreekt, en enkele gebiedsindelingen die niet voor iedereen relevant zijn. Ze bevat ook een subset van DimensieNiveaus die voor iedereen beschikbaar mogen zijn
 - **extern\_statsec**: bevat een subset van onderwerpen die expliciet toegankelijk zijn gemaakt op niveau statsec
-- **extern\_gembelg* : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
+- **extern\_gembelg** : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
 - **system**: dit moet STEEDS op &quot;alles tonen&quot; voor alles blijven staan. Anders kan je zelfs als admin niet meer alles zien!
 - **intern**: bevat op dit moment ook gewoon alles
+- **open_data**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen) beschikbaar moet zijn.
 
 We gebruiken de Access Groups om **enkele zaken voor niet-ingelogde eindgebruikers af te schermen**. Met name:
 
 - Data is NIET automatisch op **statsec niveau** beschikbaar
 - **Nieuwe dimensieniveaus van kubussen** zijn NIET automatisch beschikbaar
+- Data is NIET automatisch beschikbaar in de [odata service](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen). Deze service heeft enkel recht op de data die expliciet in de CategoryTree in de map EXTERN staat. We werken deze map bij [tijdens het bijwerken van de Connector naar de Centrumsteden](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
 
 Dus:
 
