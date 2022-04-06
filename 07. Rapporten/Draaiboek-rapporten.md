@@ -146,17 +146,17 @@ Werk het rapport verder uit in Word + verzamel de grafieken in swing
   - Spreek ook goed af wie feedback zal geven (redactiegroep, D&amp;A collega&#39;s, projectwerkgroep, externe partners…). Let erop dat zowel inhoudelijk als technisch wordt nagelezen, (ook) door iemand die de basisafspraken goed kent. Wie feedback geeft, doet dat op basis van gedocumenteerde afspraken.
   - Alle feedback wordt steeds aan de rapportvoorbereider bezorgd, die alles bundelt.
 - Verwerk alle input in één document. Herhaal indien nodig eerdere stappen totdat je zeker bent dat dit het finale resultaat is.
-- Bezorg het document aan de programmeur. Bespreek het document opnieuw samen alvorens te starten met programmeren. Uitgezonderd onvoorziene nieuwe informatie, is het niet de bedoeling dat na deze stap nog wijzigingen worden doorgegeven. De programmeur houdt je op de hoogte bij eventuele moeilijkheden die toch nog boven komen tijdens het programmeren. Dergelijke problemen EN oplossingen worden samen met Joost consequent gedocumenteerd in de bestaande documenten.
+- Bezorg het document aan de programmeur. Bespreek het document opnieuw samen alvorens te starten met programmeren. Uitgezonderd onvoorziene nieuwe informatie, is het niet de bedoeling dat na deze stap nog wijzigingen worden doorgegeven. De programmeur houdt je op de hoogte bij eventuele moeilijkheden die toch nog boven komen tijdens het programmeren. Dergelijke problemen EN oplossingen worden samen met Emilien consequent gedocumenteerd in de bestaande documenten.
 
 ## Fase 2: programmeren
 
-Laat je begeleiden door Joost.
+Laat je begeleiden door Emilien.
 
 - Stap 1: maak een export van sjabloon_rapport_vertrekproject. Pas in die export de Rapportcode aan van &quot;sjabloon_rapport&quot; naar &quot;rapport_themavanjouwrapport&quot;. Laadt op naar Swing, en pas daar verder aan. Geef het een naam in de stijl van de andere rapporten en vul de kolom &quot;Zoektermen&quot; aan met &quot;InOpmaak-JouwNaam&quot;
 
 - Stap 2: verzamel al je grafieken onder één link. Als je ze voor je ziet in Databank, verander dan eenvoudig de url van provincies.incijfers.be/databank in provincies.incijfers.be/admin/jive . Je ziet nog steeds hetzelfde! Als je nu ingelogd bent, dan kan je je presentaties nu &quot;toevoegen als rapport&quot;. Je krijgt dan direct een vertrekpunt voor je presentaties. Pas de Rapportcode aan naar preselecties\_rapport\_themavanjouwrapport zodat we weten wat dit voor een ding is.
 
-- Stap 3: het eigenlijke rapport programmeren. Als je hiermee voor het eerst aan de slag gaat, vraag een basiscursus aan bij Joost
+- Stap 3: het eigenlijke rapport programmeren. Als je hiermee voor het eerst aan de slag gaat, dan kan je steeds bij Emilien terecht voor een eerste introductie tot de code.
 
 - Stap 4: Zoek in de code op het woord TODO en los alle openstaande issues op. Indien het rapport gepubliceerd kan worden zonder dit op te lossen, kan je er eventueel TODO-longterm van maken.
 
