@@ -10,3 +10,5 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 - **Formule-onderwerpen**: onderwerpen die afgeleid zijn uit een of meerdere gewone onderwerpen, (subgroepen uit) kubussen of andere formule-onderwerpen. Verder bouwen op stroomdata kan niet. Meer info over het **inlezen** van Formule-onderwerpen vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md).
 
 ❕ ***Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!***
+
+Afspraken over alle bijkomende velden in de tabel Onderwerpen/Indicators vind je [in het volgende hoofdstuk](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel)
