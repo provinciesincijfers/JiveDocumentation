@@ -71,7 +71,8 @@ Deze nota geeft aan hoe je een kubus moet aanmaken en inlezen in de Studio van S
 Je kunt best twee bestanden aanmaken:
 - een met de data
 - een met de metadata
-- 
+
+
 ### Data
 
 In eerste instantie wordt vanuit het betreffende basisbestand een bestand aangemaakt in een formaat dat Swing Studio kan inlezen.
