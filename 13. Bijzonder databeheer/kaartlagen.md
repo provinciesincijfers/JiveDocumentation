@@ -11,7 +11,7 @@ Je kan bovendien een object aanklikbaar maken en daar dan een mini rapportje ove
 ## Achtergrondkaarten
 
 Standaard werken we met een basiskaart op basis van OpenStreetMap. Je kunt ook altijd het GRB activeren.
-Maar we hebben ook inhoudelijke kaarten, zoals bijvoorbeeld de overstromingsgebieden. Dat is bijzonder leuk om interessante combinaties te maken, zoals [een overlay van huishoudens in overstromingsgebied vs de overstromingsgebieden zelf](https://provincies.incijfers.be/jive?workspace_guid=90193642-c754-484a-99c9-e16da021cce1).
+Maar we hebben ook inhoudelijke kaarten, zoals bijvoorbeeld de overstromingsgebieden. Dat is bijzonder leuk om interessante combinaties te maken, zoals [een overlay van huishoudens in overstromingsgebied vs de overstromingsgebieden zelf](https://provincies.incijfers.be/databank?workspace_guid=90193642-c754-484a-99c9-e16da021cce1).
 
 ![afbeelding](https://user-images.githubusercontent.com/10122639/125598508-3656e806-618f-417a-a377-6f5b7574ce14.png)
 
@@ -37,7 +37,7 @@ Hier zie je een voorbeeld voor de WMS van Landgebruik 2013. Belangrijk om weten:
 
 Eens je dit aan de praat hebt gekregen voor één laag van een server, is het heel gemakkelijk om een laag toe te voegen die een andere kaart van dezelfde server bevraagt.
 
-*Het is NIET mogelijk om TMS'en toe te voegen ([zie openstaand issue](https://github.com/provinciesincijfers/bugsinjive/issues/86) over waarom dat jaamer is en wat ABF nog moet doen).*
+*Het is NIET mogelijk om TMS'en toe te voegen ([zie openstaand issue](https://github.com/provinciesincijfers/bugsinjive/issues/86) over waarom dat jammer is en wat ABF nog moet doen).*
 
 ### Beschikbaar maken van kaartlagen voor gebruikers
 
