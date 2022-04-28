@@ -11,4 +11,4 @@ Dit zijn de reeksen data die we hebben. Hierin wordt allerlei info over deze ond
 
 ❕ ***Het meeste dagelijks beheer omvat enkel gewone- en formule-onderwerpen!***
 
-Afspraken over alle bijkomende velden in de tabel Onderwerpen/Indicators vind je [in het volgende onderdeel](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel)
+Afspraken over alle bijkomende velden in de tabel Onderwerpen/Indicators vind je [in het volgende onderdeel.](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/03.%20Onderwerpentabel)
