@@ -22,13 +22,13 @@ De zichtbaarheid van de mappen wordt georganiseerd via de themaboom. Om dit moge
 - **extern\_gembelg** : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
 - **system**: dit moet STEEDS op &quot;alles tonen&quot; voor alles blijven staan. Anders kan je zelfs als admin niet meer alles zien!
 - **intern**: bevat op dit moment ook gewoon alles
-- **open_data**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen) beschikbaar moet zijn.
+- **open_data**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) beschikbaar moet zijn.
 
 We gebruiken de Access Groups om **enkele zaken voor niet-ingelogde eindgebruikers af te schermen**. Met name:
 
 - Data is NIET automatisch op **statsec niveau** beschikbaar
 - **Nieuwe dimensieniveaus van kubussen** zijn NIET automatisch beschikbaar
-- Data is NIET automatisch beschikbaar in de [odata service](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen). Deze service heeft enkel recht op de data die expliciet in de CategoryTree in de map EXTERN staat. We werken deze map bij [tijdens het bijwerken van de Connector naar de Centrumsteden](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
+- Data is NIET automatisch beschikbaar in de [odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen). Deze service heeft enkel recht op de data die expliciet in de CategoryTree in de map EXTERN staat. We werken deze map bij [tijdens het bijwerken van de Connector naar de Centrumsteden](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
 
 Dus:
 
@@ -62,7 +62,7 @@ Belangrijke UserGroups:
 - **Gasten** hebben enkel toegang tot de map **EXTERN.**
   - User: extern. Dit wordt ingesteld via Accounts>Account settings, "Guest user login"
   - UserGroup = **extern.**. Hier wordt bepaald dat ze landen op de map in de CategoryTree EXTERN. Ze krijgen toegang tot de drie EXTERNE AccessGroups. 
-- Gebruikers van de [odata service](https://provincies.incijfers.be/jive/report/?id=achter_de_schermen) hebben enkel toegang tot de AccessGroup **open_data**
+- Gebruikers van de [odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) hebben enkel toegang tot de AccessGroup **open_data**
   - User: open_data_user. Dit wordt ingesteld via Accounts>Account settings, "Open data user"
   - UserGroup = **open_data.**. Hier wordt bepaald dat ze toegang hebben tot de AccessGroups _extern_statsec_ en _open_data_. De inhoud van _open_data_ is de lijst Indicators binnen deze AccessGroup. Deze wordt periodiek manueel ingevuld met de inhoud van de CategoryTree map EXTERN [tijdens het aanvullen van de Connector](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
 
