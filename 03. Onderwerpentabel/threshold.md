@@ -49,7 +49,7 @@ Voordelen:
 -	Wie hier last van heeft, kan zelf nog altijd rekenen in Excel of een gebruikersonderwerp maken
 
 Achter deze link enkele voorbeelden (eerst inloggen!):
-https://provincies.incijfers.be//jive?workspace_guid=493b7a43-636b-40b2-a799-d37c2a22afce
+https://provincies.incijfers.be//databank?workspace_guid=493b7a43-636b-40b2-a799-d37c2a22afce
 Let hierbij op het verschil tussen wanneer je noemer totale bevolking hebt vs noemer NWWZ.
 
 1)	Tabel gesorteerd op ongecensureerd percentage (dit toont hoe de meeste extreme percentages weggefilterd worden door noemer-drempel)
