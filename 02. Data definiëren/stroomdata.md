@@ -16,4 +16,4 @@ Je werkt ook n**iet met een kolom met het geolevel**, maar gebruikt in de plaats
 
 Je kan dus geen data inlezen "van" gemeente "naar" provincie. Een eindgebruiker kan dit wel: "hoeveel leerlingen 'van' een gemeente gaan 'naar' scholen in een bepaalde provincie".
 
-In [provincies.incijfers.be](provincies.incijfers.be) beginnen we **onderwerpen met stroomdata steeds met vs????, waarbij ???? staat voor de viercijferige themacode**.
+In [provincies.incijfers.be](https://provincies.incijfers.be) beginnen we **onderwerpen met stroomdata steeds met vs????, waarbij ???? staat voor de viercijferige themacode**.
