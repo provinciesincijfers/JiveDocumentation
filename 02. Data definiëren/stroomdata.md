@@ -5,7 +5,7 @@ Bijvoorbeeld hoeveel mensen fietsen van gemeente A naar gemeente B.
 
 Het gebruik van deze gegevens is iets complexer in Swing, en het is gemakkelijk om zo veel data te vragen dat het echt niet meer werkt.
 Maar het kan bijzonder nuttig zijn, bijvoorbeeld om op kaart te laten zien waar gebruikers van diensten in een bepaalde plaats vandaan komen. 
-Zie bijvoorbeeld de rapporten [Detailhandel](https://provincies.incijfers.be/jive/report/?id=rapport_detailhandel&input_geo=gemeente_41002) en [Onderwijs](https://provincies.incijfers.be/jive/report/?id=rapport_onderwijs&input_geo=gemeente_41002).
+Zie bijvoorbeeld de rapporten [Detailhandel](https://provincies.incijfers.be/databank/report/?id=rapport_detailhandel&input_geo=gemeente_41002) en [Onderwijs](https://provincies.incijfers.be/databank/report/?id=rapport_onderwijs&input_geo=gemeente_41002).
 
 **In Swing worden deze behandeld zoals kubussen**. Je kan ze dus cachen, en ze kunnen behoorlijk traag worden indien er veel gebieden zijn.
 Je kan **niet tellen** met stroomdata, je kan dus geen totaal bouwen op een subtotaal, en **je moet bepaalde types percentages inlezen**.
