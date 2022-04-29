@@ -254,3 +254,13 @@ Volg de procedure voor het schrijven van rapporten zoals hierboven beschreven.
 
 Ook hier is communicatie van groot belang. Als je het rapport herwerkt van een collega(‘s), betrek hen dan ook in de verschillende fasen van het proces zodat ook zij feedback kunnen geven, naast de leden van de Redactiegroep.
 
+**Verander de onderwerpcode niet zomaar!** Anders gaat er vanalles kapot.
+Het Dashboard en kruisverwijzingen vanuit andere rapporten werken bijvoorbeeld wel nog goed, MAAR moet je er aan denken om in de Themaboom (CategoryTree) de link te veranderen. Immers, net als bij Indicators is de verwijzing vanuit de Themaboom NIET gekoppeld aan een code maar aan een databank-objectje.
+
+Good practice:
+- Maak een ontwikkelversie aan van je rapport dat je wil aanpassen, bv 'wonen_ontwikkel'
+- Exporteer het 'oude' rapport
+- Open de export van je ontwikkelrapport (bv. wonen_ontwikkel) en pas daar de unieke code aan naar de code van het 'oude' rapport (bv. rapport_wonen)
+- Doe het omgekeerde met de export van bv. rapport_wonen
+- Importeer beide rapporten terug in Swing, en ze zullen de inhboud op de gewenste manier overschrijden 
+
