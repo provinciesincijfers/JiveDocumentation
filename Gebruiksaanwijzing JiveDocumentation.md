@@ -24,6 +24,13 @@ Je kan op verschillende manieren zoeken binnen JiveDocumentation
 
 ![image](https://user-images.githubusercontent.com/77432663/117945780-f5390180-b30e-11eb-9b81-a5022ebdc705.png)
 
+
+❕ Zorg ervoor dat je op de **masterbranch** zit wanneer je een zoekresultaat opent.
+- (1): Dit is niet de masterbranch. Klik op het pijltje ernaast om naar de
+- (2) masterbranch te gaan. 
+![image](https://user-images.githubusercontent.com/77432663/174065426-ef2670c2-5364-4d1f-ac16-35f0e3c7f0c5.png)
+
+
 4. **Vind je iets niet terug**? Contacteer dan Emilien en laat het [hier](https://github.com/provinciesincijfers/JiveDocumentation/issues/14) weten.
 
 
