@@ -116,11 +116,11 @@ De teller kan bestaan uit verschillende (kubus)onderwerpen. De noemer moet je oo
 - Standaard Numeric, voor aantallen. Vaak ook Percentage of Gemiddelde.
 - Gebruik voor **Gemiddelde** "Mean". Dit wordt met ![image](https://user-images.githubusercontent.com/77432663/112615199-7a7d5b00-8e22-11eb-8ca4-9cb35e136c03.png)
 ![](RackMultipart20210325-4-54854n_html_4d1101d1c7397c63.png) aangeduid in themaboom.
-- Weg gebruiken datatype **Percentage (sum)** op twee manieren:
+- We gebruiken datatype **Percentage (sum)** op twee manieren:
   - &quot;**echte percentages**&quot;: gebruik  ***datatype Percentage (sum) én de eenheid &quot;p&quot;*** en je krijgt ![](RackMultipart20210325-4-54854n_html_3e242763af345613.png)![image](https://user-images.githubusercontent.com/77432663/112615232-82d59600-8e22-11eb-87c3-a2ac6e475b40.png).
   Gebruik deze combinatie steeds voor echte percentages, en enkel voor echte percentages. Een percentage is enkel van toepassing als je een subgroep van een totaal deelt door dat totaal. Dit kan dus normaal gezien ENKEL indien de teller en noemer van dezelfde bron komen en over hetzelfde gaat. Is dat niet het geval, gebruik dan een:
   - &quot;**ratio&#39;s**&quot;: Gebruik ***datatype Percentage (sum) met de Unit &quot;promille&quot;, &quot;ratio&quot; of &quot;ratio\_[NogIetsAnders]&quot;***, dan krijg je ![](RackMultipart20210325-4-54854n_html_4ac7220ded4e7769.png)![image](https://user-images.githubusercontent.com/77432663/112615251-8bc66780-8e22-11eb-9258-c9b04742226c.png).
-Er bestaat ook een datatype Percentage (mean), maar daar hebben we het nut nog niet van gevonden.
+  - Bij kubussen die een gemiddelde bevatten, gebruik je datatype Percentage (mean). Zorg ervoor dat de gebruikte dimensieniveaus op "Aggregate type" "unknown" staan. Op die manier bepaalt het onderwerp, niet het dimensieniveau, of de cijfers getotaliseerd dan wel gemiddeld worden.
  
 ## Eenheid
 
