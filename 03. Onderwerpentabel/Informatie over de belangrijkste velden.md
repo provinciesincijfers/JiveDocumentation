@@ -69,8 +69,8 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
 
 - Percentages, promilles, ratio&#39;s, … worden omgeschreven met **(t.o.v. inwoners, …)**.
 
-- Wanneer het gaat over een **deel van het geheel**, bv. bij promille, dan gebruik je [promille], anders [ratio].
-- Bij gemiddelden in de tijd (bv. gemiddelde dierbezetting, gemiddelde bevolking, gemiddelde leefloners, ...) gebruik je de **eenheid "aantal"**.
+- Wanneer het gaat over een **deel van het geheel**, bv. bij promille, dan gebruik je [promille], anders [ratio] (zie Datatype en Eenheid).
+
 - De **beschrijving begint bij een berekend onderwerp** met [percentage], [promille], [ratio], … . Het type komt m.a.w. tussen de vierkante haakjes.
 - In het geval van **enquête, prognose, of model** komt dit nog voor een eventuele deel tussen vierkante haken, in drukletters.
 Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
@@ -126,7 +126,7 @@ De teller kan bestaan uit verschillende (kubus)onderwerpen. De noemer moet je oo
 
 - Als in de naam al bv. verlichting per km staat, schrijf bij unit dan enkel kwh en niet: kwh/km.
 - Zie Afspraken omtrent de beschrijving: Wanneer het gaat over een deel van het geheel, bv. bij promille, dan gebruik je [promille], anders [ratio].
-
+- Bij gemiddelden in de tijd (bv. gemiddelde dierbezetting, gemiddelde bevolking, gemiddelde leefloners, ...) gebruik je de **eenheid "aantal"**.
 
 ❕ **Komt uit de Data > Eenheden**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Gelieve dus eerst te gaan kijken of de eenheid al bestaat.
 
