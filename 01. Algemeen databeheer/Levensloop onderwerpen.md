@@ -60,6 +60,8 @@ Onderwerpen en kubusdimensies/kubusdimensie-itmes moeten uiteindelijk wel kunnen
 Pas de data verder nog niet aan. Op die manier blijft alles werken, maar krijgen "koppige" eindgebruikers toch een duidelijke waarschuwing. We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
 Je kan hiervoor [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitdovend") gebruiken.
 
+Indien je het laatste onderwerp doet uitdoven dat gebruik maakt van een bepaalde metadatafiche, delete dan onmiddellijk de metadatafiche.
+
 ### 3. Na zes maand wissen we alle data.
 
 Dat kan heel eenvoudig aan de hand van [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitgedoofd"). Vul daar in kolom A en B enkel de INDICATOR CODE en de NAME in; de rest wordt voor jou ingevuld.
