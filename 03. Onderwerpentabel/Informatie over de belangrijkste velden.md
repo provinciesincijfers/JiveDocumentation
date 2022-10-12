@@ -20,7 +20,7 @@ Deze code dient enkel voor het gemak van de beheerder. **Een code is normaal gez
 - Hierna volgt soms een **extra verduidelijking** (voorbeeld &quot;a&quot; voor rijksregister inclusief wachtregister), maar meestal direct een underscore. Na de underscore volgt een beschrijving van het onderwerp. Ook deze dient enkel voor het gemak van de beheerder. Als 1116 voor herkomst staat, hoef je dus niet meer &quot;herk&quot; op te nemen in de onderwerpcode.
 
 ❕**Een onderwerpcode, eens aangemaakt en in gebruik genomen is DEFINITIEF en ONWIJZIGBAAR**. Indien we het gebruik ervan stopzetten, gelieve de procedure voor [**&quot;Uitdovende onderwerpen**](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md) **&quot;** te volgen. Ga bij het beheren **ook geen onderwerpen deleten en opnieuw aanmaken**. Daarbij verlies je de relatie met Themaboom, Toegangsgroepen en mogelijk nog meer.
-**Indien de inhoud van een Onderwerp radicaal zou wijzigen** (vb vanaf nu betekent &quot;werkloosheid bij ouderen&quot; 55+ ipv 50+), **maak dan een nieuw onderwerp aan**. Je weet immers niet in welke context dit Onderwerp gebruikt wordt.
+**Indien de inhoud van een Onderwerp radicaal zou wijzigen** (bv. vanaf nu betekent &quot;werkloosheid bij ouderen&quot; 55+ ipv 50+), **maak dan een nieuw onderwerp aan**. Je weet immers niet in welke context dit Onderwerp gebruikt wordt.
 
 Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen provincie**, begin je met provwv, provli, … om dit aan te duiden.
 
@@ -35,15 +35,16 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
 - Begin waar mogelijk met een **kleine letter.**
 - **Geen eenheid** (&quot;aantal&#39; of &#39;aandeel&quot;) in de onderwerpnaam gebruiken.
 - Geef een **unieke naam** aan je onderwerp. Het moet immers onmogelijk zijn om twee onderwerpen te hebben met dezelfde naam die toch een ander aantal geven.
-- **Het is soms nodig om de regels te breken om de onderwerpnaam kort genoeg te houden**. Dat is toegestaan in Databank, maar in Dashboard schrijven we deze dan toch voluit omwille van de leesbaarheid
+- **Het is soms nodig om de regels te breken om de onderwerpnaam kort genoeg te houden**. Dat is toegestaan in Databank, maar in Dashboard schrijven we deze dan toch voluit omwille van de leesbaarheid.
 - **Meer specifieke regels** :
   - Gebruik niet EUR maar €
   - Schrijf niet 1000 maar 1.000
   - Voor leeftijdsgroepen:
     - Indien afzonderlijk: &quot;18-64 jaar&quot;. Dit mag enkel gebruikt worden als het om het inwonertal gaat, anders gebruik je:
-    - eerst het &quot;kenmerk&quot;, dan de leeftijd. Vb &quot;werklozen 18-64 jaar&quot;
+    - eerst het &quot;kenmerk&quot;, dan de leeftijd. Bv. &quot;werklozen 18-64 jaar&quot;
     - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
-  - Percentages, promilles, ratio&#39;s, … worden omgeschreven met (t.o.v. inwoners, …)
+    - Gebruik 65-plussers (niet 65+ of 65-plus)
+  - Percentage worden omgeschreven met (t.o.v. inwoners, …), promilles met per 1.000 inwoners, ratio's afhankelijk van de indicator ofwel met (t.o.v. inwoners) of per 100 inwoners
   - Als het over bevolkingsprognoses gaat, voeg je achteraan [projecties] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [projecties]
 
 ❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald.***
@@ -52,10 +53,10 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
 
 | **Eenheid** | Naam | Beschrijving |
 |---|---|---|
-| promille [‰] | natuurlijk saldo (t.o.v. inwoners) | aantal geboorten min de sterfte per 1.000 inwoners |
-| ratio [ratio] | oprichtingsratio | opgerichte ondernemingen t.o.v. het aantal actieve ondernemingen \*100 [ratio] |
-| ratio\_100 [per 100] | aanbodratio WZC (t.o.v. 65-plussers) | gerealiseerde capaciteit (erkend + erkenning in onderzoek) in woonzorgcentra per 100 inwoners van 65 jaar en ouder |
-| ratio\_1000 [per 1.000] | pmeh met (enkel) IVT (t.o.v. 21-plussers) | aantal rechthebbenden op (enkel) een inkomensvervangende tegemoetkoming t.o.v. 1000 inwoners ouder dan 21 jaar [per 1000 21-plussers] |
+| promille [‰] | natuurlijk saldo per 1.000 inwoners | aantal geboorten min de sterfte per 1.000 inwoners |
+| ratio [ratio] | oprichtingsratio | [ratio] aantal opgerichte ondernemingen per 100 actieve ondernemingen |
+| ratio\_100 [per 100] | aanbodratio WZC | [ratio] gerealiseerde capaciteit (erkend + erkenning in onderzoek) in woonzorgcentra per 100 inwoners van 65 jaar en ouder |
+| ratio\_1000 [per 1.000] | pmeh met (enkel) IVT per 1.000 21-plussers | [ratio] rechthebbenden op (enkel) een inkomensvervangende tegemoetkoming t.o.v. 1.000 inwoners ouder dan 21 jaar |
 
 
 
@@ -64,30 +65,56 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
 Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer info&quot; vraagt.
  Geeft meer uitleg bij het onderwerp.
 
-- Indien het over een heel **eenvoudig onderwerp** gaat, dan mag de **Beschrijving identiek aan de Naam** zijn
-- Indien het gaat over een **formule-onderwerp**, dan mag het ook een **korte beschrijving van de formule** zijn. Dit mag in woorden, en hoeft niet wanneer het bijvoorbeeld gaat over &quot;we tellen 0-10 jarigen op bij 11 tot 18 jarigen om tot het aantal –min 18 te komen.&quot;
+- Indien het over een heel **eenvoudig onderwerp** gaat, dan mag de **Beschrijving identiek aan de Naam** zijn. In andere gevallen mag er zeker wat toelichting bij de omschrijving. Voorbeelden: 
+  -	[percentage] wijzigingen aan woningen 1983-1990 (t.o.v. woongelegenheden). Sinds 1983 wordt het wijzigingsjaar van woningen door het kadaster geregistreerd. Dit cijfer betreft enkel de wijzigingen die gekend zijn in het kadaster.
+  - [percentage] sociale huurappartementen (appartementen inclusief studio's en duplexen) met 1 slaapkamer van de SHM (t.o.v. totaal appartementen SHM). Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor (bijvoorbeeld: 2017 = toestand 31/12/2016)
+  - [percentage] oppervlakte van harde bestemmingen (t.o.v. totale bestemde oppervlakte). De harde bestemmingen zijn de bestemmingen voor wonen, recreatie, industrie (binnen de poorten), bepaalde categorieën van overig groen en bepaalde categorieën van overige bestemmingen.
+  - [aantal] ammoniakemissie door veeteelt (in ton): omvat stal- en opslagemissie, emissie van grazende dieren en emissie van het uitrijden van dierlijke mest
 
-- Percentages, promilles, ratio&#39;s, … worden omgeschreven met **(t.o.v. inwoners, …)**.
+- Indien het gaat over een **formule-onderwerp**, dan mag het ook een **korte beschrijving van de formule** zijn. Dit mag in woorden. Voorbeelden: 
+  - [aantal] 5-jarig gemiddelde van migratiesaldo met een andere Belgische gemeente: immigratie vanuit een andere Belgische gemeente - emigratie naar een andere Belgische gemeente
+  - [aantal] beroepsbevolking (som van het aantal werkenden (15-64 jaar) en het aantal werkzoekenden (15-64 jaar)) van Belgische herkomst
 
-- Wanneer het gaat over een **deel van het geheel**, bv. bij promille, dan gebruik je [promille], anders [ratio] (zie Datatype en Eenheid).
+- De **beschrijving begint steeds** met het type tussen vierkante haakjes: [aantal], [percentage], [promille], [ratio], [mediaan], [gemiddelde]. Voor tekstonderwerpen of waarvoor geen enkel type voldoen, kan je [varia] gebruiken. Bijvoorbeeld:
+  - [varia] indeling van winkelgebieden volgens type
 
-- De **beschrijving begint bij een berekend onderwerp** met [percentage], [promille], [ratio], … . Het type komt m.a.w. tussen de vierkante haakjes.
+- Bij een **gemiddelde in de TIJD** zet je [aantal] (bijvoorbeeld bij gemiddelde bevolking, waar dit het gemiddelde is van bevolking jaar x en bevolking jaar x + 1), maar bij een ‘echt’ gemiddelde, zet je [gemiddelde]. Voorbeelden: 
+  - [gemiddelde] netto belastbaar inkomen per aangifte (in €)
+  - [gemiddelde] jaarlijkse kost (in €) per meter riool voor het gebruik en beheer van riolering in de gemeente
+  - [gemiddelde] primair energieverbruik per nieuwbouwwoning (in kWh)
+  - [aantal] 5-jarig gemiddelde van bevolking op 1 januari
+  - [aantal] alleenstaande personen met een leefloon of equivalent leefloon (maandelijks gemiddelde)
+  - [aantal] arbeidsplaatsen (jaargemiddelde)
+
 - In het geval van **enquête, prognose, of model** komt dit nog voor een eventuele deel tussen vierkante haken, in drukletters.
 Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
+
+- **Geef steeds de eenheid mee tussen ronde haakjes**, bijvoorbeeld (in m²), (in €).
+- **Percentages** worden omgeschreven met (t.o.v. inwoners, …), **promilles** met per 1.000 inwoners, **ratio’s** meestal ook met per … Voorbeelden:
+  -	[ratio] apotheken per 1.000 inwoners
+  -	[ratio] faillissementsratio: aantal faillissementen per 100 actieve ondernemingen
+  -	[ratio] openstaande vacatures per 100 niet-werkende werkzoekenden
+
+- Wanneer het gaat over een **deel van het geheel**, bv. bij promille, dan gebruik je [promille], anders [ratio] (zie Datatype en Eenheid). Voorbeelden:
+  - [promille] immigratie vanuit het buitenland per 1.000 inwoners
+  - [promille] personen met een leefloon (maandelijks gemiddelde) per 1.000 inwoners
+  - [ratio] handelspanden 'levensmiddelen' per 1.000 inwoners 
+  - [ratio] gevallen van doodslag per 1.000 inwoners
 
 - **Meer specifieke regels**:
   - Gebruik niet EUR maar €
   - Schrijf niet 1000 maar 1.000
+  - Zet een spatie tussen het getal en de eenheid, bijvoorbeeld 10 m
   - Voor leeftijdsgroepen
     - Indien afzonderlijk: &quot;18-64 jaar&quot;. Dit mag enkel gebruikt worden als het om het inwonertal gaat, anders gebruik je:
-    - eerst het &quot;kenmerk&quot;, dan de leeftijd. Vb &quot;werklozen 18-64 jaar&quot;
+    - eerst het &quot;kenmerk&quot;, dan de leeftijd. Bv. &quot;werklozen 18-64 jaar&quot;
     - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
-
+    - Gebruik 65-plussers of ... ouder dan 65 jaar (niet 65+ jaar of 65-plus...)
 
 
 ## Meer informatie
 
-Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin bron en methode wordt toegelicht. _Vb. 1205\_rsvz\_zelfstandigen\_voorbeeld\_metadata_
+Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin bron en methode wordt toegelicht. _Bv. 1205\_rsvz\_zelfstandigen\_voorbeeld\_metadata_
  Per BRON/thema voorzien we deze fiche met meer uitleg over de verschillende onderwerpen die tot deze bron behoren. Gebruik hiervoor het Sjabloon Metadata dat je terugvindt binnen [Teams > D&A Interprovinciale werking > Uploadfiles PinC > 00 Metadatafiches PinC](https://teams.microsoft.com/_?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e#/files/Uploadfiles%20PinC?threadId=19:51c8556c2f0c4552b8acc0b7c93024b7@thread.tacv2&ctx=channel&rootfolder=%252Fteams%252FDA-Interprovincialewerking%252FGedeelde%2520documenten%252FUploadfiles%2520PinC%252F00%2520Metadatafiches%2520PinC%252FSjabloon%2520metadata).
 
 ❕ **Opgelet:** Dit zal in de toekomst veranderen.
@@ -98,7 +125,7 @@ Komt uit **Data > Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronne
 
 Bij **percentages** geven we **enkel de Bron van de teller** mee.
 
-❕ Als onderwerpen de som vormen van andere onderwerpen uit verschillende Bronnen, of onderwerpen die gebaseerd zijn op een dataverwerking die meerdere bronnen combineert (vb VDAB-verrijkt-met-rijksregister) dan maken we een nieuwe bron van type &quot;Naam bron 1 &amp; Naam bron 2 | provincies.incijfers.be&quot;
+❕ Als onderwerpen de som vormen van andere onderwerpen uit verschillende Bronnen, of onderwerpen die gebaseerd zijn op een dataverwerking die meerdere bronnen combineert (bv. VDAB-verrijkt-met-rijksregister) dan maken we een nieuwe bron van type &quot;Naam bron 1 &amp; Naam bron 2 | provincies.incijfers.be&quot;
 
 ## Formule 
 
