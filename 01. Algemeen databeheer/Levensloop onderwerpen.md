@@ -61,6 +61,7 @@ Pas de data verder nog niet aan. Op die manier blijft alles werken, maar krijgen
 Je kan hiervoor [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitdovend") gebruiken.
 
 Indien je het laatste onderwerp doet uitdoven dat gebruik maakt van een bepaalde metadatafiche, delete dan onmiddellijk de metadatafiche.
+Indien je het laatste onderwerp van een DataSource uitdooft, verwijder dan meteen ook deze DataSource.
 
 ### 3. Na zes maand wissen we alle data.
 
