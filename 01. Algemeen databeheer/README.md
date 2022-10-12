@@ -15,6 +15,10 @@ Indien de inhoud van een Onderwerp radicaal zou wijzigen (vb vanaf nu betekent &
 - Wat te doen in het geval van [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
 
 
-💡 Heb je **nieuwe interessante datareeksen** gevonden die op PinC kunnen komen? Maak dan een [**issue**](https://github.com/provinciesincijfers/PinC-taakopvolging/issues) aan en laat het op de **Redactiegroep** voorkomen (via Milestones). Eventueel kan je ook nog collega’s D&A taggen in je post. Wanneer je het fiat hebt gekregen en je data uiteindelijk opgeladen is, laat dit dan ook weten binnen je aangemaakte issue.
+💡 Heb je **nieuwe interessante datareeksen** gevonden die op PinC kunnen komen? Maak dan een [**issue**](https://github.com/provinciesincijfers/PinC-taakopvolging/issues) aan en laat het op de **Redactiegroep** voorkomen (via Milestones). Eventueel kan je ook nog collega’s D&A taggen in je post. 
+
+Als je data wil buiten je thema, vraag je eerst aan de (indien mogelijk) relevante werkgroep of zij dit willen overnemen en of deze data kwaliteitsvol genoeg zijn. Indien negatief advies, komt het sowieso op de Redactiegroep.
+
+Wanneer je het fiat hebt gekregen en je data uiteindelijk opgeladen is, laat dit dan ook weten binnen je aangemaakte issue.
 
 :grey_exclamation: ***Vergeet hierbij zeker niet de [procedure voor Controle](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) te volgen en de Redactiegroep per mail op de hoogte te stellen na de controle!***
