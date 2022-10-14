@@ -8,7 +8,8 @@ Voor de opmaak van de metadatafiches gebruik je het Sjabloon Metadata. Dit sjabl
 * Bij het aanmaken van een nieuwe metadatafiche: gebruik steeds het sjabloon in Teams.  
 * De **laatste versie** van een metadatafiche **moet** altijd **op Teams** staan of op de Drive van een project. Wil je wijzigingen aanbrengen aan een fiche, download dan deze versie en **gebruik geen lokaal bestand op je eigen PC**. Zo ben je zeker dat het om de allerlaatste versie gaat, en gaan er geen wijzigingen verloren die ondertussen zijn gebeurd. 
 * Laadt deze laatste versie op als Word-bestand en niet als pdf. Je kan immers makkelijk word-bestanden downloaden als pdf binnen Teams. 
-* Indien er voor één Bron meerdere PDF’s zijn, dan moet er nog een HTML-bestand aangemaakt worden dat aan de bron gekoppeld wordt. In dit HTML-bestand worden de links gezet naar de verschillende fiches die met deze bron te maken hebben. 
+* ~~Indien er voor één Bron meerdere PDF’s zijn, dan moet er nog een HTML-bestand aangemaakt worden dat aan de bron gekoppeld wordt. In dit HTML-bestand worden de links gezet naar de verschillende fiches die met deze bron te maken hebben.~~
 * Een nieuwe versie op Teams of op de Drive van een project laad je op via 'nieuwe versie uploaden'. 
 * In het overzicht van de fiches in Teams kan je zien waar een fiche staat. Zijn er wijzigingen in de titel, de locatie, de verantwoordelijke... van een fiche, wijzig dit dan ook in deze lijst. 
 * Bij **grote wijzigingen** van bestaande fiches of voor **nieuwe fiches**: stuur deze door aan Tine (tine.derijck@vlaamsbrabant.be). 
+* De uiteindelijke PDF metadatafiche zet je tenslotte in de map [Data/Information files](https://provincies.incijfers.be/admin/studio/File?type=info) en koppel je aan de relevante onderwerpen met het veld *More info* in de *Indicators tabel*.
