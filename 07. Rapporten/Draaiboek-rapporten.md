@@ -202,7 +202,7 @@ Dat betekent je rapport toevoegen aan:
 - Kiezen op kaart (report kiezen\_op\_kaart. Op de geschikte gebiedsniveaus toevoegen)
 - Gebiedsinfo (report gebiedsinfo. Meerdere keren toevoegen!)
 - De landingspagina van de Databank (Report > report files > landingspagina.html)
-- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten) en interne (Rapporten>In productie) Themaboom
+- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten)
 - Dashboard: bij het relevante thema én in het overzicht van rapporten
 - Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart)
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
