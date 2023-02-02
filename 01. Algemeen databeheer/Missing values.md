@@ -60,6 +60,9 @@ Deze cijfers worden meegenomen in het totaal voor Vlaanderen, respectievelijk Br
 
 Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbeeld als 99991zzzz voor statistische sectoren. Daarnaast heeft elke gemeente een eigen &quot;sector onbekend&quot;. Een openstaand issue is dat er op statsec nog steeds een &quot;sector onbekend&quot; is voor alle gemeenten versie 2018 en geen voor de nieuwe gemeenten. Data waarvan je dus enkel weet dat ze in Pelt waren, maar waarvan je NIET weet of ze nu in Overpelt of Neerpelt voorgekomen zijn, kan je op dit moment NIET correct behandelen. Dit wordt opgelost op het moment dat we de statsec versie 2020 aanmaken.
 
+❕ Normaal gezien moet er nooit expliciet een missing gestoken worden in 'gebied onbekend'.
+
+
 ## Missing values: technisch gezien
 
 **Er is iets en we weten dat we niet weten hoeveel** (we hebben de vissen proberen tellen in dit meer, we hebben er gevonden, maar we zijn het resultaat kwijtgeraakt):
