@@ -2,7 +2,7 @@
 
 ## Inhoud
 
-[Afspraken](Draaiboek-rapporten.md#afspraken)
+[Algemene afspraken](Draaiboek-rapporten.md#algemene-afspraken)
 
 [Types Rapporten](Draaiboek-rapporten.md#types-rapporten)
 
@@ -15,7 +15,7 @@
 [Procedure voor het vervangen van een bestaand rapport](Draaiboek-rapporten.md#Procedure-voor-het-vervangen-van-een-bestaand-rapport)
 
 
-# Algemeen
+# Algemene afspraken
 
 Dit hoofdstuk bevat de afspraken in verband met het proces om rapporten op te stellen. We bedoelen hier alle interactieve rapporten mee die gebouwd worden met de rapportenmodule van provincies.incijfers.be. Deze &quot;Rapporten&quot; bestaan uit drie types. Het meest gebruikte type is &quot;Inhoudelijk Rapport&quot;. Voor eindgebruikers noemen we dit kortweg &quot;Rapport&quot;. Als je spraakverwarring wil vermijden, gebruik dan &quot;swingrapport&quot; voor het overkoepelende woord en &quot;inhoudelijk rapport&quot; voor het subtype.
 
@@ -24,6 +24,8 @@ Maak zeker ook gebruik van volgende documenten:
 - Nieuwe &quot;Inhoudelijke Rapporten&quot; vertrekken van het PinC [sjabloon voor rapporten](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_rapport_vertrekproject) (vertrekproject).
 - In het PinC-rapport &quot;[sjabloon afspraken](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_grafiekstijl)&quot; zijn alle afspraken gebundeld. Dit document is een basis voor zowel wie het rapport opstelt, de eventuele werkgroep, en de programmeur. Er zijn ook nog andere sjablonen te vinden in PinC waaruit de programmeur voorbeeldcode kan kopiëren. Het woord &#39;sjabloon&#39; staat steeds in de broncode van deze rapporten.
 - De taken rond Rapporten worden verzameld in : [https://github.com/provinciesincijfers/PinC-taakopvolging/issues](https://github.com/provinciesincijfers/PinC-taakopvolging/issues). Gelieve problemen met rapporten daar te melden.
+
+Het overzicht van wie verantwoordelijk is voor een specifiek rapport [vind je hier](https://github.com/provinciesincijfers/PinC-taakopvolging/#taakverdeling-rapporten). Kleine issues in rapporten mag je steeds zelf corrigeren, maar laat het dan wel even weten aan de verantwoordelijke voor het rapport. 
 
 # Types Rapporten
 
