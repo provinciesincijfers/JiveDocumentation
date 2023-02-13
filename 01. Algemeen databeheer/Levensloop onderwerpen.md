@@ -52,8 +52,8 @@ Onderwerpen en kubusdimensies/kubusdimensie-itmes moeten uiteindelijk wel kunnen
 2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via Data>Consistency checks>Indicators used in categories).
     * Voor Dashboard moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
     * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Joost, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden
-3. Impact op rapporten checken. (dit kan via Data>Consistency checks>Indicators used in Reports)
-4. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
+3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
+4. Impact op rapporten checken. (dit kan via Data>Consistency checks>Indicators used in Reports)
  
 ### 2. De verantwoordelijke laat de onderwerpnaam beginnen met "UITDOVEND (sinds XX/XX/20XX) - oude onderwerpnaam"
 
