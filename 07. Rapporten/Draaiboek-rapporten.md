@@ -209,6 +209,7 @@ Dat betekent je rapport toevoegen aan:
 - Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart)
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
+- Zichtbaar maken voor de Search (Exclude from search wegvinken in tabel Reports)
 
 Vul in de tabel Reports de SEARCHTAGS in met echt-productie
 
