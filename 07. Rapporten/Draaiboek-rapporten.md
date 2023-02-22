@@ -82,7 +82,7 @@ De tabel met alle Rapporten wordt rap heel groot. Om het overzichtelijk te houde
   - demo_blabla: voor een idee in ontwikkeling
   - test_blabla: om een specifiek probleem te laten zien aan ABF
   - provXXX_blabla: voor een rapport enkel bedoeld voor intern, intraprovinciaal gebruik
-- Gebruik van &quot;Zoektermen&quot;:
+- Gebruik van &quot;Zoektermen&quot; (kolom SEARCH TAGS in de tabel Reports):
   - backup: tijdelijke eerdere versie
   - demo: een voorbeeld van hoe je iets kan doen in de rapportenmodule
   - echt-archief: een rapport dat uit roulatie is, maar we nog ter beschikking houden
@@ -162,10 +162,7 @@ Laat je begeleiden door Emilien.
 
 - Stap 4: Zoek in de code op het woord TODO en los alle openstaande issues op. Indien het rapport gepubliceerd kan worden zonder dit op te lossen, kan je er eventueel TODO-longterm van maken.
 
-- Stap 5: stuur je draft rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Om feedback te vragen, kan je werken met een link als deze:
-
-[https://provincies.incijfers.be/admin/jive/report/?id=rapport\_wonen&amp;openinputs=true](https://provincies.incijfers.be/admin/jive/report/?id=rapport_wonen&amp;openinputs=true) (in ADMIN, dus de aller recentste versie. Met &quot;open inputs&quot;, dus mensen moeten niet wachten op Aalst alvorens een gebied te kiezen). Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
-
+- Stap 5: stuur je draft rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Om feedback te vragen, kan je werken met een link als deze:[https://provincies.incijfers.be/admin/jive/report/?id=rapport\_wonen&amp;openinputs=true](https://provincies.incijfers.be/admin/jive/report/?id=rapport_wonen&amp;openinputs=true) (in ADMIN, dus de aller recentste versie. Met &quot;open inputs&quot;, dus mensen krijgen direct het keuzevenster te zien om een gebied te selecteren en niet eerst het rapport voor Aalst). Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
 De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als commentaar op een export in PDF aangeleverd wordt. Opgelet: op dit moment is het NIET meer aanvaardbaar om feedback te geven over de inhoud zelf.
 
 - Stap 6: wanneer je rapport klaar is, laat het (opnieuw) rondgaan voor feedback via redactiegroep. Het is aanvaardbaar om hierbij een strakke deadline te geven, op voorwaarde dat je mensen de kans geeft om uitstel te vragen.
@@ -180,7 +177,7 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 Als je vertrekt van een kloon van sjabloon_rapport_vertrekproject en rekening houdt met sjabloon_grafiekstijl (= sjabloon afspraken) dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze lijst.
 
 - Heb je alle onderstaande checks gedaan voor één gemeente, één provincie, twee gemeenten/provincies en meer gemeenten/provincies? Wat gebeurt er als je Brussel kiest of een Vlaamse en een Brusselse provincie?
-- Kijk de verschillende cijfers na en vergelijk met deze met de cijfers in de databank (check dat er niet per ongeluk een foutief onderwerp werd geselecteerd)
+- Kijk de verschillende cijfers na en vergelijk deze met de cijfers in de databank (check dat er niet per ongeluk een foutief onderwerp werd geselecteerd)
 - Zijn er geen actuelere data beschikbaar (in de databank of elders)?
 - Komen alle cijfers en conclusies in de tekst overeen met wat in de figuren / grafieken / kaarten getoond wordt?
 - Klopt de nummering van figuren...?
@@ -201,17 +198,17 @@ Als je vertrekt van een kloon van sjabloon_rapport_vertrekproject en rekening ho
 
 Dat betekent je rapport toevoegen aan:
 
-- Kiezen op kaart (report kiezen\_op\_kaart. Op de geschikte gebiedsniveaus toevoegen)
-- Gebiedsinfo (report gebiedsinfo. Meerdere keren toevoegen!)
+- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus)
+- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus)
 - De landingspagina van de Databank (Report > report files > landingspagina.html)
 - Themaboom: extern (bij het thema en bij &quot;Thematische rapporten)
-- Dashboard: bij het relevante thema én in het overzicht van rapporten
+- Dashboard: een tegel maken bij het relevante thema én toevegen in het overzicht van rapporten. Contacteer Koen hiervoor.
 - Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart)
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search (Exclude from search wegvinken in tabel Reports)
 
-Vul in de tabel Reports de SEARCHTAGS in met echt-productie
+Vul in de tabel Reports de SEARCH TAGS in met echt-productie
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
