@@ -95,6 +95,9 @@ De tabel met alle Rapporten wordt rap heel groot. Om het overzichtelijk te houde
   - rommel: overige zaken waarvan het niet echt duidelijk is of ze een nut hebben
   - sjabloon: een proper uitgewerkt vertrekproject, of voorbeeld voor het oplossen van specifieke problemen
   - test: een rapport dat enkel bestaat om wat in te prutsen, bijvoorbeeld om een veilige speeltuin te hebben om een issue op te lossen met hulp van ABF
+- Zoekfunctie:
+  - Als je een rapport maakt, mag dit nog niet in de zoekfunctie verschijnen. Vink daarom eerst 'Exclude from Search' aan. Het kan zijn dat je deze kolom zelf nog moet toevoegen binnen de Reports tabel.
+  - Vergeet dit niet af te vinken wanneer het rapport live gezet wordt.
 
 Welke vinkjes aan en uitzetten (in tabel rapporten):
 
@@ -106,6 +109,7 @@ Welke vinkjes aan en uitzetten (in tabel rapporten):
 | Powerpoint export toestaan | uit |
 | Gebruik Base href | aan |
 | Gebruik Scroll script | aan |
+| Exclude from search | aan |
 
 # Procedure voor aanmaak van een nieuw rapport
 
@@ -154,9 +158,9 @@ Werk het rapport verder uit in Word + verzamel de grafieken in swing
 
 Laat je begeleiden door Emilien.
 
-- Stap 1: maak een export van sjabloon_rapport_vertrekproject. Pas in die export de Rapportcode aan van &quot;sjabloon_rapport&quot; naar &quot;rapport_themavanjouwrapport&quot;. Laadt op naar Swing, en pas daar verder aan. Geef het een naam in de stijl van de andere rapporten en vul de kolom &quot;Zoektermen&quot; aan met &quot;InOpmaak-JouwNaam&quot;
+- Stap 1: maak een export van sjabloon_rapport_vertrekproject. Pas in die export de Rapportcode aan van &quot;sjabloon_rapport&quot; naar &quot;rapport_themavanjouwrapport&quot;. Laad op naar Swing, en pas daar verder aan. Geef het een naam in de stijl van de andere rapporten en vul de kolom &quot;Zoektermen&quot; aan met &quot;InOpmaak-JouwNaam&quot;
 
-- Stap 2: verzamel al je grafieken onder één link. Als je ze voor je ziet in Databank, verander dan eenvoudig de url van provincies.incijfers.be/databank in provincies.incijfers.be/admin/jive . Je ziet nog steeds hetzelfde! Als je nu ingelogd bent, dan kan je je presentaties nu &quot;toevoegen als rapport&quot;. Je krijgt dan direct een vertrekpunt voor je presentaties. Pas de Rapportcode aan naar preselecties\_rapport\_themavanjouwrapport zodat we weten wat dit voor een ding is.
+- Stap 2: verzamel al je grafieken onder één link. Als je ze voor je ziet in Databank, verander dan eenvoudig de url van provincies.incijfers.be/databank in provincies.incijfers.be/admin/jive . Je ziet nog steeds hetzelfde! Als je nu ingelogd bent, dan kan je je presentaties nu &quot;toevoegen als rapport&quot;. Je krijgt dan direct een vertrekpunt voor je presentaties. Pas de Rapportcode aan naar preselecties\_rapport\_themavanjouwrapport zodat we weten wat dit voor een ding is. ❕ Zorg ervoor dat de presentaties die je verzamelt als rapport niet in de zoekfunctie verschijnen. Vink daarom 'Exclude from Search' aan.
 
 - Stap 3: het eigenlijke rapport programmeren. Als je hiermee voor het eerst aan de slag gaat, dan kan je steeds bij Emilien terecht voor een eerste introductie tot de code.
 
@@ -262,5 +266,5 @@ Good practice:
 - Exporteer het 'oude' rapport
 - Open de export van je ontwikkelrapport (bv. wonen_ontwikkel) en pas daar de unieke code aan naar de code van het 'oude' rapport (bv. rapport_wonen)
 - Doe het omgekeerde met de export van bv. rapport_wonen
-- Importeer beide rapporten terug in Swing, en ze zullen de inhboud op de gewenste manier overschrijden 
+- Importeer beide rapporten terug in Swing, en ze zullen de inhoud op de gewenste manier overschrijden 
 
