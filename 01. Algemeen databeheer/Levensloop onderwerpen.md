@@ -21,7 +21,7 @@ Uitdovende data wordt niet meer gecontroleerd en wordt doorgaans vervangen door 
 
  
 
-1)	Uitdovende onderwerpen in Jive
+1)	Uitdovende onderwerpen in Jive (Viewer)
 
 Optie 1: 
 Ga naar Studio > Viewer > Category tree en klik op de map van je publieke themaboom. Klik op “Export” > select all indicators in this category. Na een paar minuten krijg je een excel. Je krijgt een volledig overzicht, maar de onderwerpnamen ontbreken. Die info moet je nog toevoegen. Bijvoorbeeld door een export van de Indicators tabel te maken en de themaboom export te verrijken met de namen met behulp van "vertikaal zoeken". Zoek vervolgens op het woord “uitdovend” of "uitgedoofd".
@@ -29,9 +29,17 @@ Ga naar Studio > Viewer > Category tree en klik op de map van je publieke themab
 Optie 2:
 Ga naar je live Jive versie, en type in de zoekfunctie het woord “uitdovend” of "uitgedoofd"
 
-2)	Uitdovende onderwerpen in Dashboard
+2)	Uitdovende onderwerpen in Dashboard (Mosaic)
 
-Zoals optie 1 hierboven, maar exporteer de map die je gebruikt om je Dashboard te voeden. Je gaat nog moeten dubbelchecken in je dashboard zelf, aangezien niet elk onderwerp in die themaboom per se ook echt in je Dashboard gebruikt wordt!
+* Ga naar Studio >Viewer > CategoryTree en zoek de map die gebruikt wordt voor Dashboard. Edit deze map en wijzig de CategoryCode en Name van die map. Op die manier creëer je een backup van je huidige indeling.
+* Ga naar Studio > Mosaic > Start en klik op de Sync knop. Zet zeker de functie "Add used indicators" aan.
+![afbeelding](https://user-images.githubusercontent.com/10122639/223678624-5e55844d-34d6-4fb8-88fa-74079a1a7f09.png)
+* Ga naar Studio > Viewer > Category tree en klik op de nieuwe map voor Dashboard die de stap hierboven heeft gecreëerd. OPGELET: zet deze nieuwe map op de juiste plaats, en maak hem indien gewenst onzichtbaar.
+* Klik op “Export” > select all indicators in this category. Na een paar minuten krijg je een excel. Je krijgt een volledig overzicht, maar de onderwerpnamen ontbreken. Die info moet je nog toevoegen. Bijvoorbeeld door een export van de Indicators tabel te maken en de themaboom export te verrijken met de namen met behulp van "vertikaal zoeken". Zoek vervolgens op het woord “uitdovend” of "uitgedoofd".
+
+Opgelet: je hebt mogelijk meerdere Mosaics actief staan. Je moet deze operatie voor elk Mosaic afzonderlijk doen. Omgekeerd kunnen er binnen je specifiek Mosaic tegels of figuren verborgen staan. Deze gaan uiteraard wel in de resultaten opduiken.
+
+
 
 3)	Uitdovende onderwerpen in Rapporten
 
