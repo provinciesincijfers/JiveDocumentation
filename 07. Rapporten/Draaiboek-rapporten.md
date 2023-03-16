@@ -268,3 +268,4 @@ Good practice:
 - Doe het omgekeerde met de export van bv. rapport_wonen
 - Importeer beide rapporten terug in Swing, en ze zullen de inhoud op de gewenste manier overschrijden 
 
+❕ Een uitgebreide uitleg hoe je rapporten exporteert en de code aanpast, vind je terug in het sjabloon_vertrekproject.
