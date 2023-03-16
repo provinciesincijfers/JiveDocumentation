@@ -244,7 +244,7 @@ Hiervoor volgen we dit stappenplan:
 - **Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.
 - **De landingspagina van de Databank** (Report>report files>landingspagina.html)
 - **Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.
-- **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;) en interne (Rapporten>In productie) Themaboom.
+- **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;)
 - **Dashboard:** bij het relevante thema én in het overzicht van rapporten.
 - Controleer of je rapport in de **andere rapporten** dient verwijderd te worden. Gebruik hiervoor de searchtag &#39;echt-productie&#39;.
 
