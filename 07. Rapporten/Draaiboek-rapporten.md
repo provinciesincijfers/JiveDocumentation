@@ -169,7 +169,7 @@ Laat je begeleiden door Emilien.
 - Stap 5: stuur je draft rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Om feedback te vragen, kan je werken met een link als deze:[https://provincies.incijfers.be/admin/jive/report/?id=rapport\_wonen&amp;openinputs=true](https://provincies.incijfers.be/admin/jive/report/?id=rapport_wonen&amp;openinputs=true) (in ADMIN, dus de aller recentste versie. Met &quot;open inputs&quot;, dus mensen krijgen direct het keuzevenster te zien om een gebied te selecteren en niet eerst het rapport voor Aalst). Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
 De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als commentaar op een export in PDF aangeleverd wordt. Opgelet: op dit moment is het NIET meer aanvaardbaar om feedback te geven over de inhoud zelf.
 
-- Stap 6: wanneer je rapport klaar is, laat het (opnieuw) rondgaan voor feedback via redactiegroep. Het is aanvaardbaar om hierbij een strakke deadline te geven, op voorwaarde dat je mensen de kans geeft om uitstel te vragen.
+- Stap 6: wanneer je rapport klaar is, laat het (opnieuw) rondgaan ter info naar de redactiegroep en de werkgroep.
 
 
 ## Eindfase
