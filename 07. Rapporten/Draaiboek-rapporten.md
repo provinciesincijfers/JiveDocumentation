@@ -45,7 +45,7 @@ Het overzicht van wie verantwoordelijk is voor een specifiek rapport [vind je hi
 - Gebruiker kan één, twee of meer gemeenten/provincies kiezen
 - Tabellen, grafieken en kaarten
 - Basisdata + indicatoren + duiding
-- Geen beperking op aantal pagina&#39;s
+- Geen beperking op aantal pagina&#39;s (maar hou rekening met performantie, die afhankelijk is van hoeveelheid benodigde data & interactieve grafieken)
 - Bestemd voor: de inhoudelijk specialist
 - Vb. Kansarmoede
 - Bevat doorklikken in inhoudstafel
@@ -82,12 +82,12 @@ De tabel met alle Rapporten wordt rap heel groot. Om het overzichtelijk te houde
   - demo_blabla: voor een idee in ontwikkeling
   - test_blabla: om een specifiek probleem te laten zien aan ABF
   - provXXX_blabla: voor een rapport enkel bedoeld voor intern, intraprovinciaal gebruik
-- Gebruik van &quot;Zoektermen&quot; (kolom SEARCH TAGS in de tabel Reports):
+- Gebruik van &quot;Zoektermen&quot; kolom SEARCH TAGS in de tabel Reports. (Opgelet: verwijder de searchtags van zodra je rapport op Exclude from Search op NEE staat):
   - backup: tijdelijke eerdere versie
   - demo: een voorbeeld van hoe je iets kan doen in de rapportenmodule
   - echt-archief: een rapport dat uit roulatie is, maar we nog ter beschikking houden
   - echt-inopmaak: een rapport in opmaak
-  - echt-productie: een Inhoudelijk Rapport, Steekkaart of Tabellenrapport dat online is voor iedereen
+  - ~~echt-productie~~: *een Inhoudelijk Rapport, Steekkaart of Tabellenrapport dat online is voor iedereen*.
   - intern: een rapport voor intern gebruik
   - vals-productie: staat in productie, maar is niet echt een type rapport, maar bijvoorbeeld een handleiding, een technisch hulpmiddeltje (zoals &quot;zoeken op kaart&quot;), etc.
   - projectfiche: een document met uitleg over de diverse &quot;projecten&quot;, zoals klimaat, landbouw, etc.
@@ -237,6 +237,7 @@ Hiervoor volgen we dit stappenplan:
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
   - Verander de **Searchtag** naar &#39; **echt-archief**&#39;.
+  - Ze Exclude from Search op "ja"
 
 **De verantwoordelijke kijkt na waar het rapport gebruikt wordt en past zoveel mogelijk zelf aan**
 
