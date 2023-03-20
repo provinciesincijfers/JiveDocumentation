@@ -96,7 +96,8 @@ De tabel met alle Rapporten wordt rap heel groot. Om het overzichtelijk te houde
   - sjabloon: een proper uitgewerkt vertrekproject, of voorbeeld voor het oplossen van specifieke problemen
   - test: een rapport dat enkel bestaat om wat in te prutsen, bijvoorbeeld om een veilige speeltuin te hebben om een issue op te lossen met hulp van ABF
 - Zoekfunctie:
-  - Als je een rapport maakt, mag dit nog niet in de zoekfunctie verschijnen. Vink daarom eerst 'Exclude from Search' aan. Het kan zijn dat je deze kolom zelf nog moet toevoegen binnen de Reports tabel.
+  - Als je een rapport maakt, mag dit nog niet in de zoekfunctie verschijnen. Vink daarom eerst '
+  Search' aan. Het kan zijn dat je deze kolom zelf nog moet toevoegen binnen de Reports tabel.
   - Vergeet dit niet af te vinken wanneer het rapport live gezet wordt.
 
 Welke vinkjes aan en uitzetten (in tabel rapporten):
@@ -212,7 +213,7 @@ Dat betekent je rapport toevoegen aan:
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search (Exclude from search wegvinken in tabel Reports)
 
-Vul in de tabel Reports de SEARCH TAGS in met echt-productie
+Vul in de tabel Reports de SEARCH TAGS in met echt-productie. Let op: Deze Search tags worden dan ook weergegeven in de zoekfunctie. 
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
@@ -237,7 +238,7 @@ Hiervoor volgen we dit stappenplan:
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
   - Verander de **Searchtag** naar &#39; **echt-archief**&#39;.
-  - Ze Exclude from Search op "ja"
+  - Zet Exclude from Search op "ja"
 
 **De verantwoordelijke kijkt na waar het rapport gebruikt wordt en past zoveel mogelijk zelf aan**
 
