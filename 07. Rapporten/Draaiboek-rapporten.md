@@ -213,7 +213,7 @@ Dat betekent je rapport toevoegen aan:
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search (Exclude from search wegvinken in tabel Reports)
 
-Vul in de tabel Reports de SEARCH TAGS in met echt-productie. Let op: Deze Search tags worden dan ook weergegeven in de zoekfunctie. 
+Verwijder in de tabel Reports de SEARCH TAGS. 
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
