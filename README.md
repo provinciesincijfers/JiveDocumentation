@@ -3,6 +3,7 @@
 Dit is de landingspagina voor alles wat betreft dagelijks beheer van provincies.incijfers.be, voor een groot stuk gaat het dan om Swing Studio.
 [Hier meer info over wat we allemaal met Github doen](https://github.com/provinciesincijfers/provinciesincijfers), en [over *hoe* je dat doet](https://github.com/provinciesincijfers/provinciesincijfers/wiki).
 
+**Vind je iets niet terug of ben je even de weg kwijt?** Laat het dan [hier](https://github.com/provinciesincijfers/JiveDocumentation/issues/14) weten. 
 
 **In dit document:**
 
