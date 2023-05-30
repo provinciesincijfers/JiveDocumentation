@@ -30,6 +30,9 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
     
      ❕ Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
     - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?regionlevel=gemeente&regioncode=24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem). Klik [hier](https://provincies.incijfers.be/databank?workspace_guid=7a6e3340-43aa-413a-9e65-19eb78539cfa) om de gebiedscode op te vragen.
+  - Voor communiceren van een **metadatafiche**.
+    -   Open de metadatafiche en klik met je rechtermuisknop in deze fiche. Klik vervolgens op Inspecteren. 
+    -   In het venster dat geopend wordt, zal je ergens een URL zien staan die als volgt is opgebouwd:  https://provincies.incijfers.be//info/v...verwerkingsproces.pdf; bv.: https://provincies.incijfers.be//info/v1101_bevolking_Statbel.pdf
 - **Verzamelen van gegevens over het succes van je communicatie:**
 
 **Voeg steeds aan het einde van je URL nog MINSTENS toe:**  ***mtm_campaign=naam_van_je_project.*** 
