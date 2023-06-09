@@ -17,6 +17,7 @@ Als je een thema herorganiseert proberen we daarom toch de bestaande onderwerpen
 Als je data ontvangt via de Swing Connector, doe dan regelmatig onderstaande checks.
 
 Uitdovende data wordt niet meer gecontroleerd en wordt doorgaans vervangen door nieuwe cijfers. Deze cijfers mogen dus niet verdeeld worden onder het label "provincies.incijfers.be". Connector-klanten moeten er zelf voor zorgen dat de UITDOVENDE onderwerpen en zeker UITGEDOOFDE onderwerpen zo snel mogelijk uit hun externe themaboom en dashboard verdwijnen.
+Daarnaast kunnen zij ook onderwerpen met het label ARCHIEF tegenkomen. Het is minderd dringend deze te verwijderen, maar meestal zijn er betere alternatieven voor handen.
 
 
  
@@ -91,6 +92,10 @@ Pas ook de namen aan naar "UITGEDOOFD (sinds NIEUWE DATUM) - oude onderwerpnaam"
 Eventueel kan er op lange termijn overgegaan worden tot het volledig wissen van de onderwerpen uit Swing. Pas nadat een onderwerp uitgedoofd is, kan het gedelete worden. Dit vereist dat wij het deleten en aan de beheerder van de Swing Connector laten weten dat een onderwerp gewist moet worden bij de Connector-klanten.
 Als je een object uiteindelijk wil deleten, dan moet het eerst UITGEDOOFD zijn. Als de vorige stappen goed gebeurt zijn, kan dit geen problemen geven. De Swing Connector verwijdert nooit automatisch records. We moeten dit dus aan de ABF-Connectorbeheerder laten weten, zodat die deze stap manueel kan doorvoeren.
 
+### Alternatief: ARCHIEF
+Soms zetten we een reeks die EXTERN stond op een gegeven moment INTERN, zonder dat ze daarom meteen uitdovend moeten worden. Dit is doorgaans het geval bij grote herorganisaties (voorbeeld NWWZ naar WZW). De oude cijfers zijn nog een tijd nuttig, en zijn op zich niet fout. Ze gaan gewoon nooit nog geupdate worden en verliezen dus langzaamaan hun relevantie.
+
+Voor hergebruikers is dit ntuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
 
 ## FAQ
 
