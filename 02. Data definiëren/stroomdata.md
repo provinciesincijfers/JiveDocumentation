@@ -8,7 +8,7 @@ Maar het kan bijzonder nuttig zijn, bijvoorbeeld om op kaart te laten zien waar 
 Zie bijvoorbeeld de rapporten [Detailhandel](https://provincies.incijfers.be/databank/report/?id=rapport_detailhandel&input_geo=gemeente_41002) en [Onderwijs](https://provincies.incijfers.be/databank/report/?id=rapport_onderwijs&input_geo=gemeente_41002).
 
 **In Swing worden deze behandeld zoals kubussen**. Je kan ze dus cachen, en ze kunnen behoorlijk traag worden indien er veel gebieden zijn.
-Je kan **niet tellen** met stroomdata, je kan dus geen totaal bouwen op een subtotaal, en **je moet bepaalde types percentages inlezen**.
+Je kan **geen formules maken** met stroomdata, je kan dus geen totaal bouwen op een subtotaal, en **je moet bepaalde types percentages inlezen**.
 
 Voor het **inlezen** moet je lichtjes anders te werk gaan. Dit wordt uigelegd op de Help op [Admin/Studio/Import](https://provincies.incijfers.be/Admin/Studio/Import). Belangrijk en niet intuïtief is dat je **periode-veld (normaal PERIOD of JAAR) nu STROOM moet heten**.
 
