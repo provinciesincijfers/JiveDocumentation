@@ -56,7 +56,7 @@ Ga naar Studio>Data>"Consistency checks" en maak het rapport “Indicators used 
 
 Onderwerpen en kubusdimensies/kubusdimensie-itmes moeten uiteindelijk wel kunnen verdwijnen. Hiervoor volgen we dit stappenplan:
 
-### 1. De verantwoordelijke voor het onderwerp kijkt zoveel mogelijk na waar de onderwerpen gebruikt worden en past aan of geeft door aan anderen wat aangepast moet worden
+### 1. De verantwoordelijke voor het onderwerp kijkt zoveel mogelijk na waar de onderwerpen gebruikt worden en past aan of geeft door aan anderen wat aangepast moet worden. Geef ook aan of het onderwerp al dan niet vervangen kan worden door een ander. 
 1. Aanpassen EXTERNE themaboom
 2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via Data>Consistency checks>Indicators used in categories).
     * Voor Dashboard moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
@@ -95,7 +95,7 @@ Als je een object uiteindelijk wil deleten, dan moet het eerst UITGEDOOFD zijn. 
 ### Alternatief: ARCHIEF
 Soms zetten we een reeks die EXTERN stond op een gegeven moment INTERN, zonder dat ze daarom meteen uitdovend moeten worden. Dit is doorgaans het geval bij grote herorganisaties (voorbeeld NWWZ naar WZW). De oude cijfers zijn nog een tijd nuttig, en zijn op zich niet fout. Ze gaan gewoon nooit nog geupdate worden en verliezen dus langzaamaan hun relevantie.
 
-Voor hergebruikers is dit ntuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
+Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
 
 ## FAQ
 
