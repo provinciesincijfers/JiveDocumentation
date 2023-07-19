@@ -17,7 +17,7 @@ Maar we hebben ook inhoudelijke kaarten, zoals bijvoorbeeld de overstromingsgebi
 
 ### Toevoegen van lagen aan Studio
 
-Welke kaartlagen **bestaan** kan je beheren bij `Viewer > Map layer defintions`.
+Welke kaartlagen **bestaan** kan je beheren bij `Viewer > Map layer settings / definitions`.
 
 Hier zijn vier types beschikbaar:
 - Contours: hier kan je de outline van een bestaand gebiedsniveau als afzonderlijk te activeren kaartlaag toevoegen
@@ -30,7 +30,7 @@ Een nieuwe kaartlaag doen werken kan bijzonder lastig zijn. Tijdens het toevoege
 
 Hier zie je een voorbeeld voor de WMS van Landgebruik 2013. Belangrijk om weten:
 - De server is `https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows`
-- Daar horen een aantal paramters bij, die ervoor zorgen dat je een afbeelding in de juiste projecte krijgt: `?service=WMS&version=1.1.1&request=GetMap&CRS=EPSG:31370`
+- Daar horen een aantal parameters bij, die ervoor zorgen dat je een afbeelding in de juiste projectie krijgt: `?service=WMS&version=1.1.1&request=GetMap&CRS=EPSG:31370`
 - De LayerId kan je in de inhoudstafel van de server zien. Bijvoorbeeld in QGIS, of als XML via https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows?service=WMS&request=GetCapabilities, of gevisualiseerd met [Geo-Explorer](http://geo-explore.ecs.soton.ac.uk/?url=https%3A%2F%2Fwww.mercator.vlaanderen.be%2Fraadpleegdienstenmercatorpubliek%2Fows%3Fservice%3DWMS%26request%3DGetCapabilities)
 
 ![afbeelding](https://user-images.githubusercontent.com/10122639/125602429-d5f976a3-8c98-4093-ab07-d5ef2a6b0f9c.png)
