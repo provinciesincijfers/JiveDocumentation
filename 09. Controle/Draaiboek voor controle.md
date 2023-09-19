@@ -57,7 +57,8 @@ Per onderwerp staat dit ook aangegeven **in Swing in het &quot;vrij tekstveld&qu
 
 ### Controle afgerond?
 
-Vul aan in het [logboek](https://provincies.incijfers.be/admin/jive/Report/Edit/logboek) dat een dataset werd toegevoegd of geactualiseerd.
+Vul aan in het [logboek](https://provincies.incijfers.be/admin/jive/Report/Edit/logboek) dat een dataset werd toegevoegd of geactualiseerd. Als het niet in de nieuwsbrief moet verschijnen, geef dit dan mee. 
+Vergeet (na publicatie) geen workspace link aan te maken. Zorg dat je bij het aanmaken van de link voor de nieuwsbrief ervoor zorgt dat alle indicatoren meegenomen worden. Indicatoren van hetzelfde thema mogen onder verschillende tabs, anders niet. 
 
 Vul aan in het **opvolgingsbestand taakverdeling** de datum van laatste upload en de datum van laatste check. Het opvolgingsbestand staat hier: [Teams > Interprovinciale werking > Algemeen](https://teams.microsoft.com/l/file/42D8BF76-DF8F-4518-8606-C57E70B64310?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e&amp;fileType=xlsx&amp;objectUrl=https%3A%2F%2Fvlbr.sharepoint.com%2Fteams%2FDA-Interprovincialewerking%2FGedeelde%20documenten%2FGeneral%2FOpvolgingsbestand%20taakverdeling.xlsx&amp;baseUrl=https%3A%2F%2Fvlbr.sharepoint.com%2Fteams%2FDA-Interprovincialewerking&amp;serviceName=teams&amp;threadId=19:c4098e9ac4e540f99d6f626ed467eaa0@thread.tacv2&amp;groupId=affb505a-9c02-40a9-a491-9b2e3ac774a6).
 
