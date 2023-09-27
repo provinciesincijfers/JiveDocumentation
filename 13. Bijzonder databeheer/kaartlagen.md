@@ -4,7 +4,7 @@ Swing kent enkele types kaartlagen:
 - een overlay kaart op basis van gewone data (denk kleurenkaart, bol in kaart, etc.). Hier moet je niets speciaals voor doen.
 - Locaties (ook gekend als puntenlaag of objecten). 
 Deze beheer je via de Geo levels in Swing. [Handleiding van ABF](https://swing.eu/handleiding/Objectenmodule/index.html). 
-Dit is best interessant, omdat je vanuit je objecten rechtsreejs verschillende parameters kunt optellen naar statsec en zo verder.
+Dit is best interessant, omdat je vanuit je objecten rechtsreeks verschillende parameters kunt optellen naar statsec en zo verder.
 Je kan bovendien een object aanklikbaar maken en daar dan een mini rapportje over opvragen, waar je bijvoorbeeld eigenschappen van het object en zijn omgeving kunt combineren.
 - Achtergrondkaarten. Daar gaat de rest van dit document over.
 
@@ -21,7 +21,7 @@ Welke kaartlagen **bestaan** kan je beheren bij `Viewer > Map layer settings / d
 
 Hier zijn vier types beschikbaar:
 - Contours: hier kan je de outline van een bestaand gebiedsniveau als afzonderlijk te activeren kaartlaag toevoegen
-- Background: lijkt te gaan over een kleurtje dat je onder alle kaarten kunt zetten
+- Background: lijkt te gaan over een kleurtje dat je onder alle kaarten kunt zetten, wordt eigenlijk nooit gebruikt
 - WMS
 - WMTS
 
