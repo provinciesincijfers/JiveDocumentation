@@ -27,6 +27,7 @@ Hier zijn vier types beschikbaar:
 
 Met WMS en WMTS kan je interessante kaartlagen toevoegen van externe providers. Bijvoorbeeld kan je via Geopunt heel wat interessant services opvragen. Elk kaartje dat je in Geopunt kunt laten zien, kan in principe in Swing ingebouwd worden.
 Een nieuwe kaartlaag doen werken kan bijzonder lastig zijn. Tijdens het toevoegen heb je geen idee of iets gelukt is of niet. Het vraagt dus vrij veel trial & error om het aan de praat te krijgen.
+Als een kaart plots niet meer werkt, kan het zijn dat de server veranderd is.
 
 Hier zie je een voorbeeld voor de WMS van Landgebruik 2013. Belangrijk om weten:
 - De server is `https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows`
