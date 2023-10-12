@@ -51,6 +51,12 @@ Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld*
 
 Gebruik je de OUDE statsec2019, dan gebruik je voor gebied onbekend van fusiegemeenten de OUDE niscode van de gemeente2018 + ZZZZ. Gebruik je de NIEUWE statsec, dan gebruik je voor gebied onbekende de NIEUWE niscode van de gemeente + ZZZZ
 
+***❕ Opgelet
+
+Swing aggregeert niet meer correct wanneer je gegevens op subgemeentelijk niveau en op gemeente2018 inleest, en niet op het niveau van gemeente. Voorheen verwachtten we dat de correcte aggregatie doorloopt vanaf gemeente2018 naar gemeente, provincie etc. maar dat gebeurt niet meer correct. Heb je dus data die niet volledig correct is op statsec (waardoor statsec niet automatisch mag aggregeren naar de bovenliggende niveaus) zorg dat je dan zeker ook gemeente inleest, en niet enkel gemeente2018, naast de andere subgemeentelijke niveaus.
+
+zie [issue 411](https://github.com/provinciesincijfers/PinC-taakopvolging/issues/411).
+
 De **tabel met enkel gewijzigde statsec/niscodes 2018-2019**] staat [hier](https://github.com/provinciesincijfers/gebiedsniveaus/blob/master/wijzigende\_gebiedsindelingen.md).
 
 Voor **meer informatie over (de organisatie van) gebiedsniveaus**, kan je [hier](https://github.com/provinciesincijfers/gebiedsniveaus) terecht.
