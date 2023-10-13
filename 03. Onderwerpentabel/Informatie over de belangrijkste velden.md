@@ -121,7 +121,7 @@ Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin b
 
 ## Bron
 
-Komt uit **Data > Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;.
+Komt uit **Data > Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;. provincies.incijfers.be mag ook vervangen worden door 'PinC' als er niet genoeg plaats is. Als er genoeg plaats is, mag het voluit geschreven worden.
 
 Bij **percentages** geven we **enkel de Bron van de teller** mee.
 
