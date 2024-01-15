@@ -7,7 +7,7 @@ In dit onderdeel vind je informatie over:
 
 - [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md) voor uitdovende onderwerpen.
 
--[De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Veranderende%20indicatorennamen) voor indicatoren die van naam veranderen.
+- [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Veranderende%20indicatorennamen) voor indicatoren die van naam veranderen.
 
 :grey_exclamation: Belangrijk hierbij:
 
