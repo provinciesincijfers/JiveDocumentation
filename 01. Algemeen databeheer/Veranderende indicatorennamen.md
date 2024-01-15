@@ -10,11 +10,13 @@ Doe daarom de volgende checks:
 ![afbeelding](https://user-images.githubusercontent.com/10122639/223678624-5e55844d-34d6-4fb8-88fa-74079a1a7f09.png)
 * Ga naar Studio > Viewer > Category tree en klik op de nieuwe map voor Dashboard die de stap hierboven heeft gecreëerd. OPGELET: zet deze nieuwe map op de juiste plaats, en maak hem indien gewenst onzichtbaar.
 * Klik op “Export” > select all indicators in this category. Na een paar minuten krijg je een excel. Je krijgt een volledig overzicht, maar de onderwerpnamen ontbreken. Zoek vervolgens op je indicator code.
-Laat de verantwoordelijke van het dashboard weten dat de naam van de indicator veranderd is.
+* Laat de verantwoordelijke van het dashboard weten dat de naam van de indicator veranderd is.
+
 Opgelet: je hebt mogelijk meerdere Mosaics actief staan. Je moet deze operatie voor elk Mosaic afzonderlijk doen. Omgekeerd kunnen er binnen je specifiek Mosaic tegels of figuren verborgen staan. Deze gaan uiteraard wel in de resultaten opduiken.
 
 
 ## Rapporten
 Ga naar Studio>Data>"Consistency checks" en maak het rapport “Indicators used in reports”. Filter in de “VarCode” op de indicator code.
 Opgelet: je krijgt hier een overzicht van alle indicatoren die je rapport nodig heeft, zelfs als deze enkel als aggregatieonderwerp, drempelonderwerp of in een formule gebruikt worden.
+
 Laat de verantwoordelijke van het rapport/de rapporten weten dat de naam van de indicator veranderd is.
