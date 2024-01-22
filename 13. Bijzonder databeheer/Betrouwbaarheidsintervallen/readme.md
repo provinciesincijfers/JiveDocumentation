@@ -1,7 +1,6 @@
 ## Algemeen
 
-In [deze mail](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer//BetrouwbaarheidsintervallenABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg) 
-lees je meer achtergronduitleg van ABF, of [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer/VB_StadAntwerpen_Metadata_Amon_20180604.xlsx) voor een voorbeeld. 
+In [deze mail](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer/Betrouwbaarheidsintervallen/ABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg) lees je meer achtergronduitleg van ABF, of [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer/Betrouwbaarheidsintervallen/VB_StadAntwerpen_Metadata_Amon_20180604.xlsx) voor een voorbeeld. 
 
 ❕ Het is sowieso **NIET mogelijk om surveydata met betrouwbaarheidsintervallen op te laden ZONDER dat je beschikt over de ongewogen noemers**. Dit omdat er in de formule een correctie verwerkt zit die ervoor zorgt dat de BI’s, zonder ongewogen noemers, gewoon op 0 worden gezet en dat heeft weinig meerwaarde. Zie [deze mail](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer/Betrouwbaarheidsintervallen/RE%20Betrouwbaarheidsintervallen%20berekenen%20ZONDER%20ongewogen%20noemer.msg).
 
@@ -18,8 +17,8 @@ Met standaarddeviatie (voor gemiddelden)
 ´marge = z * Math.Sqrt(p * (100.0 - p) / n) * Math.Sqrt(1.0 - n / N)´
 
 
-|Symbool|Betekenis|
---
+| Symbool | Betekenis |
+|-|-|
 |z|Betrouwbaarheidsinterval|
 |n|Sample data|
 |N|Totaal|
@@ -47,5 +46,6 @@ Proportie is dus 4602.75/11626.85= 39.6
 
 Volgens de tweede formule moet de marge voor een 5% BI dan zijn: 1.96 * vierkantswortel [39.6 * (100-39.6)/408)]* vierkantswortel [1-(408/11626.85)] = 4.65
 
-
+## Wat heb je nodig om betrouwbaarheidsintervallen in Swing te berekenen?
+Zie [deze mail](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer/Betrouwbaarheidsintervallen/ABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg)
 
