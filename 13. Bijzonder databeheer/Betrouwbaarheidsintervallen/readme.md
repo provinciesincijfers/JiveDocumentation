@@ -1,4 +1,4 @@
-
+## Algemeen
 
 In [deze mail](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer//BetrouwbaarheidsintervallenABF_formule_betrouwbaarheidsintervallen_SwingStudio%20(1).msg) 
 lees je meer achtergronduitleg van ABF, of [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/13.%20Bijzonder%20databeheer/VB_StadAntwerpen_Metadata_Amon_20180604.xlsx) voor een voorbeeld. 
