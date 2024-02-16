@@ -54,7 +54,8 @@ Vroeger gebruikten we voor data op gemeenteniveau voor niet te lokaliseren cijfe
 
 - gemeente=99991: cijfers waarvan we niet weten waar IN VLAANDEREN ze zich voordoen
 - gemeente=99992: cijfers waarvan we niet weten waar IN BRUSSEL ze zich voordoen
-- gemeente=99999: als we het écht niet weten, maar om duistere redenen toch willen meegeven
+- gemeente=99993: als we het écht niet weten, maar om duistere redenen toch willen meegeven
+- gemeente=99999: cijfers waarvan we weten dat ze zich buiten Vlaanderen en Brussel voordoen
 
 Deze cijfers worden meegenomen in het totaal voor Vlaanderen, respectievelijk Brussel. **In de meeste gevallen kan je dus nu de data enkel op gemeenteniveau inlezen en toch correcte cijfers voor heel Vlaanderen krijgen**.
 
