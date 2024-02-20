@@ -45,7 +45,8 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
     - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
     - Gebruik 65-plussers (niet 65+ of 65-plus)
   - Percentage worden omgeschreven met (t.o.v. inwoners, …), promilles met per 1.000 inwoners, ratio's afhankelijk van de indicator ofwel met (t.o.v. inwoners) of per 100 inwoners
-  - Als het over bevolkingsprognoses gaat, voeg je achteraan [projecties] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [projecties]
+  - Als het over bevolkingsprognoses gaat, voeg je achteraan [prognose] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [prognose]
+  - Model-, scenario- en enquête data duiden we ook aan in vierkante haken achteraan de onderwerpnaam met [model], [scenario] en [enquête]. 
 
 ❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald.***
 
@@ -86,7 +87,7 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
   - [aantal] alleenstaande personen met een leefloon of equivalent leefloon (maandelijks gemiddelde)
   - [aantal] arbeidsplaatsen (jaargemiddelde)
 
-- In het geval van **enquête, prognose, of model** komt dit nog voor een eventuele deel tussen vierkante haken, in drukletters.
+- In het geval van **enquête, prognose, scenario of modeldata** komt dit nog voor een eventuele deel tussen vierkante haken, in drukletters.
 Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
 
 - **Geef steeds de eenheid mee tussen ronde haakjes**, bijvoorbeeld (in m²), (in €).
