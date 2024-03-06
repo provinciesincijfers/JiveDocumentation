@@ -59,4 +59,4 @@ Voorstel: `kubus1234_omschrijving`
 ## Speciale gevallen
 Kolom- en rijtotalen: Soms wil je niet dat de kolom- of rijtotalen een loutere optelling is overheen verschillende dimensies, maar wel een gemiddelde. Dit kan je oplossen door ofwel: 
 - De randtotalen in te lezen. Ingelezen randtotalen overrulen immers het geaggregeerd totaal overheen de kubusdimensies
-- Of je kan het datatype aanpassen naar 'mean' en v ervolgens het aggregatie type van de dimensieniveaus aanpassen naar 'Unknown'. dan kijkt Swing automatisch naar het datatype van de kubusonderwerpen om te bepalen of gesommeerd of een gemiddelde berekend moet worden  bij het aggregeren. (makkelijskte oplossing)
+- Of je kan het datatype aanpassen naar 'mean' en vervolgens het aggregatie type van de dimensieniveaus aanpassen naar 'Unknown'. dan kijkt Swing automatisch naar het datatype van de kubusonderwerpen om te bepalen of gesommeerd of een gemiddelde berekend moet worden  bij het aggregeren. (makkelijkste oplossing)
