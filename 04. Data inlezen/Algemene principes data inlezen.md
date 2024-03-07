@@ -53,8 +53,9 @@ Gebruik je de OUDE statsec2019, dan gebruik je voor gebied onbekend van fusiegem
 
 ***❕ Opgelet: foute aggregaties vanaf gemeente2018 naar bovenliggende niveaus***
 
-Swing aggregeert niet meer correct wanneer je gegevens op subgemeentelijk niveau en op gemeente2018 inleest, en niet op het niveau van gemeente. Voorheen verwachtten we dat de correcte aggregatie doorloopt vanaf gemeente2018 naar gemeente, provincie etc. maar dat gebeurt niet meer correct. Heb je dus data die niet volledig correct is op statsec (waardoor statsec niet automatisch mag aggregeren naar de bovenliggende niveaus) zorg dat je dan zeker ook gemeente inleest, en niet enkel gemeente2018, naast de andere subgemeentelijke niveaus.
+Swing aggregeert niet meer correct wanneer je gegevens op subgemeentelijk niveau en op gemeente2018 inleest, en niet op het niveau van gemeente. Voorheen verwachtten we dat de correcte aggregatie doorloopt vanaf gemeente2018 naar gemeente, provincie etc. maar dat gebeurt niet meer correct. Heb je dus data die niet volledig correct is op statsec (waardoor statsec niet automatisch mag aggregeren naar de bovenliggende niveaus) zorg dat je dan zeker ook gemeente inleest, en niet enkel gemeente2018, naast de andere subgemeentelijke niveaus. 
 zie [issue 411](https://github.com/provinciesincijfers/PinC-taakopvolging/issues/411).
+Voor Brusselse gemeenten gaat het ook fout wanneer je de data enkel inleest op statsec niveau. Op het niveau van de provincies krijg je wel waarden te zien voor Brussel, op het niveau van de gewesten niet meer. **Lees dus altijd je data zowel in op het niveau van de statistische sectoren als op het niveau van de gemeenten**.  
 
 De **tabel met enkel gewijzigde statsec/niscodes 2018-2019**] staat [hier](https://github.com/provinciesincijfers/gebiedsniveaus/blob/master/wijzigende\_gebiedsindelingen.md).
 
