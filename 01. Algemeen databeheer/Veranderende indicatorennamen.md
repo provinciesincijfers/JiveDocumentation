@@ -1,6 +1,6 @@
 # Hoe omgaan met indicatoren die van naam veranderen
 
-Wanneer een indicator van naamt verandert, kan het zijn dat titels of beschrijvingen van de indicator niet meer kloppen in rapporten of in het Dashboard.
+Wanneer een indicator van naam verandert, kan het zijn dat titels of beschrijvingen van de indicator niet meer kloppen in rapporten of in het Dashboard.
 Doe daarom de volgende checks:
 
 ## Dashboard (Mosaic)
