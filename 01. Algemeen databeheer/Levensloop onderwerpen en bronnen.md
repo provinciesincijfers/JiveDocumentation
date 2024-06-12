@@ -52,9 +52,9 @@ Ga naar Studio>Data>"Consistency checks" en maak het rapport “Indicators used 
 
 
 
-## Databeheer PinC
+## Databeheer PinC voor uitdovende onderwerpen, kubusdimensies, kubusdimensie-items en bronnen
 
-Onderwerpen en kubusdimensies/kubusdimensie-itmes moeten uiteindelijk wel kunnen verdwijnen. Hiervoor volgen we dit stappenplan:
+Onderwerpen, kubusdimensies/kubusdimensie-items en bronnen moeten uiteindelijk wel kunnen verdwijnen. Hiervoor volgen we dit stappenplan:
 
 ### 1. De verantwoordelijke voor het onderwerp kijkt zoveel mogelijk na waar de onderwerpen gebruikt worden en past aan of geeft door aan anderen wat aangepast moet worden. Geef ook aan of het onderwerp al dan niet vervangen kan worden door een ander. 
 1. Aanpassen EXTERNE themaboom
@@ -63,13 +63,16 @@ Onderwerpen en kubusdimensies/kubusdimensie-itmes moeten uiteindelijk wel kunnen
     * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Emilien, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden
 3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
 4. Impact op rapporten checken. (dit kan via Data>Consistency checks>Indicators used in Reports. Opgelet: dit rapport wordt niet onmiddellijk geupdate en omvat ook vermeldingen voor indicatoren die nodig zijn in formules of als aggregatieonderwerp)
+
  
 ### 2. De verantwoordelijke laat de onderwerpnaam beginnen met "UITDOVEND (sinds XX/XX/20XX) - oude onderwerpnaam"
 
 Pas de data verder nog niet aan. Op die manier blijft alles werken, maar krijgen "koppige" eindgebruikers toch een duidelijke waarschuwing. We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
 Je kan hiervoor [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitdovend") gebruiken.
 
-Indien je het laatste onderwerp doet uitdoven dat gebruik maakt van een bepaalde metadatafiche, delete dan onmiddellijk de metadatafiche. Vergeet niet om direct ook de verwijzing naar de fiche bij de Indicator weg te halen.
+Voor uitdovende bronnen zet je enkel UITDOVEND (datum) voor de korte bronnaam (short name)
+
+Indien je het laatste onderwerp doet uitdoven dat gebruik maakt van een bepaalde bron, pas dit dan ook onmiddellijk aan in de bronnentabel.
 Indien je het laatste onderwerp van een DataSource uitdooft, verwijder dan meteen ook deze DataSource.
 
 ### 3. Na zes maand wissen we alle data.
@@ -95,7 +98,7 @@ Als je een object uiteindelijk wil deleten, dan moet het eerst UITGEDOOFD zijn. 
 ### Alternatief: ARCHIEF
 Soms zetten we een reeks die EXTERN stond op een gegeven moment INTERN, zonder dat ze daarom meteen uitdovend moeten worden. Dit is doorgaans het geval bij grote herorganisaties (voorbeeld NWWZ naar WZW). De oude cijfers zijn nog een tijd nuttig, en zijn op zich niet fout. Ze gaan gewoon nooit nog geupdate worden en verliezen dus langzaamaan hun relevantie.
 
-Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
+Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen en bronnen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
 
 ## FAQ
 
