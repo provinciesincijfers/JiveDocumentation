@@ -70,7 +70,7 @@ Onderwerpen, kubusdimensies/kubusdimensie-items en bronnen moeten uiteindelijk w
 Pas de data verder nog niet aan. Op die manier blijft alles werken, maar krijgen "koppige" eindgebruikers toch een duidelijke waarschuwing. We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
 Je kan hiervoor [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitdovend") gebruiken.
 
-Voor uitdovende bronnen zet je UITDOVEND (datum) voor de korte bronnaam (short name) en de naam (name). Een voetnoot hoef je hier niet aan toe te voegen.
+Voor uitdovende bronnen zet je UITDOVEND (datum) voor de naam (name). Een voetnoot hoef je hier niet aan toe te voegen.
 
 Indien je het laatste onderwerp doet uitdoven dat gebruik maakt van een bepaalde bron, pas dit dan ook onmiddellijk aan in de bronnentabel.
 Indien je het laatste onderwerp van een DataSource uitdooft, verwijder dan meteen ook deze DataSource.
