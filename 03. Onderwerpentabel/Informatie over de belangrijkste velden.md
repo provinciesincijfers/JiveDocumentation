@@ -49,6 +49,7 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
   - Model-, scenario- en enquête data duiden we ook aan in vierkante haken achteraan de onderwerpnaam met [model], [scenario] en [enquête]. 
 
 ❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald.***
+
 ❕***Gebruik ≥ (Unicode: U+2265) en ≤ (Unicode: U+2264) in plaats van >= en <=***
 
 **Voorbeelden van onderwerpnamen die een teller en noemer hebben** (met uitzonderingen)
