@@ -50,22 +50,8 @@ Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of
 
 `mtm_kwd=keyword`         dashboard-demografie, rapport-bevolking, update-bevolking
 
-= Inhoudelijke omschrijving van de link, indien ze gewenst.
+= Inhoudelijke omschrijving van de link, indien ze gewenst. Hier kan je bijvoorbeeld het medium plaatsen waarlangs je de URL verspreid, bv. LinkedIn, Facebook, X of Reddit. 
 
-
-`mtm_source=bron`         pinc-nieuwsbrief, limburgincijfers
-
-= Het specifieke kanaal waarmee je communiceerde.
-
-
-`mtm_medium=medium`       e-mail, website, social-media
-
-= Het type kanaal waarmee je communiceerde.
-
-
-`mtm_content=inhoud`      [inhoudelijke omschrijving van hoe je de link aanbracht]
-
-= Optioneel, bijvoorbeeld de tekstomschrijving die je gebruikte in je pagina. Ik heb de indruk dat dit automatisch aangevuld wordt adhv de tekst in de link zelf.
 
 
 :grey_exclamation: ***Gebruik overal kleine letters. Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.***
@@ -73,11 +59,11 @@ Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of
 **Je URL stel je als volgt samen:**
 (let op de plaatsing van het vraagteken)
 
-> `https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud`
+> `https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword`
 
 OF
 
-> `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword&mtm_source=bron&mtm_medium=medium&mtm_content=inhoud`
+> `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword`
 
 Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.** Dit wordt automatisch voor jou gedaan als je [de Excel in deze map](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/10.%20Communicatie/sjabloon_links.xlsx) gebruikt, of het sjabloon voor de nieuwsbrief op Teams.
 
