@@ -150,7 +150,7 @@ In onderstaand voorbeeld zien we bijvoorbeeld dat er volgens de eerste lijn onde
 
 Wanneer je het bestand samenstelt, neem volgende **aandachtspunten** in acht: 
 -	Voor dimensieniveaus die al in andere kubussen zitten (zie stap 1): de kolomtitel=de dimensieniveaucode en de categorieën=itemcodes
--	Voor nieuwe dimensieniveaus mag de kolomtitel niet overeenstemmen met een van de bestaande dimensieniveaucodes.
+-	Voor nieuwe dimensieniveaus mag de kolomtitel niet overeenstemmen met een van de bestaande dimensieniveaucodes. Let erop dat je de dimensieniveaus ook extern plaatst (Accounts > Accessgroups > lijn extern > kolom Dimlevels).
 -	Het onderwerp (teller) mag niet overeenstemmen met een reeds bestaande onderwerpcode. Dit controleer je door binnen Data > Onderwerpen te kiezen en vervolgens te controleren op het veld onderwerpcode.
 -	Er mogen geen lege rijen zijn. Verwijder deze indien nodig. Opgelet: in kubussen op gemeenteniveau [vullen we brekende missings in voor Brussel](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen) als dit volgens [onze afspraken rond missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md) nodig is.
 -	Swing schijnt 1.7 miljoen rijen per bestand te aanvaarden (ervaring 2021-04)
@@ -205,7 +205,8 @@ SAVE TRANSLATE OUTFILE='kubus.xlsx'
 
 ## 3.	Importeren kubusbestand
 
-❕ ***In nieuwere Swing versies moet je EERST alle dimensies, dimensieniveaus en dimensieniveau-items aanmaken alvorens je data kunt inlezen.***
+❕ ***In nieuwere Swing versies moet je EERST alle dimensies, dimensieniveaus en dimensieniveau-items aanmaken alvorens je data kunt inlezen. ***
+*** Let erop dat je de dimensieniveaus ook extern plaatst (Accounts > Accessgroups > lijn extern > kolom Dimlevels).***
 
 Je leest een kubusbestand in via Swing studio.
 
