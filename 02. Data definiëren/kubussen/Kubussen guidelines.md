@@ -42,6 +42,7 @@ Naam van dimensieniveau en dimensie:
 * Dimensie met een hoofdletter, dimensieniveau met een kleine letter
 
 Controleer bij elke nieuwe kubus of update of **alle dimensieniveaus en dimensies in de gebruikersinterface een zinvolle naam** hebben.
+Zorg er ook voor dat je de dimensieniveaus ook extern plaatst (Accounts > Accessgroups > lijn extern > kolom Dimlevels).
 
 Zorg voor een logische volgorde van de items in je dimensieniveau. Zorg er zeker voor dat je "restcategorie" als laatste staat.
 
