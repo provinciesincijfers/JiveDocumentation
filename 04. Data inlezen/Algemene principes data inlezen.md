@@ -29,6 +29,9 @@ In principe is **het énkel nodig op het &quot;laagste gebiedsniveau**&quot;. Sw
 **Uitzonderingen:**
 
 - **Niet aggregeerbare data** (vb percentage zonder noemer, mediaan-waarden, een onderwerp waar de waarden ontbreken voor enkele gebieden). Dit is sowieso jammer, want je kan dan ook niet vrij clusteren naar een eigen gebiedsselectie. Je gaat ook niet altijd aan de relevante data geraken voor al onze gebiedsniveaus in productie.
+
+❕**Opgelet**: Laat het Emilien weten wanneer je onderwerpen aanmaakt die niet aggregeerbaar zijn en ook niet op het wijk-niveau beschikbaar zijn in PinC. Deze worden immers foutief overgezet naar de centrumsteden.
+  
 - **Heel complexe formule-constructies**. Als je een onderwerp voor nul-jarige jongens van Turkse herkomst zou maken, en die logica zou doortrekken tot je een eindtotaal hebt, dan gaat dit eindtotaal niet vlot werken.
 - **Complexe kubussen** (vooral indien op statsec).
 
@@ -52,6 +55,8 @@ Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld*
 Gebruik je de OUDE statsec2019, dan gebruik je voor gebied onbekend van fusiegemeenten de OUDE niscode van de gemeente2018 + ZZZZ. Gebruik je de NIEUWE statsec, dan gebruik je voor gebied onbekende de NIEUWE niscode van de gemeente + ZZZZ
 
 ***❕ Opgelet: foute aggregaties vanaf gemeente2018 naar bovenliggende niveaus***
+
+***Update 10/09/24:*** Dit probleem werd opgelost.
 
 Swing aggregeert niet meer correct wanneer je gegevens op subgemeentelijk niveau en op gemeente2018 inleest, en niet op het niveau van gemeente. Voorheen verwachtten we dat de correcte aggregatie doorloopt vanaf gemeente2018 naar gemeente, provincie etc. maar dat gebeurt niet meer correct. Heb je dus data die niet volledig correct is op statsec (waardoor statsec niet automatisch mag aggregeren naar de bovenliggende niveaus) zorg dat je dan zeker ook gemeente inleest, en niet enkel gemeente2018, naast de andere subgemeentelijke niveaus. 
 zie [issue 411](https://github.com/provinciesincijfers/PinC-taakopvolging/issues/411).
