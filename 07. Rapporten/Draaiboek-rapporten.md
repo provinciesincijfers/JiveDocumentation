@@ -1,4 +1,4 @@
-# Procesbeschrijving rapporten opstellen
+# Procesbeschrijving rapporten / stories opstellen
 
 ## Inhoud
 
@@ -17,7 +17,7 @@
 
 # Algemene afspraken
 
-Dit hoofdstuk bevat de afspraken in verband met het proces om rapporten op te stellen. We bedoelen hier alle interactieve rapporten mee die gebouwd worden met de rapportenmodule van provincies.incijfers.be. Deze &quot;Rapporten&quot; bestaan uit drie types. Het meest gebruikte type is &quot;Inhoudelijk Rapport&quot;. Voor eindgebruikers noemen we dit kortweg &quot;Rapport&quot;. Als je spraakverwarring wil vermijden, gebruik dan &quot;swingrapport&quot; voor het overkoepelende woord en &quot;inhoudelijk rapport&quot; voor het subtype.
+Dit hoofdstuk bevat de afspraken in verband met het proces om rapporten of Stories op te stellen. We bedoelen hier alle interactieve rapporten mee die gebouwd worden met de rapportenmodule van provincies.incijfers.be. Deze &quot;Rapporten&quot; bestaan uit drie types. Het meest gebruikte type is &quot;Inhoudelijk Rapport&quot;. Voor eindgebruikers noemen we dit kortweg &quot;Rapport&quot;. Als je spraakverwarring wil vermijden, gebruik dan &quot;swingrapport&quot; voor het overkoepelende woord en &quot;inhoudelijk rapport&quot; voor het subtype.
 
 Maak zeker ook gebruik van volgende documenten:
 
