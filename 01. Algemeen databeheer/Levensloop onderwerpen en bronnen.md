@@ -59,7 +59,7 @@ Onderwerpen, kubusdimensies/kubusdimensie-items en bronnen moeten uiteindelijk w
 ### 1. De verantwoordelijke voor het onderwerp kijkt zoveel mogelijk na waar de onderwerpen gebruikt worden en past aan of geeft door aan anderen wat aangepast moet worden. Geef ook aan of het onderwerp al dan niet vervangen kan worden door een ander. 
 1. Aanpassen EXTERNE themaboom
 2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via Data>Consistency checks>Indicators used in categories).
-    * Voor Dashboard moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
+    * Voor Dashboard en Stories moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
     * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Emilien, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden
 3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
 4. Impact op rapporten checken. (dit kan via Data>Consistency checks>Indicators used in Reports. Opgelet: dit rapport wordt niet onmiddellijk geupdate en omvat ook vermeldingen voor indicatoren die nodig zijn in formules of als aggregatieonderwerp)
