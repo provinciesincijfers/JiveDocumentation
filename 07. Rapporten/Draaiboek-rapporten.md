@@ -232,7 +232,6 @@ Hiervoor volgen we dit stappenplan:
 
 - **Kiezen op kaart** (report kiezen_op_kaart). Verwijderen van het geschikte gebiedsniveau.
 - **Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.
-- **De landingspagina van de Databank** (Report>report files>landingspagina.html)
 - **Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.
 - **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;)
 - **Dashboard:** bij het relevante thema én in het overzicht van rapporten.
