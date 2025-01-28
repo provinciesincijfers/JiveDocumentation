@@ -174,7 +174,7 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 
 Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze lijst.
 
-- Heb je alle onderstaande checks gedaan voor één gemeente, één provincie, twee gemeenten/provincies? Wat gebeurt er als je Brussel kiest of een Vlaamse en een Brusselse provincie?
+- Heb je alle onderstaande checks gedaan voor één gemeente, één provincie, twee gemeenten/provincies? Wat gebeurt er als je Brussel kiest of een Vlaamse en een Brusselse provincie? Wat gebeurt er als een gebruiker een eigen regio aanmaakt?
 - Kijk de verschillende cijfers na en vergelijk deze met de cijfers in de databank (check dat er niet per ongeluk een foutief onderwerp werd geselecteerd)
 - Zijn er geen actuelere data beschikbaar (in de databank of elders)?
 - Komen alle cijfers en conclusies in de tekst overeen met wat in de figuren / grafieken / kaarten getoond wordt?
