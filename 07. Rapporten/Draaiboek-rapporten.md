@@ -170,17 +170,14 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 
 **Laten controleren**
 
-- Verzamel een laatste keer feedback via de Redactiegroep. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [sjabloon](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
+- Verzamel eventueel een laatste keer feedback via de Redactiegroep. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [sjabloon](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
 
-Als je vertrekt van een kloon van sjabloon_rapport_vertrekproject en rekening houdt met sjabloon_grafiekstijl (= sjabloon afspraken) dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze lijst.
+Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze lijst.
 
-- Heb je alle onderstaande checks gedaan voor één gemeente, één provincie, twee gemeenten/provincies en meer gemeenten/provincies? Wat gebeurt er als je Brussel kiest of een Vlaamse en een Brusselse provincie?
+- Heb je alle onderstaande checks gedaan voor één gemeente, één provincie, twee gemeenten/provincies? Wat gebeurt er als je Brussel kiest of een Vlaamse en een Brusselse provincie?
 - Kijk de verschillende cijfers na en vergelijk deze met de cijfers in de databank (check dat er niet per ongeluk een foutief onderwerp werd geselecteerd)
 - Zijn er geen actuelere data beschikbaar (in de databank of elders)?
 - Komen alle cijfers en conclusies in de tekst overeen met wat in de figuren / grafieken / kaarten getoond wordt?
-- Klopt de nummering van figuren...?
-- Is de inhoudstafel conform het voorbeeld in het sjabloon voor rapporten?
-- Zijn de titels en nummering in de inhoudstafel dezelfde als die in de tekst?
 - Staat er steeds een datum/jaartal bij de cijfers vermeld?
 - Wordt overal naar de juiste gemeente(n) / regio verwezen?
 - Werken alle (externe) links? Kom je via links in de juiste tabel of juiste plaats in de databank uit?
@@ -189,7 +186,7 @@ Als je vertrekt van een kloon van sjabloon_rapport_vertrekproject en rekening ho
 **Harmoniseren en integreren**
 
 - Voor oude, herwerkte rapporten: voldoet je rapport aan de standaardstijl? Indien niet, plan in wanneer dit aangepast zal worden.
-- Heb je nieuwe technische hoogstandjes gebruikt of dingen anders gedaan dan gewoonlijk? Afspraken hierover vind je terug in sjabloon\_afspraken onder 3. Tips en tricks en bijlage A.
+- Heb je nieuwe technische hoogstandjes gebruikt of dingen anders gedaan dan gewoonlijk? Laat dit dan weten aan Emilien/werkgroep Stories.
 - Heb je nieuwe data ontwikkeld? Ga na of deze in bestaande rapporten kan hergebruikt worden
 
 **Publiceren**
@@ -214,7 +211,7 @@ Je rapport is sowieso beschikbaar voor wie de link heeft. De bovenstaande zaken 
 
 _Elke keer een rapport van een specifiek gebied wordt opgevraagd, wordt dit in de cache van de Databank bewaard. De volgende krijgt het rapport dan veel sneller gezien. Deze cache wordt GEWIST elke keer dat de Databank wordt live gezet. Doe je een grote communicatiecampagne, zorg er dan voor dat de Databank NIET live gezet wordt tijdens die campagne._
 
-Je kan massaal PDF&#39;s genereren. Bij een grote release is dat nuttig om een momentopname te hebben van hoe dit rapport initieel gecommuniceerd werd. Zie [https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon\_genereer\_pdf](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_genereer_pdf) . Je ziet daar ook hoe je dit kunt gebruiken om een cache op te bouwen die het rapport sneller maakt.
+Je kan massaal PDF&#39;s genereren. Bij een grote release is dat nuttig om een momentopname te hebben van hoe dit rapport initieel gecommuniceerd werd. Zie [https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon\_genereer\_pdf](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_genereer_pdf) . Je ziet daar ook hoe je dit kunt gebruiken om een cache op te bouwen die het rapport sneller maakt. Voorlopig is dit enkel mogelijk voor rapporten uit de oude rapportenmodule.
 
 # Procedure voor het verwijderen van een rapport
 
