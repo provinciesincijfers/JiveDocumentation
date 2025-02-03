@@ -195,14 +195,14 @@ Dat betekent je rapport toevoegen aan:
 
 (Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/)
 
-- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus) (niet voor Story rapporten)
-- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus)
-- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten). Stories kan je toevoegen via een URL link
+- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus)** (niet voor Story rapporten)**
+- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.
+- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten). Stories kan je toevoegen via een URL link.
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart)
+- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
-- Zichtbaar maken voor de Search
+- Zichtbaar maken voor de Search. Oude rapporten: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
@@ -246,14 +246,14 @@ Opgelet 2: maak voor een Story rapport een link aan zonder de naam van het hoofd
 
 Je rapport toevoegen aan (en het oude verwijderen):
 
-- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Rapport verwijderen, het is immers niet mogelijk om via een dynamische URL het Stories rapport op te vragen.
-- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. 
+- Kiezen op kaart (reportcode: kiezen\_op\_kaart.** Rapport verwijderen**, het is immers niet mogelijk om via een dynamische URL het Stories rapport op te vragen.
+- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. Ben je niet zeker waar je het moet toevoegen, vraag het dan aan Emilien. 
 - Themaboom: extern (bij het thema en bij &quot;Thematische rapporten). Stories kan je toevoegen via een URL link
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart)
+- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Contacteer Stefan of David hiervoor. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
-- Zichtbaar maken voor de Search
+- Zichtbaar maken voor de Search: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
