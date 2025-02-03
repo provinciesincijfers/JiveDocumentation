@@ -254,6 +254,7 @@ Je rapport toevoegen aan (en het oude verwijderen):
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
+- Zet in je oude rapport de boodschap waarbij je meegeeft dat je dit rapport niet meer zou mogen zien, met een link naar je nieuw rapport. Vraag hierbij om info@provincies.incijfers.be te contacteren en te vermelden waar je dit rapport nog zag. 
 
 Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
