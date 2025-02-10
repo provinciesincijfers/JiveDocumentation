@@ -40,7 +40,7 @@ Als de bron een **gecensureerde waarde geeft** (en de waarde zelf NIET meegeeft)
 - Vanaf gemeentelijk niveau is dit een zeldzaam probleem. Leg de keuze voor op de Redactiegroep. Standaard kies je voor -99997. Maar dan moet je de data inlezen op meerdere gebiedsniveaus om überhaupt een resultaat te krijgen voor Vlaanderen of voor sommige arrondissementen etc. Soms is het sop de kolen niet waard, en kan je bijvoorbeeld een -99996 inladen (ontbreekt, maar een optelling waarin dit zit wordt wel weergegeven). Of je kan het sudoku-gewijs uitrekenen en het getal inladen (uiteraard verborgen onder een drempelwaarde).
 - Op subgemeentelijk niveau: vaker een groter probleem. In principe gebruik je een -99997
 
-❗ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; of nul in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
+❗ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
 
 ❗***Bij KUBUSSEN zijn dit soort aanpassing grotendeels onhaalbaar.*** Immers zou je dan data moeten inlezen voor alle combinaties die in theorie mogelijk zijn. De enige **uitzondering** is dat we waar nodig wél brekende missings (-99999) inlezen in eenvoudige kubussen op gemeenteniveau. [Meer info hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen)
 
