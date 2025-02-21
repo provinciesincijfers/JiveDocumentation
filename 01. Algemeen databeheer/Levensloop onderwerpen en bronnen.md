@@ -44,7 +44,7 @@ Opgelet: je hebt mogelijk meerdere Mosaics actief staan. Je moet deze operatie v
 
 3)	Uitdovende onderwerpen in Rapporten
 
-Ga naar Studio>Data>"Consistency checks" en maak het rapport “Indicators used in reports”. Filter in de “varname” op “uitdovend” of "uitgedoofd". Opgelet: je krijgt hier een overzicht van alle indicatoren die je rapport nodig heeft, zelfs als deze enkel als aggregatieonderwerp, drempelonderwerp of in een formule gebruikt worden.
+Ga naar Studio>General>"Consistency checks" en maak het rapport “Indicators used in reports”. Filter in de “varname” op “uitdovend” of "uitgedoofd". Opgelet: je krijgt hier een overzicht van alle indicatoren die je rapport nodig heeft, zelfs als deze enkel als aggregatieonderwerp, drempelonderwerp of in een formule gebruikt worden.
 
 4)  Uitdovende onderwerpen die door andere onderwerpen gebruikt worden
 - zorg dat er geen formules gebruik maken van deze onderwerpen (zoek in veld Formula)
@@ -58,13 +58,13 @@ Onderwerpen, kubusdimensies/kubusdimensie-items en bronnen moeten uiteindelijk w
 
 ### 1. De verantwoordelijke voor het onderwerp kijkt zoveel mogelijk na waar de onderwerpen gebruikt worden en past aan of geeft door aan anderen wat aangepast moet worden. Geef ook aan of het onderwerp al dan niet vervangen kan worden door een ander. 
 1. Aanpassen EXTERNE themaboom
-2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via Data>Consistency checks>Indicators used in categories).
+2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via General>Consistency checks>Indicators used in categories).
     * Voor Dashboard en Stories moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
     * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Emilien, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden
 3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
-4. Impact op rapporten checken. (dit kan via Data>Consistency checks>Indicators used in Reports. Opgelet: dit rapport wordt niet onmiddellijk geupdate en omvat ook vermeldingen voor indicatoren die nodig zijn in formules of als aggregatieonderwerp)
-5. Impact op Dashboard checken. Via Data > Consistency checks. Indicators used in Mosaic voor de impact op het Dashboard. 
-6. Impact op Stories checken. Via Data > Consistency checks. Indicators used in presentations voor wanneer er viewer presentations aangemaakt werden op basis van het onderwerp; Indicators used in Stories om de impact op Stories na te gaan.
+4. Impact op rapporten checken. (dit kan via General>Consistency checks>Indicators used in Reports. Opgelet: dit rapport wordt niet onmiddellijk geupdate en omvat ook vermeldingen voor indicatoren die nodig zijn in formules of als aggregatieonderwerp)
+5. Impact op Dashboard checken. Via General > Consistency checks. Indicators used in Mosaic voor de impact op het Dashboard. 
+6. Impact op Stories checken. Via General > Consistency checks. Indicators used in presentations voor wanneer er viewer presentations aangemaakt werden op basis van het onderwerp; Indicators used in Stories om de impact op Stories na te gaan.
 
  
 ### 2. De verantwoordelijke laat de onderwerpnaam beginnen met "UITDOVEND (sinds XX/XX/20XX) - oude onderwerpnaam"
