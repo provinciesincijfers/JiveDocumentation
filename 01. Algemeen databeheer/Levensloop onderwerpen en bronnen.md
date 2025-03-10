@@ -1,3 +1,5 @@
+**Lees zeker ook de [aanvullingen onderaan dit onderdeel](Levensloop%20onderwerpen%20en%20bronnen.md#Belangrijk)!**
+
 # Hoe omgaan met te verwijderen data
 
 Voor de procedure voor het verwijderen van een rapport, verwijzen we door naar het [Draaiboek rapporten]( https://github.com/provinciesincijfers/JiveDocumentation/blob/master/07.%20Rapporten/Draaiboek-rapporten.md)
@@ -11,6 +13,8 @@ Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kun
 - de Swing Connector kan het niet deleten bij connector-klanten (en ze zouden zelf alle bovenstaande issues hebben)
 
 Als je een thema herorganiseert proberen we daarom toch de bestaande onderwerpen te hergebruiken. Dit is deels een inhoudelijke keuze. Bijvoorbeeld is het wellicht geen goed idee als een onderwerp dat vroeger "mannen" bevatte nu "vrouwen" te laten bevatten. Maar wellicht is het wel OK om dit oude onderwerp "mannen" te behouden wanneer we vanaf nu de transseksuelen hieruit kunnen halen. Het gaat hier steeds om de Onderwerpcode, uiteraard moeten de omschrijvingen en andere metadata wel aangepast worden!
+
+Belangrijk: Wanneer we langs onze kant een periode van een onderwerp wissen (manueel of door alle data van die indicator te overschrijven), dan vloeit dat ook niet automatisch door. Geef Emilien daarom een seintje wanneer een periode verdwijnt, dan kan ABF deze periode ook wissen aan de kant van de centrumsteden.
 
 ## Verwachtingen van  Swing Connector klanten
 
