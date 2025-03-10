@@ -104,12 +104,13 @@ Soms zetten we een reeks die EXTERN stond op een gegeven moment INTERN, zonder d
 
 Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen en bronnen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
 
-## FAQ
+## Belangrijk
 
 * Indien data niet meer geactualiseerd kan worden, maar toch nog bewaard moet worden, dan is dit niet noodzakelijk UITDOVEND. Uitdovend is specifiek voor data die eigenlijk niet meer gebruikt mag worden omdat we ze niet meer onderhouden. Oude data die nog valide blijft is gewoon oud. Vul in dit geval gewoon de metadata aan met waarom dit onderwerp voorlopig toch nog behouden blijft.
 * deze uitleg is eerst geschreven op maat van Onderwerpen, maar is net zo goed van toepassing op kubusdimensies én ook kubusdimensie-items!
 * Voor kubusdimensies geldt aanvullend: laat elke wijziging weten aan Emilien, want hier is extra beheer nodig in functie van de Swing Connector. De wijziging moet manueel goedgekeurd worden door ABF tijdens de update.
 * Een onderwerp dat nooit gepubliceerd is geweest mag je uiteraard wél gewoon deleten!
+* Wanneer we langs onze kant een periode van een onderwerp wissen (manueel of door alle data van die indicator te overschrijven), dan vloeit dat ook niet automatisch door. Geef Emilien daarom een seintje wanneer een periode verdwijnt, dan kan ABF deze periode ook wissen aan de kant van de centrumsteden.
 * Het is technisch niet mogelijk om data te deleten aan de kant van de Connector-klant, we kunnen enkel overschrijven. Dit is logisch, omdat we anders de issues die we bovenaan beschreven aan hun kant zouden veroorzaken. De techniek van uitdovende onderwerpen laat toe dit op een goede manier te organiseren.
 
 
