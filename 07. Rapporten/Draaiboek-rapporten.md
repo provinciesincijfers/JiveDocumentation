@@ -257,6 +257,18 @@ Je rapport toevoegen aan (en het oude verwijderen):
 
 Oude rapport:
 - Zet in je oude rapport de boodschap waarbij je meegeeft dat je dit rapport niet meer zou mogen zien, met een link naar je nieuw rapport. Vraag hierbij om info@provincies.incijfers.be te contacteren en te vermelden waar je dit rapport nog zag.
+voorbeeldcode:
+
+```
+<section class="hoofdstuk">
+<h2>Rapport doorverwijzing</h2>
+Let op, dit is een oude versie van het rapport en wordt binnenkort gewist. Het is niet de bedoeling dat je dit oude rapport nog te zien krijgt. Kan je bij <a href="mailto:info@provincies.incijfers.be">info@provincies.incijfers.be</a>
+melden hoe je op dit rapport terecht kwam? Bedankt alvast!
+Bekijk de nieuwste versie van het rapport hier: 
+<a href="https://provincies.incijfers.be/dashboard/mobiliteit-en-verkeersveiligheid/rapport-mobiliteit-en-verkeersveiligheid" target="_blank">rapport mobiliteit</a>. 
+</section>
+```
+
 - Pas binnen je script de titel van het rapport aan zodat je krijgt: **&#39;rapportnaam – Doorverwijzing&#39;**
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
