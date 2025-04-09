@@ -203,8 +203,7 @@ Dat betekent je rapport toevoegen aan:
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search. Oude rapporten: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
-
-Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
+- Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
 
 **Extra tips**
@@ -273,8 +272,7 @@ Bekijk de nieuwste versie van het rapport hier:
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
   - Zet Exclude from Search op "ja"
-
-Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
+- Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
 Volg de procedure voor het schrijven van rapporten zoals hierboven beschreven.
 
