@@ -117,14 +117,6 @@ Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
     - Gebruik 65-plussers of ... ouder dan 65 jaar (niet 65+ jaar of 65-plus...)
   - Gebruik ≥ (Unicode: U+2265) en ≤ (Unicode: U+2264) in plaats van >= en <=
 
-
-## Meer informatie
-
-Dit verwijst naar een **PDF-metadatafiche** over een reeks indicatoren, waarin bron en methode wordt toegelicht. _Bv. 1205\_rsvz\_zelfstandigen\_voorbeeld\_metadata_
- Per BRON/thema voorzien we deze fiche met meer uitleg over de verschillende onderwerpen die tot deze bron behoren. Gebruik hiervoor het Sjabloon Metadata dat je terugvindt binnen [Teams > D&A Interprovinciale werking > Uploadfiles PinC > 00 Metadatafiches PinC](https://teams.microsoft.com/_?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e#/files/Uploadfiles%20PinC?threadId=19:51c8556c2f0c4552b8acc0b7c93024b7@thread.tacv2&ctx=channel&rootfolder=%252Fteams%252FDA-Interprovincialewerking%252FGedeelde%2520documenten%252FUploadfiles%2520PinC%252F00%2520Metadatafiches%2520PinC%252FSjabloon%2520metadata).
-
-❕ **Opgelet:** Dit zal in de toekomst veranderen.
-
 ## Bron
 
 Komt uit **Data > Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;. provincies.incijfers.be mag ook vervangen worden door 'PinC' als er niet genoeg plaats is. Als er genoeg plaats is, mag het voluit geschreven worden.
@@ -178,7 +170,7 @@ Meer informatie over de drempelwaarde/threshold vind je [hier](https://github.co
 - Bij Stock onderwerpen kan het jaartal verwarrend zijn. Heel wat stock-opnames worden gemaakt op nieuwjaar. In de helft van de gevallen beschouwen die bronnen dat als 31 december, in de andere helft als 1 januari. Doordat we diverse bronnen samenbrengen, moeten we harmoniseren. Wij hebben de keuze gemaakt om deze steeds weer te geven alsof het om 1 januari gaat. Daarom kan het zijn dat je bij de oorspronkelijke bronnen een ander jaartal ziet voor dezelfde data. **Toon je de data op een ander jaartal dan de bron?** Doe dan het volgende:
     - Maak een [Url link](https://provincies.incijfers.be/admin/studio/Table?tableName=UrlLink) met als tekst "⚠ Opgelet met jaartallen! Lees meer over Naam Bron". Als URL kies je de metadatafiche. Zet deze URL als eerste object in de CategeryTree in de map die de data van deze bron bundelt.
     - Aan de **Description** van de Indicator voegen we aan het einde toe (na een line-break): "_Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor (bijvoorbeeld: 2023 = toestand 31/12/2022)._"
-    - Aan de **Footnote** van de Indicator voegen we toe: "_Opgelet: Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor. Waar wij dus de cijfers harmoniseren om 31/12/2022 als 2013 te tonen, spreekt de oorspronkelijke bron wellicht van 2022._"
+    - Aan de **Footnote** van de Indicator voegen we sinds 20/02/2025 niets meer toe. Enkel aan de **voetnoot van de bron**: "_Opgelet: Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor. Waar wij dus de cijfers harmoniseren om 31/12/2022 als 2023 te tonen, spreekt de oorspronkelijke bron wellicht van 2022._"
     - Bij gebruik in Dashboard: voeg een tile toe die waarschuwt dat bij tiles van deze bron mogelijk een ander jaartal gebruikt wordt dan bij de bron zelf.
 - In het de [toelichting bij het Sjabloon Metadata](https://teams.microsoft.com/_?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e#/files/Uploadfiles%20PinC?threadId=19:51c8556c2f0c4552b8acc0b7c93024b7@thread.tacv2&ctx=channel&rootfolder=%252Fteams%252FDA-Interprovincialewerking%252FGedeelde%2520documenten%252FUploadfiles%2520PinC%252F00%2520Metadatafiches%2520PinC%252FSjabloon%2520metadata) dat je kan terugvinden binnen Teams > D&A Interprovinciale werking > Uploadfiles PinC > 00 Metadatafiches PinC, vind je de standaardformuleringen om de periode to omschrijven.
 - Onderwerpen die een **datatype &#39;percentage&#39; of &#39;mean&#39;** hebben, krijgen een periodetype &#39;stock&#39; (zie [#133](https://github.com/provinciesincijfers/PinC-taakopvolging/issues/133)).
