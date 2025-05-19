@@ -186,15 +186,14 @@ Dit moet ingevuld zijn met een **oplader en een controleur**, zie [onderdeel Con
 
 Hierbij staat het **eerste deel voor de inhoudelijk verantwoordelijke**. Het **tweede deel staat voor de controlerende partner**.
 
-## Provisional period/Voorlopige periode
-
-Hierin plaats je de periode met voorlopige waarden. Enkel wanneer de bron aangeeft dat de data van een bepaalde periode voorlopig zijn, voegen we deze periode(n) toe aan dit veld. 
-Gebeuren er correcties op de data zonder dat de bron dit zelf aangeeft? Contacteer dan eerst de bron, het is mogelijk dat hun metadata niet volledig was. Als ze hun metadata niet wijzigen of nergens aangeven dat het voorlopige data betreffen, laat dit dan op de Redactiegroep komen.   
-
-
 **Uitzonderingen:**
 
 - Voor &quot;testjes&quot; gebruik je je eigen naam. Voor onderwerpen die nog geen controleur heb vul je alvast het eerste deel in.
 - Bij data die door onze partners beheerd worden, geven we dat als volgt aan: VB(ECO)\_AN(ECO)
 
 ❕ ***Data kan pas EXTERN gezet worden eens de controle is afgerond. Voor meer details zie [onderdeel Controle](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/09.%20Controle).***
+
+## Provisional period/Voorlopige periode
+
+Hierin plaats je de periode met voorlopige waarden. Enkel wanneer de bron aangeeft dat de data van een bepaalde periode voorlopig zijn, voegen we deze periode(n) toe aan dit veld. 
+Gebeuren er correcties op de data zonder dat de bron dit zelf aangeeft? Contacteer dan eerst de bron, het is mogelijk dat hun metadata niet volledig was. Als ze hun metadata niet wijzigen of nergens aangeven dat het voorlopige data betreffen, laat dit dan op de Redactiegroep komen.   
