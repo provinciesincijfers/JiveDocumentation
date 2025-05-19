@@ -9,9 +9,10 @@ Gebiedsdekkend betekent &#39;beschikbaar voor alle gemeenten op dezelfde manier&
 Hier staat &#39;gebiedsdekkend&#39;, en niet &#39;bevolkingsdekkend&#39;. Dit wil zeggen dat enquêtes kunnen voor zover ze voor alle gemeenten beschikbaar zijn op dezelfde manier (bv. de stads- en gemeentemonitor). Voorwaarden voor de opname van enquêtegegevens zijn dat het onder een aparte hoofding &#39;enquêtes&#39; komt en dat er betrouwbaarheidsintervallen bij staan. Dat laatste wil zeggen dat we over de originele data moeten beschikken. Gegevens die op basis van modellen zijn opgesteld vallen onder een aparte hoofding &#39;modellen&#39;.
   
 
-2. **De gegevens zijn bij voorkeur minstens jaarlijks beschikbaar.**
+2. **De gegevens zijn bij voorkeur minstens jaarlijks beschikbaar en (indien relevant) de momentopname gebeurt steeds op hetzelfde moment.**
 
 Belangrijk is dat het om periodieke gegevens gaat. In principe kunnen dus ook censusgegevens opgenomen worden (die om de tien jaar worden opgesteld). Hiervoor is geen aparte hoofding vereist, omdat ze in principe &#39;bevolkingsdekkend&#39; zijn (geen enquêtegegevens).
+Wanneer het data betreft van een momentopname, moet deze momentopname steeds op hetzelfde moment gebeuren. Dus niet bv. een keer in januari, dan het jaar daarop in maart. 
 
 
 3. **De gegevens betreffen omgevingsinformatie. Bestuurlijke info wordt niet opgenomen.**
