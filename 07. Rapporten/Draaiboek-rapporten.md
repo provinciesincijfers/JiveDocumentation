@@ -193,7 +193,7 @@ Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je 
 
 Dat betekent je rapport toevoegen aan:
 
-**Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/ en zonder dynanmische URL gebiedsparameters zoals je dat wel kon bij Rapporten**
+**Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/ **
 
 - Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus)
 - Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.
@@ -241,7 +241,7 @@ Hiervoor volgen we dit stappenplan:
 
 # Procedure voor het vervangen van een bestaand rapport
 Opgelet: Wanneer je een gewoon rapport omzet naar een story rapport, moet je de volgende stappen ook overlopen:
-Opgelet 2: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/ en zonder dynanmische URL gebiedsparameters zoals je dat wel kon bij Rapporten.
+Opgelet 2: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/.
 
 Je rapport toevoegen aan (en het oude verwijderen):
 
