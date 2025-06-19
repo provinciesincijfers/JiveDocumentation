@@ -197,7 +197,7 @@ Dat betekent je rapport toevoegen aan:
 
 - Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus)
 - Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.
-- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten). Stories kan je toevoegen via een URL link.
+- Themaboom: extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
 - Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
@@ -247,7 +247,7 @@ Je rapport toevoegen aan (en het oude verwijderen):
 
 - Kiezen op kaart (reportcode: kiezen\_op\_kaart.
 - Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. Ben je niet zeker waar je het moet toevoegen, vraag het dan aan Emilien. 
-- Themaboom: extern (bij het thema en bij &quot;Thematische rapporten). Stories kan je toevoegen via een URL link
+- Themaboom:extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
 - Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Contacteer Stefan of David hiervoor. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
