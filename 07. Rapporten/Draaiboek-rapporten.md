@@ -272,6 +272,7 @@ Bekijk de nieuwste versie van het rapport hier:
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
   - Zet Exclude from Search op "ja"
+  - keywords: vervang de term 'productie' door 'uitgedoofd'
 - Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
 Volg de procedure voor het schrijven van rapporten zoals hierboven beschreven.
