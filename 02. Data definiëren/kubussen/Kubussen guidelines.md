@@ -4,7 +4,7 @@
 
 Dit zijn guidelines die we binnen Provincies in Cijfers hanteren.
 
-Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Kubussen%20guidelines.md)  eerst. **Deze tekst bevat enkel aanvullende info.**
+Check de [beginnershandleiding](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/kubussen/Basishandleiding%20kubussen.md)  eerst. **Deze tekst bevat enkel aanvullende info.**
 Ook een handleiding gezocht rond werken met gepercenteerde kubussen en het combineren van kubussen.
 
 ❕ Vergeet niet dat een kubus **maximaal 100.000 combinaties mag bevatten**. Om de combinaties te berekenen, neem je alle inhoudelijke  indelingen van de dataset (de "dimensieniveaus", voorbeeld: leeftijd, geslacht en burgerlijke staat, maar NIET jaar, gebied, aantal). Vervolgens neem je het product van het aantal keuzes per indeling.  Swing doet ook nog een controle van de hoeveelheid data na inladen en comprimeren. Dus zelfs als je je aan de 100.000 combinaties houdt, kan het zijn dat er toch nog een error opduikt.
