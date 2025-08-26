@@ -269,6 +269,7 @@ Bekijk de nieuwste versie van het rapport hier:
 ```
 
 - Pas binnen je script de titel van het rapport aan zodat je krijgt: **&#39;rapportnaam – Doorverwijzing&#39;**
+- Voeg in het oude rapport een extra HTMl tag toe in de head die verwijst naar het nieuwe rapport, bv. ```<link rel="canonical" href="https://provincies.incijfers.be/dashboard/ruimtegebruik/rapport-ruimtegebruik" />```. (zie bv. rapport ruimte voor de exacte plaats)
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
   - Zet Exclude from Search op "ja"
