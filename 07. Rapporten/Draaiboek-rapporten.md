@@ -193,7 +193,7 @@ Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je 
 
 Dat betekent je rapport toevoegen aan:
 
-**Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/ **
+**Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/**
 
 - Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus)
 - Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.
