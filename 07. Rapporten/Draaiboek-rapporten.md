@@ -195,7 +195,7 @@ Dat betekent je rapport toevoegen aan:
 
 **Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/**
 
-- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus). **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart. **
+- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus). **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.**
 - Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.
 - Themaboom: extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
@@ -229,7 +229,7 @@ Hiervoor volgen we dit stappenplan:
 
 **De verantwoordelijke kijkt na waar het rapport gebruikt wordt en past zoveel mogelijk zelf aan**
 
-- **Kiezen op kaart** (report kiezen_op_kaart). Verwijderen van het geschikte gebiedsniveau. **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart. **
+- **Kiezen op kaart** (report kiezen_op_kaart). Verwijderen van het geschikte gebiedsniveau. **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.**
 - **Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.
 - **Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.
 - **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;)
@@ -246,7 +246,7 @@ Opgelet 2: maak voor een Story rapport een link aan zonder de naam van het hoofd
 
 Je rapport toevoegen aan (en het oude verwijderen):
 
-- Kiezen op kaart (reportcode: kiezen\_op\_kaart. **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart. **
+- Kiezen op kaart (reportcode: kiezen\_op\_kaart. **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.**
 - Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. Ben je niet zeker waar je het moet toevoegen, vraag het dan aan Emilien. 
 - Themaboom:extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
