@@ -11,7 +11,7 @@ code | naam | gebruik | weergave   in PinC | kan opgeteld worden binnen PinC?
 -99999 | ten   onrechte geen antwoord | Invullen in Brussel wanneer de bron het gebied niet dekt, om te voorkomen dat Vlaamse bronnen toch opgeteld kunnen   worden samen met Brussel | ? | nee
 0 | nul |  Er is niets en we weten dat er niets is, maar het had er wel kunnen zijn | 0 | ja
 
-
+❗ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
 
 ## Duiding bij de afspraken
 
@@ -40,7 +40,6 @@ Als de bron een **gecensureerde waarde geeft** (en de waarde zelf NIET meegeeft)
 - Vanaf gemeentelijk niveau is dit een zeldzaam probleem. Leg de keuze voor op de Redactiegroep. Standaard kies je voor -99997. Maar dan moet je de data inlezen op meerdere gebiedsniveaus om überhaupt een resultaat te krijgen voor Vlaanderen of voor sommige arrondissementen etc. Soms is het sop de kolen niet waard, en kan je bijvoorbeeld een -99996 inladen (ontbreekt, maar een optelling waarin dit zit wordt wel weergegeven). Of je kan het sudoku-gewijs uitrekenen en het getal inladen (uiteraard verborgen onder een drempelwaarde).
 - Op subgemeentelijk niveau: vaker een groter probleem. In principe gebruik je een -99997
 
-❗ ***Het is NIET wenselijk om een &quot;onbekende waarde&quot; in te voeren voor onbekende locaties (zie volgende topic) zoals gemeente 99991 of statsec 11001zzzz.***
 
 ❗***Bij KUBUSSEN zijn dit soort aanpassing grotendeels onhaalbaar.*** Immers zou je dan data moeten inlezen voor alle combinaties die in theorie mogelijk zijn. De enige **uitzondering** is dat we waar nodig wél brekende missings (-99999) inlezen in eenvoudige kubussen op gemeenteniveau. [Meer info hier](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/02.%20Data%20defini%C3%ABren/kubussen/brussel-invullen)
 
@@ -66,7 +65,7 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 
 ## Missing values: technisch gezien
 
-**Er is iets en we weten dat we niet weten hoeveel** (we hebben de vissen proberen tellen in dit meer, we hebben er gevonden, maar we zijn het resultaat kwijtgeraakt):
+**Er is iets en we weten dat we niet weten hoeveel** (wanneer er bv. geen gegevens voor Brussel zijn):
 
 &quot;-99999&quot;: ?; TOGA (ten onrechte geen antwoord)
 
@@ -74,14 +73,14 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 
 :arrow_right: Ontbrekende waarden leiden tot het ontbreken van elk resultaat dat hierop verder bouwt
 
-**Er is niets, maar dat kon ook niet anders** (vb: in dit gebied zijn geen meren!):
+**Er is niets, maar dat kon ook niet anders** (vb: in dit gebied is er geen Vlaamse premie):
 
 &quot;-99998&quot;: niet van toepassing (kan hier niet voorkomen)
 
 :arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
 *Voorbeeld: ~~data van Brussel voor een Vlaamse premie~~ (strikt gezien correct, maar wij gebruiken het niet op die manier)*
 
-**Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van vissen in dit meer) :
+**Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van een universiteit in deze gemeente) :
 
 &quot;-99996&quot;: &quot;leeg&quot;
 
