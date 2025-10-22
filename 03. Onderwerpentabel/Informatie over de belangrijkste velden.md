@@ -96,7 +96,7 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
 Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
 
 - **Geef steeds de eenheid mee tussen ronde haakjes**, bijvoorbeeld (in m²), (in €).
-- **Percentages** worden omgeschreven met (t.o.v. inwoners, …), **promilles** met per 1.000 inwoners, **ratio’s** meestal ook met per … Voorbeelden:
+- **Percentages** worden omgeschreven met (per 100 inwoners, …), **promilles** met per 1.000 inwoners, **ratio’s** meestal ook met per … Voorbeelden:
   -	[ratio] apotheken per 1.000 inwoners
   -	[ratio] faillissementsratio: aantal faillissementen per 100 actieve ondernemingen
   -	[ratio] openstaande vacatures per 100 niet-werkende werkzoekenden
