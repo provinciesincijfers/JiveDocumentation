@@ -114,7 +114,7 @@ Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
   - Voor leeftijdsgroepen
     - Indien afzonderlijk: &quot;18-64 jaar&quot;. Dit mag enkel gebruikt worden als het om het inwonertal gaat, anders gebruik je:
     - eerst het &quot;kenmerk&quot;, dan de leeftijd. Bv. &quot;werklozen 18-64 jaar&quot;
-    - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
+    - Indien &quot;per&quot; gebruik &quot;per 100 werklozen 18-64 jaar&quot; of &quot;per 100 18-64-jarigen&quot;
     - Gebruik 65-plussers of ... ouder dan 65 jaar (niet 65+ jaar of 65-plus...)
   - Gebruik ≥ (Unicode: U+2265) en ≤ (Unicode: U+2264) in plaats van >= en <=
 
