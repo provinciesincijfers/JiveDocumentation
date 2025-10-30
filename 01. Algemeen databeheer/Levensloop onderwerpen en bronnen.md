@@ -65,10 +65,13 @@ Onderwerpen, kubusdimensies/kubusdimensie-items en bronnen moeten uiteindelijk w
 2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via General>Consistency checks>Indicators used in categories).
     * Voor Dashboard en Stories moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
     * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Emilien, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden
-3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
-4. Impact op rapporten checken. (dit kan via General>Consistency checks>Indicators used in Reports. Opgelet: dit rapport wordt niet onmiddellijk geupdate en omvat ook vermeldingen voor indicatoren die nodig zijn in formules of als aggregatieonderwerp)
-5. Impact op Dashboard checken. Via General > Consistency checks. Indicators used in Mosaic voor de impact op het Dashboard. 
-6. Impact op Stories checken. Via General > Consistency checks. Indicators used in presentations voor wanneer er viewer presentations aangemaakt werden op basis van het onderwerp; Indicators used in Stories om de impact op Stories na te gaan.
+3. De impact kan je sinds 29.10.25 nagaan via het consistency rapport: Indicators usage overview. De onderwerpen worden op alle mogelijke manieren gecheckt: voorbereide visualisaties, viewer reports, themaboom, mosaic, stories, conditionals in stories en mosaic, get-statements in stories en mosaic.
+
+~~3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
+5. Impact op rapporten checken. (dit kan via General>Consistency checks>Indicators used in Reports. Opgelet: dit rapport wordt niet onmiddellijk geupdate en omvat ook vermeldingen voor indicatoren die nodig zijn in formules of als aggregatieonderwerp)
+6. Impact op Dashboard checken. Via General > Consistency checks. Indicators used in Mosaic voor de impact op het Dashboard. 
+7. Impact op Stories checken. Via General > Consistency checks. Indicators used in presentations voor wanneer er viewer presentations aangemaakt werden op basis van het onderwerp; Indicators used in Stories om de impact op Stories na te gaan.~~
+
 
  
 ### 2. De verantwoordelijke laat de onderwerpnaam beginnen met "UITDOVEND (sinds XX/XX/20XX) - oude onderwerpnaam"
