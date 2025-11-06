@@ -127,7 +127,7 @@ Communicatie tussen de verschillende betrokkenen is vanaf de beginfase van belan
 
 ## Afspraken rond communicatie
 
-- Maak tijdig goede afspraken met projectwerkgroep / kabinetten gedeputeerden / externe partners /…. i.v.m. timing van publiceren!
+- Maak tijdig goede afspraken met projectwerkgroep / kabinetten gedeputeerden / externe partners /…. i.v.m. timing van publiceren en eventueel communicatie over het rapport!
 
 # Aanmaken van het rapport
 
@@ -241,8 +241,8 @@ Hiervoor volgen we dit stappenplan:
 **Na zes maanden wissen we het rapport definitief**
 
 # Procedure voor het vervangen van een bestaand rapport
-Opgelet: Wanneer je een gewoon rapport omzet naar een story rapport, moet je de volgende stappen ook overlopen:
-Opgelet 2: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/.
+Wordt de inhoud van het rapport herzien, volg dan de stappen in:
+[Procedure voor aanmaak van een nieuw rapport](Draaiboek-rapporten.md#procedure-voor-aanmaak-van-een-nieuw-rapport)
 
 Je rapport toevoegen aan (en het oude verwijderen):
 
@@ -278,9 +278,8 @@ Bekijk de nieuwste versie van het rapport hier:
   - keywords: vervang de term 'productie' door 'uitgedoofd'
 - Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
-Volg de procedure voor het schrijven van rapporten zoals hierboven beschreven.
-
 Ook hier is communicatie van groot belang. Als je het rapport herwerkt van een collega(‘s), betrek hen dan ook in de verschillende fasen van het proces zodat ook zij feedback kunnen geven, naast de leden van de Redactiegroep.
+Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/.
 
 **Verander de onderwerpcode niet zomaar!** Anders gaat er vanalles kapot.
 Het Dashboard en kruisverwijzingen vanuit andere rapporten werken bijvoorbeeld wel nog goed, MAAR moet je er aan denken om in de Themaboom (CategoryTree) de link te veranderen. Immers, net als bij Indicators is de verwijzing vanuit de Themaboom NIET gekoppeld aan een code maar aan een databank-objectje.
