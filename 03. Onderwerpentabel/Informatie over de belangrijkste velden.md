@@ -38,17 +38,16 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
 - **Geen eenheid** (&quot;aantal&#39; of &#39;aandeel&quot;) in de onderwerpnaam gebruiken.
 - Geef een **unieke naam** aan je onderwerp. Het moet immers onmogelijk zijn om twee onderwerpen te hebben met dezelfde naam die toch een ander aantal geven.
 - **Het is soms nodig om de regels te breken om de onderwerpnaam kort genoeg te houden**. Dat is toegestaan in Databank, maar in Dashboard schrijven we deze dan toch voluit omwille van de leesbaarheid.
-- Gebruik 
 - **Meer specifieke regels** :
   - Gebruik niet EUR maar €
   - Schrijf niet 1000 maar 1.000
   - Voor leeftijdsgroepen:
     - Indien afzonderlijk: &quot;18-64 jaar&quot;. Dit mag enkel gebruikt worden als het om het inwonertal gaat, anders gebruik je:
     - eerst het &quot;kenmerk&quot;, dan de leeftijd. Bv. &quot;werklozen 18-64 jaar&quot;
-    - Indien &quot;per&quot; gebruik &quot;per 100 werklozen 18-64 jaar&quot; of &quot;per 100 18-64-jarigen&quot;
+    - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
     - Gebruik 65-plussers (niet 65+ of 65-plus)
-  - Percentages, promilles, ratio’s: gebruik ‘per’ tenzij het niet anders kan, in dat gevoel voeg je (t.o.v. …) toe aan de onderwerpnaam.
-  - Als het over bevolkingsprognoses gaat, voeg je achteraan [prognose] toe, bv. 75-79 jaar vrouwen (per 100 75-79-jarigen) [prognose]
+  - Percentage worden omgeschreven met (t.o.v. inwoners, …), promilles met per 1.000 inwoners, ratio's afhankelijk van de indicator ofwel met (t.o.v. inwoners) of per 100 inwoners
+  - Als het over bevolkingsprognoses gaat, voeg je achteraan [prognose] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [prognose]
   - Model-, scenario- en enquête data duiden we ook aan in vierkante haken achteraan de onderwerpnaam met [model], [scenario] en [enquête]. 
 
 ❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald.***
@@ -62,7 +61,7 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
 | promille [‰] | natuurlijk saldo per 1.000 inwoners | aantal geboorten min de sterfte per 1.000 inwoners |
 | ratio [ratio] | oprichtingsratio | [ratio] aantal opgerichte ondernemingen per 100 actieve ondernemingen |
 | ratio\_100 [per 100] | aanbodratio WZC | [ratio] gerealiseerde capaciteit (erkend + erkenning in onderzoek) in woonzorgcentra per 100 inwoners van 65 jaar en ouder |
-| ratio\_1000 [per 1.000] | pmeh met (enkel) IVT per 1.000 21-plussers | [ratio] rechthebbenden op (enkel) een inkomensvervangende tegemoetkoming per 1.000 inwoners ouder dan 21 jaar |
+| ratio\_1000 [per 1.000] | pmeh met (enkel) IVT per 1.000 21-plussers | [ratio] rechthebbenden op (enkel) een inkomensvervangende tegemoetkoming t.o.v. 1.000 inwoners ouder dan 21 jaar |
 
 
 
@@ -72,9 +71,9 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
  Geeft meer uitleg bij het onderwerp.
 
 - Indien het over een heel **eenvoudig onderwerp** gaat, dan mag de **Beschrijving identiek aan de Naam** zijn. In andere gevallen mag er zeker wat toelichting bij de omschrijving. Voorbeelden: 
-  -	[percentage] wijzigingen aan woningen 1983-1990 (per 100 woongelegenheden). Sinds 1983 wordt het wijzigingsjaar van woningen door het kadaster geregistreerd. Dit cijfer betreft enkel de wijzigingen die gekend zijn in het kadaster.
-  - [percentage] sociale huurappartementen (appartementen inclusief studio's en duplexen) met 1 slaapkamer van de SHM (t.o.v. totaal appartementen SHM (per gaat hier moeilijk)). Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor (bijvoorbeeld: 2017 = toestand 31/12/2016)
-  - [percentage] oppervlakte van harde bestemmingen (per bestemde oppervlakte). De harde bestemmingen zijn de bestemmingen voor wonen, recreatie, industrie (binnen de poorten), bepaalde categorieën van overig groen en bepaalde categorieën van overige bestemmingen.
+  -	[percentage] wijzigingen aan woningen 1983-1990 (t.o.v. woongelegenheden). Sinds 1983 wordt het wijzigingsjaar van woningen door het kadaster geregistreerd. Dit cijfer betreft enkel de wijzigingen die gekend zijn in het kadaster.
+  - [percentage] sociale huurappartementen (appartementen inclusief studio's en duplexen) met 1 slaapkamer van de SHM (t.o.v. totaal appartementen SHM). Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor (bijvoorbeeld: 2017 = toestand 31/12/2016)
+  - [percentage] oppervlakte van harde bestemmingen (t.o.v. totale bestemde oppervlakte). De harde bestemmingen zijn de bestemmingen voor wonen, recreatie, industrie (binnen de poorten), bepaalde categorieën van overig groen en bepaalde categorieën van overige bestemmingen.
   - [aantal] ammoniakemissie door veeteelt (in ton): omvat stal- en opslagemissie, emissie van grazende dieren en emissie van het uitrijden van dierlijke mest
 
 - Indien het gaat over een **formule-onderwerp**, dan mag het ook een **korte beschrijving van de formule** zijn. Dit mag in woorden. Voorbeelden: 
@@ -96,7 +95,7 @@ Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer 
 Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
 
 - **Geef steeds de eenheid mee tussen ronde haakjes**, bijvoorbeeld (in m²), (in €).
-- **Percentages** worden omgeschreven met (per 100 inwoners, …), **promilles** met per 1.000 inwoners, **ratio’s** meestal ook met per … Voorbeelden:
+- **Percentages** worden omgeschreven met (t.o.v. inwoners, …), **promilles** met per 1.000 inwoners, **ratio’s** meestal ook met per … Voorbeelden:
   -	[ratio] apotheken per 1.000 inwoners
   -	[ratio] faillissementsratio: aantal faillissementen per 100 actieve ondernemingen
   -	[ratio] openstaande vacatures per 100 niet-werkende werkzoekenden
@@ -114,7 +113,7 @@ Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
   - Voor leeftijdsgroepen
     - Indien afzonderlijk: &quot;18-64 jaar&quot;. Dit mag enkel gebruikt worden als het om het inwonertal gaat, anders gebruik je:
     - eerst het &quot;kenmerk&quot;, dan de leeftijd. Bv. &quot;werklozen 18-64 jaar&quot;
-    - Indien &quot;per&quot; gebruik &quot;per 100 werklozen 18-64 jaar&quot; of &quot;per 100 18-64-jarigen&quot;
+    - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
     - Gebruik 65-plussers of ... ouder dan 65 jaar (niet 65+ jaar of 65-plus...)
   - Gebruik ≥ (Unicode: U+2265) en ≤ (Unicode: U+2264) in plaats van >= en <=
 
