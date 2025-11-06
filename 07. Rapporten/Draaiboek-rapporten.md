@@ -146,8 +146,9 @@ Werk het rapport verder uit in Word + verzamel de grafieken in swing
   - Moeten bepaalde resultaten extra toegelicht worden (vb. bij lage aantallen, knik in evolutiegrafiek...)?
   - Ga na of je nog verwijzingen naar andere Rapporten kunt invoegen in je tekst
 - Bespreek het resultaat samen met de programmeur (niet per mail, maar in een overleg). Hierbij worden eventuele problemen vroeg gedetecteerd en oplossingen hiervoor gezocht. Hierbij is onder andere ook al aandacht voor de verschillende manieren van opvragen van een rapport (meerdere gemeenten…). Eventuele afwijkingen van de basisafspraken kunnen samen met de programmeur worden voorgelegd aan de redactiegroep. (Herhaal deze stap indien nodig).
-- Leg het uitgewerkte voorstel (in word, nog niet geprogrammeerd!) voor aan de verantwoordelijke collega voor de eindcontrole en de opdrachtgever/werkgroep.
-  - De verantwoordelijke collega moet niet noodzakelijk in de Redactiegroep zetelen.
+- Leg het uitgewerkte voorstel (in word, nog niet geprogrammeerd!) voor aan de verantwoordelijke collega's voor de eindcontrole en de opdrachtgever/werkgroep.
+  - De verantwoordelijke collega's moeten niet noodzakelijk in de Redactiegroep zetelen.
+  - Stel een duidelijke deadline op.
   - Tijdens het nalezen moet moet extra aandacht geschonken worden aan kritisch lezen op beleidsdiscours en controleren op concepten/termen die in de glossary begrippenlijst moeten worden opgenomen.
   - Opgelet: spreek duidelijk af wiens verantwoordelijkheid het is dat alle regels gecontroleerd zijn. Als er afgeweken zou worden, bespreek dit dan op voorhand met de Redactiegroep. Maak duidelijk aan wie feedback geeft dat er géén mogelijkheid meer is voor inhoudelijke feedback eens de programmatie begint.
   - Spreek een duidelijke datum af tegen wanneer feedback (of OK voor programmatie) binnen moet zijn.
@@ -160,7 +161,7 @@ Werk het rapport verder uit in Word + verzamel de grafieken in swing
 
 Laat je begeleiden door Emilien en volg het [sjabloon vertrekproject](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) en het [sjabloon afspraken](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0).
 Wanneer het geprogrameerd is:
-- Stuur je bijna afgewerkte rapport rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Om feedback te vragen, kan je werken met een link als deze:[https://provincies.incijfers.be/dashadmin/preview/sjabloon/informatie-over-dit-sjabloon](https://provincies.incijfers.be/dashadmin/preview/sjabloon/informatie-over-dit-sjabloon)] (in ADMIN, dus de aller recentste versie. Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
+- Stuur je bijna afgewerkte rapport rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Stel een duidelijke deadline op. Om feedback te vragen, kan je werken met een link als deze:[https://provincies.incijfers.be/dashadmin/preview/sjabloon/informatie-over-dit-sjabloon](https://provincies.incijfers.be/dashadmin/preview/sjabloon/informatie-over-dit-sjabloon)] (in ADMIN, dus de aller recentste versie. Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
 De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als commentaar op een export in PDF aangeleverd wordt. Opgelet: op dit moment is het NIET meer aanvaardbaar om feedback te geven over de inhoud zelf. Specifieke opmerkingen van de eindredacteur kunnen dan nog op de redactiegroep gebracht worden.
 
 - Wanneer je rapport klaar is, laat het (opnieuw) rondgaan ter info naar de redactiegroep en de werkgroep.
@@ -170,7 +171,7 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 
 **Laten controleren**
 
-- Verzamel eventueel een laatste keer feedback via de Redactiegroep. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [sjabloon](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
+- Verzamel eventueel een laatste keer feedback via de Redactiegroep met een duidelijke deadline. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [sjabloon](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
 
 Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze lijst.
 
