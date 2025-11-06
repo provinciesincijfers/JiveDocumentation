@@ -46,7 +46,7 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
     - eerst het &quot;kenmerk&quot;, dan de leeftijd. Bv. &quot;werklozen 18-64 jaar&quot;
     - Indien &quot;t.o.v.&quot; gebruik &quot;t.o.v. werklozen 18-64 jaar&quot; of &quot;t.o.v. 18-64-jarigen&quot;
     - Gebruik 65-plussers (niet 65+ of 65-plus)
-  - Percentage worden omgeschreven met (t.o.v. x), promilles met per x, ratio's per x.
+  - Percentage worden omgeschreven met (t.o.v. x), promilles met per x, ratio's per 1.000 x.
   - Als het over bevolkingsprognoses gaat, voeg je achteraan [prognose] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [prognose]
   - Model-, scenario- en enquête data duiden we ook aan in vierkante haken achteraan de onderwerpnaam met [model], [scenario] en [enquête]. 
 
