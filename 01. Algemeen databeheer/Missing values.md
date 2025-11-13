@@ -80,7 +80,7 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 :arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
 *Voorbeeld: ~~data van Brussel voor een Vlaamse premie~~ (strikt gezien correct, maar wij gebruiken het niet op die manier)*
 
-**Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van een universiteit in deze gemeente) :
+**Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van een universiteit in deze gemeente maar er zou er wel een kunnen komen) :
 
 &quot;-99996&quot;: &quot;leeg&quot;
 
