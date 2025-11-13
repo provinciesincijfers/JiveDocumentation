@@ -7,7 +7,7 @@ code | naam | gebruik | weergave   in PinC | kan opgeteld worden binnen PinC?
 -- | -- | -- | -- | --
 -99996 | leeg | Dit   is hetzelfde als helemaal niets inlezen. Dat doen we eigenlijk nagenoeg   nooit. Zeer uitzonderlijk kan dit gebruikt worden voor een waarde die door de   bron gecensureerd werd toch in te lezen zonder sommeren onmogelijk te maken | - | ja
 -99997 | verborgen   waarde | Door   de data-leverancier reeds gecensureerd | x | nee
--99998 | niet   van toepassing | Dit gebruiken we vooralsnog NIET | - | ja
+-99998 | niet   van toepassing | Dit gebruiken we vooralsnog NIET | nvt | ja
 -99999 | ten   onrechte geen antwoord | Invullen in Brussel wanneer de bron het gebied niet dekt, om te voorkomen dat Vlaamse bronnen toch opgeteld kunnen   worden samen met Brussel | ? | nee
 0 | nul |  Er is niets en we weten dat er niets is, maar het had er wel kunnen zijn | 0 | ja
 
