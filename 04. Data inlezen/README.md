@@ -17,3 +17,5 @@ Tijdens het **importeren van data** zal je **keuzes** moeten laden. De mogelijke
 Voor informatie over het inlezen van **formule-onderwerpen** kan je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md) terecht.
 
 Alles over **Kubus-onderwerpen**, waaronder hoe in te lezen vind je binnen de [map 'Data definiëren'](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/README.md). 
+
+Alles over de controle van data vind je in deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx).
