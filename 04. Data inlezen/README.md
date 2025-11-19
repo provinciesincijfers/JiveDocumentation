@@ -18,4 +18,4 @@ Voor informatie over het inlezen van **formule-onderwerpen** kan je [hier](https
 
 Alles over **Kubus-onderwerpen**, waaronder hoe in te lezen vind je binnen de [map 'Data definiëren'](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/02.%20Data%20defini%C3%ABren/README.md). 
 
-Alles over de controle van data vind je in deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx) 
+Alles over de controle van data vind je in deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx).
