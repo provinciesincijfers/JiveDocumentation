@@ -173,16 +173,9 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 
 - Verzamel eventueel een laatste keer feedback via de Redactiegroep met een duidelijke deadline. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [sjabloon](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
 
-Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze lijst.
+Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx).
 
-- Heb je alle onderstaande checks gedaan voor één gemeente, één provincie, twee gemeenten/provincies? Wat gebeurt er als je Brussel kiest of een Vlaamse en een Brusselse provincie? Wat gebeurt er als een gebruiker een eigen regio aanmaakt?
-- Kijk de verschillende cijfers na en vergelijk deze met de cijfers in de databank (check dat er niet per ongeluk een foutief onderwerp werd geselecteerd)
-- Zijn er geen actuelere data beschikbaar (in de databank of elders)?
-- Komen alle cijfers en conclusies in de tekst overeen met wat in de figuren / grafieken / kaarten getoond wordt?
-- Staat er steeds een datum/jaartal bij de cijfers vermeld?
-- Wordt overal naar de juiste gemeente(n) / regio verwezen?
-- Werken alle (externe) links? Kom je via links in de juiste tabel of juiste plaats in de databank uit?
-- Tekst nalezen op taalfouten
+
 
 **Harmoniseren en integreren**
 
