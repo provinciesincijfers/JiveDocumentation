@@ -8,6 +8,8 @@ Informatie over **tijdelijke onderwerpen** staat [hier](https://github.com/provi
 
 ❕ **De uitzondering:** data die binnenkomt via een Swing Connector. Deze is te identificeren op basis van Beschermd = Ja. Hier heeft het géén zin om te bewerken in de Onderwerpentabel. Bij elke refresh van de data, worden je aanpassingen overschreven. Wil je toch iets aanpassen of een bestaand onderwerp vullen met data uit zo&#39;n onderwerp, maak dan gebruik van een formule.
 
+Alles over de controle van indicatornamen en beschrijvingen vind je in deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx).
+
 💡 **Tips &amp; tricks:**
 
 - Je kan de functie **&quot;Item toevoegen&quot;** gebruiken, maar dit is **omslachtig als je meer dan één onderwerp wil toevoegen**.
