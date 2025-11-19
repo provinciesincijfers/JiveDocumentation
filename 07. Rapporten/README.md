@@ -11,3 +11,5 @@ Rapporten in ontwikkeling kan je steeds **in de ontwikkelomgeving** raadplegen m
 De rapporten voorbereid door de **werkgroep OBMI** staan in de map [&quot;centrumsteden&quot;](https://github.com/provinciesincijfers/JiveDocumentation/tree/master/07.%20Rapporten/centrumsteden).
 
 **Nood aan nog wat meer uitleg**? Dan staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/07.%20Rapporten/Cursus_Swing_rapporten.pdf) de basiscursus &#39;Rapporten maken in Swing&#39; en een handleiding hoe je een [dynamisch en geavanceerd rapport opzet](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/07.%20Rapporten/Handleiding_rapporten_Swing_Jive_5.2.pdf).
+
+Alles over de controle van rapporten vind je in deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx).
