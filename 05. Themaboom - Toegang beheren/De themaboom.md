@@ -66,7 +66,7 @@ Deze map is **enkel zichtbaar voor Swing Beheerders**. Swing-beheerders zijn doo
 - **Enkel rommelen in TESTMAP**, ook INTERN een beetje opgekuist houden.
 - **Geen grote wijzigingen** zonder advies van Redactiegroep.
 - **Logica hoofdletters**: THEMA > Map naam > Submap naam > onderwerp naam.
-- **Max. 8 subthema's** per hoofdthema.
+- **Max. 9 subthema's** per hoofdthema.
 - **Mapnamen verschijnen soms in de titel van presentaties**. Als dit verwarrend kan zijn, maak ze dan niet &quot;Visible in title&quot; in titel (menu Edit achter rechtermuisklik op map).
 - Het is toegestaan om indien relevant bepaalde onderwerpen/mappen te **dupliceren** op meerdere plaatsen. Meld dit even bij de Redactiegroep vooraleer je dit doet.
 - **Voor alle thema&#39;s waar dit relevant is, maken we percentages aan** (zie [Formule-onderwerpen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md)). **De aantallen zetten we steeds eerst in de themaboom, dan pas de percentages**.
