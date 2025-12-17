@@ -106,10 +106,17 @@ Als je een object uiteindelijk wil deleten, dan moet het eerst UITGEDOOFD zijn. 
 
 Het onderwerp moet minstens zes maanden uitgedoofd zijn om gedelete te kunnen worden.
 
-### Alternatief: ARCHIEF
+### Label: ARCHIEF
 Soms zetten we een reeks die EXTERN stond op een gegeven moment INTERN, zonder dat ze daarom meteen uitdovend moeten worden. Dit is doorgaans het geval bij grote herorganisaties (voorbeeld NWWZ naar WZW). De oude cijfers zijn nog een tijd nuttig, en zijn op zich niet fout. Ze gaan gewoon nooit nog geupdate worden en verliezen dus langzaamaan hun relevantie.
 
-Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen en bronnen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn, steeds aan als ARCHIEF.
+Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle onderwerpen en bronnen die ooit EXTERN stonden en INTERN gezet worden zonder uitdovend te zijn en die niet meer geactualiseerd worden, steeds aan als ARCHIEF.
+
+We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
+
+### Label: INTERN
+Soms hebben we een datareeks die we actualiseren maar die niet extern mag staan. Hiervoor voorzien we het label INTERN. In het geval een dergelijke datareeks eerst extern stond en daarna niet meer, worden de centrumsteden via dit label op de hoogte gebracht dat deze datareeks niet meer extern mag staan. 
+
+We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
 
 ## Belangrijk
 
