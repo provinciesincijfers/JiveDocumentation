@@ -26,6 +26,8 @@ Maak zeker ook gebruik van volgende documenten:
 
 Het overzicht van wie verantwoordelijk is voor een specifiek rapport [vind je hier](https://github.com/provinciesincijfers/PinC-taakopvolging/#taakverdeling-rapporten). Kleine issues in rapporten mag je steeds zelf corrigeren, maar laat het dan wel even weten aan de verantwoordelijke voor het rapport. 
 
+In rapporten op provincies.incijfers.be blijft de **focus op data**. **Het is niet de bedoeling dat we beleidsrapporten maken.** Zorg daarom voor objectieve, neutrale formuleringen. Je mag bronvermelding gebruiken om bepaalde uitspraken te staven, maar probeer dit te beperken. Bijvoorbeeld de formulering  "(...) straatverlichting (...) heeft een negatieve impact op het leefmilieu en dient bijgevolg beperkt te worden" is geen neutrale formulering. In dat geval zou in een rapport veiligheid moeten staan "straatverlichting heeft een positieve impact op de veiligheid en dient bijgevolg gemaximaliseerd te worden." 
+
 # Types Rapporten
 
 **Tabellenrapport**
