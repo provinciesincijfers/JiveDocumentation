@@ -114,9 +114,11 @@ Voor hergebruikers is dit natuurlijk weinig zichtbaar. Daarom duiden we alle ond
 We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
 
 ### Label: INTERN
-Soms hebben we een datareeks die we actualiseren maar die niet extern mag staan. Hiervoor voorzien we het label INTERN. In het geval een dergelijke datareeks eerst extern stond en daarna niet meer, worden de centrumsteden via dit label op de hoogte gebracht dat deze datareeks niet meer extern mag staan. 
+Soms hebben we een datareeks die we actualiseren maar die niet extern mag staan. Hiervoor voorzien we het label INTERN. In het geval een dergelijke datareeks eerst extern stond en daarna niet meer, worden de centrumsteden via dit label op de hoogte gebracht dat deze datareeks niet meer extern mag staan. We gebruiken dit label daarom enkel voor datareeksen die eerst extern stonden.
 
 We voegen ook deze voetnoot toe aan het onderwerp: "Je zou deze data niet meer mogen zien. Is dat wel het geval, laat dit dan weten aan info@provincies.incijfers.be. We wijzen je dan de weg naar de correcte opvolger van deze reeks. Bezorg ons de link en/of een screenshot van waar je deze reeks precies zag."
+
+Deze indicator moet ook uit de accessgroups gehaald worden zodat gebruikers deze niet meer via URL of via ODS kunnen raadplegen. Geef Emilien een seintje wanneer je een indicator intern zet, dan haalt zij deze uit de accessgroups. 
 
 ## Belangrijk
 
