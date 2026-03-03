@@ -59,13 +59,15 @@ Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of
 **Je URL stel je als volgt samen:**
 (let op de plaatsing van het vraagteken en # (anker))
 
+**vraagteken**
 > `https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword`
 
 OF
 
 > `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword`
 
-> https://provincies.incijfers.be/info/9900_gebiedsniveaus.html?mtm_campaign=pinc-nieuwsbrief-02-2026&mtm_kwd=419#ggw7 
+**hash**
+> `https://provincies.incijfers.be/info/9900_gebiedsniveaus.html?mtm_campaign=pinc-nieuwsbrief-02-2026&mtm_kwd=419#ggw7 `
 
 Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.**
 **Als je je een anker/hash (#) gebruikt moet dit altijd als laatste komen.**
