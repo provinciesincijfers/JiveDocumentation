@@ -57,7 +57,7 @@ Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of
 :grey_exclamation: ***Gebruik overal kleine letters. Gebruik in geen enkele van deze velden &quot;speciale tekens&quot; of spaties. Je kan eventueel een spatie vervangen door %20; dat gaat soms mooi als spatie weergegeven worden.***
 
 **Je URL stel je als volgt samen:**
-(let op de plaatsing van het vraagteken)
+(let op de plaatsing van het vraagteken en # (anker))
 
 > `https://provincies.incijfers.be/WAAR-JE-NAAR-TOE-WIL-IN-SWING?mtm_campaign=naam&mtm_kwd=keyword`
 
@@ -65,7 +65,11 @@ OF
 
 > `https://provincies.incijfers.be/WAAR?-JE-NAAR-TOE-WIL-IN-SWING&mtm_campaign=naam&mtm_kwd=keyword`
 
-Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.** Dit wordt automatisch voor jou gedaan als je [de Excel in deze map](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/10.%20Communicatie/sjabloon_links.xlsx) gebruikt, of het sjabloon voor de nieuwsbrief op Teams.
+> https://provincies.incijfers.be/info/9900_gebiedsniveaus.html?mtm_campaign=pinc-nieuwsbrief-02-2026&mtm_kwd=419#ggw7 
+
+Ofwel: **als je oorspronkelijke URL reeds een vraagteken bevatte, dan sluit je aan met &amp;. Als er nog geen vraagteken in de URL stond, zet die dan net voor je met de Matomo parameters begint.**
+**Als je je een anker/hash (#) gebruikt moet dit altijd als laatste komen.**
+Dit wordt automatisch voor jou gedaan als je [de Excel in deze map](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/10.%20Communicatie/sjabloon_links.xlsx) gebruikt, of het sjabloon voor de nieuwsbrief op Teams.
 
 ## Communiceren met je communicatoren
 
