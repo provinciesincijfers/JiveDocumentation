@@ -43,12 +43,12 @@ Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of
 
 
 ### Matomo URLs opstellen
-`mtm_campaign=naam`       pinc-nieuwsbrief-februari-2021
+`mtm_campaign=naam`  (vul 'naam' in)     pinc-nieuwsbrief-februari-2021
 
 = Unieke omschrijving van de campagne, in zijn geheel. Dat mag dus de andere parameters herhalen als je dat wenst.
 
 
-`mtm_kwd=keyword`         dashboard-demografie, rapport-bevolking, update-bevolking
+`mtm_kwd=keyword`   (vul 'keyword' in)      dashboard-demografie, rapport-bevolking, update-bevolking
 
 = Inhoudelijke omschrijving van de link, indien ze gewenst. Hier kan je bijvoorbeeld het medium plaatsen waarlangs je de URL verspreid, bv. LinkedIn, Facebook, X of Reddit. 
 
