@@ -12,7 +12,7 @@ Maak een issue aan dat je een nieuw rapport aan het maken / omzetten bent en zet
 - [ ] Vergelijk de cijfers met deze in de databank en ga na of deze overeenkomen.
 - [ ] Komen de cijfers en conclusies in de tekst overeen met wat er in de figuren getoond wordt?
 - [ ] Staat er overal een jaartal, bron en gebied vermeld?
-- [ ] Werken alle (externe) links? Controleer zeker de links naar bestaande rapporten, mogelijks werd er in de tussentijd een rapport omgezet naar stories.
+- [ ] Werken alle (externe) links? Controleer zeker de links naar bestaande rapporten, mogelijks werd er in de tussentijd een rapport omgezet naar stories. Geert programmeerde hiervoor een handig Python-script dat je [hier](https://github.com/provinciesincijfers/Code-and-Collaborate/tree/main/Gedeelde%20scripts/Stories%20check) kan terugvinden. Met dit script krijg je (1) een overzicht van alle links die in Stories-rapporten gebruikt worden, (2) een overzicht van alle viewer-presentaties in Stories-rapporten en (3) links die niet (meer) werken. 
 - [ ] Komen alle voetnoten en woorden uit het glossarium terug in de voetnoten en/of begrippenlijst achteraan het rapport?
 - [ ] Staat het jaar van de laatste herwerking van het rapport juist (in het hoofdstuk: ‘Over dit rapport’)?
 - [ ] Staat alles goed in de PDF? Vraag de PDF ook op voor de verschillende niveaus. 
