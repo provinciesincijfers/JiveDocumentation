@@ -70,7 +70,8 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
 Dit is zichtbaar wanneer je met de muis over een onderwerp zweeft of &quot;meer info&quot; vraagt.
  Geeft meer uitleg bij het onderwerp.
 
-- Indien het over een heel **eenvoudig onderwerp** gaat, dan mag de **Beschrijving identiek aan de Naam** zijn. In andere gevallen mag er zeker wat toelichting bij de omschrijving. Voorbeelden: 
+-	RG 21/04/2026: Uitbreiding beschrijving: we breiden de beschrijving uit, te beginnen met de indicatoren die in dashboards en stories voorkomen. De beschrijving mag niet te lang zijn maar bij voorkeur ook niet gewoon de naam van de indicator, tenzij het heel duidelijk is. 
+- Voorbeelden: 
   -	[percentage] wijzigingen aan woningen 1983-1990 (t.o.v. woongelegenheden). Sinds 1983 wordt het wijzigingsjaar van woningen door het kadaster geregistreerd. Dit cijfer betreft enkel de wijzigingen die gekend zijn in het kadaster.
   - [percentage] sociale huurappartementen (appartementen inclusief studio's en duplexen) met 1 slaapkamer van de SHM (t.o.v. totaal appartementen SHM). Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor (bijvoorbeeld: 2017 = toestand 31/12/2016)
   - [percentage] oppervlakte van harde bestemmingen (t.o.v. totale bestemde oppervlakte). De harde bestemmingen zijn de bestemmingen voor wonen, recreatie, industrie (binnen de poorten), bepaalde categorieën van overig groen en bepaalde categorieën van overige bestemmingen.
