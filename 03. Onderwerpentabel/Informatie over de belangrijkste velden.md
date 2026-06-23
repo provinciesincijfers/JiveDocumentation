@@ -12,6 +12,7 @@ Dit wordt **automatisch toegekend**. Voeg dit dus niét toe aan je uploadfile.
   - v: aantallen
   - vs stroomdata
   - vp: verhoudingen
+  - vg: gemiddelden, enkel indien je ook absolute aantallen hebt die al ingelezen werden op 'vxxxx'. 
   - kubus: kubussen
 
 - Vervolgens gebruiken we een **viercijferige code**. De logica voor deze codes wordt bepaald in het _tabblad Domeinstructuur_ van het [opvolgingsbestand taakverdeling](https://vlbr.sharepoint.com/:x:/r/teams/DA-Interprovincialewerking/Gedeelde%20documenten/General/Opvolgingsbestand%20taakverdeling.xlsx?d=wfea5ede126b74772bf787350b4c385f5&csf=1&web=1&e=byjiyw) in Teams > D&A Interprovinciale Werking > Algemeen.
