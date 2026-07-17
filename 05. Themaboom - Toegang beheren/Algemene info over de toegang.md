@@ -7,11 +7,11 @@ Om keuzes met betrekking tot toegang te maken, moet je dit begrijpen:
 
 ## De OMGEVING: Testomgeving &amp; productieomgeving - Zeg niet publiceren van data, maar &quot;Live zetten van Data&quot;
 
-Op het moment dat je data in Swing Studio toevoegt, zijn deze onmiddellijk in Swing beschikbaar via Versie>testen (&quot;**de testomgeving**&quot;, [https://provincies.incijfers.be/admin/jive](https://provincies.incijfers.be/admin/jive)). Maar enkel indien je rechten op deze data hebt.
+Op het moment dat je data in Swing Studio toevoegt, zijn deze onmiddellijk in Swing beschikbaar via Versie>testen (&quot;**de testomgeving**&quot;, [https://provincies.incijfers.be/admin/viewer](https://provincies.incijfers.be/admin/viewer)). Maar enkel indien je rechten op deze data hebt.
  Je kan ze enkel _gemakkelijk_ raadplegen indien je ook het Thema kunt zien waar ze in staan.
  Eens je de Databank  **live zet**  (functie Publish), komt de data terecht in **de echte website, &quot;de productieomgeving&quot;.**
 
-:bulb: Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebruiker gaat uitzien, dan moet je **in de admin/jive omgeving ook nog eens uitloggen**. Immers blijf je anders ingelogt met je Beheerders-account, en die heeft normaal gezien steeds recht om alles te zien. Dit wordt wel eens vergeten, ook door de meest ervaren beheerders. Een andere mogelijkheid is om [**een incognito venster**](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
+:bulb: Als je aan het beheren bent, en wil testen hoe het er voor een gewone eindgebruiker gaat uitzien, dan moet je **in de admin/viewer omgeving ook nog eens uitloggen**. Immers blijf je anders ingelogt met je Beheerders-account, en die heeft normaal gezien steeds recht om alles te zien. Dit wordt wel eens vergeten, ook door de meest ervaren beheerders. Een andere mogelijkheid is om [**een incognito venster**](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
 
 ## De toegankelijkheid: Zeg niet publiceren van data, maar &quot;Extern zetten van Data&quot;
 
