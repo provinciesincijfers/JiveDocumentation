@@ -209,7 +209,7 @@ Je rapport is sowieso beschikbaar voor wie de link heeft. De bovenstaande zaken 
 
 _Elke keer een rapport van een specifiek gebied wordt opgevraagd, wordt dit in de cache van de Databank bewaard. De volgende krijgt het rapport dan veel sneller gezien. Deze cache wordt GEWIST elke keer dat de Databank wordt live gezet. Doe je een grote communicatiecampagne, zorg er dan voor dat de Databank NIET live gezet wordt tijdens die campagne._
 
-Je kan massaal PDF&#39;s genereren. Bij een grote release is dat nuttig om een momentopname te hebben van hoe dit rapport initieel gecommuniceerd werd. Zie [https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon\_genereer\_pdf](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_genereer_pdf) . Je ziet daar ook hoe je dit kunt gebruiken om een cache op te bouwen die het rapport sneller maakt. Voorlopig is dit enkel mogelijk voor rapporten uit de oude rapportenmodule.
+In tegenstelling tot de oude rapporten, kan je bij stories niet meer massaal PDF&#39;s genereren. Dit kan wel aangevraagd worden bij ABF. Contacteer Emilien hiervoor. 
 
 # Procedure voor het verwijderen van een rapport
 
