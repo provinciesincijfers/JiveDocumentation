@@ -117,7 +117,7 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 | wv\_eco\_anders | Anders | [anders@ietsanders.be](mailto:anders@ietsanders.be) | users | wv\_eco\_anders |
 
 - **Importeer deze Excel als metadata** in de [tabel Users in Studio](https://provincies.incijfers.be/Admin/Studio/Table?tableName=User).
-- Wacht tot de **Databank gepubliceerd** is (als het snel moet gaan kan dit ook via [https://provincies.incijfers.be/admin/jive](https://provincies.incijfers.be/admin/jive))
+- Wacht tot de **Databank gepubliceerd** is (als het snel moet gaan kan dit ook via [https://provincies.incijfers.be/admin/viewer](https://provincies.incijfers.be/admin/viewer))
 - Geef **deze instructies** aan de eindgebruikers:
   - Ga naar [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank)
   - Klik op het hamburger-menu, vervolgens Inloggen:
