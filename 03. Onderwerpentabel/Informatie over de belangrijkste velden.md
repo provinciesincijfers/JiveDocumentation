@@ -27,7 +27,7 @@ Deze code dient enkel voor het gemak van de beheerder. **Een code is normaal gez
 
 Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen provincie**, begin je met provwv, provli, … om dit aan te duiden.
 
-:bulb: Wil je rap meer weten over onderwerp v1101\_t, ga dan naar [https://provincies.incijfers.be/databank?var=v1101\_t](https://provincies.incijfers.be/databank?var=v1101_t) of [https://provincies.incijfers.be/admin/jive?var=v1101\_t](https://provincies.incijfers.be/admin/jive?var=v1101_t). 
+:bulb: Wil je snel meer weten over onderwerp v1101\_t, ga dan naar [https://provincies.incijfers.be/databank?var=v1101\_t](https://provincies.incijfers.be/databank?var=v1101_t) of [https://provincies.incijfers.be/admin/viewer?var=v1101\_t](https://provincies.incijfers.be/admin/jive?var=v1101_t). 
 
 [Meer info over magisch bevragen van de Databank](https://provincies.incijfers.be/databank?report=achter_de_schermen).
 
