@@ -28,7 +28,7 @@ Informatie over **toegangs- en gebruikersgroepen** staat [hier](https://github.c
 
 ❕ **Gebruikers zitten in een bepaalde gebruikersgroep/usergroup en die user groups hebben recht op bepaalde accesgroups/toegangsgroepen.**
 
-❕ **Test nieuwe producten in de Databank ook steeds als gast**. Zowel in /Databank als in /admin/jive kan je uitloggen. Een andere mogelijkheid is om [een incognito venster](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
+❕ **Test nieuwe producten in de Databank ook steeds als gast**. Zowel in /Databank als in /admin/viewer kan je uitloggen. Een andere mogelijkheid is om [een incognito venster](https://computertotaal.nl/artikelen/apps-software/zo-gebruik-je-de-privemodus-van-je-browser-68972/) te openen in je browser.
 
 **Check ook:**
 
