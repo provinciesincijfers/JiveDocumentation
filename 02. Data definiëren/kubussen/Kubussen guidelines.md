@@ -11,6 +11,8 @@ Ook een handleiding gezocht rond werken met gepercenteerde kubussen en het combi
 
 Bijvoorbeeld: 10 leeftijdsklassen * 2 geslachten * 4 burgerlijke staten = 80 combinaties. Stel dat je ook een "onbekend" geslacht hebt, dan wordt dit dus ```10*3*4```.
 
+**Grootte bestand:** De csv mag niet groter zijn dan 4 GB of meer dan 150M rijen bevatten. Het product van de dimensieniveau-items moet minder zijn dan 100K. ABF hanteert ook nog een maximale grootte van gecomprimeerde data voor kubussen, maar we hebben geen handvaten om hier op te controleren (dat is niet gewoon de bestandsgrootte van de uploadfile). Het is dus niet mogelijk om precies inzichtelijk te maken wat de verhouding is tussen het aantal (gevulde) cellen enerzijds en de uiteindelijk gecomprimeerde grootte anderszijds. De verhouding tussen het aantal gevulde cellen en de uiteindelijk gecomprimeerde grootte ligt ook niet vast, maar kan afhankelijk van de kubusstructuur heel erg verschillen. **Onze limiet werd verhoogd naar 15 MB.**
+
 ❕ Laat je uploadfile nakijken vooraleer je deze oplaadt. Maak de kubus aan in Swing via een uploadfile (zie onder).
 
 ❕ Bij kubussen op gemeenteniveau waar géén data voor Brussel beschikbaar is, lezen we -99999 waarden in (voor zover dit nodig is volgens [onze missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md) regels.
@@ -24,7 +26,7 @@ Je kunt ook een CSV inladen, dit schijnt beter te werken dan opgesplitste XLSX i
 
 In de toekomst zou dit ook moeten kunnen in JSON formaat. Data en de metadata zijn dan in één bestand op te nemen en kunnen ingelezen worden via Jive Services (Bulk API). 
 
-**Je kan een kubus volledig definiëren op basis van één excelbestand.** Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)
+**Je kan een kubus volledig definiëren op basis van één excelbestand.** Zie hiervoor deze pagina op het [Swing Support platform](https://helpdesk.swing.eu/support/solutions/articles/103000229987-hoe-ziet-een-importbestand-voor-swing-studio-eruit-). (als je deze pagina niet kunt zien, contacteer dan de Swing Helpdesk)
 
 **Om praktische redenen is het vaak handig om data en metadata afzonderlijk aan te bieden**. Immers ga je vaak stap voor stap de metadata inlezen. Bij elke geslaagde stap moet je het hele bestand opnieuw uploaden. Je wil niet tien keer zitten wachten eer alle data ook effectief is geupload!
 
@@ -49,7 +51,7 @@ Zorg voor een logische volgorde van de items in je dimensieniveau. Zorg er zeker
 ❕ ***Het datamodel moet exact hetzelfde zijn als je twee kubussen wilt combineren (=formulekubussen). M.a.w.: alle dimensieniveaus moeten hetzelfde zijn.***
 
 **De codes binnen een dimensie kan je best als code invullen, niet als de waarde zoals die bij de gebruiker moet verschijnen.** Hoe minder tekens, hoe beter. Vermijd speciale tekens en spaties, want die moeten door Swing vertaald worden naar een underscore. Dat duurt langer, en zorgt voor een verschil tussen je databestand en Jive. 
-Je maakt best eerst dimensies aan, alvorens de data zelf in te laden. Zie hiervoor deze pagina op het [Swing Support platform](https://support.swing.eu/document/Voorbeelden-van-importbestanden-voor-Swing-5).
+Je maakt best eerst dimensies aan, alvorens de data zelf in te laden. Zie hiervoor deze pagina op het [Swing Support platform](https://helpdesk.swing.eu/support/solutions/articles/103000229987-hoe-ziet-een-importbestand-voor-swing-studio-eruit-).
 
 Bij de **naamgeving van je dimensieniveaus** (de kolommen in in je inlaadbestand), gebruik je een naam als v1234_ding indien de dimensie heel specifiek is voor je thema, bijvoorbeeld "type winkel". Is je dimensieniveau iets dat binnen een breed thema gebruikt wordt, gebruik dan een code als 1200. Is het een allesomvattend concept, gebruik dan een betekenisvolle naam zoals "geslacht".
 
