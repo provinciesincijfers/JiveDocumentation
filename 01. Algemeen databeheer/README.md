@@ -7,6 +7,8 @@ In dit onderdeel vind je informatie over:
 
 - [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen%20en%20bronnen.md) voor uitdovende onderwerpen en bronnen.
 
+- [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Veranderende%20bronnamen.md) voor bronnen die van naam veranderen. 
+
 - [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Veranderende%20indicatorennamen.md) voor indicatoren die van naam veranderen.
 
 :grey_exclamation: Belangrijk hierbij:
