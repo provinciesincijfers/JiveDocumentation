@@ -14,7 +14,7 @@ Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kun
 
 Als je een thema herorganiseert proberen we daarom toch de bestaande onderwerpen te hergebruiken. Dit is deels een inhoudelijke keuze. Bijvoorbeeld is het wellicht geen goed idee als een onderwerp dat vroeger "mannen" bevatte nu "vrouwen" te laten bevatten. Maar wellicht is het wel OK om dit oude onderwerp "mannen" te behouden wanneer we vanaf nu de transseksuelen hieruit kunnen halen. Het gaat hier steeds om de Onderwerpcode, uiteraard moeten de omschrijvingen en andere metadata wel aangepast worden!
 
-Belangrijk: Wanneer we langs onze kant een periode van een onderwerp wissen (manueel of door alle data van die indicator te overschrijven), dan vloeit dat ook niet automatisch door. Geef Emilien daarom een seintje wanneer een periode verdwijnt, dan kan ABF deze periode ook wissen aan de kant van de centrumsteden.
+**Belangrijk: Wanneer we langs onze kant een periode van een onderwerp wissen (manueel of door alle data van die indicator te overschrijven), dan vloeit dat ook niet automatisch door. Geef Emilien daarom een seintje wanneer een periode verdwijnt, dan kan ABF deze periode ook wissen aan de kant van de centrumsteden.**
 
 ## Verwachtingen van  Swing Connector klanten
 
