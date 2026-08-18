@@ -20,7 +20,7 @@ Als je een thema herorganiseert proberen we daarom toch de bestaande onderwerpen
 
 Als je data ontvangt via de Swing Connector, doe dan regelmatig onderstaande checks.
 
-Uitdovende data wordt niet meer gecontroleerd en wordt doorgaans vervangen door nieuwe cijfers. Deze cijfers mogen dus niet verdeeld worden onder het label "provincies.incijfers.be". Connector-klanten moeten er zelf voor zorgen dat de UITDOVENDE onderwerpen en zeker UITGEDOOFDE onderwerpen zo snel mogelijk uit hun externe themaboom en dashboard verdwijnen.
+Uitdovende data wordt niet meer gecontroleerd en wordt doorgaans vervangen door nieuwe cijfers. Deze cijfers mogen dus niet verdeeld worden onder het label "provincies.incijfers.be". Connector-klanten moeten er zelf voor zorgen dat de UITDOVENDE onderwerpen en zeker UITGEDOOFDE onderwerpen zo snel mogelijk uit hun externe themaboom en dashboard verdwijnen. Dit is ook het geval voor INTERNE onderwerpen, deze mogen niet meer extern staan.
 Daarnaast kunnen zij ook onderwerpen met het label ARCHIEF tegenkomen. Het is minderd dringend deze te verwijderen, maar meestal zijn er betere alternatieven voor handen.
 
 
