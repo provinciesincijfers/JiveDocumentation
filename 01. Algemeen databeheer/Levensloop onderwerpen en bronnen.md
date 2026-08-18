@@ -55,7 +55,7 @@ Oude rapporten:
 Ga naar Studio>General>"Consistency checks" en maak het rapport “Indicators used in reports”. Filter in de “varname” op “uitdovend” of "uitgedoofd". Opgelet: je krijgt hier een overzicht van alle indicatoren die je rapport nodig heeft, zelfs als deze enkel als aggregatieonderwerp, drempelonderwerp of in een formule gebruikt worden.
 
 Stories:
-Ga naar Studio>General> Consistency checks en exporteerIndicators used in Stories en Indicators used in presenattions. 
+Ga naar Studio>General> Consistency checks en exporteerIndicators used in Stories en Indicators used in presentations. 
 
 4)  Uitdovende onderwerpen die door andere onderwerpen gebruikt worden
 - zorg dat er geen formules gebruik maken van deze onderwerpen (zoek in veld Formula)
