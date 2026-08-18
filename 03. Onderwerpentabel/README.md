@@ -2,6 +2,8 @@
 
 Informatie over de **belangrijkste velden** vind je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Informatie%20over%20de%20belangrijkste%20velden.md).
 
+Wil je gebruik maken van de functie threshold, dan kan je [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/threshold.md) terecht.
+
 Informatie over **tijdelijke onderwerpen** staat [hier](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/Tijdelijke%20onderwerpen.md). Omdat gebruikersonderwerpen niet langer bestaan, kan je hiervan gebruik maken om toch een &#39;ad hoc&#39;-onderwerp aan te maken.
 
 [Voorbeeldbestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/03.%20Onderwerpentabel/01%20vb%20beschrijvende%20info.xlsx)
