@@ -192,8 +192,9 @@ Dat betekent je rapport toevoegen aan:
 - ~~Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus).~~ ❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart aangezien rapporten uit de oude module verdwijnen.**
 - ~~Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.~~ Beslissing RG 21.04.26: We nemen rapporten niet meer op in Gebiedsinfo aangezien rapporten uit de oude module verdwijnen. 
 - ~~Themaboom: extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.~~ URL links werken niet meer in de nieuwe Viewer (vanaf 08.09.26)
+- ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David.~~ Update juni 2026: Het rapport kerncijfers is uitdovend.
+  
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David.~~ Update juni 2026: Het rapport kerncijfers is uitdovend. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search. Oude rapporten: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
