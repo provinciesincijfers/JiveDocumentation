@@ -32,14 +32,15 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
     - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?regionlevel=gemeente&regioncode=24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem). Klik [hier](https://provincies.incijfers.be/databank?workspace_guid=7a6e3340-43aa-413a-9e65-19eb78539cfa) om de gebiedscode op te vragen.
   - Voor communiceren van een **metadatafiche**.
     -   Open de metadatafiche en klik met je rechtermuisknop in deze fiche. Klik vervolgens op Inspecteren. 
-    -   In het venster dat geopend wordt, zal je ergens een URL zien staan die als volgt is opgebouwd:  https://provincies.incijfers.be//info/v...verwerkingsproces.pdf; bv.: https://provincies.incijfers.be//info/v1101_bevolking_Statbel.pdf
+    -   In het venster dat geopend wordt, zal je ergens een URL zien staan die als volgt is opgebouwd:  https://provincies.incijfers.be/viewer?var=varcode&showmetadatapopup=true bv.: https://provincies.incijfers.be/viewer?var=v1111a_tot_bevolking&showmetadatapopup=true. Let op: je gebruikt de indicatorcode om de metadatapopup op te roepen.
+    - 
 - **Verzamelen van gegevens over het succes van je communicatie:**
 
 **Voeg steeds aan het einde van je URL nog MINSTENS toe:**  ***mtm_campaign=naam_van_je_project.*** 
 Dit laat toe om te filteren hoeveel van onze bezoekers binnenkomen via projectcommunicatie, en welk project dan wel precies. Hoe beter je je naam kiest, hoe beter je kan rapporten. Als je bijvoorbeeld altijd begint met &quot;provant_&quot; , dan kan je eenvoudig rapporteren over alle campagnes van provant. Je kunt het effect van je campagne dan meten via Matomo.
 
 
-Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of Databank-presentaties. Bijvoorbeeld "toon een kaart met de totale bevolking per gemeente in het meest recent beschikbare jaar". Deze methodes worden uitgelegd in de documentatie [Meer uit provincies.incijfers.be halen](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) (achter_de_schermen)
+Je kan ook URLs opstellen die op basis van URL parameters verwijzen naar data of Databank-presentaties. Bijvoorbeeld "toon een kaart met de totale bevolking per gemeente in het meest recent beschikbare jaar". Deze methodes worden uitgelegd in de documentatie [Meer uit provincies.incijfers.be halen](https://provincies.incijfers.be/databank/report/?id=handleiding_abf) (achter_de_schermen)
 
 
 ### Matomo URLs opstellen
