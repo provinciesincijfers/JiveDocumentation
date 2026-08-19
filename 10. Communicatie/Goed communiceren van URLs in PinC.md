@@ -33,7 +33,7 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
   - Voor communiceren van een **metadatafiche**.
     -   Open de metadatafiche en klik met je rechtermuisknop in deze fiche. Klik vervolgens op Inspecteren. 
     -   In het venster dat geopend wordt, zal je ergens een URL zien staan die als volgt is opgebouwd:  https://provincies.incijfers.be/viewer?var=varcode&showmetadatapopup=true bv.: https://provincies.incijfers.be/viewer?var=v1111a_tot_bevolking&showmetadatapopup=true. Let op: je gebruikt de indicatorcode om de metadatapopup op te roepen.
-    - 
+      
 - **Verzamelen van gegevens over het succes van je communicatie:**
 
 **Voeg steeds aan het einde van je URL nog MINSTENS toe:**  ***mtm_campaign=naam_van_je_project.*** 
