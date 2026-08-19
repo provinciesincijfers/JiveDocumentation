@@ -122,13 +122,14 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
   - Ga naar [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank)
   - Klik op het hamburger-menu, vervolgens Inloggen:
  <img width="259" height="310" alt="image" src="https://github.com/user-attachments/assets/566d0b61-2aa9-444b-bf4e-552aacb5a3e2" />
-  - Probeer niet in te loggen, maar ga rechtsreeks naar ‘Nu registeren’.
+
+ - Probeer niet in te loggen, maar ga rechtsreeks naar ‘Nu registeren’.
  
 <img width="345" height="373" alt="image" src="https://github.com/user-attachments/assets/d21dc149-bc9b-4d48-82ed-90b97da0b366" />
 
  - Wanneer je je geregisteerd hebt, klik je op ‘Bent u uw wachtwoord vergeten?’. Vul daar je e-mailadres in en wacht op een mail.
  - Je krijgt verdere instructies per mail. In die mail staan je "naam" (username) en een tijdelijk paswoord.
-- Eens ingelogd, zie je de gewoonlijke Inhoud onder de map EXTERN. 
+ - Eens ingelogd, zie je de gewoonlijke Inhoud onder de map EXTERN. 
 
 
 
