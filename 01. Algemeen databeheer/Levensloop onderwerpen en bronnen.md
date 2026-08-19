@@ -14,13 +14,13 @@ Omdat de data in provincies.incijfers.be op vele plaatsen hergebruikt wordt, kun
 
 Als je een thema herorganiseert proberen we daarom toch de bestaande onderwerpen te hergebruiken. Dit is deels een inhoudelijke keuze. Bijvoorbeeld is het wellicht geen goed idee als een onderwerp dat vroeger "mannen" bevatte nu "vrouwen" te laten bevatten. Maar wellicht is het wel OK om dit oude onderwerp "mannen" te behouden wanneer we vanaf nu de transseksuelen hieruit kunnen halen. Het gaat hier steeds om de Onderwerpcode, uiteraard moeten de omschrijvingen en andere metadata wel aangepast worden!
 
-Belangrijk: Wanneer we langs onze kant een periode van een onderwerp wissen (manueel of door alle data van die indicator te overschrijven), dan vloeit dat ook niet automatisch door. Geef Emilien daarom een seintje wanneer een periode verdwijnt, dan kan ABF deze periode ook wissen aan de kant van de centrumsteden.
+**Belangrijk: Wanneer we langs onze kant een periode van een onderwerp wissen (manueel of door alle data van die indicator te overschrijven), dan vloeit dat ook niet automatisch door. Geef Emilien daarom een seintje wanneer een periode verdwijnt, dan kan ABF deze periode ook wissen aan de kant van de centrumsteden.**
 
 ## Verwachtingen van  Swing Connector klanten
 
 Als je data ontvangt via de Swing Connector, doe dan regelmatig onderstaande checks.
 
-Uitdovende data wordt niet meer gecontroleerd en wordt doorgaans vervangen door nieuwe cijfers. Deze cijfers mogen dus niet verdeeld worden onder het label "provincies.incijfers.be". Connector-klanten moeten er zelf voor zorgen dat de UITDOVENDE onderwerpen en zeker UITGEDOOFDE onderwerpen zo snel mogelijk uit hun externe themaboom en dashboard verdwijnen.
+Uitdovende data wordt niet meer gecontroleerd en wordt doorgaans vervangen door nieuwe cijfers. Deze cijfers mogen dus niet verdeeld worden onder het label "provincies.incijfers.be". Connector-klanten moeten er zelf voor zorgen dat de UITDOVENDE onderwerpen en zeker UITGEDOOFDE onderwerpen zo snel mogelijk uit hun externe themaboom en dashboard verdwijnen. Dit is ook het geval voor INTERNE onderwerpen, deze mogen niet meer extern staan.
 Daarnaast kunnen zij ook onderwerpen met het label ARCHIEF tegenkomen. Het is minderd dringend deze te verwijderen, maar meestal zijn er betere alternatieven voor handen.
 
 
@@ -34,8 +34,11 @@ Ga naar Studio > Viewer > Category tree en klik op de map van je publieke themab
 Optie 2:
 Ga naar je live Jive versie, en type in de zoekfunctie het woord “uitdovend” of "uitgedoofd"
 
+Optie 3: Ga naar Studio > General > Consistency check en exporteer 'Indicators used incategories'.
+
 2)	Uitdovende onderwerpen in Dashboard (Mosaic)
 
+Optie 1:
 * Ga naar Studio >Viewer > CategoryTree en zoek de map die gebruikt wordt voor Dashboard. Edit deze map en wijzig de CategoryCode en Name van die map. Op die manier creëer je een backup van je huidige indeling.
 * Ga naar Studio > Mosaic > Start en klik op de Sync knop. Zet zeker de functie "Add used indicators" aan.
 ![afbeelding](https://user-images.githubusercontent.com/10122639/223678624-5e55844d-34d6-4fb8-88fa-74079a1a7f09.png)
@@ -44,15 +47,22 @@ Ga naar je live Jive versie, en type in de zoekfunctie het woord “uitdovend”
 
 Opgelet: je hebt mogelijk meerdere Mosaics actief staan. Je moet deze operatie voor elk Mosaic afzonderlijk doen. Omgekeerd kunnen er binnen je specifiek Mosaic tegels of figuren verborgen staan. Deze gaan uiteraard wel in de resultaten opduiken.
 
-
+Optie 2: Ga naar Studio > General > Consistency check > Indicators used in Mosaic en Indicators used in presentations.
 
 3)	Uitdovende onderwerpen in Rapporten
 
+Oude rapporten:
 Ga naar Studio>General>"Consistency checks" en maak het rapport “Indicators used in reports”. Filter in de “varname” op “uitdovend” of "uitgedoofd". Opgelet: je krijgt hier een overzicht van alle indicatoren die je rapport nodig heeft, zelfs als deze enkel als aggregatieonderwerp, drempelonderwerp of in een formule gebruikt worden.
+
+Stories:
+Ga naar Studio>General> Consistency checks en exporteerIndicators used in Stories en Indicators used in presentations. 
 
 4)  Uitdovende onderwerpen die door andere onderwerpen gebruikt worden
 - zorg dat er geen formules gebruik maken van deze onderwerpen (zoek in veld Formula)
-- de onderwerpen kunnen eventueel ook als AggregateVar en TresholdVar gebruikt zijn 
+- de onderwerpen kunnen eventueel ook als AggregateVar en TresholdVar gebruikt zijn
+Hiervoor kan je het consistency rapport: Indicators usage overview gebruiken.
+
+**Het indicators usage overview rapport kan je ook gebruiken om na te gaan op welke plaats (dashboard, stories etc.) indicatoren gebruikt worden**
 
 
 
@@ -64,7 +74,7 @@ Onderwerpen, kubusdimensies/kubusdimensie-items en bronnen moeten uiteindelijk w
 1. Aanpassen EXTERNE themaboom
 2. Impact checken op INTERN, en dus ook Swing Connector en Dashboard (dit kan via General>Consistency checks>Indicators used in categories).
     * Voor Dashboard en Stories moet je de uitdovende verwijderen en eventueel vervangen + nieuwe presentaties aanmaken.
-    * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Emilien, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden
+    * Voor Connector: het onderwerp moet in de themaboom van de Connector blijven staan, anders stroomt de info dat dit uitdovend is niet automatisch door. Geef het ook door aan Emilien, zodat dit expliciet gecommuniceerd kan worden naar de Centrumsteden.
 3. De impact kan je sinds 29.10.25 nagaan via het consistency rapport: Indicators usage overview. De onderwerpen worden op alle mogelijke manieren gecheckt: voorbereide visualisaties, viewer reports, themaboom, mosaic, stories, conditionals in stories en mosaic, get-statements in stories en mosaic.
 
 ~~3. Impact checken op afgeleide onderwerpen. Dit kan door bij Data>Indicators te filteren in de kolom Formules op basis van de getroffen onderwerpen
@@ -86,6 +96,7 @@ Indien je het laatste onderwerp van een DataSource uitdooft, verwijder dan metee
 
 ### 3. Na zes maand wissen we alle data.
 
+Opgelet: dit hoef je zelf in principe niet te doen. Emilien doet perdiodieke checks op uitdovende indicatoren.
 Dat kan heel eenvoudig aan de hand van [deze excel](https://github.com/provinciesincijfers/JiveDocumentation/raw/master/01.%20Algemeen%20databeheer/upload_uitdovend_maken.xlsx) (tabblad "uitgedoofd"). Vul daar in kolom A en B enkel de INDICATOR CODE en de NAME in; de rest wordt voor jou ingevuld.
 
 Wat doet die:
@@ -104,7 +115,7 @@ Pas ook de namen aan naar "UITGEDOOFD (sinds NIEUWE DATUM) - oude onderwerpnaam"
 Eventueel kan er op lange termijn overgegaan worden tot het volledig wissen van de onderwerpen uit Swing. Pas nadat een onderwerp uitgedoofd is, kan het gedelete worden. Dit vereist dat wij het deleten en aan de beheerder van de Swing Connector laten weten dat een onderwerp gewist moet worden bij de Connector-klanten. 
 Als je een object uiteindelijk wil deleten, dan moet het eerst UITGEDOOFD zijn. Als de vorige stappen goed gebeurt zijn, kan dit geen problemen geven. De Swing Connector verwijdert nooit automatisch records. We moeten dit dus aan de ABF-Connectorbeheerder laten weten, zodat die deze stap manueel kan doorvoeren.
 
-Het onderwerp moet minstens zes maanden uitgedoofd zijn om gedelete te kunnen worden.
+Het onderwerp moet minstens zes maanden uitgedoofd zijn om gedelete te kunnen worden. Ook hier: dit hoef je niet zelf te doen. Emilien doet perdiodieke checks en verwijdert dan de indicatoren. Dit wordt dan ook naar de centrumsteden gecommuniceerd. 
 
 ### Label: ARCHIEF
 Soms zetten we een reeks die EXTERN stond op een gegeven moment INTERN, zonder dat ze daarom meteen uitdovend moeten worden. Dit is doorgaans het geval bij grote herorganisaties (voorbeeld NWWZ naar WZW). De oude cijfers zijn nog een tijd nuttig, en zijn op zich niet fout. Ze gaan gewoon nooit nog geupdate worden en verliezen dus langzaamaan hun relevantie.

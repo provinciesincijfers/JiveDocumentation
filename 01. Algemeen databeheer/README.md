@@ -5,7 +5,11 @@ In dit onderdeel vind je informatie over:
 
 - [Criteria](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Criteria%20voor%20opname%20in%20PinC.md) waaraan data moeten voldoen om in PinC opgenomen te worden.
 
+- Alles over [missing values](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Missing%20values.md).
+
 - [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen%20en%20bronnen.md) voor uitdovende onderwerpen en bronnen.
+
+- [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Veranderende%20bronnamen.md) voor bronnen die van naam veranderen. 
 
 - [De procedure](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Veranderende%20indicatorennamen.md) voor indicatoren die van naam veranderen.
 

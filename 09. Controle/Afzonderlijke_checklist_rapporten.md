@@ -17,5 +17,5 @@ Maak een issue aan dat je een nieuw rapport aan het maken / omzetten bent en zet
 * \[ ] Komen alle voetnoten en woorden uit het glossarium terug in de voetnoten en/of begrippenlijst achteraan het rapport?
 * \[ ] Staat het jaar van de laatste herwerking van het rapport juist (in het hoofdstuk: ‘Over dit rapport’)?
 * \[ ] Staat alles goed in de PDF? Vraag de PDF ook op voor de verschillende niveaus.
-* \[ ] Controleer het rapport als je niet ingelogd bent (pas dan in de URL ‘admin/jive’ aan naar ‘databank’). Let wel: je hebt dan waarschijnlijk niet de laatste versie van het rapport maar de versie vlak na publicatie op vrijdagavond.
+* \[ ] Controleer het rapport als je niet ingelogd bent (pas dan in de URL ‘admin/viewer’ aan naar ‘databank’). Let wel: je hebt dan waarschijnlijk niet de laatste versie van het rapport maar de versie vlak na publicatie op vrijdagavond.
 

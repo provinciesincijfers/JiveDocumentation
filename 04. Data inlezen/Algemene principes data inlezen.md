@@ -37,32 +37,21 @@ In principe is **het énkel nodig op het &quot;laagste gebiedsniveau**&quot;. Sw
 
 ## Op welke gebiedsniveaus inladen
 
-**Standaard lezen we in op niveau statsec** (statistische sectoren) **OF statsec2019** (statistische sectoren van voor de aanpassing 2019/2020) **OF gemeente2018** (de gemeenten van voor de fusie) **OF gemeente** (de huidige gemeenten zoals in voege sinds 2019). Voor niet-aggregeerbare data, beschikken we idealiter voor elk van de onderliggende gebieden over data:
-
-![image](https://user-images.githubusercontent.com/77432663/112810470-59637700-907b-11eb-8679-de865c6e05b4.png)
-
+**Standaard lezen we in op niveau statsec** (statistische sectoren) **OF statsec2024** (indeling statistische sectoren 2020 tot en met 2024) **OF gemeente2024** (de gemeenten van voor de fusie) **OF gemeente** (de huidige gemeenten zoals in voege sinds 2025).
 
 Een steeds bijgewerkte tabel van de gebiedsniveaus, vertrekkende vanaf statsec, vind je [hier](https://github.com/provinciesincijfers/gebiedsniveaus/tree/master/verzamelbestanden).
 
-***Gemeente2018 of gemeente?***
+***Gemeente20124 of gemeente?***
 
-We lezen nieuwe data *bij voorkeur in op &quot;gemeente&quot;*. Oude data mag gerust op &quot;gemeente2018&quot; blijven staan. Niet-aggregeerbare data die enkel op gemeente2018 beschikbaar was, hebben we manueel overgezet naar &quot;gemeente&quot;. Hierdoor zijn er gaten. Als je een upload doet voor dit soort data, kijk dan eens of je bron dit al berekend heeft!
+We lezen nieuwe data *bij voorkeur in op &quot;gemeente&quot;*. Oude data mag gerust op &quot;gemeente2024&quot; blijven staan. Niet-aggregeerbare data die enkel op gemeente2024 beschikbaar waren, hebben we manueel overgezet naar &quot;gemeente&quot;. Hierdoor zijn er gaten. Als je een upload doet voor dit soort data, kijk dan eens of je bron dit al berekend heeft!
 
-***Statsec2019 of statsec?***
+***Statsec2024 of statsec?***
 
-Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld**. Deze **moeten dus in statsec2019 worden ingelezen**.
+Wellicht ga je nog lang data tegenkomen die op de **oude statsec zijn verzameld**. Deze **moeten dus in statsec2024 worden ingelezen**.
 
-Gebruik je de OUDE statsec2019, dan gebruik je voor gebied onbekend van fusiegemeenten de OUDE niscode van de gemeente2018 + ZZZZ. Gebruik je de NIEUWE statsec, dan gebruik je voor gebied onbekende de NIEUWE niscode van de gemeente + ZZZZ
+Gebruik je de OUDE statsec2024, dan gebruik je voor gebied onbekend van fusiegemeenten de OUDE niscode van de gemeente2024 + ZZZZ. Gebruik je de NIEUWE statsec, dan gebruik je voor gebied onbekende de NIEUWE niscode van de gemeente + ZZZZ
 
-***❕ Opgelet: foute aggregaties vanaf gemeente2018 naar bovenliggende niveaus***
-
-***Update 10/09/24:*** Dit probleem werd opgelost.
-
-Swing aggregeert niet meer correct wanneer je gegevens op subgemeentelijk niveau en op gemeente2018 inleest, en niet op het niveau van gemeente. Voorheen verwachtten we dat de correcte aggregatie doorloopt vanaf gemeente2018 naar gemeente, provincie etc. maar dat gebeurt niet meer correct. Heb je dus data die niet volledig correct is op statsec (waardoor statsec niet automatisch mag aggregeren naar de bovenliggende niveaus) zorg dat je dan zeker ook gemeente inleest, en niet enkel gemeente2018, naast de andere subgemeentelijke niveaus. 
-zie [issue 411](https://github.com/provinciesincijfers/PinC-taakopvolging/issues/411).
-Voor Brusselse gemeenten gaat het ook fout wanneer je de data enkel inleest op statsec niveau. Op het niveau van de provincies krijg je wel waarden te zien voor Brussel, op het niveau van de gewesten niet meer. **Lees dus altijd je data zowel in op het niveau van de statistische sectoren als op het niveau van de gemeenten**.  
-
-De **tabel met enkel gewijzigde statsec/niscodes 2018-2019**] staat [hier](https://github.com/provinciesincijfers/gebiedsniveaus/blob/master/wijzigende\_gebiedsindelingen.md).
+De **tabel met enkel gewijzigde statsec/niscodes 2024**] staat [hier](https://github.com/provinciesincijfers/gebiedsniveaus/blob/master/wijzigende\_gebiedsindelingen.md).
 
 Voor **meer informatie over (de organisatie van) gebiedsniveaus**, kan je [hier](https://github.com/provinciesincijfers/gebiedsniveaus) terecht.
 

@@ -28,13 +28,9 @@ De **basisstructuur** is nu:
 
   - **Projectmappen**: werkmappen van lopende projecten
 
-  - **Rapporten**: overzicht van alle rapporten
-
   - **Swing Connectoren**: alle inkomende en uitgaande connectoren
 
-  - **Dashboards**: de mappen die gebruikt worden om het Dashboard te voeden
-
-- **TESTMAP**: enkel zichtbaar voor beheerders
+- **ADMIN ONLY**: enkel zichtbaar voor beheerders
 
 
 ## Policy op Provincies in Cijfer
@@ -52,7 +48,6 @@ Mensen met wie we projectmatig werken, zien de hele PRODUCTIE omgeving, dus de *
   - Alternatieve thematische indelingenn
   - Mappen voor Thematische werkgroepen (vb werking Klimaat)
   - De mappen voor SWING CONNECTOR
-  - Mappen om Dashboard te voeden
 
 ### Eén map ADMIN ONLY met tests en gevoelige data
 
@@ -63,10 +58,10 @@ Deze map is **enkel zichtbaar voor Swing Beheerders**. Swing-beheerders zijn doo
 ### Afspraken
 
 - **Onderwerpen beschikbaar op statsec** komen ook terug in de map **GEBIEDSINDELINGEN > beschikbaar vanaf statsec.**
-- **Enkel rommelen in TESTMAP**, ook INTERN een beetje opgekuist houden.
+- **Enkel rommelen in ADMIN ONLY**, ook INTERN een beetje opgekuist houden.
 - **Geen grote wijzigingen** zonder advies van Redactiegroep.
 - **Logica hoofdletters**: THEMA > Map naam > Submap naam > onderwerp naam.
-- **Max. 9 subthema's** per hoofdthema.
+- **Max. 9 subthema's** per hoofdthema. Zie dit [verslag](https://vlbr.sharepoint.com/:w:/r/teams/DA-Interprovincialewerking/Gedeelde%20documenten/Redactiegroep%20PinC/Themaboom/Verslag%20werksessie%20themaboom%2002122025.docx?d=w3e049a2fd9d04d02b043bc306ea6e64b&csf=1&web=1&e=5Iuh4J) waarin de meest recente afspraken vastgelegd werden. 
 - **Mapnamen verschijnen soms in de titel van presentaties**. Als dit verwarrend kan zijn, maak ze dan niet &quot;Visible in title&quot; in titel (menu Edit achter rechtermuisklik op map).
 - Het is toegestaan om indien relevant bepaalde onderwerpen/mappen te **dupliceren** op meerdere plaatsen. Meld dit even bij de Redactiegroep vooraleer je dit doet.
 - **Voor alle thema&#39;s waar dit relevant is, maken we percentages aan** (zie [Formule-onderwerpen](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/04.%20Data%20inlezen/Formule-onderwerpen.md)). **De aantallen zetten we steeds eerst in de themaboom, dan pas de percentages**.

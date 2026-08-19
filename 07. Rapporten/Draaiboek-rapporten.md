@@ -21,7 +21,7 @@ Dit hoofdstuk bevat de afspraken in verband met het proces om rapporten of Stori
 
 Maak zeker ook gebruik van volgende documenten:
 
-- Nieuwe &quot;Inhoudelijke Rapporten&quot; vertrekken van het PinC [sjabloon voor Stories](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) (ontwikkelomgeving). Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/dashboard/sjabloon/informatie-over-dit-sjabloon). Hier zit het sjabloon vervat waarvan je kan vertrekken. De afspraken vind je [hier](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0) terug (ontwikkelomgeving. Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/dashadmin/preview/sjabloon-afspraken/informatie-over-dit-sjabloon). Dit laatste document is een basis voor zowel wie het rapport opstelt, de eventuele werkgroep en de programmeur. 
+- Nieuwe &quot;Inhoudelijke Rapporten&quot; vertrekken van het PinC [sjabloon voor Stories](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) (ontwikkelomgeving). Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/admin/mosaic/sjabloon/informatie-over-dit-sjabloon). Hier zit het sjabloon vervat waarvan je kan vertrekken. De afspraken vind je [hier](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0) terug (ontwikkelomgeving. Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/admin/mosaic/sjabloon-afspraken/informatie-over-dit-sjabloon). Dit laatste document is een basis voor zowel wie het rapport opstelt, de eventuele werkgroep en de programmeur. Maak je een tabellenrapport ('Cijfers opgelijst')? Gebruik dan [dit sjabloon](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_cijfers_opgelijst/theme/cgdifhjygfrhhgju). Het rapport zelf vind je [hier](https://provincies.incijfers.be/admin/mosaic/sjabloon-cijfers-opgelijst/cijfers-x-opgelijst)
 - De taken rond Rapporten worden verzameld in : [https://github.com/provinciesincijfers/PinC-taakopvolging/issues](https://github.com/provinciesincijfers/PinC-taakopvolging/issues). Gelieve problemen met rapporten daar te melden.
 
 Het overzicht van wie verantwoordelijk is voor een specifiek rapport [vind je hier](https://github.com/provinciesincijfers/PinC-taakopvolging/#taakverdeling-rapporten). Kleine issues in rapporten mag je steeds zelf corrigeren, maar laat het dan wel even weten aan de verantwoordelijke voor het rapport. 
@@ -35,25 +35,22 @@ In rapporten op provincies.incijfers.be blijft de **focus op data**. **Het is ni
 - Cijfers
 - Praktisch geen tekst
 - Basisdata + indicatoren
-- Maximaal 4 gebiedsniveaus: standaard gemeente, arrondissement, provincie, vlaams gewest
-- Geen beperking op aantal pagina&#39;s (tabellen wel knippen op A4&#39;s)
+- Geen beperking op aantal pagina&#39;s
 - Bestemd voor: de echte cijfernerds
-- Vb. tabellenrapport Economie
+- Bv. Cijfers bevolking opgelijst
 
 **(Inhoudelijk) Rapport**
 
 - Minstens beschikbaar op niveau gemeente en provincie
-- Gebruiker kan één, twee of meer gemeenten/provincies kiezen
 - Tabellen, grafieken en kaarten
 - Basisdata + indicatoren + duiding
 - Geen beperking op aantal pagina&#39;s (maar hou rekening met performantie, die afhankelijk is van hoeveelheid benodigde data & interactieve grafieken)
 - Bestemd voor: de inhoudelijk specialist
-- Vb. Kansarmoede
-- Bevat doorklikken in inhoudstafel
+- Bv. Rapport armoede
 
 **Kerncijfers voor doelgroepen**
 
-- Vb. Buurtgerichte zorg, Eerstelijszones
+- Vb. Buurtgerichte zorg, Eerstelijnszones
 - Beschikbaar op niveau van een bepaalde werking
 - Technisch aanstuurbaar via gemeente
 
@@ -120,7 +117,7 @@ Communicatie tussen de verschillende betrokkenen is vanaf de beginfase van belan
 ## Voorbereidend werk
 
 - Start bij voorkeur pas aan het voorbereiden van een rapport wanneer de data (incl. beschrijvende info en metadata) opgeladen én gecontroleerd zijn in PinC.
-- Ga vooraf door de basisafspraken voor het opstellen van het rapport. Deze basisafspraken worden opgesteld in één handleiding [sjabloon afspraken](https://provincies.incijfers.be/dashadmin/preview/sjabloon-afspraken/informatie-over-dit-sjabloon) die zowel door de schrijver als de programmeur van het rapport wordt gebruikt. Het is belangrijk deze basisregels te volgen, aangezien wanneer hiervan afgeweken wordt, de problemen zich opstapelen bij het programmeren van het rapport.
+- Ga vooraf door de basisafspraken voor het opstellen van het rapport. Deze basisafspraken worden opgesteld in één handleiding [sjabloon afspraken](https://provincies.incijfers.be/admin/mosaic/sjabloon-afspraken/informatie-over-dit-sjabloon) die zowel door de schrijver als de programmeur van het rapport wordt gebruikt. Het is belangrijk deze basisregels te volgen, aangezien wanneer hiervan afgeweken wordt, de problemen zich opstapelen bij het programmeren van het rapport.
 - Voorzie in het geval van een projectwerkgroep voldoende duiding rond de werkwijze van het opmaken van rapporten, alsook rond de basisafspraken.
 - Analyseer beschikbare data in PinC. Maak een selectie. Zie je nog gaten, onderzoek dan of deze opgevuld kunnen worden. Als je nieuwe data toevoegt aan PinC in functie van een Rapport, dan moet deze in principe ook EXTERN gepubliceerd worden. Uitzondering: Dit is niet nodig wanneer er subtotalen in de themaboom staan en er een ad hoc totaal nodig is voor een rapport. Andere uitzonderingen vind je in het sjabloon bij onderdeel 3.4. De [gewoonlijke regels](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) gelden dan: eerst laten nakijken, dan pas publiceren; overleg met Redactiegroep vóór publicatie. De data wordt met grote voorkeur gepubliceerd vóór of tegelijk met het Rapport zelf.
 - Kies een concept: bij voorkeur wat onder hoofdstuk 2 als Rapport wordt benoemd. Steekkaarten maken we niet meer bij, wegens te veel overlappend met Dashboard; tabellenrapporten kunnen in principe aanvullend op inhoudelijke rapporten.
@@ -137,17 +134,17 @@ Communicatie tussen de verschillende betrokkenen is vanaf de beginfase van belan
 
 Werk het rapport verder uit in Word + verzamel de grafieken in swing
 
-- ARCHIEF Verzamel al je grafieken onder ÉÉN link! Op die manier kan dit in één keer omgezet worden naar code. Dat maakt het natuurlijk iets moeilijker om zeker te zijn dat de juiste grafiek op de juiste plaats komt. Eventueel kun je een afbeelding plakken om twijfel te voorkomen.
-- ARCHIEF Gebruik tijdens samenstellen grafieken in Swing Viewer zo weinig mogelijk layout. Deze wordt immers binnen het rapport ingesteld op basis van het rapportsjabloon. Met name het instellen van maximum van assen veroorzaakt **fouten**. Vind je de standaardlayout niet goed, geef dit dan aan aan de programmeur. Op die manier kan die de standaard laten aanpassen. Anders is enkel het nieuwe rapport mooi, en we willen dat alle rapporten mooi zijn.
+- ARCHIEF ~~Verzamel al je grafieken onder ÉÉN link! Op die manier kan dit in één keer omgezet worden naar code. Dat maakt het natuurlijk iets moeilijker om zeker te zijn dat de juiste grafiek op de juiste plaats komt. Eventueel kun je een afbeelding plakken om twijfel te voorkomen.~~
+- ARCHIEF ~~Gebruik tijdens samenstellen grafieken in Swing Viewer zo weinig mogelijk layout. Deze wordt immers binnen het rapport ingesteld op basis van het rapportsjabloon. Met name het instellen van maximum van assen veroorzaakt **fouten**. Vind je de standaardlayout niet goed, geef dit dan aan aan de programmeur. Op die manier kan die de standaard laten aanpassen. Anders is enkel het nieuwe rapport mooi, en we willen dat alle rapporten mooi zijn.~~
 - Geef in je tekst duidelijk aan welke tekst gebaseerd moet zijn op data. Gebruik bij voorkeur een code, bijvoorbeeld TODO Gemeente als je wil dat Gemeente vervangen wordt door de naam van de gemeente. Dit blijft dan eenvoudig doorzoekbaar in de code (tot het gefixed is natuurlijk!). Het gebruik van deze dynamische teksten maakt het leven van de programmeur exponentieel ingewikkelder, en zorgt dus voor een langere doorlooptijd en meer kans op fouten. Daarom doen we dit beperkt en vervalt de tekst in niet-standaard situaties.
-- Lees je werk goed na opdat het niet enkel geschreven is voor een rapport voor 1 gemeente, maar ook voor twee gemeenten of provincie(s). Dit heeft effect op zinsbouw (voorzie beide types van zinnen waar nodig) en (leesbaarheid van) grafieken (denk hier aan bij keuze van grafiektype). Elk rapport moet beschikbaar zijn voor één of meerdere gemeenten en één of meerdere provincies. Hierbij wordt een onderscheid gemaakt tussen twee gebieden en één of veel gebieden. Wanneer er twee gebieden zijn, dan worden deze met elkaar vergeleken.
+- Lees je werk goed na opdat het niet enkel geschreven is voor een rapport voor 1 gemeente, maar ook voor twee gemeenten of provincie(s). Dit heeft effect op zinsbouw (voorzie beide types van zinnen waar nodig) en (leesbaarheid van) grafieken (denk hier aan bij keuze van grafiektype). Elk rapport moet beschikbaar zijn voor één of twee gemeenten en één of twee provincies. Hierbij wordt een onderscheid gemaakt tussen één gebied en twee gebieden waarbij het tweede gebied als vergelijkingsgebied fungeert.
 - Lees je werk ook na op volgende aspecten:
   - Is het rapport logisch opgebouwd en begrijpelijk?
   - Horen alle onderwerpen thuis in het rapport en/of ontbreekt een relevant onderwerp?
   - Worden alle gebruikte termen voldoende toegelicht?
   - Moeten bepaalde resultaten extra toegelicht worden (vb. bij lage aantallen, knik in evolutiegrafiek...)?
   - Ga na of je nog verwijzingen naar andere Rapporten kunt invoegen in je tekst
-- Bespreek het resultaat samen met de programmeur (niet per mail, maar in een overleg). Hierbij worden eventuele problemen vroeg gedetecteerd en oplossingen hiervoor gezocht. Hierbij is onder andere ook al aandacht voor de verschillende manieren van opvragen van een rapport (meerdere gemeenten…). Eventuele afwijkingen van de basisafspraken kunnen samen met de programmeur worden voorgelegd aan de redactiegroep. (Herhaal deze stap indien nodig).
+- Bespreek het resultaat samen met de programmeur (niet per mail, maar in een overleg). Hierbij worden eventuele problemen vroeg gedetecteerd en oplossingen hiervoor gezocht. Hierbij is onder andere ook al aandacht voor de verschillende manieren van opvragen van een rapport (meerdere gemeenten, Brussel, …). Eventuele afwijkingen van de basisafspraken kunnen samen met de programmeur worden voorgelegd aan de redactiegroep. (Herhaal deze stap indien nodig).
 - Leg het uitgewerkte voorstel (in word, nog niet geprogrammeerd!) voor aan de verantwoordelijke collega's voor de eindcontrole en de opdrachtgever/werkgroep.
   - De verantwoordelijke collega's moeten niet noodzakelijk in de Redactiegroep zetelen.
   - Stel een duidelijke deadline op.
@@ -161,9 +158,10 @@ Werk het rapport verder uit in Word + verzamel de grafieken in swing
 
 ## Fase 2: programmeren
 
-Laat je begeleiden door Emilien en volg het [sjabloon vertrekproject](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) en het [sjabloon afspraken](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0).
+Laat je begeleiden door Emilien en volg het [sjabloon vertrekproject](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) en het [sjabloon afspraken](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0) of het [sjabloon voor cijfers opgelijst](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_cijfers_opgelijst/theme/cgdifhjygfrhhgju).
+
 Wanneer het geprogrameerd is:
-- Stuur je bijna afgewerkte rapport rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Stel een duidelijke deadline op. Om feedback te vragen, kan je werken met een link als deze:[https://provincies.incijfers.be/dashadmin/preview/sjabloon/informatie-over-dit-sjabloon](https://provincies.incijfers.be/dashadmin/preview/sjabloon/informatie-over-dit-sjabloon)] (in ADMIN, dus de aller recentste versie. Geef expliciet mee om het rapport te checken als je NIET ingelogd bent in Swing.
+- Stuur je bijna afgewerkte rapport rond naar de Redactiegroep en de opdrachtgever van zodra die wat presentabel is. Stel een duidelijke deadline op. Om feedback te vragen, kan je werken met een link als deze:[https://provincies.incijfers.be/admin/mosaic/sjabloon/informatie-over-dit-sjabloon](https://provincies.incijfers.be/admin/mosaic/sjabloon/informatie-over-dit-sjabloon)] (in ADMIN, dus de aller recentste versie.
 De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als commentaar op een export in PDF aangeleverd wordt. Opgelet: op dit moment is het NIET meer aanvaardbaar om feedback te geven over de inhoud zelf. Specifieke opmerkingen van de eindredacteur kunnen dan nog op de redactiegroep gebracht worden.
 
 - Wanneer je rapport klaar is, laat het (opnieuw) rondgaan ter info naar de redactiegroep en de werkgroep.
@@ -173,7 +171,7 @@ De eenvoudigste manier om gedetailleerde feedback te verwerken is indien dit als
 
 **Laten controleren**
 
-- Verzamel eventueel een laatste keer feedback via de Redactiegroep met een duidelijke deadline. Laat ook één iemand het rapport in detail nalezen, o.a. adhv [sjabloon](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20grondige%20controle%20databank.docx) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
+- Verzamel eventueel een laatste keer feedback via de Redactiegroep met een duidelijke deadline. Laat ook één iemand het rapport in detail nalezen, o.a. aan de hand van het [sjabloon afspraken](https://provincies.incijfers.be/admin/mosaic/preview/sjabloon-afspraken/informatie-over-dit-sjabloon) afspraken en onderstaande aspecten. Deze fase is bedoeld om kleine foutjes nog te corrigeren, niet meer om inhoud bij te sturen.
 
 Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je bestand. Controleer je werk verder adhv deze [Checklist](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Checklist%20controle.docx).
 
@@ -191,14 +189,15 @@ Dat betekent je rapport toevoegen aan:
 
 **Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/**
 
-- Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus). **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.**
-- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.
-- Themaboom: extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.
+- ~~Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus).~~ ❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart aangezien rapporten uit de oude module verdwijnen.**
+- ~~Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.~~ Beslissing RG 21.04.26: We nemen rapporten niet meer op in Gebiedsinfo aangezien rapporten uit de oude module verdwijnen. 
+- ~~Themaboom: extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.~~ URL links werken niet meer in de nieuwe Viewer (vanaf 08.09.26)
+- ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David.~~ Update juni 2026: Het rapport kerncijfers is uitdovend.
+  
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
-- Zichtbaar maken voor de Search. Oude rapporten: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
+- Zichtbaar maken voor de Search. Oude rapporten: In de rapportentabel het vinkje 'Exclude from search' afvinken. Stories: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
 - Zorg ervoor dat het rapport zichtbaar is zonder Login: Stories > Story settings > Authorization > Type login: No login.
 - Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
@@ -209,7 +208,7 @@ Je rapport is sowieso beschikbaar voor wie de link heeft. De bovenstaande zaken 
 
 _Elke keer een rapport van een specifiek gebied wordt opgevraagd, wordt dit in de cache van de Databank bewaard. De volgende krijgt het rapport dan veel sneller gezien. Deze cache wordt GEWIST elke keer dat de Databank wordt live gezet. Doe je een grote communicatiecampagne, zorg er dan voor dat de Databank NIET live gezet wordt tijdens die campagne._
 
-Je kan massaal PDF&#39;s genereren. Bij een grote release is dat nuttig om een momentopname te hebben van hoe dit rapport initieel gecommuniceerd werd. Zie [https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon\_genereer\_pdf](https://provincies.incijfers.be/admin/jive/Report/Edit/sjabloon_genereer_pdf) . Je ziet daar ook hoe je dit kunt gebruiken om een cache op te bouwen die het rapport sneller maakt. Voorlopig is dit enkel mogelijk voor rapporten uit de oude rapportenmodule.
+In tegenstelling tot de oude rapporten, kan je bij stories niet meer massaal PDF&#39;s genereren. Dit kan wel aangevraagd worden bij ABF. Contacteer Emilien hiervoor. 
 
 # Procedure voor het verwijderen van een rapport
 
@@ -225,10 +224,10 @@ Hiervoor volgen we dit stappenplan:
 
 **De verantwoordelijke kijkt na waar het rapport gebruikt wordt en past zoveel mogelijk zelf aan**
 
-- **Kiezen op kaart** (report kiezen_op_kaart). Verwijderen van het geschikte gebiedsniveau. **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.**
-- **Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.
-- **Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.
-- **Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;)
+- ~~Kiezen op kaart~~ ~~(reportcode: kiezen\_op\_kaart.~~ Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.
+- ~~**Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.~~ Wordt niet meer gebruikt
+- ~~**Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.~~ Rapport is uitdovend
+- ~~**Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;)~~ Themaboom kan geen URL links meer bevatten.
 - **Dashboard:** bij het relevante thema én in het overzicht van rapporten.
 - Controleer of je rapport in de **andere rapporten** dient verwijderd te worden. Gebruik hiervoor de searchtag &#39;echt-productie&#39;.
 
@@ -242,11 +241,12 @@ Wordt de inhoud van het rapport herzien, volg dan de stappen in:
 
 Je rapport toevoegen aan (en het oude verwijderen):
 
-- Kiezen op kaart (reportcode: kiezen\_op\_kaart. **❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.**
-- Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. Ben je niet zeker waar je het moet toevoegen, vraag het dan aan Emilien. 
-- Themaboom:extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.
+- ~~Kiezen op kaart~~ ~~(reportcode: kiezen\_op\_kaart.~~ ❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.
+- ~~Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. Ben je niet zeker waar je het moet toevoegen, vraag het dan aan Emilien.~~ Gebiedsinfo wordt niet meer gebruikt.
+- ~~Themaboom:extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.~~ URL links kunnen niet meer in nieuwe Viewer.
+- ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Contacteer Stefan of David hiervoor.~~ Kerncijfers is uitdovend
+
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Contacteer Stefan of David hiervoor. 
 - Controleer of je rapport in de andere rapporten dient vermeld te worden
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
@@ -285,5 +285,5 @@ ARCHIEF Good practice:
 - Exporteer het 'oude' rapport
 - Open de export van je ontwikkelrapport (bv. wonen_ontwikkel) en pas daar de unieke code aan naar de code van het 'oude' rapport (bv. rapport_wonen)
 - Doe het omgekeerde met de export van bv. rapport_wonen
-- Importeer beide rapporten terug in Swing, en ze zullen de inhoud op de gewenste manier overschrijden 
+- Importeer beide rapporten terug in Swing, en ze zullen de inhoud op de gewenste manier overschrijden
 

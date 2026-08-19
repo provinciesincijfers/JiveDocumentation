@@ -12,23 +12,24 @@ Dit wordt **automatisch toegekend**. Voeg dit dus niét toe aan je uploadfile.
   - v: aantallen
   - vs stroomdata
   - vp: verhoudingen
+  - vg: gemiddelden, enkel indien je ook absolute aantallen hebt die al ingelezen werden op 'vxxxx'. 
   - kubus: kubussen
 
 - Vervolgens gebruiken we een **viercijferige code**. De logica voor deze codes wordt bepaald in het _tabblad Domeinstructuur_ van het [opvolgingsbestand taakverdeling](https://vlbr.sharepoint.com/:x:/r/teams/DA-Interprovincialewerking/Gedeelde%20documenten/General/Opvolgingsbestand%20taakverdeling.xlsx?d=wfea5ede126b74772bf787350b4c385f5&csf=1&web=1&e=byjiyw) in Teams > D&A Interprovinciale Werking > Algemeen.
 Deze code dient enkel voor het gemak van de beheerder. **Een code is normaal gezien slechts voor één bron/upload-proces van toepassing**. Voor complexe thema&#39;s uit één verwerking, kan je er meerdere gebruiken. Bijvoorbeeld vind je met &quot;1116&quot; alle data rond herkomst op basis van rijksregister.
 
-❕De code mag niet langer zijn dan 46 characters. In principe is het maximale aantal characters 50. Maar alle data die bij ons extern staan, gaan via de connector ook naar de centrumsteden. Tijdens dit proces wordt er voor de indicatorcode het voorvoegsel 'dna_' geplaatst.  
+❕**De code mag niet langer zijn dan 46 karakters.** In principe is het maximale aantal karakters 50. Maar alle data die bij ons extern staan, gaan via de connector ook naar de centrumsteden. Tijdens dit proces wordt er voor de indicatorcode het voorvoegsel 'dna_' geplaatst.  
 
 - Hierna volgt soms een **extra verduidelijking** (voorbeeld &quot;a&quot; voor rijksregister inclusief wachtregister), maar meestal direct een underscore. Na de underscore volgt een beschrijving van het onderwerp. Ook deze dient enkel voor het gemak van de beheerder. Als 1116 voor herkomst staat, hoef je dus niet meer &quot;herk&quot; op te nemen in de onderwerpcode.
 
-❕**Een onderwerpcode, eens aangemaakt en in gebruik genomen is DEFINITIEF en ONWIJZIGBAAR**. Indien we het gebruik ervan stopzetten, gelieve de procedure voor [**&quot;Uitdovende onderwerpen**](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen.md) **&quot;** te volgen. Ga bij het beheren **ook geen onderwerpen deleten en opnieuw aanmaken**. Daarbij verlies je de relatie met Themaboom, Toegangsgroepen en mogelijk nog meer.
+❕**Een onderwerpcode, eens aangemaakt en in gebruik genomen is DEFINITIEF en ONWIJZIGBAAR**. Indien we het gebruik ervan stopzetten, gelieve de procedure voor [**&quot;Uitdovende onderwerpen**](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/01.%20Algemeen%20databeheer/Levensloop%20onderwerpen%20en%20bronnen.md) **&quot;** te volgen. Ga bij het beheren **ook geen onderwerpen deleten en opnieuw aanmaken**. Daarbij verlies je de relatie met Themaboom, Toegangsgroepen en mogelijk nog meer.
 **Indien de inhoud van een Onderwerp radicaal zou wijzigen** (bv. vanaf nu betekent &quot;werkloosheid bij ouderen&quot; 55+ ipv 50+), **maak dan een nieuw onderwerp aan**. Je weet immers niet in welke context dit Onderwerp gebruikt wordt.
 
 Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen provincie**, begin je met provwv, provli, … om dit aan te duiden.
 
-:bulb: Wil je rap meer weten over onderwerp v1101\_t, ga dan naar [https://provincies.incijfers.be/databank?var=v1101\_t](https://provincies.incijfers.be/databank?var=v1101_t) of [https://provincies.incijfers.be/admin/jive?var=v1101\_t](https://provincies.incijfers.be/admin/jive?var=v1101_t). 
+:bulb: Wil je snel meer weten over onderwerp v1101\_t, ga dan naar [https://provincies.incijfers.be/viewer?var=v1101\_t](https://provincies.incijfers.be/databank?var=v1101_t) of [https://provincies.incijfers.be/admin/viewer?var=v1101\_t](https://provincies.incijfers.be/admin/jive?var=v1101_t). 
 
-[Meer info over magisch bevragen van de Databank](https://provincies.incijfers.be/databank?report=achter_de_schermen).
+[Meer info over magisch bevragen van de Databank](https://provincies.incijfers.be/databank?report=handleiding_abf).
 
 
 
@@ -120,7 +121,7 @@ Dus bijvoorbeeld: *ENQUETE [percentage] Omschrijving*
 
 ## Bron
 
-Komt uit **Data > Bronnen** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;. provincies.incijfers.be mag ook vervangen worden door 'PinC' als er niet genoeg plaats is. Als er genoeg plaats is, mag het voluit geschreven worden.
+Komt uit **Data > Data sources** in PinC. **Gebruik zo veel mogelijk bestaande bronnen**. Als je een onderwerpentabel importeert, wordt een eenheid gebruikt uit die tabel, of bij aangemaakt in die tabel. Conventie voor Bron naam is &quot;Naam van de bron | provincies.incijfers.be&quot;. provincies.incijfers.be mag ook vervangen worden door 'PinC' als er niet genoeg plaats is. Als er genoeg plaats is, mag het voluit geschreven worden.
 
 Bij **percentages** geven we **enkel de Bron van de teller** mee.
 
@@ -139,7 +140,7 @@ De teller kan bestaan uit verschillende (kubus)onderwerpen. De noemer moet je oo
 
 ## Datatype
 
-- Standaard Numeric, voor aantallen. Vaak ook Percentage of Gemiddelde.
+- Standaard Numeric, voor aantallen. Vaak ook Percentage of Mean.
 - Gebruik voor **Gemiddelde** "Mean". Dit wordt met ![image](https://user-images.githubusercontent.com/77432663/112615199-7a7d5b00-8e22-11eb-8ca4-9cb35e136c03.png)
 ![](RackMultipart20210325-4-54854n_html_4d1101d1c7397c63.png) aangeduid in themaboom.
 - We gebruiken datatype **Percentage (sum)** op twee manieren:
@@ -172,7 +173,7 @@ Meer informatie over de drempelwaarde/threshold vind je [hier](https://github.co
     - Maak een [Url link](https://provincies.incijfers.be/admin/studio/Table?tableName=UrlLink) met als tekst "⚠ Opgelet met jaartallen! Lees meer over Naam Bron". Als URL kies je de metadatafiche. Zet deze URL als eerste object in de CategeryTree in de map die de data van deze bron bundelt.
     - Aan de **Description** van de Indicator voegen we aan het einde toe (na een line-break): "_Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor (bijvoorbeeld: 2023 = toestand 31/12/2022)._"
     - Aan de **Footnote** van de Indicator voegen we sinds 20/02/2025 niets meer toe. Enkel aan de **voetnoot van de bron**: "_Opgelet: Het aangegeven jaartal staat voor de toestand van 31/12 van het jaar daarvoor. Waar wij dus de cijfers harmoniseren om 31/12/2022 als 2023 te tonen, spreekt de oorspronkelijke bron wellicht van 2022._"
-    - Bij gebruik in Dashboard: voeg een tile toe die waarschuwt dat bij tiles van deze bron mogelijk een ander jaartal gebruikt wordt dan bij de bron zelf.
+    - Bij gebruik in Dashboard / Stories: voeg een tile toe die waarschuwt dat bij tiles van deze bron mogelijk een ander jaartal gebruikt wordt dan bij de bron zelf. Je kan dit ook in het Meer info uitklapvenster opnemen.
 - In het de [toelichting bij het Sjabloon Metadata](https://teams.microsoft.com/_?tenantId=abeeed50-ea7b-4008-b0e5-d27f624bf85e#/files/Uploadfiles%20PinC?threadId=19:51c8556c2f0c4552b8acc0b7c93024b7@thread.tacv2&ctx=channel&rootfolder=%252Fteams%252FDA-Interprovincialewerking%252FGedeelde%2520documenten%252FUploadfiles%2520PinC%252F00%2520Metadatafiches%2520PinC%252FSjabloon%2520metadata) dat je kan terugvinden binnen Teams > D&A Interprovinciale werking > Uploadfiles PinC > 00 Metadatafiches PinC, vind je de standaardformuleringen om de periode to omschrijven.
 - Onderwerpen die een **datatype &#39;percentage&#39; of &#39;mean&#39;** hebben, krijgen een periodetype &#39;stock&#39; (zie [#133](https://github.com/provinciesincijfers/PinC-taakopvolging/issues/133)).
 

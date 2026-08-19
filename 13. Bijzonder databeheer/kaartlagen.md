@@ -3,7 +3,7 @@
 Swing kent enkele types kaartlagen:
 - een overlay kaart op basis van gewone data (denk kleurenkaart, bol in kaart, etc.). Hier moet je niets speciaals voor doen.
 - Locaties (ook gekend als puntenlaag of objecten). 
-Deze beheer je via de Geo levels in Swing. [Handleiding van ABF](https://swing.eu/handleiding/Objectenmodule/index.html). 
+Deze beheer je via de Geo levels in Swing.
 Dit is best interessant, omdat je vanuit je objecten rechtsreeks verschillende parameters kunt optellen naar statsec en zo verder.
 Je kan bovendien een object aanklikbaar maken en daar dan een mini rapportje over opvragen, waar je bijvoorbeeld eigenschappen van het object en zijn omgeving kunt combineren.
 - Achtergrondkaarten. Daar gaat de rest van dit document over.
@@ -11,9 +11,7 @@ Je kan bovendien een object aanklikbaar maken en daar dan een mini rapportje ove
 ## Achtergrondkaarten
 
 Standaard werken we met een basiskaart op basis van OpenStreetMap. Je kunt ook altijd het GRB activeren.
-Maar we hebben ook inhoudelijke kaarten, zoals bijvoorbeeld de overstromingsgebieden. Dat is bijzonder leuk om interessante combinaties te maken, zoals [een overlay van huishoudens in overstromingsgebied vs de overstromingsgebieden zelf](https://provincies.incijfers.be/databank?workspace_guid=90193642-c754-484a-99c9-e16da021cce1).
-
-![afbeelding](https://user-images.githubusercontent.com/10122639/125598508-3656e806-618f-417a-a377-6f5b7574ce14.png)
+Maar we hebben ook inhoudelijke kaarten, zoals bijvoorbeeld de overstromingsgebieden. Dat is bijzonder leuk om interessante combinaties te maken.
 
 ### Toevoegen van lagen aan Studio
 
