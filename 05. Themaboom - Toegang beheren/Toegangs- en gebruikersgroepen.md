@@ -7,9 +7,9 @@ Bekijk zeker ook [dit](https://github.com/provinciesincijfers/JiveDocumentation/
 
 ## Toegangsgroepen &amp; inloggen
 
-**Iedereen die de Databank (Swing Viewer) gebruikt zit per definitie in een Toegangsgroep/Accessgroup**. Ook mensen die gewoon je website bezoeken en verder niets doen. In **Versie > Instellingen** wordt bepaald welke Gebruiker gebruikt wordt om de rechten van buitenstaanders toe te kennen. Je kunt ervoor kiezen om heel ver te gaan in de organisatie van gebruikers in gebruikersgroepen en toegangsgroepen, of je kan hier niet of nauwelijks in differentiëren.
+**Iedereen die de Databank (Swing Viewer) gebruikt zit per definitie in een Toegangsgroep/Accessgroup**. Ook mensen die gewoon je website bezoeken en verder niets doen. Je kunt ervoor kiezen om heel ver te gaan in de organisatie van gebruikers in gebruikersgroepen en toegangsgroepen, of je kan hier niet of nauwelijks in differentiëren.
 
-**Alle gebruikers, behalve de &quot;gastgebruiker&quot; moeten inloggen**. Die inlog kan je zowel in de gepubliceerde omgeving als in de nog-niet-gepubliceerde omgeving gebruiken (zie verder). Alle gebruikers kunnen in beide omgevingen inloggen. Swing beheerders kunnen hun login in beide omgevingen gebruiken, maar ook nog eens in de Studio. Zij hebben als Gebruikerstype (via de tabel Gebruikersgroepen) het type Beheerder meegekregen. **Elke account waarmee je in Studio kunt inloggen, kan je dus ook in je live website (de productieomgeving) gebruiken**. In theorie zou je een Beheerder echter op basis van Toegangsgroepen de toegang tot de data zelf kunnen ontzeggen.
+**Alle gebruikers, behalve de &quot;gastgebruiker&quot; moeten inloggen**. Die login kan je zowel in de gepubliceerde omgeving als in de nog-niet-gepubliceerde omgeving gebruiken (zie verder). Alle gebruikers kunnen in beide omgevingen inloggen. Swing beheerders kunnen hun login in beide omgevingen gebruiken, maar ook nog eens in de Studio. Zij hebben als  Gebruikerstype (via de tabel User groups) het type Beheerder meegekregen. **Elke account waarmee je in Studio kunt inloggen, kan je dus ook in je live website (de productieomgeving) gebruiken**. In theorie zou je een Beheerder echter op basis van Toegangsgroepen de toegang tot de data zelf kunnen ontzeggen.
 
 **Alle data waar je rechten op hebt, is raadpleegbaar. De Themaboom dient enkel om dit** ***gemakkelijk*** **te maken voor mensen**. Maar als je bijvoorbeeld de onderwerpcode kent, dan kan je ze sowieso raadplegen door `?var=onderwerpcode` toe te voegen aan de URL van je website.
 
@@ -22,7 +22,7 @@ De zichtbaarheid van de mappen wordt georganiseerd via de themaboom. Om dit moge
 - **extern\_gembelg** : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
 - **system**: dit moet STEEDS op &quot;alles tonen&quot; voor alles blijven staan. Anders kan je zelfs als admin niet meer alles zien!
 - **intern**: bevat op dit moment ook gewoon alles
-- **open_data**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) beschikbaar moet zijn.
+- **open_data groepen**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) beschikbaar moet zijn.
 
 We gebruiken de Access Groups om **enkele zaken voor niet-ingelogde eindgebruikers af te schermen**. Met name:
 
@@ -113,19 +113,23 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 
 | **Login name** | **Username** | **MailAddress** | **UserGroup** | **Usercode** |
 | --- | --- | --- | --- | --- |
-| an\_eco\_iemand | Iemand | [iemand@iets.be](mailto:iemand@iets.be) | users | an\_eco\_iemand |
-| wv\_eco\_anders | Anders | [anders@ietsanders.be](mailto:anders@ietsanders.be) | users | wv\_eco\_anders |
+| an\_eco\_iemand | [iemand@iets.be](mailto:iemand@iets.be) | [iemand@iets.be](mailto:iemand@iets.be) | users | an\_eco\_iemand |
+| wv\_eco\_anders |  [anders@ietsanders.be](mailto:anders@ietsanders.be) | [anders@ietsanders.be](mailto:anders@ietsanders.be) | users | wv\_eco\_anders |
 
 - **Importeer deze Excel als metadata** in de [tabel Users in Studio](https://provincies.incijfers.be/Admin/Studio/Table?tableName=User).
 - Wacht tot de **Databank gepubliceerd** is (als het snel moet gaan kan dit ook via [https://provincies.incijfers.be/admin/viewer](https://provincies.incijfers.be/admin/viewer))
 - Geef **deze instructies** aan de eindgebruikers:
   - Ga naar [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank)
   - Klik op het hamburger-menu, vervolgens Inloggen:
+ <img width="259" height="310" alt="image" src="https://github.com/user-attachments/assets/566d0b61-2aa9-444b-bf4e-552aacb5a3e2" />
+  - Probeer niet in te loggen, maar ga rechtsreeks naar ‘Nu registeren’.
+ 
+<img width="345" height="373" alt="image" src="https://github.com/user-attachments/assets/d21dc149-bc9b-4d48-82ed-90b97da0b366" />
 
-  ![image](https://user-images.githubusercontent.com/77432663/113412718-4c1af500-93b9-11eb-8c77-ee01282eb15d.png)
+ - Wanneer je je geregisteerd hebt, klik je op ‘Bent u uw wachtwoord vergeten?’. Vul daar je e-mailadres in en wacht op een mail.
+ - Je krijgt verdere instructies per mail. In die mail staan je "naam" (username) en een tijdelijk paswoord.
+- Eens ingelogd, zie je de gewoonlijke Inhoud onder de map EXTERN. 
 
-  - Probeer niet in te loggen, maar ga rechtsreeks naar &quot;Wachtwoord vergeten&quot;. Vul daar je e-mail adres in en wacht op een mail.
-  - Je krijgt verdere instructies per mail. In die mail staan je &quot;naam&quot; (username) en een tijdelijk paswoord.
-  - Eens ingelogd, zie je de gewoonlijke Inhoud onder de map EXTERN. Ga naar de map INTERN, en zoek daar de map van je Project.
+
 
 
