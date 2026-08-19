@@ -21,7 +21,7 @@ Dit hoofdstuk bevat de afspraken in verband met het proces om rapporten of Stori
 
 Maak zeker ook gebruik van volgende documenten:
 
-- Nieuwe &quot;Inhoudelijke Rapporten&quot; vertrekken van het PinC [sjabloon voor Stories](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) (ontwikkelomgeving). Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/dashboard/sjabloon/informatie-over-dit-sjabloon). Hier zit het sjabloon vervat waarvan je kan vertrekken. De afspraken vind je [hier](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0) terug (ontwikkelomgeving. Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/dashadmin/preview/sjabloon-afspraken/informatie-over-dit-sjabloon). Dit laatste document is een basis voor zowel wie het rapport opstelt, de eventuele werkgroep en de programmeur. 
+- Nieuwe &quot;Inhoudelijke Rapporten&quot; vertrekken van het PinC [sjabloon voor Stories](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon/theme/cgdif3jehajfnhd0) (ontwikkelomgeving). Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/dashboard/sjabloon/informatie-over-dit-sjabloon). Hier zit het sjabloon vervat waarvan je kan vertrekken. De afspraken vind je [hier](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_afspraken/theme/cgdif3jehajfnhd0) terug (ontwikkelomgeving. Voor het rapport zelf, klik [hier](https://provincies.incijfers.be/dashadmin/preview/sjabloon-afspraken/informatie-over-dit-sjabloon). Dit laatste document is een basis voor zowel wie het rapport opstelt, de eventuele werkgroep en de programmeur. Maak je een tabellenrapport ('Cijfers opgelijst')? Gebruik dan [dit sjabloon](https://provincies.incijfers.be/admin/storiesstudio/stories/sjabloon_cijfers_opgelijst/theme/cgdifhjygfrhhgju). Het rapport zelf vind je [hier](https://provincies.incijfers.be/admin/mosaic/sjabloon-cijfers-opgelijst/cijfers-x-opgelijst)
 - De taken rond Rapporten worden verzameld in : [https://github.com/provinciesincijfers/PinC-taakopvolging/issues](https://github.com/provinciesincijfers/PinC-taakopvolging/issues). Gelieve problemen met rapporten daar te melden.
 
 Het overzicht van wie verantwoordelijk is voor een specifiek rapport [vind je hier](https://github.com/provinciesincijfers/PinC-taakopvolging/#taakverdeling-rapporten). Kleine issues in rapporten mag je steeds zelf corrigeren, maar laat het dan wel even weten aan de verantwoordelijke voor het rapport. 
@@ -35,25 +35,22 @@ In rapporten op provincies.incijfers.be blijft de **focus op data**. **Het is ni
 - Cijfers
 - Praktisch geen tekst
 - Basisdata + indicatoren
-- Maximaal 4 gebiedsniveaus: standaard gemeente, arrondissement, provincie, vlaams gewest
-- Geen beperking op aantal pagina&#39;s (tabellen wel knippen op A4&#39;s)
+- Geen beperking op aantal pagina&#39;s
 - Bestemd voor: de echte cijfernerds
-- Vb. tabellenrapport Economie
+- Bv. Cijfers bevolking opgelijst
 
 **(Inhoudelijk) Rapport**
 
 - Minstens beschikbaar op niveau gemeente en provincie
-- Gebruiker kan één, twee of meer gemeenten/provincies kiezen
 - Tabellen, grafieken en kaarten
 - Basisdata + indicatoren + duiding
 - Geen beperking op aantal pagina&#39;s (maar hou rekening met performantie, die afhankelijk is van hoeveelheid benodigde data & interactieve grafieken)
 - Bestemd voor: de inhoudelijk specialist
-- Vb. Kansarmoede
-- Bevat doorklikken in inhoudstafel
+- Bv. Rapport armoede
 
 **Kerncijfers voor doelgroepen**
 
-- Vb. Buurtgerichte zorg, Eerstelijszones
+- Vb. Buurtgerichte zorg, Eerstelijnszones
 - Beschikbaar op niveau van een bepaalde werking
 - Technisch aanstuurbaar via gemeente
 
@@ -120,7 +117,7 @@ Communicatie tussen de verschillende betrokkenen is vanaf de beginfase van belan
 ## Voorbereidend werk
 
 - Start bij voorkeur pas aan het voorbereiden van een rapport wanneer de data (incl. beschrijvende info en metadata) opgeladen én gecontroleerd zijn in PinC.
-- Ga vooraf door de basisafspraken voor het opstellen van het rapport. Deze basisafspraken worden opgesteld in één handleiding [sjabloon afspraken](https://provincies.incijfers.be/dashadmin/preview/sjabloon-afspraken/informatie-over-dit-sjabloon) die zowel door de schrijver als de programmeur van het rapport wordt gebruikt. Het is belangrijk deze basisregels te volgen, aangezien wanneer hiervan afgeweken wordt, de problemen zich opstapelen bij het programmeren van het rapport.
+- Ga vooraf door de basisafspraken voor het opstellen van het rapport. Deze basisafspraken worden opgesteld in één handleiding [sjabloon afspraken](https://provincies.incijfers.be/mosaic/sjabloon-afspraken/informatie-over-dit-sjabloon) die zowel door de schrijver als de programmeur van het rapport wordt gebruikt. Het is belangrijk deze basisregels te volgen, aangezien wanneer hiervan afgeweken wordt, de problemen zich opstapelen bij het programmeren van het rapport.
 - Voorzie in het geval van een projectwerkgroep voldoende duiding rond de werkwijze van het opmaken van rapporten, alsook rond de basisafspraken.
 - Analyseer beschikbare data in PinC. Maak een selectie. Zie je nog gaten, onderzoek dan of deze opgevuld kunnen worden. Als je nieuwe data toevoegt aan PinC in functie van een Rapport, dan moet deze in principe ook EXTERN gepubliceerd worden. Uitzondering: Dit is niet nodig wanneer er subtotalen in de themaboom staan en er een ad hoc totaal nodig is voor een rapport. Andere uitzonderingen vind je in het sjabloon bij onderdeel 3.4. De [gewoonlijke regels](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/09.%20Controle/Draaiboek%20voor%20controle.md) gelden dan: eerst laten nakijken, dan pas publiceren; overleg met Redactiegroep vóór publicatie. De data wordt met grote voorkeur gepubliceerd vóór of tegelijk met het Rapport zelf.
 - Kies een concept: bij voorkeur wat onder hoofdstuk 2 als Rapport wordt benoemd. Steekkaarten maken we niet meer bij, wegens te veel overlappend met Dashboard; tabellenrapporten kunnen in principe aanvullend op inhoudelijke rapporten.
