@@ -2,7 +2,7 @@
 
 Bij het opstellen van **nieuwe rapporten**, het **verwijderen en vervangen van oude rapporten** volgen we bij D&amp;A het [draaiboek om rapporten aan te maken](Draaiboek-rapporten.md).
 
-In de studio vind je het **sjabloon voor rapporten** alsook het **ontwikkelsjabloon voor grafiekstijl**.
+In de studio vind je het **sjabloon voor rapporten** alsook een **sjabloon met daarin alle afspraken**.
 
 De rapporten zelf worden gemaakt in de Stories-module.
 
