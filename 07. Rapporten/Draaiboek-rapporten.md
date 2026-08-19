@@ -224,7 +224,7 @@ Hiervoor volgen we dit stappenplan:
 
 **De verantwoordelijke kijkt na waar het rapport gebruikt wordt en past zoveel mogelijk zelf aan**
 
-- ~~Kiezen op kaart (reportcode: kiezen\_op\_kaart. Verwijderen van het gebiedsniveau.~~❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.
+- ~~Kiezen op kaart~~ ~~(reportcode: kiezen\_op\_kaart.~~ Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.
 - ~~**Gebiedsinfo** (report gebiedsinfo). Meerdere keren verwijderen.~~ Wordt niet meer gebruikt
 - ~~**Rapport Kerncijfers** (report omgevingsanalyse\_steekkaart). Verwijder de link.~~ Rapport is uitdovend
 - ~~**Themaboom** : extern (bij het thema en bij &quot;Thematische rapporten&quot;)~~ Themaboom kan geen URL links meer bevatten.
@@ -241,7 +241,7 @@ Wordt de inhoud van het rapport herzien, volg dan de stappen in:
 
 Je rapport toevoegen aan (en het oude verwijderen):
 
-- ~~Kiezen op kaart (reportcode: kiezen\_op\_kaart).~~❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.
+- ~~Kiezen op kaart~~ ~~(reportcode: kiezen\_op\_kaart.~~ ❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart.
 - ~~Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Het kan zijn dat je rapport niet meer getoond wordt bij gebiedsniveaus waar het voorheen wel getoond werd. Ben je niet zeker waar je het moet toevoegen, vraag het dan aan Emilien.~~ Gebiedsinfo wordt niet meer gebruikt.
 - ~~Themaboom:extern (bij het thema). Toevoegen aan de lijst met Thematische rapporten hoeft niet meer, deze werd uit de themaboom gehaald. Stories kan je toevoegen via een URL link.~~ URL links kunnen niet meer in nieuwe Viewer.
 - ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Contacteer Stefan of David hiervoor.~~ Kerncijfers is uitdovend
@@ -285,5 +285,5 @@ ARCHIEF Good practice:
 - Exporteer het 'oude' rapport
 - Open de export van je ontwikkelrapport (bv. wonen_ontwikkel) en pas daar de unieke code aan naar de code van het 'oude' rapport (bv. rapport_wonen)
 - Doe het omgekeerde met de export van bv. rapport_wonen
-- Importeer beide rapporten terug in Swing, en ze zullen de inhoud op de gewenste manier overschrijden 
+- Importeer beide rapporten terug in Swing, en ze zullen de inhoud op de gewenste manier overschrijden
 
