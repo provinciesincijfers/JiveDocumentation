@@ -77,9 +77,9 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 
 &quot;-99998&quot;: niet van toepassing (kan hier niet voorkomen)
 
-:arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
-*Voorbeeld: In het geval je percentages hard inleest (wat we bijna nooit doen): Je kunt geen % biolandbouw t.o.v. het totaal van de landbouwgrond berekenen als er geen landbouwgrond is in de gemeente.
-  *
+:arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen.
+
+*Voorbeeld: In het geval je percentages hard inleest (wat we bijna nooit doen): Je kunt geen % biolandbouw t.o.v. het totaal van de landbouwgrond berekenen als er geen landbouwgrond is in de gemeente.*
 
 **Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van een universiteit in deze gemeente maar er zou er wel een kunnen komen) :
 
