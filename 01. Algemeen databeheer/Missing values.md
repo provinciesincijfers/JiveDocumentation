@@ -7,7 +7,7 @@ code | naam | gebruik | weergave   in PinC | kan opgeteld worden binnen PinC?
 -- | -- | -- | -- | --
 -99996 | leeg | Dit   is hetzelfde als helemaal niets inlezen. Dat doen we eigenlijk nagenoeg   nooit. Zeer uitzonderlijk kan dit gebruikt worden voor een waarde die door de   bron gecensureerd werd toch in te lezen zonder sommeren onmogelijk te maken | - | ja
 -99997 | verborgen   waarde | Door   de data-leverancier reeds gecensureerd | x | nee
--99998 | niet   van toepassing | Dit gebruiken we vooralsnog NIET | nvt | ja
+-99998 | niet   van toepassing | Wanneer iets niet mogelijk is | nvt | ja
 -99999 | ten   onrechte geen antwoord | Invullen in Brussel wanneer de bron het gebied niet dekt, om te voorkomen dat Vlaamse bronnen toch opgeteld kunnen   worden samen met Brussel | ? | nee
 0 | nul |  Er is niets en we weten dat er niets is, maar het had er wel kunnen zijn | 0 | ja
 
@@ -78,7 +78,8 @@ Op **sub-gemeentelijk niveau** komen deze codes inhoudelijk ook voor, bijvoorbee
 &quot;-99998&quot;: niet van toepassing (kan hier niet voorkomen)
 
 :arrow_right: Ontbrekende waarden leiden NIET tot het ontbreken van resultaten die hier op verder bouwen
-*Voorbeeld: ~~data van Brussel voor een Vlaamse premie~~ (strikt gezien correct, maar wij gebruiken het niet op die manier)*
+*Voorbeeld: In het geval je percentages hard inleest (wat we bijna nooit doen): Je kunt geen % biolandbouw t.o.v. het totaal van de landbouwgrond berekenen als er geen landbouwgrond is in de gemeente.
+  *
 
 **Er is niets, en we denken dat er ook niets is** (vb: we hebben geen weet van aanwezigheid van een universiteit in deze gemeente maar er zou er wel een kunnen komen) :
 
