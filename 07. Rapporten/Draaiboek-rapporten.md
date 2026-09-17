@@ -187,7 +187,7 @@ Als je vertrekt van het sjabloon dan staan de meeste afspraken al sowieso in je 
 
 Dat betekent je rapport toevoegen aan:
 
-**Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/**
+**Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/mosaic/sdg-indicatoren/**
 
 - ~~Kiezen op kaart (reportcode: kiezen\_op\_kaart. Toevoegen in de code bij de geschikte gebiedsniveaus).~~ ❕Beslissing RG 14.10.25: We nemen rapporten niet meer op in kiezen op kaart aangezien rapporten uit de oude module verdwijnen.**
 - ~~Gebiedsinfo (reportcode: gebiedsinfo. Meerdere keren toevoegen in de code bij de juiste gebiedsniveaus). Als je niet zeker bent waar je dit moet toevoegen, vraag het dan aan Emilien.~~ Beslissing RG 21.04.26: We nemen rapporten niet meer op in Gebiedsinfo aangezien rapporten uit de oude module verdwijnen. 
@@ -262,12 +262,12 @@ voorbeeldcode:
 Let op, dit is een oude versie van het rapport en wordt binnenkort gewist. Het is niet de bedoeling dat je dit oude rapport nog te zien krijgt. Kan je bij <a href="mailto:info@provincies.incijfers.be">info@provincies.incijfers.be</a>
 melden hoe je op dit rapport terecht kwam? Bedankt alvast!
 Bekijk de nieuwste versie van het rapport hier: 
-<a href="https://provincies.incijfers.be/dashboard/mobiliteit-en-verkeersveiligheid/rapport-mobiliteit-en-verkeersveiligheid" target="_blank">rapport mobiliteit</a>. 
+<a href="https://provincies.incijfers.be/mosaic/mobiliteit-en-verkeersveiligheid/rapport-mobiliteit-en-verkeersveiligheid" target="_blank">rapport mobiliteit</a>. 
 </section>
 ```
 
 - Pas binnen je script de titel van het rapport aan zodat je krijgt: **&#39;rapportnaam – Doorverwijzing&#39;**
-- Voeg in het oude rapport een extra HTMl tag toe in de head die verwijst naar het nieuwe rapport, bv. ```<link rel="canonical" href="https://provincies.incijfers.be/dashboard/ruimtegebruik/rapport-ruimtegebruik" />```. (zie bv. rapport ruimte voor de exacte plaats)
+- Voeg in het oude rapport een extra HTMl tag toe in de head die verwijst naar het nieuwe rapport, bv. ```<link rel="canonical" href="https://provincies.incijfers.be/mosaic/ruimtegebruik/rapport-ruimtegebruik" />```. (zie bv. rapport ruimte voor de exacte plaats)
 - Pas bij Reports:
   - De naam aan naar: **&#39;UITDOVEND (sinds xx/xx/20xx) – rapportnaam&#39;**
   - Zet Exclude from Search op "ja"
@@ -275,7 +275,7 @@ Bekijk de nieuwste versie van het rapport hier:
 - Vul aan in het Logboek, dan komt het wellicht in de Nieuwsbrief. Zie voor technische tips rond communicatie van een rapport [dit bestand](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
 Ook hier is communicatie van groot belang. Als je het rapport herwerkt van een collega(‘s), betrek hen dan ook in de verschillende fasen van het proces zodat ook zij feedback kunnen geven, naast de leden van de Redactiegroep.
-Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/dashboard/sdg-indicatoren/.
+Opgelet: maak voor een Story rapport een link aan zonder de naam van het hoofdstuk, bv. https://provincies.incijfers.be/mosaic/sdg-indicatoren/.
 
 **Verander de onderwerpcode niet zomaar!** Anders gaat er vanalles kapot.
 Het Dashboard en kruisverwijzingen vanuit andere rapporten werken bijvoorbeeld wel nog goed, MAAR moet je er aan denken om in de Themaboom (CategoryTree) de link te veranderen. Immers, net als bij Indicators is de verwijzing vanuit de Themaboom NIET gekoppeld aan een code maar aan een databank-objectje.
