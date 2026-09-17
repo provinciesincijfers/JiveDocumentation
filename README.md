@@ -67,7 +67,7 @@ Vanuit die toepassing kan je ook doorklikken naar **DashAdmin**, de beheerstool 
 
 :bulb: *Tip om vlot te kunnen testen: Je komt veel over een onderwerp te weten door het op de testomgeving of in de echte databank op te vragen. Als je de onderwerpcode al weet, dan kan dat supersnel via:
 provincies.incijfers.be/viewer?var=v1111a\_tot\_bevolking
- provincies.incijfers.be/admin/jive?var=v1111a\_tot\_bevolking
+ provincies.incijfers.be/admin/viewer?var=v1111a\_tot\_bevolking
 *
 
 Of kijk [hoe je URLS correct communiceert](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
