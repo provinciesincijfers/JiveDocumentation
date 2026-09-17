@@ -234,7 +234,7 @@ De volgorde is zo:
 - deze Dimensieniveaus hebben Items nodig (vb Nederland, EU)
 - nu kan je een aggregatietabel inlezen (met daarin rijen die aan Swing vertellen "Nederland ligt in de EU")
 
-Er zijn ook **niet-aggregeerbare dimensies** mogelijk. Bijvoorbeeld kan het zijn dat je weet dat je met missing values zit op bepaalde kruisingen. Dat kan je oplossen door ook het totaal in te lezen. Maar dan mag Swing uiteraard NIET de som nemen van het totaal en de beschikbare subtotalen. Bij de Dimension level kan je dit instellen met *Aggregate type* > *no aggregation*. [Hier een voorbeeld van dergelijke kubus](https://provincies.incijfers.be/databank?var=kubus2603_overnachtingen&keepworkspace=true).
+Er zijn ook **niet-aggregeerbare dimensies** mogelijk. Bijvoorbeeld kan het zijn dat je weet dat je met missing values zit op bepaalde kruisingen. Dat kan je oplossen door ook het totaal in te lezen. Maar dan mag Swing uiteraard NIET de som nemen van het totaal en de beschikbare subtotalen. Bij de Dimension level kan je dit instellen met *Aggregate type* > *no aggregation*. [Hier een voorbeeld van dergelijke kubus](https://provincies.incijfers.be/viewer?var=kubus2603_overnachtingen&keepworkspace=true).
 
 
 ## 5.	Onderbrengen in de themaboom
