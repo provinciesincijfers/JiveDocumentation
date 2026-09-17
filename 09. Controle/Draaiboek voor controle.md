@@ -51,7 +51,7 @@ Per onderwerp staat dit ook aangegeven **in Swing in het &quot;vrij tekstveld&qu
 - Binnen de werkgroep Economie controleert men elkaars uploadfiles. Dit is de excel die klaar staat voor upload naar Swing. Alle uploadfiles horen op Teams te staan.
 - Het is **aangeraden om te controleren in de testomgeving**: [https://provincies.incijfers.be/admin/viewer](https://provincies.incijfers.be/admin/viewer). In Excel files komen komen sommige fouten immers niet naar boven. Als het gaat om updates, dan is dit de enige eenvoudige manier om te testen zonder dat eindgebruikers potentieel foute data kunnen zien.
 - Als de **data enkel INTERN staan**, dan moet de controlerende partner uiteraard over een account beschikken.
-- Als de **data enkel INTERN staat én het gaat om nieuwe data**, dan kan er zonder problemen getest worden in de gepubliceerde [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank) omgeving
+- Als de **data enkel INTERN staat én het gaat om nieuwe data**, dan kan er zonder problemen getest worden in de gepubliceerde [https://provincies.incijfers.be/viewer](https://provincies.incijfers.be/viewer) omgeving
 
 ❕ ***Neem maatregelen indien het prematuur publiceren van de databank problemen kan opleveren. Er zijn verschillende oplossingen mogelijk - neem dit op met de databeheerder.***
 
