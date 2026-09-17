@@ -195,7 +195,7 @@ Dat betekent je rapport toevoegen aan:
 - ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Vraag dit aan Stefan of David.~~ Update juni 2026: Het rapport kerncijfers is uitdovend.
   
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- Controleer of je rapport in de andere rapporten dient vermeld te worden
+- Controleer of je rapport in de andere rapporten dient vermeld te worden, bv. in de omgevingsanalyse.
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search. Oude rapporten: In de rapportentabel het vinkje 'Exclude from search' afvinken. Stories: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
 - Zorg ervoor dat het rapport zichtbaar is zonder Login: Stories > Story settings > Authorization > Type login: No login.
@@ -247,7 +247,7 @@ Je rapport toevoegen aan (en het oude verwijderen):
 - ~~Link toevoegen in rapport Kerncijfers (report omgevingsanalyse\_steekkaart). Contacteer Stefan of David hiervoor.~~ Kerncijfers is uitdovend
 
 - Dashboard: een tegel maken bij het relevante thema én toevoegen in het overzicht van rapporten. Contacteer Koen hiervoor.
-- Controleer of je rapport in de andere rapporten dient vermeld te worden
+- Controleer of je rapport in de andere rapporten dient vermeld te worden, bv. in de omgevingsanalys.
 - [Lijst rapporten en verantwoordelijken op Github](https://github.com/provinciesincijfers/PinC-taakopvolging/blob/master/README.md)
 - Zichtbaar maken voor de Search: In de rapportentabel het vinkje 'Exclude from search' afvinken. Storyies: Story settings > General > Search engine optimization > Include this stories in the searchresults: Yes.
 - Zorg ervoor dat het rapport zichtbaar is zonder Login: Stories > Story settings > Authorization > Type login: No login.
