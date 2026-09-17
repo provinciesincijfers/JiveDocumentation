@@ -26,10 +26,9 @@ Als je een specifiek rapport wil communiceren op een klantgerichte manier, en je
     - Je kan ook een presentatie samenstellen aan de hand **van complexere parameters**, zie [Achter de schermen van de databank](https://provincies.incijfers.be/viewer/report/?id=handleiding_abf) voor meer info over presentaties met URL parameters samenstellen. Voeg steeds `&keepworkspace=true` toe aan je URL. Dit respecteert wat ze al hadden en voegt je nieuwe presentatie gewoon toe aan hun sessie
 
   - Voor communiceren van een **Dashboard**.
-    - Als je naar een **specifieke pagina** wil verwijzen, dan kan dat eenvoudig door de **URL te kopiëren die je bovenaan ziet**. Bijvoorbeeld: https://provincies.incijfers.be/dashboard/Nationaliteit-en-herkomst/
+    - Als je naar een **specifieke pagina** wil verwijzen, dan kan dat eenvoudig door de **URL te kopiëren die je bovenaan ziet**. Bijvoorbeeld: https://provincies.incijfers.be/mosaic/Nationaliteit-en-herkomst/
     
-     ❕ Vaak ga je hier dashboard/dashboard/ zien staan. Da&#39;s onnozel, dus dat kan je beter vervangen door slechts één keer dashboard/. Maar het werkt beide.
-    - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?regionlevel=gemeente&regioncode=24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem). Klik [hier](https://provincies.incijfers.be/viewer?workspace_guid=7a6e3340-43aa-413a-9e65-19eb78539cfa) om de gebiedscode op te vragen.
+     - Ook hier kan **je verwijzen naar een specifiek gebied**. Voeg hiervoor `?regionlevel=gemeente&regioncode=24134` toe (voorbeeld voor gemeente Scherpenheuvel-Zichem). Klik [hier](https://provincies.incijfers.be/viewer?workspace_guid=7a6e3340-43aa-413a-9e65-19eb78539cfa) om de gebiedscode op te vragen.
   - Voor communiceren van een **metadatafiche**.
     -   Open de metadatafiche en klik met je rechtermuisknop in deze fiche. Klik vervolgens op Inspecteren. 
     -   In het venster dat geopend wordt, zal je ergens een URL zien staan die als volgt is opgebouwd:  https://provincies.incijfers.be/viewer?var=varcode&showmetadatapopup=true bv.: https://provincies.incijfers.be/viewer?var=v1111a_tot_bevolking&showmetadatapopup=true. Let op: je gebruikt de indicatorcode om de metadatapopup op te roepen.
