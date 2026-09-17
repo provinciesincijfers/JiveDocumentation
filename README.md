@@ -62,17 +62,17 @@ Vanuit die toepassing kan je ook doorklikken naar **DashAdmin**, de beheerstool 
 
 **Swing Jive** heeft een &quot;live&quot; versie een &quot;test&quot; versie.
 
-- De &quot;**live**&quot; versie provincies.incijfers.be/databank staat op een krachtige server. Je kan er inloggen om gevoelige data of nog niet afgeronde thema&#39;s te raadplegen. Deze versie wordt ververst elke keer we &quot;de Databank live zetten&quot;.
+- De &quot;**live**&quot; versie provincies.incijfers.be/viewer staat op een krachtige server. Je kan er inloggen om gevoelige data of nog niet afgeronde thema&#39;s te raadplegen. Deze versie wordt ververst elke keer we &quot;de Databank live zetten&quot;.
 - De &quot;**test**&quot; versie provincies.incijfers.be/admin/viewer staat op een server die enkel bedoeld is om te testen. Je bent er doorgaans ingelogd, maar je kan er uitloggen om te zien wat klanten straks zien op de &quot;live&quot; versie.
 
 :bulb: *Tip om vlot te kunnen testen: Je komt veel over een onderwerp te weten door het op de testomgeving of in de echte databank op te vragen. Als je de onderwerpcode al weet, dan kan dat supersnel via:
-provincies.incijfers.be/databank?var=v1111a\_tot\_bevolking
+provincies.incijfers.be/viewer?var=v1111a\_tot\_bevolking
  provincies.incijfers.be/admin/jive?var=v1111a\_tot\_bevolking
-Je kan met dit soort parameters alle kanten op. Lees het [hier](https://provincies.incijfers.be/databank?report=achter_de_schermen) na.*
+*
 
 Of kijk [hoe je URLS correct communiceert](https://github.com/provinciesincijfers/JiveDocumentation/blob/master/10.%20Communicatie/Goed%20communiceren%20van%20URLs%20in%20PinC.md).
 
-De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de [**beta-omgeving**](https://beta-provincies.incijfers.be/) . Ook deze heeft een /databank en /admin/jive omgeving.
+De test-versie wordt regelmatig gepubliceerd. Als er een probleem opduikt, kunnen we dit tegenhouden met een **publicatiestop**. Dit is echter heel lastig voor andere beheerders. Als je voorziet dat je wijzigingen uitgebreid getest gaan moeten worden, of je wil iets uitproberen dat dingen kapot kan maken, gebruik dan de [**beta-omgeving**](https://beta-provincies.incijfers.be/) . Ook deze heeft een /viewer en /admin/viewer omgeving.
 
 :grey_exclamation: *Hier kan je alles uittesten, alles kapot maken wat je wil, zonder enig risico voor de echte website. De data die erachter zit is een snapshot van de &quot;echte&quot; databank. Dat gaat dus snel verouderd zijn. Voorlopig is met Richard afgesproken dat we op afroep kunnen vragen om de recente versie daar neer te zetten. Op termijn kunnen we wellicht zelf een import-export operatie doen. Als je echt gaat prutsen, maak dan eerst een backup van de databank.*
 
