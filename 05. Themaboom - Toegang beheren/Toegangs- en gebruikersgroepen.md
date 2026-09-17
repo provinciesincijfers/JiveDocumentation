@@ -22,13 +22,13 @@ De zichtbaarheid van de mappen wordt georganiseerd via de themaboom. Om dit moge
 - **extern\_gembelg** : deze groep moet je niet aankomen. Ze bestaat enkel om het mogelijk te maken in rapporten stroomdata voor heel België te tonen (dit mogen we niet gewoon in de Databank)
 - **system**: dit moet STEEDS op &quot;alles tonen&quot; voor alles blijven staan. Anders kan je zelfs als admin niet meer alles zien!
 - **intern**: bevat op dit moment ook gewoon alles
-- **open_data groepen**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) beschikbaar moet zijn.
+- **open_data groepen**: dit omvat de data die via [de odata service](https://provincies.incijfers.be/viewer/report/?id=achter_de_schermen) beschikbaar moet zijn.
 
 We gebruiken de Access Groups om **enkele zaken voor niet-ingelogde eindgebruikers af te schermen**. Met name:
 
 - Data is NIET automatisch op **statsec niveau** beschikbaar
 - **Nieuwe dimensieniveaus van kubussen** zijn NIET automatisch beschikbaar
-- Data is NIET automatisch beschikbaar in de [odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen). Deze service heeft enkel recht op de data die expliciet in de CategoryTree in de map EXTERN staat. We werken deze map bij [tijdens het bijwerken van de Connector naar de Centrumsteden](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
+- Data is NIET automatisch beschikbaar in de [odata service](https://provincies.incijfers.be/viewer/report/?id=achter_de_schermen). Deze service heeft enkel recht op de data die expliciet in de CategoryTree in de map EXTERN staat. We werken deze map bij [tijdens het bijwerken van de Connector naar de Centrumsteden](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
 
 Dus:
 
@@ -56,13 +56,13 @@ Belangrijke UserGroups:
 
 - **Swing Beheerders** hebben recht op **alle mappen**, ook de TESTMAP en doorgaans ook tot **Studio**.
   - Gebruikersgroep = **system**.
-- **Speciale gebruikers** (personeel provincie, centrumsteden of andere specifieke klanten met een account) kunnen inloggen op provincies.incijfers.be/databank en zien de map **PRODUCTIE,** waar zowel het **INTERNE en EXTERNE** deel te zien is.
+- **Speciale gebruikers** (personeel provincie, centrumsteden of andere specifieke klanten met een account) kunnen inloggen op provincies.incijfers.be/viewer en zien de map **PRODUCTIE,** waar zowel het **INTERNE en EXTERNE** deel te zien is.
   - Gebruikersgroep = **users.**
   - Ze hebben recht op zowel INTERN als drie EXTERNE AccessGroups.
 - **Gasten** hebben enkel toegang tot de map **EXTERN.**
   - User: extern. Dit wordt ingesteld via Accounts>Account settings, "Guest user login"
   - UserGroup = **extern.**. Hier wordt bepaald dat ze landen op de map in de CategoryTree EXTERN. Ze krijgen toegang tot de drie EXTERNE AccessGroups. 
-- Gebruikers van de [odata service](https://provincies.incijfers.be/databank/report/?id=achter_de_schermen) hebben enkel toegang tot de AccessGroup **open_data**
+- Gebruikers van de [odata service](https://provincies.incijfers.be/viewer/report/?id=achter_de_schermen) hebben enkel toegang tot de AccessGroup **open_data**
   - User: open_data_user. Dit wordt ingesteld via Accounts>Account settings, "Open data user"
   - UserGroup = **open_data.**. Hier wordt bepaald dat ze toegang hebben tot de AccessGroups _extern_statsec_ en _open_data_. De inhoud van _open_data_ is de lijst Indicators binnen deze AccessGroup. Deze wordt periodiek manueel ingevuld met de inhoud van de CategoryTree map EXTERN [tijdens het aanvullen van de Connector](https://github.com/provinciesincijfers/connectorbeheer/blob/master/How_to_connect.md).
 
@@ -119,7 +119,7 @@ Indien je iemand kan verder helpen met dit soort account die buiten deze categor
 - **Importeer deze Excel als metadata** in de [tabel Users in Studio](https://provincies.incijfers.be/Admin/Studio/Table?tableName=User).
 - Wacht tot de **Databank gepubliceerd** is (als het snel moet gaan kan dit ook via [https://provincies.incijfers.be/admin/viewer](https://provincies.incijfers.be/admin/viewer))
 - Geef **deze instructies** aan de eindgebruikers:
-  - Ga naar [https://provincies.incijfers.be/databank](https://provincies.incijfers.be/databank)
+  - Ga naar [https://provincies.incijfers.be/viewer](https://provincies.incijfers.be/viewer)
   - Klik op het hamburger-menu, vervolgens Inloggen:
  <img width="259" height="310" alt="image" src="https://github.com/user-attachments/assets/566d0b61-2aa9-444b-bf4e-552aacb5a3e2" />
 
