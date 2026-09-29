@@ -9,6 +9,8 @@ Ook een handleiding gezocht rond werken met gepercenteerde kubussen en het combi
 
 ❕ Vergeet niet dat een kubus **maximaal 100.000 combinaties mag bevatten**. Om de combinaties te berekenen, neem je alle inhoudelijke  indelingen van de dataset (de "dimensieniveaus", voorbeeld: leeftijd, geslacht en burgerlijke staat, maar NIET jaar, gebied, aantal). Vervolgens neem je het product van het aantal keuzes per indeling.  Swing doet ook nog een controle van de hoeveelheid data na inladen en comprimeren. Dus zelfs als je je aan de 100.000 combinaties houdt, kan het zijn dat er toch nog een error opduikt.
 
+Het importbestand mag daarnaast niet meer dan **255 kolommen** bevatten. 
+
 Bijvoorbeeld: 10 leeftijdsklassen * 2 geslachten * 4 burgerlijke staten = 80 combinaties. Stel dat je ook een "onbekend" geslacht hebt, dan wordt dit dus ```10*3*4```.
 
 **Grootte bestand:** De csv mag niet groter zijn dan 4 GB of meer dan 150M rijen bevatten. Het product van de dimensieniveau-items moet minder zijn dan 100K. ABF hanteert ook nog een maximale grootte van gecomprimeerde data voor kubussen, maar we hebben geen handvaten om hier op te controleren (dat is niet gewoon de bestandsgrootte van de uploadfile). Het is dus niet mogelijk om precies inzichtelijk te maken wat de verhouding is tussen het aantal (gevulde) cellen enerzijds en de uiteindelijk gecomprimeerde grootte anderszijds. De verhouding tussen het aantal gevulde cellen en de uiteindelijk gecomprimeerde grootte ligt ook niet vast, maar kan afhankelijk van de kubusstructuur heel erg verschillen. **Onze limiet werd verhoogd naar 15 MB.**
