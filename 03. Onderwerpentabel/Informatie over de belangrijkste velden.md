@@ -49,7 +49,8 @@ Voor **testonderwerpen of onderwerpen die enkel relevant zijn voor je eigen prov
     - Gebruik 65-plussers (niet 65+ of 65-plus)
   - Percentage worden omgeschreven met (t.o.v. x), promilles met per x, ratio's per 1.000 x.
   - Als het over bevolkingsprognoses gaat, voeg je achteraan [prognose] toe, bv. 75-79 jaar vrouwen (t.o.v. 75-79-jarigen) [prognose]
-  - Model-, scenario- en enquête data duiden we ook aan in vierkante haken achteraan de onderwerpnaam met [model], [scenario]. Enquête data rond een bepaald thema worden samengenomen in één rubriek met als naam: thema (enquête). 
+  - Model- en scenariodata duiden we ook aan in vierkante haken achteraan de onderwerpnaam met [model], [scenario].
+  - Enquête data rond een bepaald thema worden samengenomen in één rubriek met als naam: thema (enquête). 
 
 ❕ ***Wil je '<' of '>' gebruiken in de onderwerpnaam, doe dit dat NIET via de web interface, maar wel via een Excel import. Dit wordt immers aanzien als een ongeldige HTML tag die er automatisch uit wordt gehaald.***
 
